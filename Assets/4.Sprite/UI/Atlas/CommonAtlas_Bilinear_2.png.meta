@@ -1,0 +1,5847 @@
+fileFormatVersion: 2
+guid: 0e8a0cf45f0a19c48be8bf6ebc0d1d78
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7001613149106267092
+    second: CommonAtlas_Bilinear_2_0
+  - first:
+      213: 1003431674121646136
+    second: CommonAtlas_Bilinear_2_1
+  - first:
+      213: 8827125750656213267
+    second: CommonAtlas_Bilinear_2_2
+  - first:
+      213: 7504139301183599506
+    second: CommonAtlas_Bilinear_2_3
+  - first:
+      213: -1732610530388545865
+    second: CommonAtlas_Bilinear_2_4
+  - first:
+      213: -5960631411494371183
+    second: CommonAtlas_Bilinear_2_5
+  - first:
+      213: -5348075174084372698
+    second: CommonAtlas_Bilinear_2_6
+  - first:
+      213: 6235705162429110683
+    second: CommonAtlas_Bilinear_2_7
+  - first:
+      213: -3454835965096040334
+    second: CommonAtlas_Bilinear_2_8
+  - first:
+      213: -513443984863335292
+    second: CommonAtlas_Bilinear_2_9
+  - first:
+      213: -5584272145109346092
+    second: CommonAtlas_Bilinear_2_10
+  - first:
+      213: 36961164106495930
+    second: CommonAtlas_Bilinear_2_11
+  - first:
+      213: 5021556279396194969
+    second: CommonAtlas_Bilinear_2_12
+  - first:
+      213: -7837347715085083188
+    second: CommonAtlas_Bilinear_2_13
+  - first:
+      213: -8780457326379343946
+    second: CommonAtlas_Bilinear_2_14
+  - first:
+      213: -5720403166059931273
+    second: CommonAtlas_Bilinear_2_15
+  - first:
+      213: -3727670506804213920
+    second: CommonAtlas_Bilinear_2_16
+  - first:
+      213: 3646868762667503211
+    second: CommonAtlas_Bilinear_2_17
+  - first:
+      213: -4212264709444974829
+    second: CommonAtlas_Bilinear_2_18
+  - first:
+      213: 729366625508907163
+    second: CommonAtlas_Bilinear_2_19
+  - first:
+      213: 7040334337676977180
+    second: CommonAtlas_Bilinear_2_20
+  - first:
+      213: -3823896849719247871
+    second: CommonAtlas_Bilinear_2_21
+  - first:
+      213: -7077070652111609828
+    second: CommonAtlas_Bilinear_2_22
+  - first:
+      213: -5812750491033332130
+    second: CommonAtlas_Bilinear_2_23
+  - first:
+      213: 7887730513339252760
+    second: CommonAtlas_Bilinear_2_24
+  - first:
+      213: -2447280169983609850
+    second: CommonAtlas_Bilinear_2_25
+  - first:
+      213: 2396403938805731204
+    second: CommonAtlas_Bilinear_2_26
+  - first:
+      213: 6162602692321280393
+    second: CommonAtlas_Bilinear_2_27
+  - first:
+      213: 5416569829133192680
+    second: CommonAtlas_Bilinear_2_28
+  - first:
+      213: 4374390566942943761
+    second: CommonAtlas_Bilinear_2_29
+  - first:
+      213: -2402270116849501602
+    second: CommonAtlas_Bilinear_2_30
+  - first:
+      213: -7297059193617905735
+    second: CommonAtlas_Bilinear_2_31
+  - first:
+      213: -3743649120242055926
+    second: CommonAtlas_Bilinear_2_32
+  - first:
+      213: 3905208723708755380
+    second: CommonAtlas_Bilinear_2_33
+  - first:
+      213: -8066539903077778909
+    second: CommonAtlas_Bilinear_2_34
+  - first:
+      213: 2037617527594168876
+    second: CommonAtlas_Bilinear_2_35
+  - first:
+      213: -8286417757081654659
+    second: CommonAtlas_Bilinear_2_36
+  - first:
+      213: -6888958277234970756
+    second: CommonAtlas_Bilinear_2_37
+  - first:
+      213: -7917409335255187305
+    second: CommonAtlas_Bilinear_2_38
+  - first:
+      213: 2935862831965464403
+    second: CommonAtlas_Bilinear_2_39
+  - first:
+      213: -6517173355682491505
+    second: CommonAtlas_Bilinear_2_40
+  - first:
+      213: -992433082006206537
+    second: CommonAtlas_Bilinear_2_41
+  - first:
+      213: 1539404561345411002
+    second: CommonAtlas_Bilinear_2_42
+  - first:
+      213: 2780358078526006712
+    second: CommonAtlas_Bilinear_2_43
+  - first:
+      213: -1456774126674963410
+    second: CommonAtlas_Bilinear_2_44
+  - first:
+      213: 432072876722942103
+    second: CommonAtlas_Bilinear_2_45
+  - first:
+      213: -6576538562888742074
+    second: UI_NameBox_Right
+  - first:
+      213: -8099498334371804407
+    second: UI_NameBox_Left
+  - first:
+      213: 5018075496732118687
+    second: CommonAtlas_Bilinear_2_48
+  - first:
+      213: 3042165847678635234
+    second: CommonAtlas_Bilinear_2_49
+  - first:
+      213: 579821973173217216
+    second: CommonAtlas_Bilinear_2_50
+  - first:
+      213: 6726269372867849542
+    second: CommonAtlas_Bilinear_2_51
+  - first:
+      213: -6814538260425777245
+    second: CommonAtlas_Bilinear_2_52
+  - first:
+      213: -5003555656350334372
+    second: CommonAtlas_Bilinear_2_53
+  - first:
+      213: -6984797377705667223
+    second: CommonAtlas_Bilinear_2_54
+  - first:
+      213: 3213746264737040145
+    second: CommonAtlas_Bilinear_2_55
+  - first:
+      213: 3355643087711879333
+    second: CommonAtlas_Bilinear_2_56
+  - first:
+      213: 7321574290942990873
+    second: CommonAtlas_Bilinear_2_57
+  - first:
+      213: 212611848271929680
+    second: CommonAtlas_Bilinear_2_58
+  - first:
+      213: -1300552161036588207
+    second: CommonAtlas_Bilinear_2_59
+  - first:
+      213: 8395847730213346829
+    second: CommonAtlas_Bilinear_2_60
+  - first:
+      213: -5266031264966298808
+    second: CommonAtlas_Bilinear_2_61
+  - first:
+      213: 8489555634989464525
+    second: CommonAtlas_Bilinear_2_62
+  - first:
+      213: -5313332661648700952
+    second: CommonAtlas_Bilinear_2_63
+  - first:
+      213: -4260546168335919231
+    second: CommonAtlas_Bilinear_2_64
+  - first:
+      213: 7616352751717878022
+    second: CommonAtlas_Bilinear_2_65
+  - first:
+      213: 648439180093261761
+    second: CommonAtlas_Bilinear_2_66
+  - first:
+      213: 5458238369267516636
+    second: CommonAtlas_Bilinear_2_67
+  - first:
+      213: -3326260621591411553
+    second: CommonAtlas_Bilinear_2_68
+  - first:
+      213: 5398273665022753450
+    second: CommonAtlas_Bilinear_2_69
+  - first:
+      213: 8981891354894044147
+    second: CommonAtlas_Bilinear_2_70
+  - first:
+      213: 9092567990007831864
+    second: CommonAtlas_Bilinear_2_71
+  - first:
+      213: -8010427329463491051
+    second: CommonAtlas_Bilinear_2_72
+  - first:
+      213: -4734408832524014152
+    second: CommonAtlas_Bilinear_2_73
+  - first:
+      213: 662047420331381789
+    second: CommonAtlas_Bilinear_2_74
+  - first:
+      213: 2777097814056358059
+    second: CommonAtlas_Bilinear_2_75
+  - first:
+      213: -4423181354940668246
+    second: CommonAtlas_Bilinear_2_76
+  - first:
+      213: -5567978483040012690
+    second: CommonAtlas_Bilinear_2_77
+  - first:
+      213: -5794005303676138471
+    second: CommonAtlas_Bilinear_2_78
+  - first:
+      213: -5563794761076856049
+    second: CommonAtlas_Bilinear_2_79
+  - first:
+      213: 3930699645092992449
+    second: CommonAtlas_Bilinear_2_80
+  - first:
+      213: 9088592993067669053
+    second: CommonAtlas_Bilinear_2_81
+  - first:
+      213: -5728604505813786034
+    second: CommonAtlas_Bilinear_2_82
+  - first:
+      213: 2244317427969088395
+    second: CommonAtlas_Bilinear_2_83
+  - first:
+      213: 6993674086504275799
+    second: CommonAtlas_Bilinear_2_84
+  - first:
+      213: 5594843785375605510
+    second: CommonAtlas_Bilinear_2_85
+  - first:
+      213: -4177191173201060144
+    second: CommonAtlas_Bilinear_2_86
+  - first:
+      213: 5273647931942271531
+    second: CommonAtlas_Bilinear_2_87
+  - first:
+      213: 6679055812510131836
+    second: CommonAtlas_Bilinear_2_88
+  - first:
+      213: 3106266945500643647
+    second: CommonAtlas_Bilinear_2_89
+  - first:
+      213: 4861959445531540524
+    second: CommonAtlas_Bilinear_2_90
+  - first:
+      213: 8329495147388390197
+    second: CommonAtlas_Bilinear_2_91
+  - first:
+      213: 6502695784768159741
+    second: CommonAtlas_Bilinear_2_92
+  - first:
+      213: 5282615553475930804
+    second: CommonAtlas_Bilinear_2_93
+  - first:
+      213: 374845282549874226
+    second: CommonAtlas_Bilinear_2_94
+  - first:
+      213: 8629345858438666689
+    second: CommonAtlas_Bilinear_2_95
+  - first:
+      213: -5963790648613182830
+    second: CommonAtlas_Bilinear_2_96
+  - first:
+      213: -7764569699681490070
+    second: CommonAtlas_Bilinear_2_97
+  - first:
+      213: -5679122566313681937
+    second: CommonAtlas_Bilinear_2_98
+  - first:
+      213: -1550838123989245467
+    second: CommonAtlas_Bilinear_2_99
+  - first:
+      213: 5075609090277719688
+    second: CommonAtlas_Bilinear_2_100
+  - first:
+      213: 5540493194239082396
+    second: CommonAtlas_Bilinear_2_101
+  - first:
+      213: -3530592476126864239
+    second: CommonAtlas_Bilinear_2_102
+  - first:
+      213: 1073541982371710065
+    second: CommonAtlas_Bilinear_2_103
+  - first:
+      213: 6270424640904666455
+    second: CommonAtlas_Bilinear_2_104
+  - first:
+      213: 4905082840222761720
+    second: CommonAtlas_Bilinear_2_105
+  - first:
+      213: 4114137908364941214
+    second: CommonAtlas_Bilinear_2_106
+  - first:
+      213: -8761248649447817276
+    second: CommonAtlas_Bilinear_2_107
+  - first:
+      213: 6483194320188546242
+    second: CommonAtlas_Bilinear_2_108
+  - first:
+      213: 7524945927461963660
+    second: CommonAtlas_Bilinear_2_109
+  - first:
+      213: 353541519230492098
+    second: CommonAtlas_Bilinear_2_110
+  - first:
+      213: -1859868480061229858
+    second: CommonAtlas_Bilinear_2_111
+  - first:
+      213: 2222441446324175077
+    second: CommonAtlas_Bilinear_2_112
+  - first:
+      213: -3844633646962971548
+    second: CommonAtlas_Bilinear_2_113
+  - first:
+      213: -1411685579391412225
+    second: CommonAtlas_Bilinear_2_114
+  - first:
+      213: -5889520793654854461
+    second: CommonAtlas_Bilinear_2_115
+  - first:
+      213: -1222502443301054551
+    second: CommonAtlas_Bilinear_2_116
+  - first:
+      213: -8025753053296402600
+    second: CommonAtlas_Bilinear_2_117
+  - first:
+      213: -3547760069078460065
+    second: CommonAtlas_Bilinear_2_118
+  - first:
+      213: -7923391772826307107
+    second: CommonAtlas_Bilinear_2_119
+  - first:
+      213: -8713448886217416763
+    second: CommonAtlas_Bilinear_2_120
+  - first:
+      213: -5245039078176403206
+    second: CommonAtlas_Bilinear_2_121
+  - first:
+      213: -1493966831765075725
+    second: CommonAtlas_Bilinear_2_122
+  - first:
+      213: -2975135687361058273
+    second: CommonAtlas_Bilinear_2_123
+  - first:
+      213: -2434495831584421451
+    second: CommonAtlas_Bilinear_2_124
+  - first:
+      213: 6631448818685518761
+    second: CommonAtlas_Bilinear_2_125
+  - first:
+      213: -5960999660712867987
+    second: CommonAtlas_Bilinear_2_126
+  - first:
+      213: 6090111648391615231
+    second: CommonAtlas_Bilinear_2_127
+  - first:
+      213: -3493943697726857876
+    second: CommonAtlas_Bilinear_2_128
+  - first:
+      213: -1314009966335702653
+    second: CommonAtlas_Bilinear_2_129
+  - first:
+      213: -7969407288731600840
+    second: CommonAtlas_Bilinear_2_130
+  - first:
+      213: 6979011837934915915
+    second: CommonAtlas_Bilinear_2_131
+  - first:
+      213: 3892695818397678177
+    second: CommonAtlas_Bilinear_2_132
+  - first:
+      213: 6808008703393275239
+    second: CommonAtlas_Bilinear_2_133
+  - first:
+      213: -6529150620189909927
+    second: CommonAtlas_Bilinear_2_134
+  - first:
+      213: -7784138943411293623
+    second: CommonAtlas_Bilinear_2_135
+  - first:
+      213: 8133917826955162752
+    second: CommonAtlas_Bilinear_2_136
+  - first:
+      213: -4945191978561141185
+    second: CommonAtlas_Bilinear_2_137
+  - first:
+      213: -999926421473606229
+    second: CommonAtlas_Bilinear_2_138
+  - first:
+      213: 4265568448295351992
+    second: CommonAtlas_Bilinear_2_139
+  - first:
+      213: -6705336122019216012
+    second: CommonAtlas_Bilinear_2_140
+  - first:
+      213: -1893578832997277755
+    second: CommonAtlas_Bilinear_2_141
+  - first:
+      213: 6482811316527614592
+    second: CommonAtlas_Bilinear_2_142
+  - first:
+      213: -2257127530533118106
+    second: CommonAtlas_Bilinear_2_143
+  - first:
+      213: -9176409593888909101
+    second: CommonAtlas_Bilinear_2_144
+  - first:
+      213: -8957584535335543774
+    second: CommonAtlas_Bilinear_2_145
+  - first:
+      213: -1713288197018909159
+    second: CommonAtlas_Bilinear_2_146
+  - first:
+      213: 8600434892453252972
+    second: CommonAtlas_Bilinear_2_147
+  - first:
+      213: 7336305627358833733
+    second: CommonAtlas_Bilinear_2_148
+  - first:
+      213: 2512049690059276447
+    second: CommonAtlas_Bilinear_2_149
+  - first:
+      213: 6855707335885399809
+    second: CommonAtlas_Bilinear_2_150
+  - first:
+      213: -4668173518405940594
+    second: CommonAtlas_Bilinear_2_151
+  - first:
+      213: -5798278770760610038
+    second: CommonAtlas_Bilinear_2_152
+  - first:
+      213: -4407888745755644506
+    second: CommonAtlas_Bilinear_2_153
+  - first:
+      213: 6475901883526429722
+    second: CommonAtlas_Bilinear_2_154
+  - first:
+      213: -11615294188604444
+    second: CommonAtlas_Bilinear_2_155
+  - first:
+      213: -6561885223268520459
+    second: CommonAtlas_Bilinear_2_156
+  - first:
+      213: -2425351756154678933
+    second: CommonAtlas_Bilinear_2_157
+  - first:
+      213: 4086236097711055498
+    second: CommonAtlas_Bilinear_2_158
+  - first:
+      213: -802853965748668842
+    second: CommonAtlas_Bilinear_2_159
+  - first:
+      213: 6057933171045241230
+    second: CommonAtlas_Bilinear_2_160
+  - first:
+      213: 3563576284759987650
+    second: CommonAtlas_Bilinear_2_161
+  - first:
+      213: 8753669608179651897
+    second: CommonAtlas_Bilinear_2_162
+  - first:
+      213: 8549582211818219717
+    second: CommonAtlas_Bilinear_2_163
+  - first:
+      213: 990101781682706313
+    second: CommonAtlas_Bilinear_2_164
+  - first:
+      213: 2251342550532132385
+    second: CommonAtlas_Bilinear_2_165
+  - first:
+      213: -4367330810247086118
+    second: CommonAtlas_Bilinear_2_166
+  - first:
+      213: 879168068992833456
+    second: CommonAtlas_Bilinear_2_167
+  - first:
+      213: 417997016418695255
+    second: CommonAtlas_Bilinear_2_168
+  - first:
+      213: 4552839086484183394
+    second: CommonAtlas_Bilinear_2_169
+  - first:
+      213: -6989614600313686854
+    second: CommonAtlas_Bilinear_2_170
+  - first:
+      213: -2856837155505038980
+    second: CommonAtlas_Bilinear_2_171
+  - first:
+      213: -7196412143504470194
+    second: CommonAtlas_Bilinear_2_172
+  - first:
+      213: -2073121870271467850
+    second: CommonAtlas_Bilinear_2_173
+  - first:
+      213: 3298055803668844396
+    second: CommonAtlas_Bilinear_2_174
+  - first:
+      213: 7221017364455401938
+    second: CommonAtlas_Bilinear_2_175
+  - first:
+      213: -1718558552076553807
+    second: CommonAtlas_Bilinear_2_176
+  - first:
+      213: -8943523403809874038
+    second: CommonAtlas_Bilinear_2_177
+  - first:
+      213: -6796435954399488844
+    second: CommonAtlas_Bilinear_2_178
+  - first:
+      213: 7642801013172158499
+    second: CommonAtlas_Bilinear_2_179
+  - first:
+      213: 3015656261986724575
+    second: CommonAtlas_Bilinear_2_180
+  - first:
+      213: 7468083628013994657
+    second: CommonAtlas_Bilinear_2_181
+  - first:
+      213: 5870736560502878507
+    second: CommonAtlas_Bilinear_2_182
+  - first:
+      213: 7583798414332485074
+    second: CommonAtlas_Bilinear_2_183
+  - first:
+      213: 5979845303679408693
+    second: CommonAtlas_Bilinear_2_184
+  - first:
+      213: -1249731752599241757
+    second: CommonAtlas_Bilinear_2_185
+  - first:
+      213: 6506330201927743411
+    second: CommonAtlas_Bilinear_2_186
+  - first:
+      213: 437451145368903972
+    second: CommonAtlas_Bilinear_2_187
+  - first:
+      213: -7677051969578523627
+    second: CommonAtlas_Bilinear_2_188
+  - first:
+      213: 8195131276211386869
+    second: CommonAtlas_Bilinear_2_189
+  - first:
+      213: -6409284336671585145
+    second: CommonAtlas_Bilinear_2_190
+  - first:
+      213: -6054729186247393625
+    second: CommonAtlas_Bilinear_2_191
+  - first:
+      213: -3000155868226736638
+    second: CommonAtlas_Bilinear_2_192
+  - first:
+      213: 6735138087771652968
+    second: CommonAtlas_Bilinear_2_193
+  - first:
+      213: -1204277916698411052
+    second: CommonAtlas_Bilinear_2_194
+  - first:
+      213: 5779739649762286048
+    second: CommonAtlas_Bilinear_2_195
+  - first:
+      213: 4987566489611629072
+    second: CommonAtlas_Bilinear_2_196
+  - first:
+      213: -2897456409707069125
+    second: CommonAtlas_Bilinear_2_197
+  - first:
+      213: 3964252951927417016
+    second: CommonAtlas_Bilinear_2_198
+  - first:
+      213: 3917884684885389726
+    second: CommonAtlas_Bilinear_2_199
+  - first:
+      213: -1764511150739001561
+    second: CommonAtlas_Bilinear_2_200
+  - first:
+      213: -515505040602948160
+    second: CommonAtlas_Bilinear_2_201
+  - first:
+      213: 2118749938309345987
+    second: CommonAtlas_Bilinear_2_202
+  - first:
+      213: 1053958405378320525
+    second: CommonAtlas_Bilinear_2_203
+  - first:
+      213: 4536418773621104424
+    second: CommonAtlas_Bilinear_2_204
+  - first:
+      213: -1743621218109531462
+    second: CommonAtlas_Bilinear_2_205
+  - first:
+      213: 1240114274232136501
+    second: CommonAtlas_Bilinear_2_206
+  - first:
+      213: 7502123765439217148
+    second: CommonAtlas_Bilinear_2_207
+  - first:
+      213: -9018115745441769879
+    second: CommonAtlas_Bilinear_2_208
+  - first:
+      213: -236132495359618185
+    second: CommonAtlas_Bilinear_2_209
+  - first:
+      213: -4391715810342390186
+    second: CommonAtlas_Bilinear_2_210
+  - first:
+      213: 1881846224435404313
+    second: CommonAtlas_Bilinear_2_211
+  - first:
+      213: -7967949581987740692
+    second: CommonAtlas_Bilinear_2_212
+  - first:
+      213: -8064762852730345376
+    second: CommonAtlas_Bilinear_2_213
+  - first:
+      213: -159558458128216455
+    second: CommonAtlas_Bilinear_2_214
+  - first:
+      213: -7308544729380819324
+    second: CommonAtlas_Bilinear_2_215
+  - first:
+      213: 1383698972065349496
+    second: CommonAtlas_Bilinear_2_216
+  - first:
+      213: -6305271257184316185
+    second: CommonAtlas_Bilinear_2_217
+  - first:
+      213: -4911926624224768661
+    second: CommonAtlas_Bilinear_2_218
+  - first:
+      213: 4735762881541222543
+    second: CommonAtlas_Bilinear_2_219
+  - first:
+      213: 8405731731887559778
+    second: CommonAtlas_Bilinear_2_220
+  - first:
+      213: 9200397723358210361
+    second: CommonAtlas_Bilinear_2_221
+  - first:
+      213: 5550925426444372713
+    second: CommonAtlas_Bilinear_2_222
+  - first:
+      213: 3427470667203431528
+    second: CommonAtlas_Bilinear_2_223
+  - first:
+      213: -4166962139330495033
+    second: CommonAtlas_Bilinear_2_224
+  - first:
+      213: 8210326466196253806
+    second: CommonAtlas_Bilinear_2_225
+  - first:
+      213: 2624220963578387617
+    second: CommonAtlas_Bilinear_2_226
+  - first:
+      213: -3551674056289284690
+    second: CommonAtlas_Bilinear_2_227
+  - first:
+      213: -2584486033153658291
+    second: CommonAtlas_Bilinear_2_228
+  - first:
+      213: 6534067736781211197
+    second: CommonAtlas_Bilinear_2_229
+  - first:
+      213: -1550204094299546897
+    second: CommonAtlas_Bilinear_2_230
+  - first:
+      213: 3374178905032259417
+    second: CommonAtlas_Bilinear_2_231
+  - first:
+      213: 7683421642842495408
+    second: CommonAtlas_Bilinear_2_232
+  - first:
+      213: -7591071460511608595
+    second: CommonAtlas_Bilinear_2_233
+  - first:
+      213: -6030180825240339772
+    second: CommonAtlas_Bilinear_2_234
+  - first:
+      213: 2091065520875066976
+    second: CommonAtlas_Bilinear_2_235
+  - first:
+      213: 8005747165472878538
+    second: CommonAtlas_Bilinear_2_236
+  - first:
+      213: 5192347383196420557
+    second: CommonAtlas_Bilinear_2_237
+  - first:
+      213: 2793714201189694529
+    second: CommonAtlas_Bilinear_2_238
+  - first:
+      213: 4444511057996852622
+    second: CommonAtlas_Bilinear_2_239
+  - first:
+      213: 5553874062526055758
+    second: CommonAtlas_Bilinear_2_240
+  - first:
+      213: -8627310161739703327
+    second: CommonAtlas_Bilinear_2_241
+  - first:
+      213: 1882029149510660753
+    second: CommonAtlas_Bilinear_2_242
+  - first:
+      213: -2881497688857888914
+    second: CommonAtlas_Bilinear_2_243
+  - first:
+      213: 3847937608504167470
+    second: CommonAtlas_Bilinear_2_244
+  - first:
+      213: 1806519728668401768
+    second: CommonAtlas_Bilinear_2_245
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2771
+        width: 203
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3ee2f101aba2160800000000000000
+      internalID: 7001613149106267092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_1
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2900
+        width: 189
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830756c8ac7eced00800000000000000
+      internalID: 1003431674121646136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_2
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 2903
+        width: 315
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31121932a10408a70800000000000000
+      internalID: 8827125750656213267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_3
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 2897
+        width: 140
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293b8109fee042860800000000000000
+      internalID: 7504139301183599506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_4
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 2743
+        width: 107
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bee61207e784f7e0800000000000000
+      internalID: -1732610530388545865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_5
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 2714
+        width: 229
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190c7d0ef45974da0800000000000000
+      internalID: -5960631411494371183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_6
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 2840
+        width: 73
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6279d98e6f1d7c5b0800000000000000
+      internalID: -5348075174084372698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_7
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2822
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9918aa9ecca98650800000000000000
+      internalID: 6235705162429110683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_8
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 2818
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278e4378ef4fd00d0800000000000000
+      internalID: -3454835965096040334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_9
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 2835
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ce8268a61efd8f0800000000000000
+      internalID: -513443984863335292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_10
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 2837
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d816ad121ea082b0800000000000000
+      internalID: -5584272145109346092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_11
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 2841
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab77d01abff438000800000000000000
+      internalID: 36961164106495930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_12
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 2811
+        width: 61
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ada0da4d620b540800000000000000
+      internalID: 5021556279396194969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_13
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 2826
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd5225f6c52c3390800000000000000
+      internalID: -7837347715085083188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_14
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 2828
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfdeaf159c852680800000000000000
+      internalID: -8780457326379343946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_15
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 2830
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7795af2e0ab0d90b0800000000000000
+      internalID: -5720403166059931273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_16
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 2857
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0670c329c67a44cc0800000000000000
+      internalID: -3727670506804213920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_17
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2847
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ec34551d74c9230800000000000000
+      internalID: 3646868762667503211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_18
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 2809
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3174e9570970b85c0800000000000000
+      internalID: -4212264709444974829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_19
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 2816
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98db70e41b3f1a00800000000000000
+      internalID: 729366625508907163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_20
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 2813
+        width: 48
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14a83167ca44b160800000000000000
+      internalID: 7040334337676977180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_21
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 2813
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cbfb6331aceeac0800000000000000
+      internalID: -3823896849719247871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_22
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 2813
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10ab82ecb139cd90800000000000000
+      internalID: -7077070652111609828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_23
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 2813
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e561bf5c936f45fa0800000000000000
+      internalID: -5812750491033332130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_24
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 2747
+        width: 54
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81088936c19d67d60800000000000000
+      internalID: 7887730513339252760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_25
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 2804
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604f442d6a3890ed0800000000000000
+      internalID: -2447280169983609850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_26
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 2809
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fccd68facb14120800000000000000
+      internalID: 2396403938805731204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_27
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 2744
+        width: 98
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9810daf6f76f58550800000000000000
+      internalID: 6162602692321280393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_28
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 2795
+        width: 108
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed0596bf858b2b40800000000000000
+      internalID: 5416569829133192680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_29
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 2780
+        width: 7
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a247b4b05f4bc30800000000000000
+      internalID: 4374390566942943761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_30
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 2768
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a36a67e0c69aed0800000000000000
+      internalID: -2402270116849501602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_31
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 2783
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7086b2353abba90800000000000000
+      internalID: -7297059193617905735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_32
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 2747
+        width: 70
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05c448b5f2eb0cc0800000000000000
+      internalID: -3743649120242055926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_33
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 2769
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdba6eb4a6123630800000000000000
+      internalID: 3905208723708755380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_34
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 2769
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32af88e42b4ed0090800000000000000
+      internalID: -8066539903077778909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_35
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 2768
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c223c587852174c10800000000000000
+      internalID: 2037617527594168876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_36
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 2708
+        width: 38
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7aa8a804fab00d80800000000000000
+      internalID: -8286417757081654659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_37
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 2762
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f2ce432f08560a0800000000000000
+      internalID: -6888958277234970756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_38
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 2752
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790c0c66826bf1290800000000000000
+      internalID: -7917409335255187305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_39
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 2750
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357e298d0b74eb820800000000000000
+      internalID: 2935862831965464403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_40
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 2725
+        width: 93
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8397eacc595e85a0800000000000000
+      internalID: -6517173355682491505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_41
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 2696
+        width: 117
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b78cabbe5b2a32f0800000000000000
+      internalID: -992433082006206537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_42
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2629
+        width: 595
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7fb9cda401d5510800000000000000
+      internalID: 1539404561345411002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_43
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 2709
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b52ee201f0d59620800000000000000
+      internalID: 2780358078526006712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_44
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 2516
+        width: 644
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e241f8d66af78cbe0800000000000000
+      internalID: -1456774126674963410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_45
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 2574
+        width: 618
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790f62efdf70ff500800000000000000
+      internalID: 432072876722942103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_NameBox_Right
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 2564
+        width: 344
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bcb5365017bb4a0800000000000000
+      internalID: -6576538562888742074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_NameBox_Left
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 2563
+        width: 341
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b86e88d2dc89f80800000000000000
+      internalID: -8099498334371804407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_48
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 2459
+        width: 554
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e4fcec319c3a540800000000000000
+      internalID: 5018075496732118687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_49
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 2460
+        width: 127
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecc5ba68b1f73a20800000000000000
+      internalID: 3042165847678635234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_50
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2473
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7a4f73301fb0800800000000000000
+      internalID: 579821973173217216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_51
+      rect:
+        serializedVersion: 2
+        x: 2557
+        y: 2473
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64da0697b52885d50800000000000000
+      internalID: 6726269372867849542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_52
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 2470
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af530f9e85ed61a0800000000000000
+      internalID: -6814538260425777245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_53
+      rect:
+        serializedVersion: 2
+        x: 2681
+        y: 2470
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c528759f3accf8ab0800000000000000
+      internalID: -5003555656350334372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_54
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 2188
+        width: 262
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96516c1cac3011f90800000000000000
+      internalID: -6984797377705667223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_55
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 2171
+        width: 265
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117c3eb5335899c20800000000000000
+      internalID: 3213746264737040145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_56
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 2197
+        width: 295
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0cf0cfb93a19e20800000000000000
+      internalID: 3355643087711879333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_57
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 2355
+        width: 492
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a1a48b6057b9560800000000000000
+      internalID: 7321574290942990873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_58
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2418
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051a94b795953f200800000000000000
+      internalID: 212611848271929680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_59
+      rect:
+        serializedVersion: 2
+        x: 2557
+        y: 2418
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b2c8d33b283fde0800000000000000
+      internalID: -1300552161036588207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_60
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 2415
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ed2ab070b048470800000000000000
+      internalID: 8395847730213346829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_61
+      rect:
+        serializedVersion: 2
+        x: 2681
+        y: 2415
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8433593177c4be6b0800000000000000
+      internalID: -5266031264966298808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_62
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 2158
+        width: 296
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb7674ded5f0d570800000000000000
+      internalID: 8489555634989464525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_63
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2245
+        width: 69
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9c2f078104346b0800000000000000
+      internalID: -5313332661648700952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_64
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 2219
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1879f2f45df7fd4c0800000000000000
+      internalID: -4260546168335919231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_65
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 2226
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609863a7978b2b960800000000000000
+      internalID: 7616352751717878022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_66
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 2235
+        width: 66
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c787ebaff7bff800800000000000000
+      internalID: 648439180093261761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_67
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 2239
+        width: 78
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4099bb0ee8fbb40800000000000000
+      internalID: 5458238369267516636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_68
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 2172
+        width: 233
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f948ca3869fb6d1d0800000000000000
+      internalID: -3326260621591411553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_69
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 2132
+        width: 346
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaaf60c0c458aea40800000000000000
+      internalID: 5398273665022753450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_70
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2153
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb8c93699616ac70800000000000000
+      internalID: 8981891354894044147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_71
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 2139
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d1184996a4f2e70800000000000000
+      internalID: 9092567990007831864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_72
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 2136
+        width: 66
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5166f30f8ce35d090800000000000000
+      internalID: -8010427329463491051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_73
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 2134
+        width: 70
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd2fe330400c4eb0800000000000000
+      internalID: -4734408832524014152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_74
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 2144
+        width: 70
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14d0510f90103900800000000000000
+      internalID: 662047420331381789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_75
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1754
+        width: 533
+        height: 309
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0d7598fbb3a8620800000000000000
+      internalID: 2777097814056358059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_76
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1574
+        width: 301
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa661a12ef3bd92c0800000000000000
+      internalID: -4423181354940668246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_77
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 1909
+        width: 198
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66b161f1119ab2b0800000000000000
+      internalID: -5567978483040012690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_78
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 1870
+        width: 311
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c87afcfde879fa0800000000000000
+      internalID: -5794005303676138471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_79
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 1874
+        width: 309
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ba5de942e69c2b0800000000000000
+      internalID: -5563794761076856049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_80
+      rect:
+        serializedVersion: 2
+        x: 2371
+        y: 1965
+        width: 222
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c595806086ac8630800000000000000
+      internalID: 3930699645092992449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_81
+      rect:
+        serializedVersion: 2
+        x: 2595
+        y: 2048
+        width: 4
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3617eb7c2b212e70800000000000000
+      internalID: 9088592993067669053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_82
+      rect:
+        serializedVersion: 2
+        x: 2359
+        y: 1792
+        width: 293
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42644cad88ef70b0800000000000000
+      internalID: -5728604505813786034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_83
+      rect:
+        serializedVersion: 2
+        x: 2444
+        y: 1870
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bd0515fca652f10800000000000000
+      internalID: 2244317427969088395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_84
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1693
+        width: 643
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f11f017858e0160800000000000000
+      internalID: 6993674086504275799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_85
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 1707
+        width: 81
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6036d11b7c0e4ad40800000000000000
+      internalID: 5594843785375605510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_86
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 1477
+        width: 947
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de147a72c2a706c0800000000000000
+      internalID: -4177191173201060144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_87
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1680
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a74e56ad2cf2940800000000000000
+      internalID: 5273647931942271531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_88
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1365
+        width: 533
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76aca3dfd5c0bc50800000000000000
+      internalID: 6679055812510131836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_89
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1469
+        width: 650
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f318a18445dab1b20800000000000000
+      internalID: 3106266945500643647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_90
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1265
+        width: 590
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c334f1b56297340800000000000000
+      internalID: 4861959445531540524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_91
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 1340
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bcc6a74bf489370800000000000000
+      internalID: 8329495147388390197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_92
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 1359
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff398d0d573e3a50800000000000000
+      internalID: 6502695784768159741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_93
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 1346
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bae2ed7bde9f4940800000000000000
+      internalID: 5282615553475930804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_94
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 1259
+        width: 476
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ebd186cc7b33500800000000000000
+      internalID: 374845282549874226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_95
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 1250
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c99938865891c770800000000000000
+      internalID: 8629345858438666689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_96
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 1278
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2926d9aa00c5c3da0800000000000000
+      internalID: -5963790648613182830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_97
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1176
+        width: 1876
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b29b02ff4be3490800000000000000
+      internalID: -7764569699681490070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_98
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 1230
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febd7fe7d14bf21b0800000000000000
+      internalID: -5679122566313681937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_99
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 1228
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1ec7361f05a7ae0800000000000000
+      internalID: -1550838123989245467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_100
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 1206
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e3fbc639f207640800000000000000
+      internalID: 5075609090277719688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_101
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 1209
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ff6139439c3ec40800000000000000
+      internalID: 5540493194239082396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_102
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 1171
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c9acd49d0d00fc0800000000000000
+      internalID: -3530592476126864239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_103
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 1115
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1740cbebebcf5ee00800000000000000
+      internalID: 1073541982371710065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_104
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 1158
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d9aff1df5050750800000000000000
+      internalID: 6270424640904666455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_105
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1123
+        width: 142
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2875ddada521440800000000000000
+      internalID: 4905082840222761720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_106
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 971
+        width: 363
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e979f0941aa581930800000000000000
+      internalID: 4114137908364941214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_107
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 1130
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfbaccb5cac96680800000000000000
+      internalID: -8761248649447817276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_108
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 1096
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc1ba082eee8f950800000000000000
+      internalID: 6483194320188546242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_109
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1111
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c878460c37afd6860800000000000000
+      internalID: 7524945927461963660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_110
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1056
+        width: 80
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdd51b732808e400800000000000000
+      internalID: 353541519230492098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_111
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1035
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4310da87b6036e0800000000000000
+      internalID: -1859868480061229858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_112
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 1061
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0024e68b2b7de10800000000000000
+      internalID: 2222441446324175077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_113
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 1029
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ce14d511e15aac0800000000000000
+      internalID: -3844633646962971548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_114
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 1064
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff755d9e17fa86ce0800000000000000
+      internalID: -1411685579391412225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_115
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 1035
+        width: 68
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccfcecca08344ea0800000000000000
+      internalID: -5889520793654854461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_116
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 999
+        width: 76
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a75ef1418cc80fe0800000000000000
+      internalID: -1222502443301054551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_117
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 1038
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fd24bce1cce9090800000000000000
+      internalID: -8025753053296402600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_118
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1053
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5953469303d3cec0800000000000000
+      internalID: -3547760069078460065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_119
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 929
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd57f6c99257a0290800000000000000
+      internalID: -7923391772826307107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_120
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 927
+        width: 166
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfdc70676c931780800000000000000
+      internalID: -8713448886217416763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_121
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 888
+        width: 141
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0d0407fb0e537b0800000000000000
+      internalID: -5245039078176403206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_122
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 992
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f84d66f41d544be0800000000000000
+      internalID: -1493966831765075725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_123
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 995
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1aa144fad136b6d0800000000000000
+      internalID: -2975135687361058273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_124
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 991
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9cd3f80fee63ed0800000000000000
+      internalID: -2434495831584421451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_125
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 998
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a32fefc093a70c50800000000000000
+      internalID: 6631448818685518761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_126
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 924
+        width: 115
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d674cfc2466464da0800000000000000
+      internalID: -5960999660712867987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_127
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 966
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2d9d4074c648450800000000000000
+      internalID: 6090111648391615231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_128
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 928
+        width: 133
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d96c7f7b4038fc0800000000000000
+      internalID: -3493943697726857876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_129
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 890
+        width: 72
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389cc35c5e2b3cde0800000000000000
+      internalID: -1314009966335702653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_130
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 934
+        width: 43
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8387ebc6b4af66190800000000000000
+      internalID: -7969407288731600840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_131
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 959
+        width: 54
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b415b5b4a4e6ad060800000000000000
+      internalID: 6979011837934915915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_132
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 764
+        width: 50
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16afd32f832a50630800000000000000
+      internalID: 3892695818397678177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_133
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 886
+        width: 246
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d168968d7ea7e50800000000000000
+      internalID: 6808008703393275239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_134
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 864
+        width: 98
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c1f869a1cc365a0800000000000000
+      internalID: -6529150620189909927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_135
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 902
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9427fa38fde29f390800000000000000
+      internalID: -7784138943411293623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_136
+      rect:
+        serializedVersion: 2
+        x: 2186
+        y: 912
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08431e31b2b71e070800000000000000
+      internalID: 8133917826955162752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_137
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 821
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3680c3a8162f5bb0800000000000000
+      internalID: -4945191978561141185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_138
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 789
+        width: 67
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5c98ea73c8f12f0800000000000000
+      internalID: -999926421473606229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_139
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 830
+        width: 140
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b632cd57e7523b30800000000000000
+      internalID: 4265568448295351992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_140
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 783
+        width: 150
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475037bc25cd1f2a0800000000000000
+      internalID: -6705336122019216012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_141
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 838
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf9ff08518a8b5e0800000000000000
+      internalID: -1893578832997277755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_142
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 849
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ac2838b8297f950800000000000000
+      internalID: 6482811316527614592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_143
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 826
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f91d148721da0e0800000000000000
+      internalID: -2257127530533118106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_144
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 762
+        width: 84
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8d3c2d718d6a080800000000000000
+      internalID: -9176409593888909101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_145
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 808
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cdacd035440b380800000000000000
+      internalID: -8957584535335543774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_146
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 833
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91681d2567d2938e0800000000000000
+      internalID: -1713288197018909159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_147
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 820
+        width: 145
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f0d86b7f1ea5770800000000000000
+      internalID: 8600434892453252972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_148
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 783
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c2c62491bcfc560800000000000000
+      internalID: 7336305627358833733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_149
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 788
+        width: 39
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f900d1a32e79cd220800000000000000
+      internalID: 2512049690059276447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_150
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 519
+        width: 406
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1072d77bf7d542f50800000000000000
+      internalID: 6855707335885399809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_151
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 808
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a47850be0573fb0800000000000000
+      internalID: -4668173518405940594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_152
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 792
+        width: 110
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f0028bd20688fa0800000000000000
+      internalID: -5798278770760610038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_153
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 767
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6adeacb2a8804d2c0800000000000000
+      internalID: -4407888745755644506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_154
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 789
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c30e7c3760fd950800000000000000
+      internalID: 6475901883526429722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_155
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 801
+        width: 103
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e33de393fbb6dff0800000000000000
+      internalID: -11615294188604444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_156
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 644
+        width: 92
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fde132e7208fe4a0800000000000000
+      internalID: -6561885223268520459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_157
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 767
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61d7078d6b675ed0800000000000000
+      internalID: -2425351756154678933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_158
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 749
+        width: 127
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a822270c41a35b830800000000000000
+      internalID: 4086236097711055498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_159
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 695
+        width: 124
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65679056290bbd4f0800000000000000
+      internalID: -802853965748668842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_160
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 698
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81153d6f1a121450800000000000000
+      internalID: 6057933171045241230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_161
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 756
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5102710cd547130800000000000000
+      internalID: 3563576284759987650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_162
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 714
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9355ea431284b7970800000000000000
+      internalID: 8753669608179651897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_163
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 726
+        width: 38
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c86c6959b736a670800000000000000
+      internalID: 8549582211818219717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_164
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 729
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987ddac135c8dbd00800000000000000
+      internalID: 990101781682706313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_165
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 678
+        width: 83
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e80302f106e3f10800000000000000
+      internalID: 2251342550532132385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_166
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 688
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf7a9664cf1463c0800000000000000
+      internalID: -4367330810247086118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_167
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 680
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b71f2263be633c00800000000000000
+      internalID: 879168068992833456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_168
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 108
+        width: 397
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7583fc062160dc500800000000000000
+      internalID: 417997016418695255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_169
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 620
+        width: 108
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2695765f60fee2f30800000000000000
+      internalID: 4552839086484183394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_170
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 506
+        width: 147
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab43b67bd86effe90800000000000000
+      internalID: -6989614600313686854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_171
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 703
+        width: 34
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c791cf44eb97a58d0800000000000000
+      internalID: -2856837155505038980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_172
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 670
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fcb11a845312c90800000000000000
+      internalID: -7196412143504470194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_173
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 647
+        width: 111
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be206294aaca33e0800000000000000
+      internalID: -2073121870271467850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_174
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 672
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6fc813974c05cd20800000000000000
+      internalID: 3298055803668844396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_175
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 619
+        width: 53
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9aa4dc805363460800000000000000
+      internalID: 7221017364455401938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_176
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 619
+        width: 75
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b174c92a147628e0800000000000000
+      internalID: -1718558552076553807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_177
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 666
+        width: 53
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f158b59d832e380800000000000000
+      internalID: -8943523403809874038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_178
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 657
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4535f22853ea1a0800000000000000
+      internalID: -6796435954399488844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_179
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 483
+        width: 106
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3204f17370fa01a60800000000000000
+      internalID: 7642801013172158499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_180
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 486
+        width: 88
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdaa6648463c9d920800000000000000
+      internalID: 3015656261986724575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_181
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 593
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a24fa8fd76f3a760800000000000000
+      internalID: 7468083628013994657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_182
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 615
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b213caa1ccb097150800000000000000
+      internalID: 5870736560502878507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_183
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 602
+        width: 155
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd55762a701f3960800000000000000
+      internalID: 7583798414332485074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_184
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 625
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a59910f9dacf250800000000000000
+      internalID: 5979845303679408693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_185
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 483
+        width: 142
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebbbc5a79f08aee0800000000000000
+      internalID: -1249731752599241757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_186
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 572
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b77c4db8d02b4a50800000000000000
+      internalID: 6506330201927743411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_187
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 467
+        width: 205
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4212d4ebf73221600800000000000000
+      internalID: 437451145368903972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_188
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 406
+        width: 93
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5142f0f88e1a57590800000000000000
+      internalID: -7677051969578523627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_189
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 493
+        width: 19
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9f54ed974fab170800000000000000
+      internalID: 8195131276211386869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_190
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 370
+        width: 82
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c07388ad5ad07a0800000000000000
+      internalID: -6409284336671585145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_191
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 503
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aeb88a62e749fba0800000000000000
+      internalID: -6054729186247393625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_192
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 546
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20eaa83222e4d56d0800000000000000
+      internalID: -3000155868226736638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_193
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 532
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86345d21864087d50800000000000000
+      internalID: 6735138087771652968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_194
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 405
+        width: 150
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dff7548d9b894fe0800000000000000
+      internalID: -1204277916698411052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_195
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 475
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9525ec692c53050800000000000000
+      internalID: 5779739649762286048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_196
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 370
+        width: 95
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01271fa0c45673540800000000000000
+      internalID: 4987566489611629072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_197
+      rect:
+        serializedVersion: 2
+        x: 2109
+        y: 168
+        width: 32
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b314b3b2fba2ac7d0800000000000000
+      internalID: -2897456409707069125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_198
+      rect:
+        serializedVersion: 2
+        x: 2186
+        y: 464
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b86d676e0bd30730800000000000000
+      internalID: 3964252951927417016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_199
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 464
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e917981fc5f1f5630800000000000000
+      internalID: 3917884684885389726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_200
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 398
+        width: 42
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f6cf905723387e0800000000000000
+      internalID: -1764511150739001561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_201
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 434
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd10f695ee88d8f0800000000000000
+      internalID: -515505040602948160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_202
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 272
+        width: 135
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c23fc0e7df476d10800000000000000
+      internalID: 2118749938309345987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_203
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 165
+        width: 371
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88ac98e59960ae00800000000000000
+      internalID: 1053958405378320525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_204
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 367
+        width: 373
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f5912f6d894fe30800000000000000
+      internalID: 4536418773621104424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_205
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 358
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba5fbf7db96dc7e0800000000000000
+      internalID: -1743621218109531462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_206
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 310
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5337f7cac55c53110800000000000000
+      internalID: 1240114274232136501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_207
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 294
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd350411d5ec1860800000000000000
+      internalID: 7502123765439217148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_208
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 279
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9661691728739d280800000000000000
+      internalID: -9018115745441769879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_209
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 262
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773d92e1fb619bcf0800000000000000
+      internalID: -236132495359618185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_210
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 278
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65633122dbd7d03c0800000000000000
+      internalID: -4391715810342390186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_211
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 81
+        width: 221
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ed161bb29ad1a10800000000000000
+      internalID: 1881846224435404313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_212
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 232
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3066932182c6190800000000000000
+      internalID: -7967949581987740692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_213
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 186
+        width: 110
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068ed351ae4341090800000000000000
+      internalID: -8064762852730345376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_214
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 238
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ecb5e7d6229cdf0800000000000000
+      internalID: -159558458128216455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_215
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 238
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ee33c7a45d29a90800000000000000
+      internalID: -7308544729380819324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_216
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 244
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f370a42e2e33310800000000000000
+      internalID: 1383698972065349496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_217
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 187
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e45c07c23d2f78a0800000000000000
+      internalID: -6305271257184316185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_218
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 213
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d8c4082c455dbb0800000000000000
+      internalID: -4911926624224768661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_219
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 210
+        width: 42
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80beb6ef3fc8b140800000000000000
+      internalID: 4735762881541222543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_220
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 188
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2641364897827a470800000000000000
+      internalID: 8405731731887559778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_221
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 177
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939241dcbf06eaf70800000000000000
+      internalID: 9200397723358210361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_222
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 199
+        width: 54
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea86e9e349d80d40800000000000000
+      internalID: 5550925426444372713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_223
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 157
+        width: 104
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c4bbc8962d09f20800000000000000
+      internalID: 3427470667203431528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_224
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 48
+        width: 104
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd34b4030afb26c0800000000000000
+      internalID: -4166962139330495033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_225
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 177
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6cad9bbb60f0f170800000000000000
+      internalID: 8210326466196253806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_226
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 174
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac193a001b1b6420800000000000000
+      internalID: 2624220963578387617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_227
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 125
+        width: 67
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead08ec634be5bec0800000000000000
+      internalID: -3551674056289284690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_228
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 77
+        width: 76
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42fae265af022cd0800000000000000
+      internalID: -2584486033153658291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_229
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 133
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d364f25dcfbadaa50800000000000000
+      internalID: 6534067736781211197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_230
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 33
+        width: 140
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea5bede6919c7ae0800000000000000
+      internalID: -1550204094299546897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_231
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 133
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957701346dd73de20800000000000000
+      internalID: 3374178905032259417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_232
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 83
+        width: 101
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9dc21964ff0aa60800000000000000
+      internalID: 7683421642842495408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_233
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 106
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de09993d9b817a690800000000000000
+      internalID: -7591071460511608595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_234
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 74
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca7d2c1d7e705ca0800000000000000
+      internalID: -6030180825240339772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_235
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 38
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06653d52305f40d10800000000000000
+      internalID: 2091065520875066976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CommonAtlas_Bilinear_2_236
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 45
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfe99771a02a1f60800000000000000
+      internalID: 8005747165472878538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: eaaafdce2e430724982e5ee6031f1d61
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2220 @@
+fileFormatVersion: 2
+guid: 9396dd572e7a8c64eb033757cf97d611
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1497717599636420339
+    second: Dialogue_Dave_0
+  - first:
+      213: -7367156980926474169
+    second: Dialogue_Dave_1
+  - first:
+      213: 5966941138207565546
+    second: Dialogue_Dave_2
+  - first:
+      213: -5278778776944706813
+    second: Dialogue_Dave_3
+  - first:
+      213: 7506664615947911300
+    second: Dialogue_Dave_4
+  - first:
+      213: -1044965296455360784
+    second: Dialogue_Dave_5
+  - first:
+      213: 6832767650079878246
+    second: Dialogue_Dave_6
+  - first:
+      213: 1040328350158454410
+    second: Dialogue_Dave_7
+  - first:
+      213: -2388622863922227030
+    second: Dialogue_Dave_8
+  - first:
+      213: -1446061710388380223
+    second: Dialogue_Dave_9
+  - first:
+      213: -2482194112408339978
+    second: Dialogue_Dave_10
+  - first:
+      213: -1071850608456531624
+    second: Dialogue_Dave_11
+  - first:
+      213: -6305408439359846405
+    second: Dialogue_Dave_12
+  - first:
+      213: -2879547858441570354
+    second: Dialogue_Dave_13
+  - first:
+      213: 2976901760759132141
+    second: Dialogue_Dave_14
+  - first:
+      213: -3344266007820594049
+    second: Dialogue_Dave_15
+  - first:
+      213: -3360107724083748669
+    second: Dialogue_Dave_16
+  - first:
+      213: -3806791515479446521
+    second: Dialogue_Dave_17
+  - first:
+      213: 5359979822326487600
+    second: Dialogue_Dave_18
+  - first:
+      213: -2895899401761864609
+    second: Dialogue_Dave_19
+  - first:
+      213: 1904918134153658588
+    second: Dialogue_Dave_20
+  - first:
+      213: -2606726688064067528
+    second: Dialogue_Dave_21
+  - first:
+      213: -5723830429812703855
+    second: Dialogue_Dave_22
+  - first:
+      213: 6393433145041478390
+    second: Dialogue_Dave_23
+  - first:
+      213: 4681413320898329030
+    second: Dialogue_Dave_24
+  - first:
+      213: 3642032364118713069
+    second: Dialogue_Dave_25
+  - first:
+      213: 8470616431728295065
+    second: Dialogue_Dave_26
+  - first:
+      213: 6021454244999860962
+    second: Dialogue_Dave_27
+  - first:
+      213: 3095033423876079248
+    second: Dialogue_Dave_28
+  - first:
+      213: -1051043594250437769
+    second: Dialogue_Dave_29
+  - first:
+      213: -1389616262779592178
+    second: Dialogue_Dave_30
+  - first:
+      213: 2126848331160314770
+    second: Dialogue_Dave_31
+  - first:
+      213: 2605133651871305395
+    second: Dialogue_Dave_32
+  - first:
+      213: 8991901580509685969
+    second: Dialogue_Dave_33
+  - first:
+      213: 8990856527343697273
+    second: Dialogue_Dave_34
+  - first:
+      213: 1165587609562496213
+    second: Dialogue_Dave_35
+  - first:
+      213: -6570512461180679892
+    second: Dialogue_Dave_36
+  - first:
+      213: -1514233823993669684
+    second: Dialogue_Dave_37
+  - first:
+      213: -218302363633758274
+    second: Dialogue_Dave_38
+  - first:
+      213: 7318804855491590817
+    second: Dialogue_Dave_39
+  - first:
+      213: 4401794394045160193
+    second: Dialogue_Dave_40
+  - first:
+      213: 4671808999929643100
+    second: Dialogue_Dave_41
+  - first:
+      213: 9205288568958317261
+    second: Dialogue_Dave_42
+  - first:
+      213: 7338772315752718197
+    second: Dialogue_Dave_43
+  - first:
+      213: -1697296250552308445
+    second: Dialogue_Dave_44
+  - first:
+      213: 235402402029003305
+    second: Dialogue_Dave_45
+  - first:
+      213: -1489590479522811742
+    second: Dialogue_Dave_46
+  - first:
+      213: 1375688025507379038
+    second: Dialogue_Dave_47
+  - first:
+      213: -4837591516859310704
+    second: Dialogue_Dave_48
+  - first:
+      213: -8722562821254760285
+    second: Dialogue_Dave_49
+  - first:
+      213: 7314333230082321865
+    second: Dialogue_Dave_50
+  - first:
+      213: 906586776801250756
+    second: Dialogue_Dave_51
+  - first:
+      213: -2461167797114545536
+    second: Dialogue_Dave_52
+  - first:
+      213: -7503020774313241673
+    second: Dialogue_Dave_53
+  - first:
+      213: -7170193237976626676
+    second: Dialogue_Dave_54
+  - first:
+      213: 3020022734919616149
+    second: Dialogue_Dave_55
+  - first:
+      213: 229482378942287581
+    second: Dialogue_Dave_56
+  - first:
+      213: -6247161121387736695
+    second: Dialogue_Dave_57
+  - first:
+      213: -8596108352841107354
+    second: Dialogue_Dave_58
+  - first:
+      213: -9146753217298291738
+    second: Dialogue_Dave_59
+  - first:
+      213: -6517087009296828183
+    second: Dialogue_Dave_60
+  - first:
+      213: -449104980385825606
+    second: Dialogue_Dave_61
+  - first:
+      213: -4523090412095688793
+    second: Dialogue_Dave_62
+  - first:
+      213: 8368798523895020625
+    second: Dialogue_Dave_63
+  - first:
+      213: 6094685900157945504
+    second: Dialogue_Dave_64
+  - first:
+      213: -1188312707126737378
+    second: Dialogue_Dave_65
+  - first:
+      213: 2800792682615758991
+    second: Dialogue_Dave_66
+  - first:
+      213: -2246419907485202862
+    second: Dialogue_Dave_67
+  - first:
+      213: -8056815880589502673
+    second: Dialogue_Dave_68
+  - first:
+      213: 5262382110694275362
+    second: Dialogue_Dave_69
+  - first:
+      213: 4164329592711085909
+    second: Dialogue_Dave_70
+  - first:
+      213: 9012001631991296122
+    second: Dialogue_Dave_71
+  - first:
+      213: 948022183355183147
+    second: Dialogue_Dave_72
+  - first:
+      213: 8995939143544408075
+    second: Dialogue_Dave_73
+  - first:
+      213: -5068534799018120998
+    second: Dialogue_Dave_74
+  - first:
+      213: -3880068113650136413
+    second: Dialogue_Dave_75
+  - first:
+      213: -3145893777739610061
+    second: Dialogue_Dave_76
+  - first:
+      213: -4699315081165169295
+    second: Dialogue_Dave_77
+  - first:
+      213: 1906901756589608074
+    second: Dialogue_Dave_78
+  - first:
+      213: -6061432155266659160
+    second: Dialogue_Dave_79
+  - first:
+      213: 2469540474545853399
+    second: Dialogue_Dave_80
+  - first:
+      213: -4872139901455261069
+    second: Dialogue_Dave_81
+  - first:
+      213: 4652400355938677564
+    second: Dialogue_Dave_82
+  - first:
+      213: -75386648764065759
+    second: Dialogue_Dave_83
+  - first:
+      213: 6264445716278724318
+    second: Dialogue_Dave_84
+  - first:
+      213: 106144163509442481
+    second: Dialogue_Dave_85
+  - first:
+      213: 3640570858132249964
+    second: Dialogue_Dave_86
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dialogue_Dave_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 913
+        width: 71
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0902d347c9073be0800000000000000
+      internalID: -1497717599636420339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 913
+        width: 78
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748965b32c992c990800000000000000
+      internalID: -7367156980926474169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 913
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6e68ad955dec250800000000000000
+      internalID: 5966941138207565546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_3
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 913
+        width: 78
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bf658aba20eb6b0800000000000000
+      internalID: -5278778776944706813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_4
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 913
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480c19932b70d2860800000000000000
+      internalID: 7506664615947911300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_5
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 913
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0feda2e69998f71f0800000000000000
+      internalID: -1044965296455360784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_6
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 913
+        width: 78
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66caac7e9fdd2de50800000000000000
+      internalID: 6832767650079878246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_7
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 913
+        width: 103
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e76f06f1dff6e00800000000000000
+      internalID: 1040328350158454410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 811
+        width: 103
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa81a852928e9ded0800000000000000
+      internalID: -2388622863922227030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_9
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 820
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdb105398e8eebe0800000000000000
+      internalID: -1446061710388380223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_10
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 811
+        width: 112
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9b5522b997d8dd0800000000000000
+      internalID: -2482194112408339978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_11
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 820
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85189aeec850021f0800000000000000
+      internalID: -1071850608456531624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_12
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 811
+        width: 103
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7c4309e60be78a0800000000000000
+      internalID: -6305408439359846405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_13
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 811
+        width: 103
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec77adfaa7ac908d0800000000000000
+      internalID: -2879547858441570354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_14
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 811
+        width: 85
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def684d0164105920800000000000000
+      internalID: 2976901760759132141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_15
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 820
+        width: 80
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f749079d8c7c691d0800000000000000
+      internalID: -3344266007820594049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 709
+        width: 103
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c021fad3df7e51d0800000000000000
+      internalID: -3360107724083748669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_17
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 709
+        width: 88
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c60e1394f8b2bc0800000000000000
+      internalID: -3806791515479446521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_18
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 709
+        width: 88
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a18010049726a40800000000000000
+      internalID: 5359979822326487600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_19
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 709
+        width: 88
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54c7b456d2bfc7d0800000000000000
+      internalID: -2895899401761864609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_20
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 718
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0cd6843f0af6a10800000000000000
+      internalID: 1904918134153658588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_21
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 709
+        width: 112
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838296363eb03dbd0800000000000000
+      internalID: -2606726688064067528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_22
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 709
+        width: 85
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d317cdc8ed090b0800000000000000
+      internalID: -5723830429812703855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_23
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 709
+        width: 89
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2e76152990ab850800000000000000
+      internalID: 6393433145041478390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 607
+        width: 103
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c93de6bc98b7f040800000000000000
+      internalID: 4681413320898329030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_25
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 607
+        width: 88
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2a5cb83291b8230800000000000000
+      internalID: 3642032364118713069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_26
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 607
+        width: 85
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c70c1f3ccad8570800000000000000
+      internalID: 8470616431728295065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_27
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 607
+        width: 89
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e21c789bb0809350800000000000000
+      internalID: 6021454244999860962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_28
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 616
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e38163084c3fa20800000000000000
+      internalID: 3095033423876079248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_29
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 607
+        width: 112
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bb0417b61f961f0800000000000000
+      internalID: -1051043594250437769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_30
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 616
+        width: 77
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02aaea1f5717bce0800000000000000
+      internalID: -1389616262779592178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_31
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 607
+        width: 103
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29361f5e945148d10800000000000000
+      internalID: 2126848331160314770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_32
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 616
+        width: 76
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be8438f04b472420800000000000000
+      internalID: 2605133651871305395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_33
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 505
+        width: 103
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8ad89a8d6a9cc70800000000000000
+      internalID: 8991901580509685969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_34
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 505
+        width: 89
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97db2d24060f5cc70800000000000000
+      internalID: 8990856527343697273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_35
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 505
+        width: 88
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcb19e51cffc2010800000000000000
+      internalID: 1165587609562496213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_36
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 505
+        width: 89
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c294c078ab9d0d4a0800000000000000
+      internalID: -6570512461180679892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_37
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 514
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7d9fd1c5c5cfae0800000000000000
+      internalID: -1514233823993669684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_38
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 505
+        width: 112
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf4bf9282f68fcf0800000000000000
+      internalID: -218302363633758274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_39
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 514
+        width: 77
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aafaf74d3e919560800000000000000
+      internalID: 7318804855491590817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_40
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 505
+        width: 103
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b1e5ffda0561d30800000000000000
+      internalID: 4401794394045160193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_41
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 514
+        width: 76
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50874b788995d040800000000000000
+      internalID: 4671808999929643100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_42
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 403
+        width: 103
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc279b78e21cfbf70800000000000000
+      internalID: 9205288568958317261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_43
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 403
+        width: 89
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f59e7e98e88d560800000000000000
+      internalID: 7338772315752718197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_44
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 403
+        width: 88
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d2a338d0ef178e0800000000000000
+      internalID: -1697296250552308445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_45
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 403
+        width: 88
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9226638cc31544300800000000000000
+      internalID: 235402402029003305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_46
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 403
+        width: 84
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a03d3fd959e35be0800000000000000
+      internalID: -1489590479522811742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_47
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 412
+        width: 82
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57302278fc671310800000000000000
+      internalID: 1375688025507379038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_48
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 403
+        width: 94
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d5825652c6ddcb0800000000000000
+      internalID: -4837591516859310704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_49
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 403
+        width: 103
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8b414045b33f680800000000000000
+      internalID: -8722562821254760285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_50
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 412
+        width: 76
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd64ebd15bb18560800000000000000
+      internalID: 7314333230082321865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_51
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 301
+        width: 103
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd0e45ced7d49c00800000000000000
+      internalID: 906586776801250756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_52
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 301
+        width: 88
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a5b58adec28ddd0800000000000000
+      internalID: -2461167797114545536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_53
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 301
+        width: 86
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3dea4cb5aefd790800000000000000
+      internalID: -7503020774313241673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_54
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 301
+        width: 88
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ace774d3b5e7c90800000000000000
+      internalID: -7170193237976626676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_55
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 301
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596cc783da649e920800000000000000
+      internalID: 3020022734919616149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_56
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 301
+        width: 87
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde011ff1094f2300800000000000000
+      internalID: 229482378942287581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_57
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 310
+        width: 82
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9819d091f00ad49a0800000000000000
+      internalID: -6247161121387736695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_58
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 301
+        width: 103
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668332a4ffc74b880800000000000000
+      internalID: -8596108352841107354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_59
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 310
+        width: 76
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e326c21964301180800000000000000
+      internalID: -9146753217298291738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_60
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 199
+        width: 103
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8bc80e4e7ae85a0800000000000000
+      internalID: -6517087009296828183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_61
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 199
+        width: 88
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc7e39566574c9f0800000000000000
+      internalID: -449104980385825606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_62
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 199
+        width: 86
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afaf0c0c31ca31c0800000000000000
+      internalID: -4523090412095688793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_63
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 199
+        width: 88
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c739deae1f32470800000000000000
+      internalID: 8368798523895020625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_64
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 199
+        width: 81
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a60f70098ca49450800000000000000
+      internalID: 6094685900157945504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_65
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 199
+        width: 87
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16c0a983e3428fe0800000000000000
+      internalID: -1188312707126737378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_66
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 208
+        width: 80
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8063d80b1a6ed620800000000000000
+      internalID: 2800792682615758991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_67
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 199
+        width: 103
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2568af50ffc13d0e0800000000000000
+      internalID: -2246419907485202862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_68
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 208
+        width: 77
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f279cb8b4a0703090800000000000000
+      internalID: -8056815880589502673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_69
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 97
+        width: 103
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2297d4cf5acb70940800000000000000
+      internalID: 5262382110694275362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_70
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 97
+        width: 88
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ff03573bbaac930800000000000000
+      internalID: 4164329592711085909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_71
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 97
+        width: 88
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70f4169cbf011d70800000000000000
+      internalID: 9012001631991296122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_72
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 106
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b207316272d082d00800000000000000
+      internalID: 948022183355183147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_73
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 97
+        width: 112
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b080fff0dfef7dc70800000000000000
+      internalID: 8995939143544408075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_74
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 97
+        width: 87
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8a1dc5472f8a9b0800000000000000
+      internalID: -5068534799018120998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_75
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 106
+        width: 80
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa409dab9a372ac0800000000000000
+      internalID: -3880068113650136413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_76
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 97
+        width: 103
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33808bcd64a8754d0800000000000000
+      internalID: -3145893777739610061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_77
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 106
+        width: 77
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d938be4dda8ceb0800000000000000
+      internalID: -4699315081165169295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_78
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 4
+        width: 76
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c871f5b0da67a10800000000000000
+      internalID: 1906901756589608074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_79
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 4
+        width: 78
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac4333d19771eba0800000000000000
+      internalID: -6061432155266659160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_80
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 4
+        width: 79
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d351c73af1954220800000000000000
+      internalID: 2469540474545853399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_81
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 4
+        width: 78
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372a0c5c29ea26cb0800000000000000
+      internalID: -4872139901455261069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_82
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 4
+        width: 78
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3330a86975a09040800000000000000
+      internalID: 4652400355938677564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_83
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 4
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1285c9b0e3c24fef0800000000000000
+      internalID: -75386648764065759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_84
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 4
+        width: 103
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6c2814038cfe650800000000000000
+      internalID: 6264445716278724318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_85
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 4
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b716f8ed89197100800000000000000
+      internalID: 106144163509442481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogue_Dave_86
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 4
+        width: 103
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d9c9a28e7e58230800000000000000
+      internalID: 3640570858132249964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6ca23ca5de90c5644bfd9890c10f5d9b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

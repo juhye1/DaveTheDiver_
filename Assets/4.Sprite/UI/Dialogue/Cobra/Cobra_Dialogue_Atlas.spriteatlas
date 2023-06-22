@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cobra_Dialogue_Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: cb3cbb4ea4808e241aca964e41fdb856, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d28438606a8f41348af1bceb014bf688, type: 3}
+  - {fileID: 21300000, guid: be7eea119ec4917449de7515bd1857d4, type: 3}
+  - {fileID: 21300000, guid: 68d2fcc115b608644a877becc2c69479, type: 3}
+  - {fileID: 21300000, guid: 074697d12119b8c489b377e64feb25a2, type: 3}
+  - {fileID: 21300000, guid: 56252ca4beb078d429afee4e105c50bf, type: 3}
+  - {fileID: 21300000, guid: 06fc15052ca142847a6155fac0b7cce4, type: 3}
+  - {fileID: 21300000, guid: 870c7ea557b796d4c8800452871bdc84, type: 3}
+  - {fileID: 21300000, guid: 2117e1c5a5d3d9444aaac8f544c1f0d1, type: 3}
+  - {fileID: 21300000, guid: 3258fec57fd587f4d9f2efdc02b47b0e, type: 3}
+  - {fileID: 21300000, guid: 675e240893dcd62489371f317ee0d834, type: 3}
+  - {fileID: 21300000, guid: b977af38fc2dc74409ba2586a74c9443, type: 3}
+  - {fileID: 21300000, guid: 0a903c983e2ee6a449d143df5af6dae0, type: 3}
+  - {fileID: 21300000, guid: 953c77d86d0cdd14d97765c77562398f, type: 3}
+  - {fileID: 21300000, guid: 6f87f4f8f7102c94587a3f60c3481ae6, type: 3}
+  - {fileID: 21300000, guid: 1209964a07cebde4193cdf174e64fdae, type: 3}
+  - {fileID: 21300000, guid: 1bc3393b0b3d74846b99b55d2baad2c2, type: 3}
+  - {fileID: 21300000, guid: 9868847bb006f6242b1239e251b9c946, type: 3}
+  - {fileID: 21300000, guid: f6f2cf2c7bb5e4f4d8383f1bca28b2ee, type: 3}
+  - {fileID: 21300000, guid: 719ffaacf1c687046865829571b709b5, type: 3}
+  - {fileID: 21300000, guid: d45830dc3d6416349be56d8e073c8c6d, type: 3}
+  - {fileID: 21300000, guid: 163739dcb67c9464aa1ed329767cfb38, type: 3}
+  - {fileID: 21300000, guid: 623d24ecc64a51c488a679b9c2ecfd27, type: 3}
+  - {fileID: 21300000, guid: 775280edbb298484e94fa6e278846340, type: 3}
+  - {fileID: 21300000, guid: 7a1258cede546824689e531ffba421f6, type: 3}
+  - {fileID: 21300000, guid: 911922cf39d4f6249bf30f492ef9abd7, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 07_Cobra02
+  - Dialogue_Cobra_Normal03
+  - Dialogue_Cobra_Smile01
+  - 07_Cobra03
+  - Dialogue_Cobra_Normal05
+  - Dialogue_Cobra_Normal01
+  - Dialogue_Cobra_What
+  - 07_Cobra04
+  - Dialogue_Cobra_Call_Angry02
+  - Dialogue_Cobra_Call
+  - Dialogue_Cobra_Exciting01
+  - Dialogue_Cobra_Worry
+  - Dialogue_Cobra_Normal02
+  - Dialogue_Cobra_Nice
+  - Dialogue_Cobra_Smile
+  - Dialogue_Cobra_Normal04
+  - 07_Cobra06
+  - Dialogue_Cobra_Call_Angry01
+  - Dialogue_Cobra_Normal06
+  - Dialogue_Cobra_Exciting
+  - 07_Cobra01
+  - Dialogue_Cobra_Nice01
+  - Dialogue_Cobra_Normal
+  - 07_Cobra05
+  - 07_Cobra01Mouth
+  m_RenderDataMap: {}
+  m_Tag: Cobra_Dialogue_Atlas
+  m_IsVariant: 0
