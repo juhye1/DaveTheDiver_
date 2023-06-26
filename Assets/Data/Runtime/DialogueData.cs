@@ -24,4 +24,8 @@ public class DialogueData
   EEmotionType eemotiontype;
   public EEmotionType EEMOTIONTYPE { get {return eemotiontype; } set { this.eemotiontype = value;} }
   
+  [SerializeField]
+  bool isnpc;
+  public bool Isnpc { get {return isnpc; } set { this.isnpc = value;} }
+  
 }

@@ -5,9 +5,10 @@ using UnityEngine;
 public class PortraitData : MonoBehaviour
 {
     public Dictionary<EEmotionType, Sprite> PortraitDictionary;
-    public Sprite[] portraits;
+    public Sprite[] CobraPortraits;
+    public Sprite[] DavePortraits;
 
-    private void Start()
+    private void Awake()
     {
         Init();
     }
@@ -15,8 +16,8 @@ public class PortraitData : MonoBehaviour
     private void Init()
     {
         PortraitDictionary = new Dictionary<EEmotionType, Sprite>();
-        PortraitDictionary.Add(EEmotionType.Normal, portraits[(int)EEmotionType.Normal]);
-        PortraitDictionary.Add(EEmotionType.Nice, portraits[(int)EEmotionType.Nice]);
-        PortraitDictionary.Add(EEmotionType.Smile, portraits[(int)EEmotionType.Smile]);
+        PortraitDictionary.Add(EEmotionType.Normal, CobraPortraits[(int)EEmotionType.Normal]);
+        PortraitDictionary.Add(EEmotionType.Nice, CobraPortraits[(int)EEmotionType.Nice]);
+        PortraitDictionary.Add(EEmotionType.Smile, CobraPortraits[(int)EEmotionType.Smile]);
     }
 }

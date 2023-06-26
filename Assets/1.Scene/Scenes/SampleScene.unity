@@ -866,10 +866,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69bcbdec2b80ebd4d90424737d54e269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portraits:
+  CobraPortraits:
   - {fileID: 21300000, guid: 775280edbb298484e94fa6e278846340, type: 3}
   - {fileID: 21300000, guid: 6f87f4f8f7102c94587a3f60c3481ae6, type: 3}
   - {fileID: 21300000, guid: 1209964a07cebde4193cdf174e64fdae, type: 3}
+  DavePortraits: []
 --- !u!1 &156341182
 GameObject:
   m_ObjectHideFlags: 0
@@ -3996,7 +3997,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uB370\uC774\uBE0C"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e310ef7a728bf54186986dcee573d99, type: 2}
   m_sharedMaterial: {fileID: -3716803710304657071, guid: 2e310ef7a728bf54186986dcee573d99, type: 2}
@@ -4177,7 +4178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &534182355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4309,14 +4310,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a677181e85de9dd40812293a0fc11c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeftPanel: {fileID: 596536876}
-  RightPanel: {fileID: 2072066173}
-  LeftPortrait: {fileID: 275833967}
-  RightPortrait: {fileID: 963272168}
-  LeftTMP: {fileID: 867914842}
-  RightTMP: {fileID: 1512732873}
-  LeftNameTMP: {fileID: 1520158190}
-  RightNameTMP: {fileID: 499566430}
+  speaker:
+  - Portrait: {fileID: 275833967}
+    TalkBox: {fileID: 867914842}
+    NameBox: {fileID: 1520158190}
+    Panel: {fileID: 596536876}
+  - Portrait: {fileID: 963272168}
+    TalkBox: {fileID: 1512732873}
+    NameBox: {fileID: 499566430}
+    Panel: {fileID: 2072066173}
 --- !u!225 &534182362
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10606,14 +10608,14 @@ RectTransform:
   m_GameObject: {fileID: 1512732871}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 944461805}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -11}
   m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512732873
@@ -15270,7 +15272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2072066173
 RectTransform:
   m_ObjectHideFlags: 0

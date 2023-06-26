@@ -6,9 +6,11 @@ public class NPC_Cobra : BaseNPC
 {
     private readonly int beer = Animator.StringToHash("Beer");
     private readonly int idle = Animator.StringToHash("Idle");
-    private string CobraGun = "Cobra_Gun_";
-    private int dialogueNum = 0;
 
+    private void Start()
+    {
+        dialogueString = "Cobra_Gun_";
+    }
     public override void RandomAnimation()
     {
         int num = Random.Range(0, 2);
@@ -23,17 +25,11 @@ public class NPC_Cobra : BaseNPC
                 break;
 
         }
-
-
     }
 
     public override void Talk()
     {
-        dialogueKey = CobraGun + dialogueNum;
+        dialogueKey = dialogueString + dialogueNum;
         base.Talk();
-        dialogueUI.UpdateUI(dialogueKey);
-        dialogueUI.FirstTalk();
-        dialogueNum++;
-
     }
 }

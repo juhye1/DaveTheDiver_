@@ -5,60 +5,67 @@ using UnityEngine.UI;
 using DG.Tweening;
 using TMPro;
 
-public enum EEmotionType
+[System.Serializable]
+public struct Speaker
 {
-    Normal = 0,
-    Nice,
-    Smile
+    public Image Portrait;
+    public TextMeshProUGUI TalkBox;
+    public TextMeshProUGUI NameBox;
+    public Transform Panel;
 }
+
 public class DialogueUI : UIBase
 {
-    [SerializeField] private Transform LeftPanel;
-    [SerializeField] private Transform RightPanel;
-
-    public Image LeftPortrait;
-    public Image RightPortrait;
-
-    public TextMeshProUGUI LeftTMP;
-    public TextMeshProUGUI RightTMP;
-    public TextMeshProUGUI LeftNameTMP;
-    public TextMeshProUGUI RightNameTMP;
-
+    [SerializeField] private Speaker[] speaker;
     private PortraitData portraitData;
-    private string dialoueText = "";
-    
     private DialogueData dialogueData;
+    private string dialoueText;
+
+    private EName Ename = EName.Unknown;
+
     private void Awake()
     {
-        tmp = GetComponentInChildren<TextMeshProUGUI>();
         canvasGroup = GetComponent<CanvasGroup>();
         portraitData = GetComponentInChildren<PortraitData>();
         canvasGroup.alpha = 0;
     }
 
-    private void Init()
+    private void OnEnable()
     {
-        sequence = DOTween.Sequence();
-        sequence.Append(canvasGroup.DOFade(1, 0.5f))
-                .Append(LeftPanel.DOLocalMoveY(10, 1).SetEase(Ease.OutBack))
-                .Append(tmp.DOText(dialoueText.Replace("\\n","\n"), 1f));
+        canvasGroup.DOFade(1, 0.5f);
     }
 
-    public void FirstTalk()
+    public void TalkEffect(int num)
     {
         sequence = DOTween.Sequence();
-        sequence.Append(canvasGroup.DOFade(1, 0.5f))
-                .Append(LeftPanel.DOLocalMoveY(10, 1).SetEase(Ease.OutBack))
-                .Append(tmp.DOText(dialoueText.Replace("\\n", "\n"), 1f));
-        DOTween.Play(sequence);
+        sequence.Append(speaker[num].Panel.DOLocalMoveY(10, 1).SetEase(Ease.OutBack)).SetDelay(0.5f)
+                .Append(speaker[num].TalkBox.DOText(dialoueText.Replace("\\n", "\n"), 1f));
     }
 
     public void UpdateUI(string key)
     {
         dialogueData = DataManager.Instance.LoadData(key);
         dialoueText = dialogueData.Dialogtext;
-        LeftNameTMP.text = dialogueData.Name;
-        LeftPortrait.sprite = portraitData.PortraitDictionary[dialogueData.EEMOTIONTYPE];
+        int num = dialogueData.Isnpc ? 0 : 1;
+        speaker[num].NameBox.text = dialogueData.Name;
+        speaker[num].TalkBox.text = string.Empty;
+        speaker[num].Portrait.sprite = portraitData.PortraitDictionary[dialogueData.EEMOTIONTYPE];
+
+        int change = num == 0 ? 1 : 0;
+        SetActiveUI(speaker[change], dialogueData.Isnpc);
+        TalkEffect(num);
     }
+
+    private void SetActiveUI(Speaker speaker, bool visible)
+    {
+        speaker.NameBox.gameObject.SetActive(visible);
+        speaker.TalkBox.gameObject.SetActive(visible);
+
+/*        Color color = speaker.Portrait.color;
+        color.a = visible ? 1 : 0.2f;
+        speaker.Portrait.color = color;*/
+    }
+
+
 
 }
