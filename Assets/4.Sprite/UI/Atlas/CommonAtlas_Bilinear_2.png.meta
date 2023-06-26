@@ -31,7 +31,7 @@ TextureImporter:
     second: CommonAtlas_Bilinear_2_8
   - first:
       213: -513443984863335292
-    second: CommonAtlas_Bilinear_2_9
+    second: UI_Blue
   - first:
       213: -5584272145109346092
     second: CommonAtlas_Bilinear_2_10
@@ -232,7 +232,7 @@ TextureImporter:
     second: CommonAtlas_Bilinear_2_75
   - first:
       213: -4423181354940668246
-    second: CommonAtlas_Bilinear_2_76
+    second: Phone
   - first:
       213: -5567978483040012690
     second: CommonAtlas_Bilinear_2_77
@@ -259,7 +259,7 @@ TextureImporter:
     second: CommonAtlas_Bilinear_2_84
   - first:
       213: 5594843785375605510
-    second: CommonAtlas_Bilinear_2_85
+    second: UI_YellowGlow
   - first:
       213: -4177191173201060144
     second: CommonAtlas_Bilinear_2_86
@@ -280,7 +280,7 @@ TextureImporter:
     second: CommonAtlas_Bilinear_2_91
   - first:
       213: 6502695784768159741
-    second: CommonAtlas_Bilinear_2_92
+    second: Gold
   - first:
       213: 5282615553475930804
     second: CommonAtlas_Bilinear_2_93
@@ -334,7 +334,7 @@ TextureImporter:
     second: CommonAtlas_Bilinear_2_109
   - first:
       213: 353541519230492098
-    second: CommonAtlas_Bilinear_2_110
+    second: UI
   - first:
       213: -1859868480061229858
     second: CommonAtlas_Bilinear_2_111
@@ -568,7 +568,7 @@ TextureImporter:
     second: CommonAtlas_Bilinear_2_187
   - first:
       213: -7677051969578523627
-    second: CommonAtlas_Bilinear_2_188
+    second: UI_Phone
   - first:
       213: 8195131276211386869
     second: CommonAtlas_Bilinear_2_189
@@ -637,7 +637,7 @@ TextureImporter:
     second: CommonAtlas_Bilinear_2_210
   - first:
       213: 1881846224435404313
-    second: CommonAtlas_Bilinear_2_211
+    second: Clock
   - first:
       213: -7967949581987740692
     second: CommonAtlas_Bilinear_2_212
@@ -770,7 +770,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -784,7 +784,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10000
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1042,7 +1042,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CommonAtlas_Bilinear_2_9
+      name: UI_Blue
       rect:
         serializedVersion: 2
         x: 906
@@ -2449,7 +2449,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CommonAtlas_Bilinear_2_76
+      name: Phone
       rect:
         serializedVersion: 2
         x: 732
@@ -2638,7 +2638,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CommonAtlas_Bilinear_2_85
+      name: UI_YellowGlow
       rect:
         serializedVersion: 2
         x: 1912
@@ -2785,13 +2785,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CommonAtlas_Bilinear_2_92
+      name: Gold
       rect:
         serializedVersion: 2
         x: 1974
-        y: 1359
-        width: 34
-        height: 51
+        y: 1377
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3163,7 +3163,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CommonAtlas_Bilinear_2_110
+      name: UI
       rect:
         serializedVersion: 2
         x: 1875
@@ -4801,7 +4801,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CommonAtlas_Bilinear_2_188
+      name: UI_Phone
       rect:
         serializedVersion: 2
         x: 497
@@ -5284,7 +5284,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CommonAtlas_Bilinear_2_211
+      name: Clock
       rect:
         serializedVersion: 2
         x: 1483

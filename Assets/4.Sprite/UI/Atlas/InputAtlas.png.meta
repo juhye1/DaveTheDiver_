@@ -1,0 +1,8028 @@
+fileFormatVersion: 2
+guid: e5decb251b19e1440a2154d68ec92cf2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -654474128292163951
+    second: InputAtlas_0
+  - first:
+      213: -5875112612881504084
+    second: InputAtlas_1
+  - first:
+      213: 5821719336470409709
+    second: InputAtlas_2
+  - first:
+      213: -4251650341990104040
+    second: InputAtlas_3
+  - first:
+      213: 2560408174687143589
+    second: InputAtlas_4
+  - first:
+      213: -4105974531028843856
+    second: InputAtlas_5
+  - first:
+      213: -6958027517584508730
+    second: InputAtlas_6
+  - first:
+      213: -988463167659486875
+    second: InputAtlas_7
+  - first:
+      213: 6639505408584033174
+    second: InputAtlas_8
+  - first:
+      213: 2331849168965104926
+    second: InputAtlas_9
+  - first:
+      213: -8455469650170608925
+    second: InputAtlas_10
+  - first:
+      213: -6360113022997006811
+    second: InputAtlas_11
+  - first:
+      213: -8738360471736604710
+    second: InputAtlas_12
+  - first:
+      213: -6834237096175097113
+    second: InputAtlas_13
+  - first:
+      213: -3640560255534539565
+    second: InputAtlas_14
+  - first:
+      213: -6429362935929736963
+    second: InputAtlas_15
+  - first:
+      213: 3549692700004552865
+    second: InputAtlas_16
+  - first:
+      213: 597606573338905318
+    second: InputAtlas_17
+  - first:
+      213: 2836137632579050084
+    second: InputAtlas_18
+  - first:
+      213: 879390084856372671
+    second: InputAtlas_19
+  - first:
+      213: 7939514164103224376
+    second: InputAtlas_20
+  - first:
+      213: -3537242138058802642
+    second: InputAtlas_21
+  - first:
+      213: -8089150146104298800
+    second: InputAtlas_22
+  - first:
+      213: -2936062502435089459
+    second: InputAtlas_23
+  - first:
+      213: -2227036733054103806
+    second: InputAtlas_24
+  - first:
+      213: -4563377620010557812
+    second: InputAtlas_25
+  - first:
+      213: -3218554114566080613
+    second: InputAtlas_26
+  - first:
+      213: 4259980213515318437
+    second: InputAtlas_27
+  - first:
+      213: 3966559784436272369
+    second: InputAtlas_28
+  - first:
+      213: -7316535089677205452
+    second: InputAtlas_29
+  - first:
+      213: -3200312536344056929
+    second: InputAtlas_30
+  - first:
+      213: -5235578257240867943
+    second: InputAtlas_31
+  - first:
+      213: 2298196168631428386
+    second: InputAtlas_32
+  - first:
+      213: 8169315177379056083
+    second: InputAtlas_33
+  - first:
+      213: 760259102532505531
+    second: InputAtlas_34
+  - first:
+      213: 175848224373790691
+    second: InputAtlas_35
+  - first:
+      213: -2711427552603320266
+    second: InputAtlas_36
+  - first:
+      213: 7336632705912537587
+    second: InputAtlas_37
+  - first:
+      213: -3670364617588961304
+    second: InputAtlas_38
+  - first:
+      213: -7852763355052859874
+    second: InputAtlas_39
+  - first:
+      213: 4631576106887085173
+    second: InputAtlas_40
+  - first:
+      213: 3949831832821394107
+    second: InputAtlas_41
+  - first:
+      213: -3679620392015070022
+    second: InputAtlas_42
+  - first:
+      213: 5088421511207003362
+    second: InputAtlas_43
+  - first:
+      213: 412492499437971114
+    second: InputAtlas_44
+  - first:
+      213: -8157944219905552766
+    second: InputAtlas_45
+  - first:
+      213: 7785653466433919439
+    second: InputAtlas_46
+  - first:
+      213: 8191117437283426776
+    second: InputAtlas_47
+  - first:
+      213: -8818123741575493957
+    second: InputAtlas_48
+  - first:
+      213: -3550172801466112188
+    second: InputAtlas_49
+  - first:
+      213: -2029808976482664802
+    second: InputAtlas_50
+  - first:
+      213: -7771820031673120253
+    second: InputAtlas_51
+  - first:
+      213: -8035780744504908613
+    second: InputAtlas_52
+  - first:
+      213: 7365613166715359200
+    second: InputAtlas_53
+  - first:
+      213: -9037706211763751142
+    second: InputAtlas_54
+  - first:
+      213: 8634325478196637681
+    second: InputAtlas_55
+  - first:
+      213: -1573066194298188952
+    second: InputAtlas_56
+  - first:
+      213: -6494409365740935089
+    second: InputAtlas_57
+  - first:
+      213: 4593711330484444476
+    second: InputAtlas_58
+  - first:
+      213: 5723923697972592702
+    second: InputAtlas_59
+  - first:
+      213: 2543366229107876298
+    second: InputAtlas_60
+  - first:
+      213: 6234826899345632940
+    second: InputAtlas_61
+  - first:
+      213: 5603867640098360641
+    second: InputAtlas_62
+  - first:
+      213: 2744882477698079016
+    second: InputAtlas_63
+  - first:
+      213: 5892663575558520807
+    second: InputAtlas_64
+  - first:
+      213: 6550424808043240934
+    second: InputAtlas_65
+  - first:
+      213: 7735756285448385214
+    second: InputAtlas_66
+  - first:
+      213: 5135585593007245510
+    second: InputAtlas_67
+  - first:
+      213: -3880690519049142262
+    second: InputAtlas_68
+  - first:
+      213: -6974278082910603022
+    second: InputAtlas_69
+  - first:
+      213: 1633528521967043798
+    second: InputAtlas_70
+  - first:
+      213: 6556589257569633301
+    second: InputAtlas_71
+  - first:
+      213: -1920436381384067283
+    second: InputAtlas_72
+  - first:
+      213: -1320763043717161930
+    second: InputAtlas_73
+  - first:
+      213: -5727394229549948444
+    second: InputAtlas_74
+  - first:
+      213: 3256403224355004467
+    second: InputAtlas_75
+  - first:
+      213: 847312409375671073
+    second: InputAtlas_76
+  - first:
+      213: -1130994966093605320
+    second: InputAtlas_77
+  - first:
+      213: -2436313593183049057
+    second: InputAtlas_78
+  - first:
+      213: -8260301852444327722
+    second: InputAtlas_79
+  - first:
+      213: -4733090817501471828
+    second: InputAtlas_80
+  - first:
+      213: 6429798791872226488
+    second: InputAtlas_81
+  - first:
+      213: -7837305392402610860
+    second: InputAtlas_82
+  - first:
+      213: -417765150292020780
+    second: InputAtlas_83
+  - first:
+      213: 3796394321889513151
+    second: InputAtlas_84
+  - first:
+      213: 4423141508180026643
+    second: InputAtlas_85
+  - first:
+      213: -6385416330932013215
+    second: InputAtlas_86
+  - first:
+      213: -6692839558124888606
+    second: InputAtlas_87
+  - first:
+      213: 5258538882119952145
+    second: InputAtlas_88
+  - first:
+      213: -8309463350271645323
+    second: InputAtlas_89
+  - first:
+      213: 2505567808461924466
+    second: InputAtlas_90
+  - first:
+      213: 9054732214097304220
+    second: InputAtlas_91
+  - first:
+      213: -8912110098666896273
+    second: InputAtlas_92
+  - first:
+      213: 7464442526748532471
+    second: InputAtlas_93
+  - first:
+      213: -591174318705809658
+    second: InputAtlas_94
+  - first:
+      213: 1967802652763907260
+    second: InputAtlas_95
+  - first:
+      213: 1002311508746311534
+    second: InputAtlas_96
+  - first:
+      213: 4619361299518799936
+    second: InputAtlas_97
+  - first:
+      213: 1429088210352985883
+    second: InputAtlas_98
+  - first:
+      213: -7935977134667893624
+    second: InputAtlas_99
+  - first:
+      213: -8044597970285870955
+    second: InputAtlas_100
+  - first:
+      213: -3568855897450842176
+    second: InputAtlas_101
+  - first:
+      213: -5149766636970007564
+    second: InputAtlas_102
+  - first:
+      213: -4298771792428457483
+    second: InputAtlas_103
+  - first:
+      213: 4868274496516377928
+    second: InputAtlas_104
+  - first:
+      213: -6490470754025025016
+    second: InputAtlas_105
+  - first:
+      213: -7916295193217694856
+    second: InputAtlas_106
+  - first:
+      213: 4802549164656645770
+    second: InputAtlas_107
+  - first:
+      213: 35185987418071118
+    second: InputAtlas_108
+  - first:
+      213: -8919329269518744699
+    second: InputAtlas_109
+  - first:
+      213: 521837694940298362
+    second: InputAtlas_110
+  - first:
+      213: 4591902564552744657
+    second: InputAtlas_111
+  - first:
+      213: -3321106625259985544
+    second: InputAtlas_112
+  - first:
+      213: 7339789862989123326
+    second: InputAtlas_113
+  - first:
+      213: 3856404454277265662
+    second: InputAtlas_114
+  - first:
+      213: -1523909499237157948
+    second: InputAtlas_115
+  - first:
+      213: -5611748254246010078
+    second: InputAtlas_116
+  - first:
+      213: -2539796630794665054
+    second: InputAtlas_117
+  - first:
+      213: 8305858725146796129
+    second: InputAtlas_118
+  - first:
+      213: 4336655553074762449
+    second: InputAtlas_119
+  - first:
+      213: 8606185651536003607
+    second: InputAtlas_120
+  - first:
+      213: -221704925872600690
+    second: InputAtlas_121
+  - first:
+      213: 1066192080930045702
+    second: InputAtlas_122
+  - first:
+      213: -3828773215829089102
+    second: InputAtlas_123
+  - first:
+      213: -2217320817634843916
+    second: InputAtlas_124
+  - first:
+      213: -8806004935322857176
+    second: InputAtlas_125
+  - first:
+      213: -8233953380805608966
+    second: InputAtlas_126
+  - first:
+      213: 232239580434966554
+    second: InputAtlas_127
+  - first:
+      213: 5580106778705980233
+    second: InputAtlas_128
+  - first:
+      213: 5514449785682028155
+    second: InputAtlas_129
+  - first:
+      213: -7593370562853632228
+    second: InputAtlas_130
+  - first:
+      213: -3827029725733427161
+    second: InputAtlas_131
+  - first:
+      213: 8838172147458982754
+    second: InputAtlas_132
+  - first:
+      213: 400687433293553293
+    second: InputAtlas_133
+  - first:
+      213: -3402245491115665691
+    second: InputAtlas_134
+  - first:
+      213: 3834227250032918964
+    second: InputAtlas_135
+  - first:
+      213: -523844194293482871
+    second: InputAtlas_136
+  - first:
+      213: -4207230390761272343
+    second: InputAtlas_137
+  - first:
+      213: -7509183356529899219
+    second: InputAtlas_138
+  - first:
+      213: 8739799883527269476
+    second: InputAtlas_139
+  - first:
+      213: 4977079486499669077
+    second: InputAtlas_140
+  - first:
+      213: -4210825992410264634
+    second: InputAtlas_141
+  - first:
+      213: 2419035185435610756
+    second: InputAtlas_142
+  - first:
+      213: -2486624060987974967
+    second: InputAtlas_143
+  - first:
+      213: 3991754462105625460
+    second: InputAtlas_144
+  - first:
+      213: -1985959087569608115
+    second: InputAtlas_145
+  - first:
+      213: 3034206093533707953
+    second: InputAtlas_146
+  - first:
+      213: -4585424933878106251
+    second: InputAtlas_147
+  - first:
+      213: -7806802439054850721
+    second: InputAtlas_148
+  - first:
+      213: 1060265922981019351
+    second: InputAtlas_149
+  - first:
+      213: 2752121516588289101
+    second: InputAtlas_150
+  - first:
+      213: -8084237142157481176
+    second: InputAtlas_151
+  - first:
+      213: 5226352308087792404
+    second: InputAtlas_152
+  - first:
+      213: 2782822647041890668
+    second: InputAtlas_153
+  - first:
+      213: -1032853280636682911
+    second: InputAtlas_154
+  - first:
+      213: 3029053456656263265
+    second: InputAtlas_155
+  - first:
+      213: 2547195308282762713
+    second: InputAtlas_156
+  - first:
+      213: -8257505869888035793
+    second: InputAtlas_157
+  - first:
+      213: 95563662544431110
+    second: InputAtlas_158
+  - first:
+      213: 3512518966878443443
+    second: InputAtlas_159
+  - first:
+      213: -3026791705951897246
+    second: InputAtlas_160
+  - first:
+      213: -1748327900775927820
+    second: InputAtlas_161
+  - first:
+      213: -2180528414913596103
+    second: InputAtlas_162
+  - first:
+      213: 7435189806625169572
+    second: InputAtlas_163
+  - first:
+      213: -567456123815725782
+    second: InputAtlas_164
+  - first:
+      213: -745222729356455817
+    second: InputAtlas_165
+  - first:
+      213: 8665549134863133818
+    second: InputAtlas_166
+  - first:
+      213: 1422129909105645733
+    second: InputAtlas_167
+  - first:
+      213: 6907198419877447863
+    second: InputAtlas_168
+  - first:
+      213: -3441280213620507491
+    second: InputAtlas_169
+  - first:
+      213: -7028920299845475538
+    second: InputAtlas_170
+  - first:
+      213: 4783785269261418806
+    second: InputAtlas_171
+  - first:
+      213: -2598738133609439200
+    second: InputAtlas_172
+  - first:
+      213: 80232348765703785
+    second: InputAtlas_173
+  - first:
+      213: -6057865923375008243
+    second: InputAtlas_174
+  - first:
+      213: 6356623080197245239
+    second: InputAtlas_175
+  - first:
+      213: -8617873093468596847
+    second: InputAtlas_176
+  - first:
+      213: -2289669497432532138
+    second: InputAtlas_177
+  - first:
+      213: 2668364342253402185
+    second: InputAtlas_178
+  - first:
+      213: 8764716041931321985
+    second: InputAtlas_179
+  - first:
+      213: -8660759785264822710
+    second: InputAtlas_180
+  - first:
+      213: 3802090915719051834
+    second: InputAtlas_181
+  - first:
+      213: 2277319023029679665
+    second: InputAtlas_182
+  - first:
+      213: -3751915758841642574
+    second: InputAtlas_183
+  - first:
+      213: -9209417067185771439
+    second: InputAtlas_184
+  - first:
+      213: 8666836530158364399
+    second: InputAtlas_185
+  - first:
+      213: 4716006093360815681
+    second: InputAtlas_186
+  - first:
+      213: 646621294947815494
+    second: InputAtlas_187
+  - first:
+      213: -66844276666427935
+    second: InputAtlas_188
+  - first:
+      213: 5265439106610186061
+    second: InputAtlas_189
+  - first:
+      213: 215830566546154422
+    second: InputAtlas_190
+  - first:
+      213: 2052449198862854615
+    second: InputAtlas_191
+  - first:
+      213: -8965236816346731456
+    second: InputAtlas_192
+  - first:
+      213: 4786169830541286782
+    second: InputAtlas_193
+  - first:
+      213: 788084639482603343
+    second: InputAtlas_194
+  - first:
+      213: 4341481626551492077
+    second: InputAtlas_195
+  - first:
+      213: -3134041945471963593
+    second: InputAtlas_196
+  - first:
+      213: 2867219659198353688
+    second: InputAtlas_197
+  - first:
+      213: 3648696555287797679
+    second: InputAtlas_198
+  - first:
+      213: 34354195292749923
+    second: InputAtlas_199
+  - first:
+      213: 5946526207945355631
+    second: InputAtlas_200
+  - first:
+      213: -8971467066941980576
+    second: InputAtlas_201
+  - first:
+      213: 3715523097393501657
+    second: InputAtlas_202
+  - first:
+      213: -5372241529891932967
+    second: InputAtlas_203
+  - first:
+      213: -3586248122661775608
+    second: InputAtlas_204
+  - first:
+      213: -3795762769247199224
+    second: InputAtlas_205
+  - first:
+      213: 5479781714871274071
+    second: InputAtlas_206
+  - first:
+      213: -4617968550572309315
+    second: InputAtlas_207
+  - first:
+      213: -3002707959429782246
+    second: InputAtlas_208
+  - first:
+      213: -3519716941181858472
+    second: InputAtlas_209
+  - first:
+      213: 1079995465955972604
+    second: InputAtlas_210
+  - first:
+      213: 8204178329400473258
+    second: InputAtlas_211
+  - first:
+      213: 2637505867827920249
+    second: InputAtlas_212
+  - first:
+      213: 7611402013119538338
+    second: InputAtlas_213
+  - first:
+      213: -7944209192797305537
+    second: InputAtlas_214
+  - first:
+      213: 2012566218306488348
+    second: InputAtlas_215
+  - first:
+      213: 1162534320272735801
+    second: InputAtlas_216
+  - first:
+      213: 5348527326486548605
+    second: InputAtlas_217
+  - first:
+      213: 5797845025380212025
+    second: InputAtlas_218
+  - first:
+      213: 4246287495856600779
+    second: InputAtlas_219
+  - first:
+      213: 8740615067413187230
+    second: InputAtlas_220
+  - first:
+      213: 7117282470756008849
+    second: InputAtlas_221
+  - first:
+      213: -7011229042450577650
+    second: InputAtlas_222
+  - first:
+      213: 3621626083253635165
+    second: InputAtlas_223
+  - first:
+      213: -5898914706690048691
+    second: InputAtlas_224
+  - first:
+      213: 882115966854823381
+    second: InputAtlas_225
+  - first:
+      213: -457815238358201231
+    second: InputAtlas_226
+  - first:
+      213: 9108094484896821462
+    second: InputAtlas_227
+  - first:
+      213: -1922515975129974004
+    second: InputAtlas_228
+  - first:
+      213: 2862214907830734858
+    second: InputAtlas_229
+  - first:
+      213: 5802713013127618587
+    second: InputAtlas_230
+  - first:
+      213: -1529832265730995248
+    second: InputAtlas_231
+  - first:
+      213: 3630192075556621030
+    second: InputAtlas_232
+  - first:
+      213: -663140129221156602
+    second: InputAtlas_233
+  - first:
+      213: -1622169664894280796
+    second: InputAtlas_234
+  - first:
+      213: -8039192682339268408
+    second: InputAtlas_235
+  - first:
+      213: -1200295704684981399
+    second: InputAtlas_236
+  - first:
+      213: 7542756021146461967
+    second: InputAtlas_237
+  - first:
+      213: 7065447550248124624
+    second: InputAtlas_238
+  - first:
+      213: -2657020246140700929
+    second: InputAtlas_239
+  - first:
+      213: 3019657090679243563
+    second: InputAtlas_240
+  - first:
+      213: 1579353836748494714
+    second: InputAtlas_241
+  - first:
+      213: 7337013941455711257
+    second: InputAtlas_242
+  - first:
+      213: -1718019481842937163
+    second: InputAtlas_243
+  - first:
+      213: -2785900078555726764
+    second: InputAtlas_244
+  - first:
+      213: -1295044693174043585
+    second: InputAtlas_245
+  - first:
+      213: 1037406223116088782
+    second: InputAtlas_246
+  - first:
+      213: 7845444276018216950
+    second: InputAtlas_247
+  - first:
+      213: 7066935640891939257
+    second: InputAtlas_248
+  - first:
+      213: -3226299700377089271
+    second: InputAtlas_249
+  - first:
+      213: 7667467965281266133
+    second: InputAtlas_250
+  - first:
+      213: -2318090248218936789
+    second: InputAtlas_251
+  - first:
+      213: 3045868928526203556
+    second: InputAtlas_252
+  - first:
+      213: -262497751800541752
+    second: InputAtlas_253
+  - first:
+      213: 6855011995864983493
+    second: InputAtlas_254
+  - first:
+      213: -3161143594434131
+    second: InputAtlas_255
+  - first:
+      213: 981272386791624449
+    second: InputAtlas_256
+  - first:
+      213: 2838732218045270370
+    second: InputAtlas_257
+  - first:
+      213: 3832161616635102950
+    second: InputAtlas_258
+  - first:
+      213: -5796224691957237147
+    second: InputAtlas_259
+  - first:
+      213: -4217053949501750281
+    second: InputAtlas_260
+  - first:
+      213: 9010368074685131054
+    second: InputAtlas_261
+  - first:
+      213: -7058742586608160556
+    second: InputAtlas_262
+  - first:
+      213: -4899987245299291385
+    second: InputAtlas_263
+  - first:
+      213: 66469760101170375
+    second: InputAtlas_264
+  - first:
+      213: 24113524825174199
+    second: InputAtlas_265
+  - first:
+      213: 5449560399790396852
+    second: InputAtlas_266
+  - first:
+      213: 7043791654343954793
+    second: InputAtlas_267
+  - first:
+      213: -8679248061382007867
+    second: InputAtlas_268
+  - first:
+      213: -6039980167089160309
+    second: InputAtlas_269
+  - first:
+      213: 201177712249916209
+    second: InputAtlas_270
+  - first:
+      213: 8985059096532073812
+    second: InputAtlas_271
+  - first:
+      213: 4484410966083200893
+    second: InputAtlas_272
+  - first:
+      213: -4798584579892477451
+    second: InputAtlas_273
+  - first:
+      213: -8146101068524941901
+    second: InputAtlas_274
+  - first:
+      213: 375608376367721762
+    second: InputAtlas_275
+  - first:
+      213: 918009401683050557
+    second: InputAtlas_276
+  - first:
+      213: 1152317147477815488
+    second: InputAtlas_277
+  - first:
+      213: 5245680570270932256
+    second: InputAtlas_278
+  - first:
+      213: 4113207021695325763
+    second: InputAtlas_279
+  - first:
+      213: 2081693661555941610
+    second: InputAtlas_280
+  - first:
+      213: 4891163683115180605
+    second: InputAtlas_281
+  - first:
+      213: 3841672377391177054
+    second: InputAtlas_282
+  - first:
+      213: -1632251005863075159
+    second: InputAtlas_283
+  - first:
+      213: 6611265525501018110
+    second: InputAtlas_284
+  - first:
+      213: 7734390481979319302
+    second: InputAtlas_285
+  - first:
+      213: 39361463477305164
+    second: InputAtlas_286
+  - first:
+      213: 619051858269685759
+    second: InputAtlas_287
+  - first:
+      213: 2027373553298434304
+    second: InputAtlas_288
+  - first:
+      213: -6234096922932080450
+    second: InputAtlas_289
+  - first:
+      213: 2428645605788275137
+    second: InputAtlas_290
+  - first:
+      213: 8324561375719934893
+    second: InputAtlas_291
+  - first:
+      213: 7456961740905904979
+    second: InputAtlas_292
+  - first:
+      213: 2106873966974782847
+    second: InputAtlas_293
+  - first:
+      213: 8985341675382265514
+    second: InputAtlas_294
+  - first:
+      213: -2650581837951396041
+    second: InputAtlas_295
+  - first:
+      213: -3284306117518954975
+    second: InputAtlas_296
+  - first:
+      213: 4540688452222819677
+    second: InputAtlas_297
+  - first:
+      213: -7531672280752602175
+    second: InputAtlas_298
+  - first:
+      213: 2704731823483764993
+    second: InputAtlas_299
+  - first:
+      213: -1945405824946686132
+    second: InputAtlas_300
+  - first:
+      213: 1638866411674425786
+    second: InputAtlas_301
+  - first:
+      213: 3880922232445430504
+    second: InputAtlas_302
+  - first:
+      213: -1636994015269928059
+    second: InputAtlas_303
+  - first:
+      213: -2344694358380229663
+    second: InputAtlas_304
+  - first:
+      213: 503449935804503410
+    second: InputAtlas_305
+  - first:
+      213: 2932687222760536684
+    second: InputAtlas_306
+  - first:
+      213: -2370665997551891378
+    second: InputAtlas_307
+  - first:
+      213: -5808735963308298345
+    second: InputAtlas_308
+  - first:
+      213: -7865621874635028705
+    second: InputAtlas_309
+  - first:
+      213: 3108030329246872267
+    second: InputAtlas_310
+  - first:
+      213: -5426484156814800655
+    second: InputAtlas_311
+  - first:
+      213: 5965395714364886614
+    second: InputAtlas_312
+  - first:
+      213: -8386497191658746581
+    second: InputAtlas_313
+  - first:
+      213: -1720295164675357434
+    second: InputAtlas_314
+  - first:
+      213: 2712278088239757612
+    second: InputAtlas_315
+  - first:
+      213: -945492294287796394
+    second: InputAtlas_316
+  - first:
+      213: -4202772109453991684
+    second: InputAtlas_317
+  - first:
+      213: 3853721894984504099
+    second: InputAtlas_318
+  - first:
+      213: 5310988311407990080
+    second: InputAtlas_319
+  - first:
+      213: 2050494431376672849
+    second: InputAtlas_320
+  - first:
+      213: 8115936378337500065
+    second: InputAtlas_321
+  - first:
+      213: -7425584616342828704
+    second: InputAtlas_322
+  - first:
+      213: -6343095795209242660
+    second: InputAtlas_323
+  - first:
+      213: 5068586856342415023
+    second: InputAtlas_324
+  - first:
+      213: 5664315467322100386
+    second: InputAtlas_325
+  - first:
+      213: -4312427013500221465
+    second: InputAtlas_326
+  - first:
+      213: 7596468296221615770
+    second: InputAtlas_327
+  - first:
+      213: 1492813715966862390
+    second: InputAtlas_328
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: InputAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1893
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e46747f37dae6f0800000000000000
+      internalID: -654474128292163951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1934
+        width: 89
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8e7cdc438677ea0800000000000000
+      internalID: -5875112612881504084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1914
+        width: 85
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1775844e6eac050800000000000000
+      internalID: 5821719336470409709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1940
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81403884a8a1ff4c0800000000000000
+      internalID: -4251650341990104040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1897
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6cb345ba5688320800000000000000
+      internalID: 2560408174687143589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1897
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2893d1be5a407c0800000000000000
+      internalID: -4105974531028843856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1889
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c87bf486de107f90800000000000000
+      internalID: -6958027517584508730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_7
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1939
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56159127cf54842f0800000000000000
+      internalID: -988463167659486875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1939
+        width: 54
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693afe2ddf2442c50800000000000000
+      internalID: 6639505408584033174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 1911
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1574f9e6746c5020800000000000000
+      internalID: 2331849168965104926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1813
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e20c74f62328aa80800000000000000
+      internalID: -8455469650170608925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1874
+        width: 86
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5267de427e65cb7a0800000000000000
+      internalID: -6360113022997006811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_12
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1854
+        width: 85
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad723d2e27b1bb680800000000000000
+      internalID: -8738360471736604710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_13
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1882
+        width: 88
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eaafa30299e721a0800000000000000
+      internalID: -6834237096175097113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_14
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1823
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc55717cb12a7dc0800000000000000
+      internalID: -3640560255534539565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_15
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1823
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df078d7597056c6a0800000000000000
+      internalID: -6429362935929736963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_16
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1865
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0919d14ba034130800000000000000
+      internalID: 3549692700004552865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_17
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1865
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eacd4f13002b4800800000000000000
+      internalID: 597606573338905318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_18
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1869
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46addfb762cfb5720800000000000000
+      internalID: 2836137632579050084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_19
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1869
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd5dda7f98343c00800000000000000
+      internalID: 879390084856372671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_20
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 1837
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c1e802112de2e60800000000000000
+      internalID: 7939514164103224376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1800
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a367c340139eec0800000000000000
+      internalID: -3537242138058802642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_22
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1790
+        width: 84
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d277aedcc09dbf80800000000000000
+      internalID: -8089150146104298800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_23
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1822
+        width: 85
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc31300c5b20147d0800000000000000
+      internalID: -2936062502435089459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_24
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1815
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f409004e9f711e0800000000000000
+      internalID: -2227036733054103806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_25
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1791
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e9d4f7b30aba0c0800000000000000
+      internalID: -4563377620010557812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_26
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1795
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97baeed5166553d0800000000000000
+      internalID: -3218554114566080613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_27
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1763
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4f5c01f6d7e1b30800000000000000
+      internalID: 4259980213515318437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1733
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc8ca3bb1d0c0730800000000000000
+      internalID: 3966559784436272369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_29
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1737
+        width: 88
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4300c11c912767a90800000000000000
+      internalID: -7316535089677205452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_30
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1708
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9babf444b43693d0800000000000000
+      internalID: -3200312536344056929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_31
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1766
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b3667705d7757b0800000000000000
+      internalID: -5235578257240867943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_32
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1765
+        width: 88
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225a07f2d35d4ef10800000000000000
+      internalID: 2298196168631428386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_33
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1741
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9c2e5fedc3f5170800000000000000
+      internalID: 8169315177379056083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_34
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1717
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf05bf20abfc8a00800000000000000
+      internalID: 760259102532505531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_35
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1724
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7de24470db07200800000000000000
+      internalID: 175848224373790691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_36
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1721
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6305fd4b1031f5ad0800000000000000
+      internalID: -2711427552603320266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_37
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1651
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f10e6b2394f0d560800000000000000
+      internalID: 7336632705912537587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_38
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1656
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef8274a3de301dc0800000000000000
+      internalID: -3670364617588961304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_39
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1655
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e9ed49551650390800000000000000
+      internalID: -7852763355052859874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_40
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1708
+        width: 104
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cf0391ee9a64040800000000000000
+      internalID: 4631576106887085173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_41
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1691
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba69d5ff1f90d630800000000000000
+      internalID: 3949831832821394107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_42
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1691
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc78a9bfbc5fecc0800000000000000
+      internalID: -3679620392015070022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_43
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1667
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e423f2a764bd9640800000000000000
+      internalID: 5088421511207003362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_44
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1643
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa663852eb779b500800000000000000
+      internalID: 412492499437971114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_45
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1650
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e041364f829ce80800000000000000
+      internalID: -8157944219905552766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_46
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1647
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9151bd3923c0c60800000000000000
+      internalID: 7785653466433919439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_47
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1689
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d169ca29e1bca170800000000000000
+      internalID: 8191117437283426776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_48
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1571
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb644fd6d2bbf9580800000000000000
+      internalID: -8818123741575493957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_49
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1583
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447eb5d85a04bbec0800000000000000
+      internalID: -3550172801466112188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_50
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1575
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ef9d28d7ba4d3e0800000000000000
+      internalID: -2029808976482664802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_51
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1626
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30acbd9abd2f42490800000000000000
+      internalID: -7771820031673120253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_52
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1626
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb46cdefcfb2b7090800000000000000
+      internalID: -8035780744504908613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_53
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1617
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef4203862ae73660800000000000000
+      internalID: 7365613166715359200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_54
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1609
+        width: 88
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17fa7f851e939280800000000000000
+      internalID: -9037706211763751142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_55
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1569
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffe30b964943d770800000000000000
+      internalID: 8634325478196637681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_56
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1576
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b4ea871a85b2ae0800000000000000
+      internalID: -1573066194298188952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_57
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1573
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48aa0937193fd5a0800000000000000
+      internalID: -6494409365740935089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_58
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1615
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d5636dd1420cf30800000000000000
+      internalID: 4593711330484444476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_59
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1491
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30c813d6467f6f40800000000000000
+      internalID: 5723923697972592702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_60
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1501
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac123bb2c1adb4320800000000000000
+      internalID: 2543366229107876298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_61
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1473
+        width: 56
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caeeb8b080e868650800000000000000
+      internalID: 6234826899345632940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_62
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1559
+        width: 85
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d8e589defe4cd40800000000000000
+      internalID: 5603867640098360641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_63
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1559
+        width: 89
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82953690218c71620800000000000000
+      internalID: 2744882477698079016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_64
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1535
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef7c022d42f6c150800000000000000
+      internalID: 5892663575558520807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_65
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1535
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6edd25348a8c7ea50800000000000000
+      internalID: 6550424808043240934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_66
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1513
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb275271b5dea5b60800000000000000
+      internalID: 7735756285448385214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_67
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1502
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c88fc823e3454740800000000000000
+      internalID: 5135585593007245510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_68
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1499
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0089d0a884052ac0800000000000000
+      internalID: -3880690519049142262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_69
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1541
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8325fe803663f90800000000000000
+      internalID: -6974278082910603022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_70
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1411
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4805239857ba610800000000000000
+      internalID: 1633528521967043798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_71
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1421
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5148493013fadfa50800000000000000
+      internalID: 6556589257569633301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_72
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1457
+        width: 74
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27bdd9394d3955e0800000000000000
+      internalID: -1920436381384067283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_73
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1457
+        width: 54
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c56ca6205bbade0800000000000000
+      internalID: -1320763043717161930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_74
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1453
+        width: 90
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1ad031b453480b0800000000000000
+      internalID: -5727394229549948444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_75
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1453
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330ed19ba71113d20800000000000000
+      internalID: 3256403224355004467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_76
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1450
+        width: 88
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1230e96a52242cb00800000000000000
+      internalID: 847312409375671073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_77
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 1442
+        width: 86
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8365c331216ed40f0800000000000000
+      internalID: -1130994966093605320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_78
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1439
+        width: 86
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a6ed4f1b9703ed0800000000000000
+      internalID: -2436313593183049057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_79
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1467
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d00e8bea338d5d80800000000000000
+      internalID: -8260301852444327722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_80
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1331
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab592d7afea05eb0800000000000000
+      internalID: -4733090817501471828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_81
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1341
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4a7c64feb3b3950800000000000000
+      internalID: 6429798791872226488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_82
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1391
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455c699f44c4c3390800000000000000
+      internalID: -7837305392402610860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_83
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1393
+        width: 95
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d17e492fccc33af0800000000000000
+      internalID: -417765150292020780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_84
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1380
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbec88785808fa430800000000000000
+      internalID: 3796394321889513151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_85
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1378
+        width: 89
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3152b5254c7226d30800000000000000
+      internalID: 4423141508180026643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_86
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1368
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167b1dbada17267a0800000000000000
+      internalID: -6385416330932013215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_87
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 1368
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed984fc1e14e13a0800000000000000
+      internalID: -6692839558124888606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_88
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1365
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117e65a90451af840800000000000000
+      internalID: 5258538882119952145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_89
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1393
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5796eecbb1bdeac80800000000000000
+      internalID: -8309463350271645323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_90
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1393
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278e60095a095c220800000000000000
+      internalID: 2505567808461924466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_91
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1251
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a5e8589fed8ad70800000000000000
+      internalID: 9054732214097304220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_92
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1261
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64c9c96513d15480800000000000000
+      internalID: -8912110098666896273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_93
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1311
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe5a250ee6079760800000000000000
+      internalID: 7464442526748532471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_94
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1311
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607e43dd61abbc7f0800000000000000
+      internalID: -591174318705809658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_95
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1311
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4601a361a0f4b10800000000000000
+      internalID: 1967802652763907260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_96
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1307
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e671c19b10de8ed00800000000000000
+      internalID: 1002311508746311534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_97
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1314
+        width: 90
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0404103a0a44b1040800000000000000
+      internalID: 4619361299518799936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_98
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1266
+        width: 54
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17d9cad72425d310800000000000000
+      internalID: 1429088210352985883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_99
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1291
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8847f76b7debdd190800000000000000
+      internalID: -7935977134667893624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_100
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1291
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5904844a4c8db5090800000000000000
+      internalID: -8044597970285870955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_101
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1319
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c772e94870e87ec0800000000000000
+      internalID: -3568855897450842176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_102
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1319
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3ae3f378a5888b0800000000000000
+      internalID: -5149766636970007564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_103
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1231
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f125d5a4d1b754c0800000000000000
+      internalID: -4298771792428457483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_104
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1231
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84dc3f18cd59f8340800000000000000
+      internalID: 4868274496516377928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_105
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1243
+        width: 95
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802d649bc373de5a0800000000000000
+      internalID: -6490470754025025016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_106
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1243
+        width: 95
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873802fc67ba32290800000000000000
+      internalID: -7916295193217694856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_107
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1234
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8655bf250516a240800000000000000
+      internalID: 4802549164656645770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_108
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1209
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40202918710d7000800000000000000
+      internalID: 35185987418071118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_109
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1263
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5834797394d283480800000000000000
+      internalID: -8919329269518744699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_110
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1231
+        width: 56
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c33556e90fd3700800000000000000
+      internalID: 521837694940298362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_111
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1171
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de1f53bd07b9bf30800000000000000
+      internalID: 4591902564552744657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_112
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1181
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875ae2cce1f09e1d0800000000000000
+      internalID: -3321106625259985544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_113
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1151
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efeca751efb2cd560800000000000000
+      internalID: 7339789862989123326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_114
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1151
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef83e674b63b48530800000000000000
+      internalID: 3856404454277265662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_115
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1161
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3302c626cf9dae0800000000000000
+      internalID: -1523909499237157948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_116
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1161
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2238fb0f1b01f12b0800000000000000
+      internalID: -5611748254246010078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_117
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1170
+        width: 95
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a300c3bb64d0ccd0800000000000000
+      internalID: -2539796630794665054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_118
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1186
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16024f21186544370800000000000000
+      internalID: 8305858725146796129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_119
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1107
+        width: 54
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d21f3abf35ee2c30800000000000000
+      internalID: 4336655553074762449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_120
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1189
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7120ed6a0405f6770800000000000000
+      internalID: 8606185651536003607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_121
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 1157
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89c8686b885cecf0800000000000000
+      internalID: -221704925872600690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_122
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1157
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f7b267c00ebce00800000000000000
+      internalID: 1066192080930045702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_123
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1091
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b42af0cb077ddac0800000000000000
+      internalID: -3828773215829089102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_124
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1101
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2ebc7d67e7a31e0800000000000000
+      internalID: -2217320817634843916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_125
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1071
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8219eb3ea29cac580800000000000000
+      internalID: -8806004935322857176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_126
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1071
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af974f7860f1bbd80800000000000000
+      internalID: -8233953380805608966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_127
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1081
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18ac9efaa4193300800000000000000
+      internalID: 232239580434966554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_128
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1081
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94be481fc85807d40800000000000000
+      internalID: 5580106778705980233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_129
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1088
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b766e4ffcd2478c40800000000000000
+      internalID: 5514449785682028155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_130
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1107
+        width: 74
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17833954bdee9690800000000000000
+      internalID: -7593370562853632228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_131
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1107
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7286cccadb8a3eac0800000000000000
+      internalID: -3827029725733427161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_132
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1099
+        width: 88
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2634b01ddbe77aa70800000000000000
+      internalID: 8838172147458982754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_133
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1011
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8edc6ff8178f8500800000000000000
+      internalID: 400687433293553293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_134
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1021
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6506f60cbc8c0d0800000000000000
+      internalID: -3402245491115665691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_135
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 991
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1c55a8e59e53530800000000000000
+      internalID: 3834227250032918964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_136
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 991
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a7c711b7eeab8f0800000000000000
+      internalID: -523844194293482871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_137
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1001
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb427e104aec95c0800000000000000
+      internalID: -4207230390761272343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_138
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1001
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2982c8c5850ac790800000000000000
+      internalID: -7509183356529899219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_139
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1008
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ca4a940b10a4970800000000000000
+      internalID: 8739799883527269476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_140
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1025
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55442bb5c63221540800000000000000
+      internalID: 4977079486499669077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_141
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1025
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb876fd1142095c0800000000000000
+      internalID: -4210825992410264634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_142
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1025
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e8f0f3fa3229120800000000000000
+      internalID: 2419035185435610756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_143
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1025
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca5fda579cbd7dd0800000000000000
+      internalID: -2486624060987974967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_144
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1025
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473e268b88f856730800000000000000
+      internalID: 3991754462105625460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_145
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1025
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4264fe5bb47074e0800000000000000
+      internalID: -1985959087569608115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_146
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 931
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bef66cbd5aab1a20800000000000000
+      internalID: 3034206093533707953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_147
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 941
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577f9f7315c4d50c0800000000000000
+      internalID: -4585424933878106251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_148
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 911
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f558b7c3b8aa8a390800000000000000
+      internalID: -7806802439054850721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_149
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 911
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de3cba4d32d6be00800000000000000
+      internalID: 1060265922981019351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_150
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 921
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c44fe10ff713620800000000000000
+      internalID: 2752121516588289101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_151
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 921
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b2fadb6250fcf80800000000000000
+      internalID: -8084237142157481176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_152
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 928
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413ad9adbbbb78840800000000000000
+      internalID: 5226352308087792404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_153
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 945
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6918d514729e9620800000000000000
+      internalID: 2782822647041890668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_154
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 945
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dbd8ed9619aa1f0800000000000000
+      internalID: -1032853280636682911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_155
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 945
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1686aa9f11c590a20800000000000000
+      internalID: 3029053456656263265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_156
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 945
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d55cb323a4795320800000000000000
+      internalID: 2547195308282762713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_157
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 945
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24ee965922776d80800000000000000
+      internalID: -8257505869888035793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_158
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 861
+        width: 90
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608656f05a2835100800000000000000
+      internalID: 95563662544431110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_159
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 861
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b79c97e369feb030800000000000000
+      internalID: 3512518966878443443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_160
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 831
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26973a5eafcaef5d0800000000000000
+      internalID: -3026791705951897246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_161
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 831
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffa85b8901bcb7e0800000000000000
+      internalID: -1748327900775927820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_162
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 841
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935fd66a5f43db1e0800000000000000
+      internalID: -2180528414913596103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_163
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 841
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0af7d5cb91f2760800000000000000
+      internalID: 7435189806625169572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_164
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 848
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25f75279adff18f0800000000000000
+      internalID: -567456123815725782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_165
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 865
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770592240ef68a5f0800000000000000
+      internalID: -745222729356455817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_166
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 865
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ce53fa607324870800000000000000
+      internalID: 8665549134863133818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_167
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 865
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a853b81e9b6cb310800000000000000
+      internalID: 1422129909105645733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_168
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 865
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b84fe1fd5c4bdf50800000000000000
+      internalID: 6907198419877447863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_169
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 865
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cb19ed0ed1e30d0800000000000000
+      internalID: -3441280213620507491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_170
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 841
+        width: 50
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23ad256a32447e90800000000000000
+      internalID: -7028920299845475538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_171
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 753
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631c2185b5b636240800000000000000
+      internalID: 4783785269261418806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_172
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 769
+        width: 78
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020a2f9af6d6febd0800000000000000
+      internalID: -2598738133609439200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_173
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 747
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ecca765ea0d1100800000000000000
+      internalID: 80232348765703785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_174
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 751
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06f944e9032eeba0800000000000000
+      internalID: -6057865923375008243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_175
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 751
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739c43a3303473850800000000000000
+      internalID: 6356623080197245239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_176
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 761
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1955868b41a276880800000000000000
+      internalID: -8617873093468596847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_177
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 761
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b9c7829b57930e0800000000000000
+      internalID: -2289669497432532138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_178
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 768
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948355f4b3fe70520800000000000000
+      internalID: 2668364342253402185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_179
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 785
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182fb7c7dc682a970800000000000000
+      internalID: 8764716041931321985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_180
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 785
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a464d4aacdccec780800000000000000
+      internalID: -8660759785264822710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_181
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 785
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a7c232b8db3c430800000000000000
+      internalID: 3802090915719051834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_182
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 785
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1367cefe599aa9f10800000000000000
+      internalID: 2277319023029679665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_183
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 767
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1cd0fee748eebc0800000000000000
+      internalID: -3751915758841642574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_184
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 665
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ce8f198f3913080800000000000000
+      internalID: -9209417067185771439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_185
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 677
+        width: 68
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6e772c7e9c64870800000000000000
+      internalID: 8666836530158364399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_186
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 659
+        width: 78
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e59513e8e927140800000000000000
+      internalID: 4716006093360815681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_187
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 681
+        width: 91
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640519d44a249f800800000000000000
+      internalID: 646621294947815494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_188
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 681
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5970a0c75821ff0800000000000000
+      internalID: -66844276666427935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_189
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 680
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4743ff48f8921940800000000000000
+      internalID: 5265439106610186061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_190
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 688
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3a7aab1c8cef200800000000000000
+      internalID: 215830566546154422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_191
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 705
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d961c90ca3cb7c10800000000000000
+      internalID: 2052449198862854615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_192
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 705
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c266a8d94159380800000000000000
+      internalID: -8965236816346731456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_193
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 705
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dda184a14eb6240800000000000000
+      internalID: 4786169830541286782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_194
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 693
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f476d4dddc6dfea00800000000000000
+      internalID: 788084639482603343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_195
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 728
+        width: 80
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded9c75898a004c30800000000000000
+      internalID: 4341481626551492077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_196
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 647
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e28f89475a184d0800000000000000
+      internalID: -3134041945471963593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_197
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 611
+        width: 91
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811d88fb6196ac720800000000000000
+      internalID: 2867219659198353688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_198
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 600
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafde177f26c2a230800000000000000
+      internalID: 3648696555287797679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_199
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 608
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36008f665fc0a7000800000000000000
+      internalID: 34354195292749923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_200
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 625
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f613220841e468250800000000000000
+      internalID: 5946526207945355631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_201
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 625
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060cec84c32fe7380800000000000000
+      internalID: -8971467066941980576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_202
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 625
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d516e64290309330800000000000000
+      internalID: 3715523097393501657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_203
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 619
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4b03bbac6f175b0800000000000000
+      internalID: -5372241529891932967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_204
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 670
+        width: 80
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807555c45561b3ec0800000000000000
+      internalID: -3586248122661775608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_205
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 577
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8002e574fddb25bc0800000000000000
+      internalID: -3795762769247199224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_206
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 577
+        width: 68
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a4591cf681c0c40800000000000000
+      internalID: 5479781714871274071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_207
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 559
+        width: 68
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4463ff11ea9efb0800000000000000
+      internalID: -4617968550572309315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_208
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 559
+        width: 78
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1523f9150d3456d0800000000000000
+      internalID: -3002707959429782246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_209
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 559
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d4eea1714772fc0800000000000000
+      internalID: -3519716941181858472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_210
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 541
+        width: 91
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5965b772aecfe00800000000000000
+      internalID: 1079995465955972604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_211
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 538
+        width: 91
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa67fd519b81bd170800000000000000
+      internalID: 8204178329400473258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_212
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 545
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d34e8dc9d4a9420800000000000000
+      internalID: 2637505867827920249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_213
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 545
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4eea2ddc121a960800000000000000
+      internalID: 7611402013119538338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_214
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 545
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f358ce154df70c190800000000000000
+      internalID: -7944209192797305537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_215
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 596
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c180c1100521eeb10800000000000000
+      internalID: 2012566218306488348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_216
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 598
+        width: 80
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e7e0f0ec6222010800000000000000
+      internalID: 1162534320272735801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_217
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 489
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7053b60449c93a40800000000000000
+      internalID: 5348527326486548605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_218
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 489
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d9d801555167050800000000000000
+      internalID: 5797845025380212025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_219
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 471
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc637bccaf7ddea30800000000000000
+      internalID: 4246287495856600779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_220
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 471
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a07931817ec4970800000000000000
+      internalID: 8740615067413187230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_221
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 530
+        width: 91
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193c68bb2baa5c260800000000000000
+      internalID: 7117282470756008849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_222
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 522
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07c4dd355c13be90800000000000000
+      internalID: -7011229042450577650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_223
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 540
+        width: 80
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d584f990cb9924230800000000000000
+      internalID: 3621626083253635165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_224
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 396
+        width: 90
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d796bf358d22ea0800000000000000
+      internalID: -5898914706690048691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_225
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 471
+        width: 90
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddf4175cc7ed3c00800000000000000
+      internalID: 882115966854823381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_226
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 460
+        width: 90
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c06e0677385a9f0800000000000000
+      internalID: -457815238358201231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_227
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 438
+        width: 68
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d038f06da3766e70800000000000000
+      internalID: 9108094484896821462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_228
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 457
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b3d5318e9d155e0800000000000000
+      internalID: -1922515975129974004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_229
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 465
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0014144b41a8b720800000000000000
+      internalID: 2862214907830734858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_230
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 465
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b102209cdb0678050800000000000000
+      internalID: 5802713013127618587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_231
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 448
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db4c23e8a1f4cae0800000000000000
+      internalID: -1529832265730995248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_232
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 452
+        width: 56
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea8df98578016230800000000000000
+      internalID: 3630192075556621030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_233
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 452
+        width: 50
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6016771e09d0cc6f0800000000000000
+      internalID: -663140129221156602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_234
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 300
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abdf8ec845ec79e0800000000000000
+      internalID: -1622169664894280796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_235
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 385
+        width: 90
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c88f3059dc0f6090800000000000000
+      internalID: -8039192682339268408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_236
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 383
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96313d08a61b75fe0800000000000000
+      internalID: -1200295704684981399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_237
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 377
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07afd353a04da860800000000000000
+      internalID: 7542756021146461967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_238
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 377
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d081b3dc138d0260800000000000000
+      internalID: 7065447550248124624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_239
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 360
+        width: 72
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff633c3e92e502bd0800000000000000
+      internalID: -2657020246140700929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_240
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 360
+        width: 68
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b230d69002af7e920800000000000000
+      internalID: 3019657090679243563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_241
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 339
+        width: 72
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a775b0e52fdfae510800000000000000
+      internalID: 1579353836748494714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_242
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 377
+        width: 91
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c6e8c7e4f42d560800000000000000
+      internalID: 7337013941455711257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_243
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 377
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b21d8b326e5828e0800000000000000
+      internalID: -1718019481842937163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_244
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 360
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cf3fd83ae7659d0800000000000000
+      internalID: -2785900078555726764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_245
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 378
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c3b1786b3170ee0800000000000000
+      internalID: -1295044693174043585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_246
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 372
+        width: 80
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec53d98a67b956e00800000000000000
+      internalID: 1037406223116088782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_247
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 292
+        width: 90
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ffff29800e90ec60800000000000000
+      internalID: 7845444276018216950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_248
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 289
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b959ede58cc21260800000000000000
+      internalID: 7066935640891939257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_249
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 283
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b03142481e933d0800000000000000
+      internalID: -3226299700377089271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_250
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 283
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9e64d8d71586a60800000000000000
+      internalID: 7667467965281266133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_251
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 280
+        width: 91
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2afc95733d74dfd0800000000000000
+      internalID: -2318090248218936789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_252
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 259
+        width: 72
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa343d17a9154a20800000000000000
+      internalID: 3045868928526203556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_253
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 259
+        width: 91
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd079d7fab6b5cf0800000000000000
+      internalID: -262497751800541752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_254
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 278
+        width: 72
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7e2904715e12f50800000000000000
+      internalID: 6855011995864983493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_255
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 278
+        width: 72
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da148f6e4f4c4fff0800000000000000
+      internalID: -3161143594434131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_256
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 261
+        width: 72
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f4d9a690e2e9d00800000000000000
+      internalID: 981272386791624449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_257
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 304
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2698b0d79e3356720800000000000000
+      internalID: 2838732218045270370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_258
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 298
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e60c69cfa29e2530800000000000000
+      internalID: 3832161616635102950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_259
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 202
+        width: 88
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a7a853a5caf8fa0800000000000000
+      internalID: -5796224691957237147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_260
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 196
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f34a4d96c30a75c0800000000000000
+      internalID: -4217053949501750281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_261
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 196
+        width: 88
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29a02366024b0d70800000000000000
+      internalID: 9010368074685131054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_262
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 189
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d07c4c240f4a0e90800000000000000
+      internalID: -7058742586608160556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_263
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 189
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70badf7cf8fbffbb0800000000000000
+      internalID: -4899987245299291385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_264
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 190
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ccb22705e52ce000800000000000000
+      internalID: 66469760101170375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_265
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 179
+        width: 91
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0bc718f1ba55000800000000000000
+      internalID: 24113524825174199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_266
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 198
+        width: 91
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5da838f4ab0ab40800000000000000
+      internalID: 5449560399790396852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_267
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 181
+        width: 91
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9615805a03390c160800000000000000
+      internalID: 7043791654343954793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_268
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 230
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3e3df6fdd1d8780800000000000000
+      internalID: -8679248061382007867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_269
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 224
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ffe3a0a0ead2ca0800000000000000
+      internalID: -6039980167089160309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_270
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 224
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13bc16b301abac200800000000000000
+      internalID: 201177712249916209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_271
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 104
+        width: 88
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45dbfa6b4a751bc70800000000000000
+      internalID: 8985059096532073812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_272
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 100
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d776144a304db3e30800000000000000
+      internalID: 4484410966083200893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_273
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 94
+        width: 88
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f187d2afb0086db0800000000000000
+      internalID: -4798584579892477451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_274
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 95
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd0422fc3c33fe80800000000000000
+      internalID: -8146101068524941901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_275
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 95
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d2f0804dd663500800000000000000
+      internalID: 375608376367721762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_276
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 38
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3089cfdfac6dbc00800000000000000
+      internalID: 918009401683050557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_277
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 97
+        width: 35
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0b104275addff00800000000000000
+      internalID: 1152317147477815488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_278
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 96
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02dda249fa66cc840800000000000000
+      internalID: 5245680570270932256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_279
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 99
+        width: 91
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346dac75efb051930800000000000000
+      internalID: 4113207021695325763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_280
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 99
+        width: 72
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0693c1b59a3ec10800000000000000
+      internalID: 2081693661555941610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_281
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 101
+        width: 91
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d322f5e8477e0e340800000000000000
+      internalID: 4891163683115180605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_282
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 156
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5dd4d55cac505530800000000000000
+      internalID: 3841672377391177054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_283
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 150
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2e143bb541959e0800000000000000
+      internalID: -1632251005863075159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_284
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 150
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff364ba7feefbb50800000000000000
+      internalID: 6611265525501018110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_285
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 150
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6042a803a23165b60800000000000000
+      internalID: 7734390481979319302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_286
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 150
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f7760ea07db8000800000000000000
+      internalID: 39361463477305164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_287
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 150
+        width: 50
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7c5bd9260579800800000000000000
+      internalID: 619051858269685759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_288
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 134
+        width: 54
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009ef57518da22c10800000000000000
+      internalID: 2027373553298434304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_289
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 134
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb01745d0e90c79a0800000000000000
+      internalID: -6234096922932080450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_290
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 42
+        width: 82
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1d25a9f4844b120800000000000000
+      internalID: 2428645605788275137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_291
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 28
+        width: 37
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab49be3778c68370800000000000000
+      internalID: 8324561375719934893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_292
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 2
+        width: 90
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bff56d1337c7760800000000000000
+      internalID: 7456961740905904979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_293
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 2
+        width: 88
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dcc04d5be1d3d10800000000000000
+      internalID: 2106873966974782847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_294
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2
+        width: 88
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa65caab5a852bc70800000000000000
+      internalID: 8985341675382265514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_295
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 2
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7371ecc9cdd373bd0800000000000000
+      internalID: -2650581837951396041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_296
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 2
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ee3a3bcfccb62d0800000000000000
+      internalID: -3284306117518954975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_297
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 27
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d9576f614c30f30800000000000000
+      internalID: 4540688452222819677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_298
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 2
+        width: 72
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3c51517ff1a7790800000000000000
+      internalID: -7531672280752602175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_299
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 82
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101c17f5343298520800000000000000
+      internalID: 2704731823483764993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_300
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 76
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47b31c95b78005e0800000000000000
+      internalID: -1945405824946686132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_301
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 76
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab95c2e715c6eb610800000000000000
+      internalID: 1638866411674425786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_302
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 76
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea63d9553ecbd530800000000000000
+      internalID: 3880922232445430504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_303
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 76
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5834564cd9a3849e0800000000000000
+      internalID: -1636994015269928059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_304
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 76
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb42ed57e8f57fd0800000000000000
+      internalID: -2344694358380229663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_305
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 76
+        width: 80
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27512d99c0d9cf600800000000000000
+      internalID: 503449935804503410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_306
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2
+        width: 84
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6af7f5bd7ff2b820800000000000000
+      internalID: 2932687222760536684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_307
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 2
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c82d6e5d3b91fd0800000000000000
+      internalID: -2370665997551891378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_308
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 2
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fe8f8da69336fa0800000000000000
+      internalID: -5808735963308298345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_309
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1746d03492b7d290800000000000000
+      internalID: -7865621874635028705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_310
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 2
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc276ed0e11f12b20800000000000000
+      internalID: 3108030329246872267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_311
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 2
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8c4cdf86141b4b0800000000000000
+      internalID: -5426484156814800655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_312
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 2
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e4b53dbc759c250800000000000000
+      internalID: 5965395714364886614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_313
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d8e5ddc3d2d9b80800000000000000
+      internalID: -8386497191658746581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_314
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 2
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60504b889a84028e0800000000000000
+      internalID: -1720295164675357434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_315
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 2
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c293b9d0d82f3a520800000000000000
+      internalID: 2712278088239757612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_316
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 2
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6575b1d84cfe0e2f0800000000000000
+      internalID: -945492294287796394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_317
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 2
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf06310a801cca5c0800000000000000
+      internalID: -4202772109453991684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_318
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 2
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32352b545ab2b7530800000000000000
+      internalID: 3853721894984504099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_319
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 0
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04599bbfabb64b940800000000000000
+      internalID: 5310988311407990080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_320
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 2
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1588f1442d1d47c10800000000000000
+      internalID: 2050494431376672849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_321
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab1a72d22991a070800000000000000
+      internalID: 8115936378337500065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_322
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 2
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069c745422603f890800000000000000
+      internalID: -7425584616342828704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_323
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 2
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7774e3bfbc8f7a0800000000000000
+      internalID: -6343095795209242660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_324
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 2
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6e08d24ec375640800000000000000
+      internalID: 5068586856342415023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_325
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa0c7d18e0bb9e40800000000000000
+      internalID: 5664315467322100386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_326
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 2
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7458cba7e2724c0800000000000000
+      internalID: -4312427013500221465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_327
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 2
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a966ec7eaa31c6960800000000000000
+      internalID: 7596468296221615770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InputAtlas_328
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 2
+        width: 80
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63429085a2a87b410800000000000000
+      internalID: 1492813715966862390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

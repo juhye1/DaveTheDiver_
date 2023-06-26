@@ -25,10 +25,10 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_6
   - first:
       213: 1171982077723408903
-    second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_7
+    second: Cobra_Beer_1
   - first:
       213: 110078651254438716
-    second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_8
+    second: Cobra_Idle
   - first:
       213: -753197068318884865
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_9
@@ -43,7 +43,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_12
   - first:
       213: -3877074829589353352
-    second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_13
+    second: Cobra_Phone_0
   - first:
       213: 3631902289694320894
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_14
@@ -70,7 +70,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_21
   - first:
       213: 4091757335833229243
-    second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_22
+    second: Cobra_Beer_2
   - first:
       213: 9157794523031486739
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_23
@@ -142,7 +142,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_45
   - first:
       213: -1652097786347025273
-    second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_46
+    second: Cobra_Beer_0
   - first:
       213: 3271624277344520551
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_47
@@ -190,7 +190,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_61
   - first:
       213: -8052219474612798514
-    second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_62
+    second: Cobra_Idle_2
   - first:
       213: 8578793412056379579
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_63
@@ -232,7 +232,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_75
   - first:
       213: 8850690662124556281
-    second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_76
+    second: Cobra_Beer_
   - first:
       213: -3066233747490301939
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_77
@@ -265,7 +265,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_86
   - first:
       213: 2155728105860143641
-    second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_87
+    second: Cobra_Phone_1
   - first:
       213: -137448163327896927
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_88
@@ -337,7 +337,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_110
   - first:
       213: -5126798387376989493
-    second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_111
+    second: Cobra_Beer_01
   - first:
       213: 6246684722925403890
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_112
@@ -529,7 +529,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_174
   - first:
       213: -2931559832011586051
-    second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_175
+    second: Cobra_Idle_1
   - first:
       213: 9093988880308718358
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_176
@@ -538,7 +538,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_177
   - first:
       213: 4049682808675097099
-    second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_178
+    second: Cobra_Beer_3
   - first:
       213: 6002143851260401838
     second: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_179
@@ -1184,9 +1184,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 1789
-        width: 25
-        height: 56
+        y: 1790
+        width: 24
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1285,7 +1285,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_7
+      name: Cobra_Beer_1
       rect:
         serializedVersion: 2
         x: 2
@@ -1306,13 +1306,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_8
+      name: Cobra_Idle
       rect:
         serializedVersion: 2
         x: 37
-        y: 1673
+        y: 1674
         width: 25
-        height: 57
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1411,7 +1411,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_13
+      name: Cobra_Phone_0
       rect:
         serializedVersion: 2
         x: 82
@@ -1600,13 +1600,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_22
+      name: Cobra_Beer_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1467
-        width: 79
-        height: 153
+        x: 51
+        y: 1505
+        width: 28
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2104,13 +2104,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_46
+      name: Cobra_Beer_0
       rect:
         serializedVersion: 2
-        x: 98
-        y: 1411
-        width: 66
-        height: 91
+        x: 136
+        y: 1446
+        width: 28
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2440,13 +2440,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_62
+      name: Cobra_Idle_2
       rect:
         serializedVersion: 2
         x: 272
-        y: 1392
+        y: 1393
         width: 25
-        height: 57
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2734,7 +2734,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_76
+      name: Cobra_Beer_
       rect:
         serializedVersion: 2
         x: 256
@@ -2965,13 +2965,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_87
+      name: Cobra_Phone_1
       rect:
         serializedVersion: 2
         x: 369
-        y: 1284
+        y: 1291
         width: 24
-        height: 62
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3221,9 +3221,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 463
-        y: 1254
+        y: 1261
         width: 24
-        height: 62
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3469,7 +3469,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_111
+      name: Cobra_Beer_01
       rect:
         serializedVersion: 2
         x: 390
@@ -4813,13 +4813,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_175
+      name: Cobra_Idle_1
       rect:
         serializedVersion: 2
-        x: 727
-        y: 958
-        width: 62
-        height: 123
+        x: 764
+        y: 1025
+        width: 25
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4876,7 +4876,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-LobbyAtlas_Point-82ad4e61_178
+      name: Cobra_Beer_3
       rect:
         serializedVersion: 2
         x: 863

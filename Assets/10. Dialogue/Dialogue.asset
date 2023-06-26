@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe7bd9fa2256ee4b9c3bd2022a6a1ac, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  SheetName: Assets/10. Dialogue/Dialogue.xlsx
+  WorksheetName: Dialogue
+  dataArray:
+  - type: Cobra_Gun_0
+    name: "\uCF54\uBE0C\uB77C"
+    dialogtext: "\uADF8\uB7EC\uACE0 \uBCF4\uB2C8 \uB370\uC774\uBE0C, \\n<color=#F1DC2B>\uCD1D</color>\uC740
+      \uC798 \uC0AC\uC6A9\uD558\uACE0 \uC788\uB098?"
+    eemotiontype: 1
+  - type: Cobra_Gun_1
+    name: "\uB370\uC774\uBE0C"
+    dialogtext: "\uB124. \uADF8\uB807\uAE34 \uD55C\uB370\u2026\\n\uBB3C\uACE0\uAE30\uB97C
+      \uBC14\uB85C \uC8FD\uC5EC \uBC84\uB9AC\uBA74 \uC7AC\uB8CC\uB85C \uC4F8 \uC218\uAC00
+      \uC5C6\uC5B4\uC11C\u2026"
+    eemotiontype: 0
+  - type: Cobra_Gun_2
+    name: "\uCF54\uBE0C\uB77C"
+    dialogtext: "\uC791\uC740 \uBB3C\uACE0\uAE30\uB294 \uC544\uBB34\uB798\uB3C4 \uADF8\uB7F0
+      \uACBD\uC6B0\uAC00 \uB9CE\uC9C0."
+    eemotiontype: 0
+  - type: Cobra_Gun_3
+    name: "\uCF54\uBE0C\uB77C"
+    dialogtext: "\uB2E4\uB9CC \uD06C\uACE0 \uAC15\uD55C \uBB3C\uACE0\uAE30\uB294
+      \uCD1D\uC73C\uB85C \uC5B4\uB290 \uC815\uB3C4\\n\uC57D\uD558\uAC8C \uB9CC\uB4E4\uC5B4\uC11C
+      \uC7A1\uB294 \uAC8C \uD3B8\uD560\uAC78\uC138."
+    eemotiontype: 1
+  - type: Cobra_Gun_4
+    name: "\uCF54\uBE0C\uB77C"
+    dialogtext: "\uCDA9\uBD84\uD788 \uC57D\uD574\uC9C0\uBA74 \uD53C\uB97C \uD758\uB9AC\uAC70\uB098
+      \uBE44\uD2C0\uAC70\uB9AC\uAC70\uB098 \uD558\uB294\\n\uBCC0\uD654\uAC00 \uC788\uC744\uD14C\uB2C8
+      \uC798 \uAD00\uCC30\uD574\uBCF4\uAC8C."
+    eemotiontype: 0
+  - type: Cobra_Gun_5
+    name: "\uB370\uC774\uBE0C"
+    dialogtext: "\uADF8\uB807\uAD70\uC694.\\n\uBB34\uAE30\uB97C \uC4F0\uB294 \uD0C0\uC774\uBC0D\uC744
+      \uC798 \uC0DD\uAC01\uD574\uC57C\uACA0\uB124\uC694."
+    eemotiontype: 1
+  - type: Cobra_Gun_6
+    name: "\uCF54\uBE0C\uB77C"
+    dialogtext: "\uC88B\uC740 \uCD1D\uAE30\uAC00 \uD544\uC694\uD558\uBA74 \uD578\uB4DC\uD3F0\uC758
+      <color=#F1DC2B>\uB354\uD504\uC758 \uC6E8\uD3F0\uC0F5</color>\uC5D0\uC11C\\n\uB9CC\uB4E4\uC5B4\uC11C
+      \uBCF4\uC720\uD560 \uC218 \uC788\uC73C\uB2C8 \uC78A\uC9C0\uB9D0\uB77C\uAD6C!"
+    eemotiontype: 1
