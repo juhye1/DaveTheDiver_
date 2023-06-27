@@ -22,11 +22,13 @@ public class UIManager : MonoBehaviour
         dialogueUI.SetActive(false);
         chapterUI.SetActive(false);
     }
-    public void TalkStart()
+    public void TalkStart(bool isOn)
     {
-        dialogueUI.SetActive(true);
-        mainUI.SetActive(false);
+        dialogueUI.SetActive(isOn);
+        mainUI.SetActive(!isOn);
     }
+
+
 
     public void ShowChapter()
     {

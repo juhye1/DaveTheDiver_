@@ -32,4 +32,8 @@ public class DialogueData
   bool isnpc;
   public bool Isnpc { get {return isnpc; } set { this.isnpc = value;} }
   
+  [SerializeField]
+  EName ename;
+  public EName ENAME { get {return ename; } set { this.ename = value;} }
+  
 }

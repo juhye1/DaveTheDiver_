@@ -22,6 +22,7 @@ MonoBehaviour:
       \uC798 \uC0AC\uC6A9\uD558\uACE0 \uC788\uB098?"
     eemotiontype: 1
     isnpc: 1
+    ename: 1
   - etype: 0
     number: 1
     name: "\uB370\uC774\uBE0C"
@@ -30,6 +31,7 @@ MonoBehaviour:
       \uC5C6\uC5B4\uC11C\u2026"
     eemotiontype: 0
     isnpc: 0
+    ename: 0
   - etype: 0
     number: 2
     name: "\uCF54\uBE0C\uB77C"
@@ -37,6 +39,7 @@ MonoBehaviour:
       \uACBD\uC6B0\uAC00 \uB9CE\uC9C0."
     eemotiontype: 0
     isnpc: 1
+    ename: 1
   - etype: 0
     number: 3
     name: "\uCF54\uBE0C\uB77C"
@@ -45,6 +48,7 @@ MonoBehaviour:
       \uC7A1\uB294 \uAC8C \uD3B8\uD560\uAC78\uC138."
     eemotiontype: 1
     isnpc: 1
+    ename: 1
   - etype: 0
     number: 4
     name: "\uCF54\uBE0C\uB77C"
@@ -53,6 +57,7 @@ MonoBehaviour:
       \uC798 \uAD00\uCC30\uD574\uBCF4\uAC8C."
     eemotiontype: 0
     isnpc: 1
+    ename: 1
   - etype: 0
     number: 5
     name: "\uB370\uC774\uBE0C"
@@ -60,6 +65,7 @@ MonoBehaviour:
       \uC798 \uC0DD\uAC01\uD574\uC57C\uACA0\uB124\uC694."
     eemotiontype: 3
     isnpc: 0
+    ename: 0
   - etype: 0
     number: 6
     name: "\uCF54\uBE0C\uB77C"
@@ -68,3 +74,4 @@ MonoBehaviour:
       \uBCF4\uC720\uD560 \uC218 \uC788\uC73C\uB2C8 \uC78A\uC9C0\uB9D0\uB77C\uAD6C!"
     eemotiontype: 1
     isnpc: 1
+    ename: 1

@@ -58,7 +58,7 @@ TextureImporter:
     second: Dialogue_Dave_17
   - first:
       213: 5359979822326487600
-    second: Dialogue_Dave_18
+    second: Normal_Blue
   - first:
       213: -2895899401761864609
     second: Dialogue_Dave_19
@@ -109,7 +109,7 @@ TextureImporter:
     second: Nice
   - first:
       213: 1165587609562496213
-    second: Dialogue_Dave_35
+    second: Smile_Blue
   - first:
       213: -6570512461180679892
     second: Nice_Blue
@@ -163,7 +163,7 @@ TextureImporter:
     second: Dialogue_Dave_52
   - first:
       213: -7503020774313241673
-    second: Dialogue_Dave_53
+    second: Thinking_Blue
   - first:
       213: -7170193237976626676
     second: Dialogue_Dave_54
@@ -754,7 +754,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dialogue_Dave_18
+      name: Normal_Blue
       rect:
         serializedVersion: 2
         x: 223
@@ -1111,10 +1111,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dialogue_Dave_35
+      name: Smile_Blue
       rect:
         serializedVersion: 2
-        x: 223
+        x: 222
         y: 505
         width: 88
         height: 69
@@ -1489,7 +1489,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dialogue_Dave_53
+      name: Thinking_Blue
       rect:
         serializedVersion: 2
         x: 225

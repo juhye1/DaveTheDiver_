@@ -42,6 +42,10 @@ MonoBehaviour:
     name: isNPC
     isEnable: 0
     isArray: 0
+  - type: 7
+    name: EName
+    isEnable: 0
+    isArray: 0
   excelFilePath: Assets/10. Dialogue/Dialogue.xlsx
   SheetNames:
   - Dialogue

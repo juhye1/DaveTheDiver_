@@ -38,6 +38,7 @@ public class NPC_Cobra : BaseNPC
 
     public override void Talk()
     {
+        dialogueCount = cobraGunDictionary.Count;
         dialogueData = cobraGunDictionary[dialogueNum];
         base.Talk();
     }

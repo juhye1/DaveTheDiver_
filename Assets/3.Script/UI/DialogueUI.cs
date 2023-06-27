@@ -27,7 +27,7 @@ public class DialogueUI : UIBase
     private void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
-        portraitData = GetComponentInChildren<PortraitData>();
+        portraitData = FindObjectOfType<PortraitData>();
         canvasGroup.alpha = 0; 
         _num = 1;
     }
@@ -53,10 +53,11 @@ public class DialogueUI : UIBase
     public void Talk(DialogueData data)
     {
         Speaker speaker = UpdateUI(data);
-        dialoueText = dialogueData.Dialogtext;
-        speaker.NameBox.text = dialogueData.Name;
+        dialoueText = data.Dialogtext;
+        speaker.NameBox.text = data.Name;
         speaker.TalkTMP.text = string.Empty;
-        speaker.Portrait.sprite = portraitData.PortraitDictionary[dialogueData.EEMOTIONTYPE];
+        speaker.Portrait.sprite = 
+            portraitData.LoadPortrait(data.ENAME, data.EEMOTIONTYPE);
 
         UpTalkEffect(speaker);
     }
@@ -64,15 +65,12 @@ public class DialogueUI : UIBase
 
     public Speaker UpdateUI(DialogueData data)
     {
-
         if(dialogueData!=null)
         {
             _num = dialogueData.Isnpc ? 0 : 1;
         }
-
         dialogueData = data;
         int num = dialogueData.Isnpc ? 0 : 1;
-
 
         if (_num!=num)
         {
