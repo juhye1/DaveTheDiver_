@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class ObjectInteraction : BaseInteraction
 {
+    private BaseObject baseObject;
+
+    private void Start()
+    {
+        baseObject = GetComponent<BaseObject>();
+    }
     public override void Perform()
     {
-        throw new System.NotImplementedException();
+        
     }
 }

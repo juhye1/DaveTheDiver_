@@ -43,7 +43,7 @@ public class DialogueUI : UIBase
 
     public void UpTalkEffect()
     {
-        Sequence upequence = DOTween.Sequence().SetAutoKill()
+        upSequence = DOTween.Sequence().SetAutoKill()
                 .Append(curruentSpeaker.Panel.DOLocalMoveY(10, 1).SetEase(Ease.OutBack))
                 .Append(curruentSpeaker.TalkTMP.DOText(dialoueText.Replace("\\n", "\n"), 1f));
 
@@ -51,7 +51,7 @@ public class DialogueUI : UIBase
     }
     public void DownTalkEffect(int num)
     {
-        Sequence sequence = DOTween.Sequence().SetAutoKill()
+        sequence = DOTween.Sequence().SetAutoKill()
                         .Append(speaker[num].Panel.DOLocalMoveY(-30, 1));
         speaker[num].TalkTMP.text = string.Empty;
     }
