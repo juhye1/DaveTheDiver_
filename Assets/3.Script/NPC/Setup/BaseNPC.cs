@@ -8,7 +8,7 @@ public abstract class BaseNPC : MonoBehaviour
 {
     protected Animator animator;
     protected DialogueUI dialogueUI;
-    protected DialogueData[] dialogueDatas;
+    protected List<DialogueData> dialogueDatas;
     protected DialogueData dialogueData;
 
     protected string dialogueString;

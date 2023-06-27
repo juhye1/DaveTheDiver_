@@ -7,14 +7,14 @@ public class NPC_Cobra : BaseNPC
     private readonly int beer = Animator.StringToHash("Beer");
     private readonly int idle = Animator.StringToHash("Idle");
     private Dictionary<int, DialogueData> cobraGunDictionary;
-    private EType eType = EType.Cobra_Gun;
+    private EType EcobraGun = EType.Cobra_Gun;
     
 
     private void Start()
     {
         cobraGunDictionary = new Dictionary<int, DialogueData>();
-        dialogueDatas = DataManager.Instance.LoadData(eType);
-        for(int i=0; i< dialogueDatas.Length; i++)
+        dialogueDatas = DataManager.Instance.LoadData(EcobraGun);
+        for(int i=0; i< dialogueDatas.Count; i++)
         {
             cobraGunDictionary.Add(i, dialogueDatas[i]);
         }
