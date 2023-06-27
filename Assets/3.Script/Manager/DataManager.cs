@@ -6,7 +6,7 @@ public class DataManager : MonoBehaviour
 {
     public static DataManager Instance { get; private set; } = null;
     [SerializeField] private Dialogue dialogue;
-    private Dictionary<string, DialogueData> dialogueDictionary;
+    private Dictionary<EType, DialogueData[]> dialogueDictionary;
 
     private void Awake()
     {
@@ -17,14 +17,16 @@ public class DataManager : MonoBehaviour
         else
             Destroy(gameObject);
 
-        dialogueDictionary = new Dictionary<string, DialogueData>();
-        for(int i=0; i<dialogue.dataArray.Length; i++)
+        dialogueDictionary = new Dictionary<EType, DialogueData[]>();
+        dialogueDictionary.Add(EType.Cobra_Gun, dialogue.dataArray);
+
+        for (int i=0; i<dialogue.dataArray.Length; i++)
         {
-            dialogueDictionary.Add(dialogue.dataArray[i].Type, dialogue.dataArray[i]);
+            dialogueDictionary.Add(dialogue.dataArray[i].ETYPE, dialogue.dataArray);
         }
     }
 
-    public DialogueData LoadData(string key)
+    public DialogueData[] LoadData(EType key)
     {
         return dialogueDictionary[key];
     }

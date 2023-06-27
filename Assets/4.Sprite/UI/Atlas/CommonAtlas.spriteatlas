@@ -27,7 +27,7 @@ SpriteAtlas:
       blockOffset: 1
       allowAlphaSplitting: 0
       enableRotation: 0
-      enableTightPacking: 1
+      enableTightPacking: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
@@ -38,6 +38,8 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: -2894257721834759367, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
+  - {fileID: -4837663613076929826, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
+  - {fileID: -8937971209165554592, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
   - {fileID: 2562647926840708810, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
   - {fileID: -1629353861978556983, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
   - {fileID: -7158642649967882346, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
@@ -47,9 +49,7 @@ SpriteAtlas:
   - {fileID: 8024517358536485556, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
   - {fileID: -6492942154352148943, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
   - {fileID: -1997633055684181498, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
-  - {fileID: -8937971209165554592, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
   - {fileID: -408969854443579932, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
-  - {fileID: -4837663613076929826, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
   - {fileID: 4970101008168775552, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
   - {fileID: 8118130875300665634, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
   - {fileID: -8242557283904088345, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
@@ -2736,6 +2736,8 @@ SpriteAtlas:
   - {fileID: -1424448330158741814, guid: a5f3cd1e43df0bd4f8f7cd14d8d2dbcf, type: 3}
   m_PackedSpriteNamesToIndex:
   - CommonAtlas_Bilinear_2_fix 1_220
+  - NameBox_Right
+  - NameBox_Left
   - CommonAtlas_Bilinear_2_fix 1_41
   - CommonAtlas_Bilinear_2_fix 1_40
   - CommonAtlas_Bilinear_2_fix 1_43
@@ -2745,9 +2747,7 @@ SpriteAtlas:
   - CommonAtlas_Bilinear_2_fix 1_35
   - CommonAtlas_Bilinear_2_fix 1_44
   - CommonAtlas_Bilinear_2_fix 1_36
-  - CommonAtlas_Bilinear_2_fix 1_47
   - CommonAtlas_Bilinear_2_fix 1_37
-  - CommonAtlas_Bilinear_2_fix 1_46
   - CommonAtlas_Bilinear_2_fix 1_30
   - CommonAtlas_Bilinear_2_fix 1_49
   - CommonAtlas_Bilinear_2_fix 1_31

@@ -142,10 +142,10 @@ TextureImporter:
     second: CommonAtlas_Bilinear_2_fix 1_45
   - first:
       213: -4837663613076929826
-    second: CommonAtlas_Bilinear_2_fix 1_46
+    second: NameBox_Right
   - first:
       213: -8937971209165554592
-    second: CommonAtlas_Bilinear_2_fix 1_47
+    second: NameBox_Left
   - first:
       213: 6548585495672306165
     second: CommonAtlas_Bilinear_2_fix 1_48
@@ -1798,11 +1798,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CommonAtlas_Bilinear_2_fix 1_46
+      name: NameBox_Right
       rect:
         serializedVersion: 2
-        x: 2157
-        y: 2564
+        x: 2156
+        y: 2565
         width: 344
         height: 54
       alignment: 0
@@ -1819,12 +1819,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CommonAtlas_Bilinear_2_fix 1_47
+      name: NameBox_Left
       rect:
         serializedVersion: 2
         x: 2563
         y: 2563
-        width: 341
+        width: 344
         height: 54
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

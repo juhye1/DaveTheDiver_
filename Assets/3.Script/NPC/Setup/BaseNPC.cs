@@ -8,10 +8,11 @@ public abstract class BaseNPC : MonoBehaviour
 {
     protected Animator animator;
     protected DialogueUI dialogueUI;
+    protected DialogueData[] dialogueDatas;
+    protected DialogueData dialogueData;
 
-    protected string dialogueKey;
-    protected int dialogueNum;
     protected string dialogueString;
+    protected int dialogueNum;
     protected ETalk ETalkType = ETalk.Start;
 
 
@@ -34,13 +35,13 @@ public abstract class BaseNPC : MonoBehaviour
             case ETalk.Start:
                 UIManager.Instance.TalkStart();
                 dialogueUI = FindObjectOfType<DialogueUI>();
-                dialogueUI.UpdateUI(dialogueKey);
+                dialogueUI.Talk(dialogueData);
                 dialogueNum++;
                 ETalkType = ETalk.InProgress;
                 break;
 
             case ETalk.InProgress:
-                dialogueUI.UpdateUI(dialogueKey);
+                dialogueUI.Talk(dialogueData);
                 dialogueNum++;
                 Debug.Log("¥Î»≠¡ﬂ");
                 break;

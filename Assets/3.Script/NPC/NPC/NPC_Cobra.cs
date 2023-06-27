@@ -6,10 +6,19 @@ public class NPC_Cobra : BaseNPC
 {
     private readonly int beer = Animator.StringToHash("Beer");
     private readonly int idle = Animator.StringToHash("Idle");
+    private Dictionary<int, DialogueData> cobraGunDictionary;
+    private EType eType = EType.Cobra_Gun;
+    
 
     private void Start()
     {
-        dialogueString = "Cobra_Gun_";
+        cobraGunDictionary = new Dictionary<int, DialogueData>();
+        dialogueDatas = DataManager.Instance.LoadData(eType);
+        for(int i=0; i< dialogueDatas.Length; i++)
+        {
+            cobraGunDictionary.Add(i, dialogueDatas[i]);
+        }
+        
     }
     public override void RandomAnimation()
     {
@@ -29,7 +38,7 @@ public class NPC_Cobra : BaseNPC
 
     public override void Talk()
     {
-        dialogueKey = dialogueString + dialogueNum;
+        dialogueData = cobraGunDictionary[dialogueNum];
         base.Talk();
     }
 }

@@ -16,9 +16,15 @@ public enum EName
     Unknown
 }
 
+public enum EType
+{
+    Cobra_Gun
+}
+
 public enum EEmotionType
 {
     Normal = 0,
     Nice,
-    Smile
+    Smile,
+    Thinking
 }

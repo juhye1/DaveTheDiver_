@@ -2036,7 +2036,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6075181925982084404, guid: 93e8568dd7bec5343a8da54a8d3451be, type: 3}
+  m_Sprite: {fileID: 4386370681610570539, guid: a5f3cd1e43df0bd4f8f7cd14d8d2dbcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4236,7 +4236,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 27
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -4311,12 +4311,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speaker:
-  - Portrait: {fileID: 275833967}
-    TalkBox: {fileID: 867914842}
+  - TalkBox: {fileID: 1566989830}
+    Group: {fileID: 1542403795}
+    Portrait: {fileID: 275833967}
+    TalkTMP: {fileID: 867914842}
     NameBox: {fileID: 1520158190}
     Panel: {fileID: 596536876}
-  - Portrait: {fileID: 963272168}
-    TalkBox: {fileID: 1512732873}
+  - TalkBox: {fileID: 944461804}
+    Group: {fileID: 1378925466}
+    Portrait: {fileID: 963272168}
+    TalkTMP: {fileID: 1512732873}
     NameBox: {fileID: 499566430}
     Panel: {fileID: 2072066173}
 --- !u!225 &534182362
@@ -6108,7 +6112,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6576538562888742074, guid: 0e8a0cf45f0a19c48be8bf6ebc0d1d78, type: 3}
+  m_Sprite: {fileID: -4837663613076929826, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8581,7 +8585,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6075181925982084404, guid: 93e8568dd7bec5343a8da54a8d3451be, type: 3}
+  m_Sprite: {fileID: 4386370681610570539, guid: a5f3cd1e43df0bd4f8f7cd14d8d2dbcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9437,7 +9441,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8099498334371804407, guid: 0e8a0cf45f0a19c48be8bf6ebc0d1d78, type: 3}
+  m_Sprite: {fileID: -8937971209165554592, guid: 10cb67c3a2aeecc4f9fd4b6c39a949e0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10035,6 +10039,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1378925465}
+  - component: {fileID: 1378925466}
   m_Layer: 5
   m_Name: Portrait_Right
   m_TagString: Untagged
@@ -10063,6 +10068,18 @@ RectTransform:
   m_AnchoredPosition: {x: -200, y: 220}
   m_SizeDelta: {x: 400, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1378925466
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378925464}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1389862415
 GameObject:
   m_ObjectHideFlags: 0
@@ -11022,6 +11039,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1542403794}
+  - component: {fileID: 1542403795}
   m_Layer: 5
   m_Name: Portrait_Left
   m_TagString: Untagged
@@ -11050,6 +11068,18 @@ RectTransform:
   m_AnchoredPosition: {x: 200, y: 220}
   m_SizeDelta: {x: 400, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1542403795
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542403793}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1547300168
 GameObject:
   m_ObjectHideFlags: 0
@@ -15272,7 +15302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2072066173
 RectTransform:
   m_ObjectHideFlags: 0
