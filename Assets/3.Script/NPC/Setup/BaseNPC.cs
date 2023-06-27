@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-
 public abstract class BaseNPC : MonoBehaviour
 {
     protected Animator animator;
@@ -42,13 +40,12 @@ public abstract class BaseNPC : MonoBehaviour
                 break;
 
             case ETalk.InProgress:
-                dialogueUI.Talk(dialogueData);
-                if (dialogueCount > dialogueNum)
+                if (dialogueCount-1 > dialogueNum)
                 {
+                    dialogueUI.Talk(dialogueData);
                     dialogueNum++;
                 }
                 else ETalkType = ETalk.End;
-                Debug.Log("¥Î»≠¡ﬂ");
                 break;
             case ETalk.End:
                 UIManager.Instance.TalkStart(false);

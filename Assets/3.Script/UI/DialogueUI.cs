@@ -19,10 +19,13 @@ public struct Speaker
 public class DialogueUI : UIBase
 {
     [SerializeField] private Speaker[] speaker;
+    private Speaker curruentSpeaker;
     private PortraitData portraitData;
     private DialogueData dialogueData;
     private string dialoueText;
     private int _num;
+
+    private Sequence upSequence;
 
     private void Awake()
     {
@@ -30,6 +33,7 @@ public class DialogueUI : UIBase
         portraitData = FindObjectOfType<PortraitData>();
         canvasGroup.alpha = 0; 
         _num = 1;
+        upSequence = DOTween.Sequence();
     }
 
     private void OnEnable()
@@ -37,16 +41,18 @@ public class DialogueUI : UIBase
         canvasGroup.DOFade(1, 0.5f);
     }
 
-    public void UpTalkEffect(Speaker speaker)
+    public void UpTalkEffect()
     {
-        sequence = DOTween.Sequence();
-        sequence.Append(speaker.Panel.DOLocalMoveY(10, 1).SetEase(Ease.OutBack))
-                .Append(speaker.TalkTMP.DOText(dialoueText.Replace("\\n", "\n"), 1f));
+        Sequence upequence = DOTween.Sequence().SetAutoKill()
+                .Append(curruentSpeaker.Panel.DOLocalMoveY(10, 1).SetEase(Ease.OutBack))
+                .Append(curruentSpeaker.TalkTMP.DOText(dialoueText.Replace("\\n", "\n"), 1f));
+
+
     }
     public void DownTalkEffect(int num)
     {
-        sequence = DOTween.Sequence();
-        sequence.Append(speaker[num].Panel.DOLocalMoveY(-30, 1));
+        Sequence sequence = DOTween.Sequence().SetAutoKill()
+                        .Append(speaker[num].Panel.DOLocalMoveY(-30, 1));
         speaker[num].TalkTMP.text = string.Empty;
     }
 
@@ -57,9 +63,9 @@ public class DialogueUI : UIBase
         speaker.NameBox.text = data.Name;
         speaker.TalkTMP.text = string.Empty;
         speaker.Portrait.sprite = 
-            portraitData.LoadPortrait(data.ENAME, data.EEMOTIONTYPE);
-
-        UpTalkEffect(speaker);
+                portraitData.LoadPortrait(data.ENAME, data.EEMOTIONTYPE);
+        curruentSpeaker = speaker;
+        UpTalkEffect();
     }
 
 
