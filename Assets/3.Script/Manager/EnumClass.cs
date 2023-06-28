@@ -28,3 +28,4 @@ public enum EEmotionType
     Smile,
     Thinking
 }
+

@@ -3,28 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public enum EState
-{
 
-}
 
-public class PlayerInput : MonoBehaviour
+public class Player : MonoBehaviour
 {
+    public enum EState
+    {
+        Ground,
+        UnderWater,
+        UI
+    }
+
     [SerializeField] private PlayerSettings settings;
     private Vector2 cachedMove = Vector2.zero;
     private Vector2 left = new Vector2(-1, 1);
     public Vector3 Point;
 
-    private InputAction inputAction;
+    private PlayerInput playerInput;
     private Animator animator;
     private BaseInteraction interaction;
     private readonly int isMove = Animator.StringToHash("isMove");
 
+    private InputActionMap lobby;
+    private InputActionMap ui;
+    private UIInput uiInput;
+    private EState state;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        playerInput = GetComponent<PlayerInput>();
+
+        lobby = playerInput.actions.FindActionMap("Lobby");
+        ui = playerInput.actions.FindActionMap("UI");
     }
 
+    #region InputSystem
     public void OnMove(InputAction.CallbackContext context)
     {
         cachedMove = context.ReadValue<Vector2>();
@@ -47,6 +61,18 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
+    public void OnUIMove(InputAction.CallbackContext context)
+    {
+        if (!context.started)
+            return;
+        if (uiInput==null)
+        {
+            uiInput = FindObjectOfType<UIInput>();
+        }
+        cachedMove = context.ReadValue<Vector2>();
+        uiInput.Inventory(cachedMove);
+    }
+
     public void OnSpace(InputAction.CallbackContext context)
     {
         if (!context.started)
@@ -61,7 +87,10 @@ public class PlayerInput : MonoBehaviour
     {
         Vector3 desiredMovement = cachedMove * transform.right;
         transform.position += desiredMovement * settings.MoveSpeed * Time.deltaTime;
+
     }
+
+    #endregion
 
     private void Update()
     {
@@ -70,7 +99,14 @@ public class PlayerInput : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move();
+        switch(state)
+        {
+            case EState.Ground:
+                Move();
+                break;
+            case EState.UI:
+                break;
+        }
     }
 
 
@@ -91,4 +127,19 @@ public class PlayerInput : MonoBehaviour
 
     }
 
+    public void SwitchActionMap(bool isOn)
+    {
+        if (isOn)
+        {
+            state = EState.UI;
+            lobby.Disable();
+            ui.Enable();
+        }
+        else
+        {
+            state = EState.Ground;
+            lobby.Enable();
+            ui.Disable();
+        }
+    }
 }

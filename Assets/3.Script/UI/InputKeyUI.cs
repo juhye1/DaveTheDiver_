@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class InputKeyUI : MonoBehaviour
 {
     private Image keyImage;
-    private PlayerInput playerInput;
+    private Player playerInput;
     private Vector3 screenPosition;
     private bool isOn => playerInput.Interaction();
     private void Awake()
     {
         keyImage = GetComponent<Image>();
-        playerInput = FindObjectOfType<PlayerInput>();
+        playerInput = FindObjectOfType<Player>();
     }
 
     private void Update()
