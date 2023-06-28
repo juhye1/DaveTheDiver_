@@ -11,8 +11,9 @@ public class Object_DiveTrigger : BaseObject
         {
             inputKeyUI = FindObjectOfType<InputKeyUI>();
         }
-        if(inputKeyUI.dd())
+        if(inputKeyUI.FillSlider())
         {
+            player.LoadScene(ELoadScene.UnderWater);
             CanPerform = !CanPerform;
         }
     }

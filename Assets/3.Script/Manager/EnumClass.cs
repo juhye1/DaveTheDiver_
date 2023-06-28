@@ -29,3 +29,10 @@ public enum EEmotionType
     Thinking
 }
 
+public enum ELoadScene
+{
+    Lobby,
+    UnderWater,
+    Loading,
+    Sushi
+}

@@ -11,7 +11,8 @@ public class Player : MonoBehaviour
     {
         Ground,
         UnderWater,
-        UI
+        UI,
+        Load
     }
 
     enum EInteractionType
@@ -19,24 +20,24 @@ public class Player : MonoBehaviour
         Enter,
         Tick
     }
-    [SerializeField] private PlayerSettings settings;
+    [SerializeField] protected PlayerSettings settings;
     private Vector2 cachedMove = Vector2.zero;
     private Vector2 left = new Vector2(-1, 1);
-    public Vector3 Point;
-    public bool PressKey => pressKey;
+    public Vector3 Point { get;protected set; }
     private bool pressKey = false;
 
     private PlayerInput playerInput;
     private Animator animator;
-    private BaseInteraction interaction;
-    private BaseInteraction movePointinteraction;
+    protected BaseInteraction interaction;
+    protected BaseInteraction movePointinteraction;
+
     private readonly int isMove = Animator.StringToHash("isMove");
+    private readonly int isReady = Animator.StringToHash("isReady");
 
     private InputActionMap lobby;
     private InputActionMap ui;
     private UIInput uiInput;
-    private EState state;
-    private EInteractionType interactionType;
+    protected EState state;
 
     private void Awake()
     {
@@ -93,10 +94,6 @@ public class Player : MonoBehaviour
                 interaction.Perform();
             }
 
-        if(pressKey)
-        {
-            interactionType = EInteractionType.Enter;
-        }
     }
 
     private void Space(bool pressKey)
@@ -120,10 +117,6 @@ public class Player : MonoBehaviour
 
     #endregion
 
-    private void Update()
-    {
-        //Interaction();
-    }
 
     private void FixedUpdate()
     {
@@ -136,43 +129,6 @@ public class Player : MonoBehaviour
             case EState.UI:
                 break;
         }
-    }
-
-
-    public bool Interaction()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, settings.DetectRange, settings.InteractableMask);
-        if (hit.collider != null)
-        {
-            interaction = hit.transform.GetComponent<BaseInteraction>();
-            Point = interaction.Point;
-            return true;
-        }
-        else
-        {
-            interaction = null;
-        }
-        return false;
-
-    }
-
-    public bool MovePoint(BaseInteraction baseInteraction)
-    {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, settings.DetectRange, settings.MovePointMask);
-        if (hit.collider != null)
-        {
-            movePointinteraction = hit.transform.GetComponent<BaseInteraction>();
-            Point = movePointinteraction.Point;
-            if(baseInteraction == movePointinteraction)
-            {
-                return true;
-            }
-        }
-        else
-        {
-            movePointinteraction = null;
-        }
-        return false;
     }
 
     public void SwitchActionMap(bool isOn)
@@ -188,6 +144,23 @@ public class Player : MonoBehaviour
             state = EState.Ground;
             lobby.Enable();
             ui.Disable();
+        }
+    }
+
+    public void LoadScene(ELoadScene scene)
+    {
+        ELoadScene sceneType = scene;
+        switch(scene)
+        {
+            case ELoadScene.UnderWater:
+                state = EState.Load;
+                animator.SetTrigger(isReady);
+                break;
+            case ELoadScene.Sushi:
+                state = EState.Load;
+                animator.SetTrigger(isReady);
+                Debug.Log("½º½ÃÁý");
+                break;
         }
     }
 }

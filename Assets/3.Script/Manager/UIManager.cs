@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,12 +14,14 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject chapterUI;
     [SerializeField] private GameObject mainUI;
     [SerializeField] private Image background;
+    [SerializeField] private Image loadScene;
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else Destroy(gameObject);
         player = FindObjectOfType<Player>();
@@ -33,6 +36,12 @@ public class UIManager : MonoBehaviour
         player.SwitchActionMap(isOn);
         dialogueUI.SetActive(isOn);
         mainUI.SetActive(!isOn);
+    }
+
+    public void GotoLoadingScene()
+    {
+        loadScene.enabled = true;
+        loadScene.DOFade(1, 3).OnComplete(()=>SceneManager.LoadScene("LoadingScene"));
     }
 
     public void InteractionUI(bool isOn, GameObject ui)

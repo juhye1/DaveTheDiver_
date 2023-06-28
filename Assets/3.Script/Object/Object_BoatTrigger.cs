@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Object_BoatTrigger : BaseObject
 {
@@ -24,8 +26,9 @@ public class Object_BoatTrigger : BaseObject
         {
             inputKeyUI = FindObjectOfType<InputKeyUI>();
         }
-        if (inputKeyUI.dd())
+        if (inputKeyUI.FillSlider())
         {
+            player.LoadScene(ELoadScene.Sushi);
             CanPerform = !CanPerform;
         }
     }
