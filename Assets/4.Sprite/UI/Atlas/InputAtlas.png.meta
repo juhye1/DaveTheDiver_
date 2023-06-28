@@ -43,7 +43,7 @@ TextureImporter:
     second: InputAtlas_12
   - first:
       213: -6834237096175097113
-    second: InputAtlas_13
+    second: Space
   - first:
       213: -3640560255534539565
     second: InputAtlas_14
@@ -1375,7 +1375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: InputAtlas_13
+      name: Space
       rect:
         serializedVersion: 2
         x: 269

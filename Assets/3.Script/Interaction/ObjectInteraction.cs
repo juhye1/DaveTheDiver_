@@ -14,4 +14,9 @@ public class ObjectInteraction : BaseInteraction
     {
         baseObject.Interaction();
     }
+
+    public override bool CanPerform()
+    {
+        return baseObject.CanPerform;
+    }
 }

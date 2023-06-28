@@ -14,4 +14,9 @@ public class NPCInteraction : BaseInteraction
         npc.Talk();
     }
 
+    public override bool CanPerform()
+    {
+        Debug.Log("?");
+        return true;
+    }
 }

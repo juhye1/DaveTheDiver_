@@ -14,20 +14,29 @@ public class Player : MonoBehaviour
         UI
     }
 
+    enum EInteractionType
+    {
+        Enter,
+        Tick
+    }
     [SerializeField] private PlayerSettings settings;
     private Vector2 cachedMove = Vector2.zero;
     private Vector2 left = new Vector2(-1, 1);
     public Vector3 Point;
+    public bool PressKey => pressKey;
+    private bool pressKey = false;
 
     private PlayerInput playerInput;
     private Animator animator;
     private BaseInteraction interaction;
+    private BaseInteraction movePointinteraction;
     private readonly int isMove = Animator.StringToHash("isMove");
 
     private InputActionMap lobby;
     private InputActionMap ui;
     private UIInput uiInput;
     private EState state;
+    private EInteractionType interactionType;
 
     private void Awake()
     {
@@ -75,11 +84,30 @@ public class Player : MonoBehaviour
 
     public void OnSpace(InputAction.CallbackContext context)
     {
+        pressKey = context.ReadValue<float>() > 0.1f;
         if (!context.started)
             return;
-        if(interaction!=null)
+
+            if (interaction != null)
+            {
+                interaction.Perform();
+            }
+
+        if(pressKey)
         {
-            interaction.Perform();
+            interactionType = EInteractionType.Enter;
+        }
+    }
+
+    private void Space(bool pressKey)
+    {
+        if(pressKey&&interaction!=null)
+        {
+            if(interaction.CanPerform())
+            {
+                interaction.Perform();
+
+            }
         }
     }
 
@@ -94,7 +122,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        Interaction();
+        //Interaction();
     }
 
     private void FixedUpdate()
@@ -103,6 +131,7 @@ public class Player : MonoBehaviour
         {
             case EState.Ground:
                 Move();
+                Space(pressKey);
                 break;
             case EState.UI:
                 break;
@@ -125,6 +154,25 @@ public class Player : MonoBehaviour
         }
         return false;
 
+    }
+
+    public bool MovePoint(BaseInteraction baseInteraction)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, settings.DetectRange, settings.MovePointMask);
+        if (hit.collider != null)
+        {
+            movePointinteraction = hit.transform.GetComponent<BaseInteraction>();
+            Point = movePointinteraction.Point;
+            if(baseInteraction == movePointinteraction)
+            {
+                return true;
+            }
+        }
+        else
+        {
+            movePointinteraction = null;
+        }
+        return false;
     }
 
     public void SwitchActionMap(bool isOn)

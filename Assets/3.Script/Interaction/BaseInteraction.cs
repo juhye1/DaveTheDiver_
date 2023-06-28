@@ -12,15 +12,10 @@ public abstract class BaseInteraction : MonoBehaviour
     [SerializeField] protected Transform interactionMarker;
     public Vector3 Point => interactionMarker != null ? interactionMarker.position : transform.position;
     protected EInteractionType type = EInteractionType.NPC;
-    protected UIManager uiManager;
     protected List<BaseInteraction> interactions;
     protected bool IsStart;
-    private void Awake()
-    {
-        uiManager = FindObjectOfType<UIManager>();
-    }
 
-    public List<BaseInteraction> Interactions
+/*    public List<BaseInteraction> Interactions
     {
         get
         {
@@ -29,8 +24,9 @@ public abstract class BaseInteraction : MonoBehaviour
 
             return interactions;
         }
-    }
+    }*/
 
     public abstract void Perform();
+    public abstract bool CanPerform();
 
 }

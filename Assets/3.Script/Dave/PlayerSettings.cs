@@ -11,9 +11,10 @@ public class PlayerSettings : ScriptableObject
     [Space(10)]
     [Header("상호 작용")]
     public float DetectRange;
-    public LayerMask NPCMask;
-    public LayerMask ObjectMask;
+/*    public LayerMask NPCMask;
+    public LayerMask ObjectMask;*/
     public LayerMask InteractableMask;
+    public LayerMask MovePointMask;
 
 
 }
