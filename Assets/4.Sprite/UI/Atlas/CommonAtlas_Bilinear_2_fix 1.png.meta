@@ -2263,10 +2263,10 @@ TextureImporter:
       name: CommonAtlas_Bilinear_2_fix 1_68
       rect:
         serializedVersion: 2
-        x: 2025
-        y: 2172
-        width: 233
-        height: 237
+        x: 2029
+        y: 2185
+        width: 216
+        height: 216
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

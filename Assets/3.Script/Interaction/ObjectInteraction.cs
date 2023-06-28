@@ -12,6 +12,6 @@ public class ObjectInteraction : BaseInteraction
     }
     public override void Perform()
     {
-        
+        baseObject.Interaction();
     }
 }

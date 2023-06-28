@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance = null;
-    [SerializeField] GameObject dialogueUI;
-    [SerializeField] GameObject chapterUI;
-    [SerializeField] GameObject mainUI;
+    [SerializeField] private GameObject dialogueUI;
+    [SerializeField] private GameObject chapterUI;
+    [SerializeField] private GameObject mainUI;
+    [SerializeField] private Image background;
 
     private void Awake()
     {
@@ -28,7 +31,14 @@ public class UIManager : MonoBehaviour
         mainUI.SetActive(!isOn);
     }
 
-
+    public void InteractionUI(bool isOn, GameObject ui)
+    {
+        background.enabled = isOn;
+        mainUI.SetActive(!isOn);
+        ui.SetActive(isOn);
+        ui.transform.localPosition = new Vector2(0, -1000);
+        ui.transform.DOLocalMoveY(72, 1).SetEase(Ease.OutBounce); 
+    }
 
     public void ShowChapter()
     {

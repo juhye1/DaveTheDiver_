@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public enum EState
+{
+
+}
+
 public class PlayerInput : MonoBehaviour
 {
     [SerializeField] private PlayerSettings settings;
