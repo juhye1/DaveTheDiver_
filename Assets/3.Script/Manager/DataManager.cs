@@ -8,7 +8,7 @@ public class DataManager : MonoBehaviour
     [SerializeField] private Dialogue dialogue;
     private Dictionary<EType, List<DialogueData>> dialogueDictionary;
 
-    private List<DialogueData> dd;
+    private List<DialogueData> dialogueList;
 
     private void Awake()
     {
@@ -19,27 +19,26 @@ public class DataManager : MonoBehaviour
         else
             Destroy(gameObject);
 
-        dialogueDictionary = new Dictionary<EType, List<DialogueData>>();
-        dd = new List<DialogueData>();
-        for (int i=0; i<dialogue.dataArray.Length; i++)
-        {
-            if(dialogue.dataArray[i].ETYPE==EType.Cobra_Gun)
-            {
-                dd.Add(dialogue.dataArray[i]);
-            }
-        }
-
-        dialogueDictionary.Add(EType.Cobra_Gun, dd);
-
-/*        for (int i=0; i<dialogue.dataArray.Length; i++)
-        {
-            dialogueDictionary.Add(dialogue.dataArray[i].ETYPE, dialogue.dataArray);
-        }*/
+        Init();
     }
 
     public List<DialogueData> LoadData(EType key)
     {
         return dialogueDictionary[key];
+    }
+
+    private void Init()
+    {
+        dialogueDictionary = new Dictionary<EType, List<DialogueData>>();
+        dialogueList = new List<DialogueData>();
+        for (int i = 0; i < dialogue.dataArray.Length; i++)
+        {
+            if (dialogue.dataArray[i].ETYPE == EType.Cobra_Gun)
+            {
+                dialogueList.Add(dialogue.dataArray[i]);
+            }
+        }
+        dialogueDictionary.Add(EType.Cobra_Gun, dialogueList);
     }
 
 }

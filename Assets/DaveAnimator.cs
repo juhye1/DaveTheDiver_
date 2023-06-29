@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_Sushi : MonoBehaviour
+public class DaveAnimator : StateMachineBehaviour
 {
 
 }

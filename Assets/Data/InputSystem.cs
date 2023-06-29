@@ -184,6 +184,96 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Sushi"",
+            ""id"": ""b85d2ad3-f46f-4fcd-bda9-2cba47b753b3"",
+            ""actions"": [
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Value"",
+                    ""id"": ""0370af5e-621d-44dd-8264-5d10fae2e9cf"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Space"",
+                    ""type"": ""Button"",
+                    ""id"": ""30674ef7-e561-4b56-8af1-2d5e9611cd44"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Dash"",
+                    ""type"": ""Button"",
+                    ""id"": ""075b2f58-bdc5-46be-8ab8-36f61faa04ee"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""f74e8991-204f-4543-96d4-9975d28edcfe"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""95b68beb-c058-4eae-9ddc-c4d254b86c86"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PC"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""660c204e-ae61-4f51-9558-65728a91dc90"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PC"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""55994c63-a624-4736-8a8b-f9205f101100"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PC"",
+                    ""action"": ""Space"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""58209259-cb3a-4cb6-b5b9-141a1ccff546"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PC"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -224,6 +314,11 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_UIMove = m_UI.FindAction("UIMove", throwIfNotFound: true);
         m_UI_Space = m_UI.FindAction("Space", throwIfNotFound: true);
+        // Sushi
+        m_Sushi = asset.FindActionMap("Sushi", throwIfNotFound: true);
+        m_Sushi_Move = m_Sushi.FindAction("Move", throwIfNotFound: true);
+        m_Sushi_Space = m_Sushi.FindAction("Space", throwIfNotFound: true);
+        m_Sushi_Dash = m_Sushi.FindAction("Dash", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -361,6 +456,55 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         }
     }
     public UIActions @UI => new UIActions(this);
+
+    // Sushi
+    private readonly InputActionMap m_Sushi;
+    private ISushiActions m_SushiActionsCallbackInterface;
+    private readonly InputAction m_Sushi_Move;
+    private readonly InputAction m_Sushi_Space;
+    private readonly InputAction m_Sushi_Dash;
+    public struct SushiActions
+    {
+        private @InputSystem m_Wrapper;
+        public SushiActions(@InputSystem wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_Sushi_Move;
+        public InputAction @Space => m_Wrapper.m_Sushi_Space;
+        public InputAction @Dash => m_Wrapper.m_Sushi_Dash;
+        public InputActionMap Get() { return m_Wrapper.m_Sushi; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(SushiActions set) { return set.Get(); }
+        public void SetCallbacks(ISushiActions instance)
+        {
+            if (m_Wrapper.m_SushiActionsCallbackInterface != null)
+            {
+                @Move.started -= m_Wrapper.m_SushiActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_SushiActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_SushiActionsCallbackInterface.OnMove;
+                @Space.started -= m_Wrapper.m_SushiActionsCallbackInterface.OnSpace;
+                @Space.performed -= m_Wrapper.m_SushiActionsCallbackInterface.OnSpace;
+                @Space.canceled -= m_Wrapper.m_SushiActionsCallbackInterface.OnSpace;
+                @Dash.started -= m_Wrapper.m_SushiActionsCallbackInterface.OnDash;
+                @Dash.performed -= m_Wrapper.m_SushiActionsCallbackInterface.OnDash;
+                @Dash.canceled -= m_Wrapper.m_SushiActionsCallbackInterface.OnDash;
+            }
+            m_Wrapper.m_SushiActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Move.started += instance.OnMove;
+                @Move.performed += instance.OnMove;
+                @Move.canceled += instance.OnMove;
+                @Space.started += instance.OnSpace;
+                @Space.performed += instance.OnSpace;
+                @Space.canceled += instance.OnSpace;
+                @Dash.started += instance.OnDash;
+                @Dash.performed += instance.OnDash;
+                @Dash.canceled += instance.OnDash;
+            }
+        }
+    }
+    public SushiActions @Sushi => new SushiActions(this);
     private int m_PCSchemeIndex = -1;
     public InputControlScheme PCScheme
     {
@@ -388,5 +532,11 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     {
         void OnUIMove(InputAction.CallbackContext context);
         void OnSpace(InputAction.CallbackContext context);
+    }
+    public interface ISushiActions
+    {
+        void OnMove(InputAction.CallbackContext context);
+        void OnSpace(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
     }
 }

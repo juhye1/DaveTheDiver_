@@ -15,6 +15,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject mainUI;
     [SerializeField] private Image background;
     [SerializeField] private Image loadScene;
+    [SerializeField] private Slider dashSlider;
 
     private void Awake()
     {
@@ -28,8 +29,9 @@ public class UIManager : MonoBehaviour
     }
     private void Start()
     {
-        dialogueUI.SetActive(false);
-        chapterUI.SetActive(false);
+        mainUI.SetActive(true);
+/*        dialogueUI.SetActive(false);
+        chapterUI.SetActive(false);*/
     }
     public void TalkStart(bool isOn)
     {
@@ -65,5 +67,38 @@ public class UIManager : MonoBehaviour
     {
         mainUI.gameObject.SetActive(false);
         chapterUI.gameObject.SetActive(true);
+    }
+
+    public void DashUI(bool isDash)
+    {
+        if (isDash)
+        {
+            dashSlider.gameObject.SetActive(true);
+            dashSlider.value = Mathf.MoveTowards(dashSlider.value, 0, Time.deltaTime * 0.5f);
+        }
+        else
+        {
+            dashSlider.value = Mathf.MoveTowards(dashSlider.value, 1, Time.deltaTime * 0.3f);
+            if(dashSlider.value.Equals(1))
+            {
+                dashSlider.gameObject.SetActive(false);
+            }
+        }
+    }
+
+    public bool CheckDash()
+    {
+        if (dashSlider.IsActive())
+        {
+            dashSlider.transform.position = Camera.main.WorldToScreenPoint(player.UIPosition.position);
+            if (dashSlider.value.Equals(0)) return false;
+        }
+        return true;
+    }
+
+
+    public void EndTired()
+    {
+        dashSlider.value = 0.1f;
     }
 }

@@ -22,32 +22,45 @@ public class Player : MonoBehaviour
         Tick
     }
     [SerializeField] protected PlayerSettings settings;
+    public Transform UIPosition;
+
     private Vector2 cachedMove = Vector2.zero;
     private Vector2 left = new Vector2(-1, 1);
+    [HideInInspector]
     public Vector3 Point { get;protected set; }
-    private bool pressKey = false;
+    protected bool pressKey = false;
+    protected float speed;
 
-    private PlayerInput playerInput;
-    private Animator animator;
+    protected PlayerInput playerInput;
+    protected Animator animator;
     protected BaseInteraction interaction;
     protected BaseInteraction movePointinteraction;
 
-    private readonly int isMove = Animator.StringToHash("isMove");
-    private readonly int isReady = Animator.StringToHash("isReady");
+    protected readonly int isMove = Animator.StringToHash("isMove");
+    protected readonly int isReady = Animator.StringToHash("isReady");
+    protected readonly int isDash = Animator.StringToHash("isDash");
 
-    private InputActionMap lobby;
-    private InputActionMap ui;
+    protected InputActionMap lobby;
+    protected InputActionMap ui;
+    protected InputActionMap sushi;
+
+    protected SpriteRenderer spriteRenderer;
+
+
+
     private UIInput uiInput;
     protected EState state;
 
     private void Awake()
     {
-        state = EState.Ground;
+        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
+        speed = settings.MoveSpeed;
 
         lobby = playerInput.actions.FindActionMap("Lobby");
         ui = playerInput.actions.FindActionMap("UI");
+        sushi = playerInput.actions.FindActionMap("Sushi");
     }
 
     #region InputSystem
@@ -60,11 +73,13 @@ public class Player : MonoBehaviour
             animator.SetBool(isMove, true);
             if (cachedMove.x < 0)
             {
-                transform.localScale = left;
+                spriteRenderer.flipX = false;
+                //transform.localScale = left;
             }
             else if (cachedMove.x > 0)
             {
-                transform.localScale = Vector2.one;
+                spriteRenderer.flipX = true;
+                //transform.localScale = Vector2.one;
             }
         }
         else
@@ -95,10 +110,9 @@ public class Player : MonoBehaviour
             {
                 interaction.Perform();
             }
-
     }
 
-    private void Space(bool pressKey)
+    protected void Space(bool pressKey)
     {
         if(pressKey&&interaction!=null)
         {
@@ -110,10 +124,10 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Move()
+    protected void Move()
     {
         Vector3 desiredMovement = cachedMove * transform.right;
-        transform.position += desiredMovement * settings.MoveSpeed * Time.deltaTime;
+        transform.position += desiredMovement * speed * Time.deltaTime;
 
     }
 
@@ -129,6 +143,10 @@ public class Player : MonoBehaviour
                 Space(pressKey);
                 break;
             case EState.UI:
+                break;
+            case EState.Sushi:
+                Move();
+                Space(pressKey);
                 break;
         }
     }
@@ -165,4 +183,5 @@ public class Player : MonoBehaviour
                 break;
         }
     }
+
 }

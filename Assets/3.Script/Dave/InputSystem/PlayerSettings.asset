@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerSettings
   m_EditorClassIdentifier: 
   MoveSpeed: 0.5
-  DashSpeed: 0.7
+  DashSpeed: 0.9
   DetectRange: 1
   InteractableMask:
     serializedVersion: 2
