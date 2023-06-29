@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 0.5
   DashSpeed: 0.9
+  TiredSpeed: 0.7
   DetectRange: 1
   InteractableMask:
     serializedVersion: 2
-    m_Bits: 3584
+    m_Bits: 7680
   MovePointMask:
     serializedVersion: 2
     m_Bits: 512

@@ -35,7 +35,7 @@ public class UIManager : MonoBehaviour
     }
     public void TalkStart(bool isOn)
     {
-        player.SwitchActionMap(isOn);
+        player.SwitchActionMap(isOn, Player.EState.Ground);
         dialogueUI.SetActive(isOn);
         mainUI.SetActive(!isOn);
     }
@@ -48,7 +48,7 @@ public class UIManager : MonoBehaviour
 
     public void InteractionUI(bool isOn, GameObject ui)
     {
-        player.SwitchActionMap(isOn);
+        player.SwitchActionMap(isOn, Player.EState.Ground);
         background.enabled = isOn;
         mainUI.SetActive(!isOn);
         if(isOn)
@@ -61,6 +61,13 @@ public class UIManager : MonoBehaviour
         {
             ui.transform.DOLocalMoveY(-1000, 0.5f).OnComplete(() => ui.SetActive(false));
         }
+    }
+
+    public void SushiUI(bool isOn, GameObject ui)
+    {
+        player.SwitchActionMap(isOn, Player.EState.Sushi);
+        background.enabled = isOn;
+        ui.SetActive(isOn);
     }
 
     public void ShowChapter()

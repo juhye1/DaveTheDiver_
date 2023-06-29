@@ -6,7 +6,7 @@ public class PlayerInteraction : Player
 {
     public bool Interaction()
     {
-        if (!state.Equals(EState.Ground))
+        if (state.Equals(EState.UI))
             return false;
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, settings.DetectRange, settings.InteractableMask);

@@ -92,6 +92,7 @@ public class Player : MonoBehaviour
     {
         if (!context.started)
             return;
+
         if (uiInput==null)
         {
             uiInput = FindObjectOfType<UIInput>();
@@ -134,7 +135,7 @@ public class Player : MonoBehaviour
     #endregion
 
 
-    private void FixedUpdate()
+/*    private void FixedUpdate()
     {
         switch(state)
         {
@@ -149,21 +150,25 @@ public class Player : MonoBehaviour
                 Space(pressKey);
                 break;
         }
-    }
+    }*/
 
-    public void SwitchActionMap(bool isOn)
+    public void SwitchActionMap(bool isOn, EState state)
     {
         if (isOn)
         {
-            state = EState.UI;
-            lobby.Disable();
+            playerInput.currentActionMap.Disable();
             ui.Enable();
         }
         else
         {
-            state = EState.Ground;
-            lobby.Enable();
             ui.Disable();
+            switch(state)
+            {
+                case EState.Ground:
+                    lobby.Enable(); break;
+                case EState.Sushi:
+                    sushi.Enable(); break;
+            }
         }
     }
 

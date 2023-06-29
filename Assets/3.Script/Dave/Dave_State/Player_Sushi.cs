@@ -39,9 +39,9 @@ public class Player_Sushi : PlayerInteraction
 
     protected void DashGauge(bool pressKey)
     {
-        bool dd = UIManager.Instance.CheckDash();
+        bool canDash = UIManager.Instance.CheckDash();
 
-        if(dd)
+        if(canDash)
         {
             UIManager.Instance.DashUI(pressKey);
         }
@@ -63,7 +63,7 @@ public class Player_Sushi : PlayerInteraction
                 break;
             case EState.Sushi:
                 Move();
-                Space(pressKey);
+                //Space(pressKey);
                 DashGauge(dash);
                 break;
         }

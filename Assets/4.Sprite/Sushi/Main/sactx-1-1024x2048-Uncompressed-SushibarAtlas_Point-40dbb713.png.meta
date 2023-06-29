@@ -1,0 +1,7020 @@
+fileFormatVersion: 2
+guid: f4c9b78b7b1f4c0429dbde7deadaafa4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8443347466200935877
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_0
+  - first:
+      213: -8250328684395292785
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_1
+  - first:
+      213: 6569359408443559625
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_2
+  - first:
+      213: -7525476058875058374
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_3
+  - first:
+      213: 8130461628184635404
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_4
+  - first:
+      213: -1663609522621396760
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_5
+  - first:
+      213: -1528250515839704500
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_6
+  - first:
+      213: -589786499406117247
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_7
+  - first:
+      213: 601447019560370868
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_8
+  - first:
+      213: -3480086174561731540
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_9
+  - first:
+      213: -1202172184475575579
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_10
+  - first:
+      213: -3973214977110587852
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_11
+  - first:
+      213: 7936885187259523124
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_12
+  - first:
+      213: -2254572029498559540
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_13
+  - first:
+      213: 1234518447492078664
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_14
+  - first:
+      213: -3700117754645200526
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_15
+  - first:
+      213: -1586348326357807500
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_16
+  - first:
+      213: -910096513451321891
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_17
+  - first:
+      213: -8332113094225263792
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_18
+  - first:
+      213: 5597638365297720504
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_19
+  - first:
+      213: -8559109208964127844
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_20
+  - first:
+      213: 4341018370651844083
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_21
+  - first:
+      213: 4810679445044892458
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_22
+  - first:
+      213: 3450964491231514740
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_23
+  - first:
+      213: 2992893242375873991
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_24
+  - first:
+      213: -8408008563881075260
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_25
+  - first:
+      213: 166285109290713086
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_26
+  - first:
+      213: -8753667421130575528
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_27
+  - first:
+      213: 8460688796251619049
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_28
+  - first:
+      213: -8635789528578810387
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_29
+  - first:
+      213: -6746940840331283334
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_30
+  - first:
+      213: -1745719534528887816
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_31
+  - first:
+      213: -5147661892652875810
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_32
+  - first:
+      213: 647860533602164777
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_33
+  - first:
+      213: -3458280418813605880
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_34
+  - first:
+      213: -6956921529981655170
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_35
+  - first:
+      213: 4067750948954573812
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_36
+  - first:
+      213: -2932470968624871789
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_37
+  - first:
+      213: -3066520512764693468
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_38
+  - first:
+      213: -3245186621406139626
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_39
+  - first:
+      213: 7060032222566897105
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_40
+  - first:
+      213: -3300633574502579797
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_41
+  - first:
+      213: 8087622029193619412
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_42
+  - first:
+      213: 3778393798897814446
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_43
+  - first:
+      213: -8234954940397890160
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_44
+  - first:
+      213: -8951516860216858904
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_45
+  - first:
+      213: 613678571417075812
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_46
+  - first:
+      213: 8019676716306498894
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_47
+  - first:
+      213: 8304963521148475586
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_48
+  - first:
+      213: -8950818159668785159
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_49
+  - first:
+      213: 2657801473760187378
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_50
+  - first:
+      213: 6993147231671352033
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_51
+  - first:
+      213: -4903612914634779806
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_52
+  - first:
+      213: -1563766496310318356
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_53
+  - first:
+      213: -2701753515075483924
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_54
+  - first:
+      213: 6768706347477628275
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_55
+  - first:
+      213: 7033160812039537688
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_56
+  - first:
+      213: 2402756001662425719
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_57
+  - first:
+      213: -9188474210788606571
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_58
+  - first:
+      213: -7806863980336308172
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_59
+  - first:
+      213: 1062795117620883377
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_60
+  - first:
+      213: 8927982564201879073
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_61
+  - first:
+      213: 1354259550681986415
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_62
+  - first:
+      213: -1234965581775021651
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_63
+  - first:
+      213: 1556169089922531437
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_64
+  - first:
+      213: 649339531378710567
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_65
+  - first:
+      213: 2886763964784610583
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_66
+  - first:
+      213: -2372211179365587975
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_67
+  - first:
+      213: 2672823242022719072
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_68
+  - first:
+      213: 4657086534591152210
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_69
+  - first:
+      213: 2367287455328153281
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_70
+  - first:
+      213: -3049020354898285243
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_71
+  - first:
+      213: -2094585431370388555
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_72
+  - first:
+      213: -2824488191264097721
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_73
+  - first:
+      213: -489795462100524223
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_74
+  - first:
+      213: 8763657871832077852
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_75
+  - first:
+      213: 2243340093068777921
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_76
+  - first:
+      213: 8519878196221000592
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_77
+  - first:
+      213: -1675600872918453939
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_78
+  - first:
+      213: -5934586573719321160
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_79
+  - first:
+      213: -1812537359908103394
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_80
+  - first:
+      213: 5813601566088560842
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_81
+  - first:
+      213: 6748527107185774851
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_82
+  - first:
+      213: 6841709120024814297
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_83
+  - first:
+      213: -2057807786408214323
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_84
+  - first:
+      213: -7047169145408744625
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_85
+  - first:
+      213: 5650512193817406132
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_86
+  - first:
+      213: -4685388560831957638
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_87
+  - first:
+      213: -6690312223493098738
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_88
+  - first:
+      213: -8239836130511834695
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_89
+  - first:
+      213: -6816167693313948897
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_90
+  - first:
+      213: 8402670612813606194
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_91
+  - first:
+      213: -7574513452639053995
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_92
+  - first:
+      213: -3428076468557357890
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_93
+  - first:
+      213: -5088734673532570
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_94
+  - first:
+      213: 6335677648552334746
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_95
+  - first:
+      213: 6104916421159811272
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_96
+  - first:
+      213: 5157350748326676983
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_97
+  - first:
+      213: 8472986857292681748
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_98
+  - first:
+      213: 3162885673248556731
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_99
+  - first:
+      213: -2810391839995726081
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_100
+  - first:
+      213: 2621702752471309606
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_101
+  - first:
+      213: -551201539646483020
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_102
+  - first:
+      213: -2746398440622723438
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_103
+  - first:
+      213: -8415020031023229637
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_104
+  - first:
+      213: -1273883584536864104
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_105
+  - first:
+      213: 3294938015665182685
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_106
+  - first:
+      213: 7856008439705538274
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_107
+  - first:
+      213: 4260305956507069958
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_108
+  - first:
+      213: 526233273404846893
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_109
+  - first:
+      213: -4010407107319815064
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_110
+  - first:
+      213: -8607175057166541189
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_111
+  - first:
+      213: -1349843890666039100
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_112
+  - first:
+      213: 2269243786486328217
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_113
+  - first:
+      213: -3933656246284496637
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_114
+  - first:
+      213: 9049001259962353980
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_115
+  - first:
+      213: 3751554343352447445
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_116
+  - first:
+      213: 7996648760626631284
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_117
+  - first:
+      213: -3144208744814591199
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_118
+  - first:
+      213: -4523079352381947060
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_119
+  - first:
+      213: -1540668470811801454
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_120
+  - first:
+      213: 3489052809449200445
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_121
+  - first:
+      213: -1120476534871962226
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_122
+  - first:
+      213: -5018477744512037428
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_123
+  - first:
+      213: 2913850115924577067
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_124
+  - first:
+      213: -4514964034261693921
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_125
+  - first:
+      213: 8715920606631522215
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_126
+  - first:
+      213: 8030147035238553213
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_127
+  - first:
+      213: -7947557136895009725
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_128
+  - first:
+      213: 7036032890131492109
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_129
+  - first:
+      213: 2026640187235191434
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_130
+  - first:
+      213: -93769987641969306
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_131
+  - first:
+      213: -1446871221595942159
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_132
+  - first:
+      213: -2965790481979510544
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_133
+  - first:
+      213: 460207971146975142
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_134
+  - first:
+      213: 7875497539996150611
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_135
+  - first:
+      213: 7450709270902143740
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_136
+  - first:
+      213: 261550395991772191
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_137
+  - first:
+      213: 1391961755978346213
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_138
+  - first:
+      213: 1683705321555727878
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_139
+  - first:
+      213: -1013058260808792492
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_140
+  - first:
+      213: 236019986123764543
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_141
+  - first:
+      213: 1401894464753715300
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_142
+  - first:
+      213: 1772127036703553081
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_143
+  - first:
+      213: 5060414201801070618
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_144
+  - first:
+      213: -482486764551643506
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_145
+  - first:
+      213: -2011409064437452976
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_146
+  - first:
+      213: -802731012442496129
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_147
+  - first:
+      213: 8178513699388447783
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_148
+  - first:
+      213: -9220468654400446750
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_149
+  - first:
+      213: 4978828045930123347
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_150
+  - first:
+      213: 7812055979147409157
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_151
+  - first:
+      213: 3478465288121038238
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_152
+  - first:
+      213: -2258241055247240276
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_153
+  - first:
+      213: 8406393295772191005
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_154
+  - first:
+      213: 5609257084058575278
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_155
+  - first:
+      213: 547212677265029075
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_156
+  - first:
+      213: -8736421558341770790
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_157
+  - first:
+      213: 7546649035817168899
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_158
+  - first:
+      213: 3443986641658660925
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_159
+  - first:
+      213: 6010477770506053781
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_160
+  - first:
+      213: -4837124696702109019
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_161
+  - first:
+      213: 5710134787755997789
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_162
+  - first:
+      213: -6529296532243982426
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_163
+  - first:
+      213: 4870039569484622074
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_164
+  - first:
+      213: -3821155139460351996
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_165
+  - first:
+      213: -5080456450917238035
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_166
+  - first:
+      213: -4974411027025640695
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_167
+  - first:
+      213: -4044929847499353930
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_168
+  - first:
+      213: 3410625250461585951
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_169
+  - first:
+      213: -2727270144906923095
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_170
+  - first:
+      213: -6124445388576279899
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_171
+  - first:
+      213: 2582768803642886480
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_172
+  - first:
+      213: -8178863957227121879
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_173
+  - first:
+      213: 3605636549707990949
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_174
+  - first:
+      213: 2151397611316654371
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_175
+  - first:
+      213: -5448225019010714848
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_176
+  - first:
+      213: -3825620537223841316
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_177
+  - first:
+      213: 5819057082175768989
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_178
+  - first:
+      213: -8325936807570131484
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_179
+  - first:
+      213: -4992024297650278106
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_180
+  - first:
+      213: -469961367335517812
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_181
+  - first:
+      213: 3896283693959593506
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_182
+  - first:
+      213: 6193721540960965809
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_183
+  - first:
+      213: -5776357955341256079
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_184
+  - first:
+      213: 3981134906813679099
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_185
+  - first:
+      213: 8133010464810247727
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_186
+  - first:
+      213: 4461941026958198244
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_187
+  - first:
+      213: 217166632415205723
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_188
+  - first:
+      213: 656659846799062003
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_189
+  - first:
+      213: -7907299083640617847
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_190
+  - first:
+      213: 210469646811245366
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_191
+  - first:
+      213: -251444742643421491
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_192
+  - first:
+      213: 1444867383800456122
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_193
+  - first:
+      213: 3662268712351613967
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_194
+  - first:
+      213: -6604121209817926218
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_195
+  - first:
+      213: 3682977962085421416
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_196
+  - first:
+      213: -2048274229652387936
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_197
+  - first:
+      213: -6862877636388578298
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_198
+  - first:
+      213: -3202083050720988559
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_199
+  - first:
+      213: -891322612080401979
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_200
+  - first:
+      213: 8499352569925329457
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_201
+  - first:
+      213: 140487766643514631
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_202
+  - first:
+      213: -6006187742470290714
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_203
+  - first:
+      213: -3868302995369487885
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_204
+  - first:
+      213: -1272699514955474844
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_205
+  - first:
+      213: 96976245987110314
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_206
+  - first:
+      213: 144080476235337909
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_207
+  - first:
+      213: -1064192951789712333
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_208
+  - first:
+      213: -3602602362879054090
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_209
+  - first:
+      213: 470528288334578529
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_210
+  - first:
+      213: 1969662662292937764
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_211
+  - first:
+      213: 1169787812724101444
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_212
+  - first:
+      213: -5523279726104815278
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_213
+  - first:
+      213: -4536370161670614104
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_214
+  - first:
+      213: -5789221571803129613
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_215
+  - first:
+      213: -1203556731952741996
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_216
+  - first:
+      213: -8321205894617857553
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_217
+  - first:
+      213: 6405590474258281872
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_218
+  - first:
+      213: -5032332079988045494
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_219
+  - first:
+      213: -311918084692474160
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_220
+  - first:
+      213: 4552806525268674425
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_221
+  - first:
+      213: 3727247899900320762
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_222
+  - first:
+      213: 4904041206132954106
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_223
+  - first:
+      213: -3967741399216725896
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_224
+  - first:
+      213: -1200197742794674760
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_225
+  - first:
+      213: -2618346780897923286
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_226
+  - first:
+      213: -8190919706430055430
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_227
+  - first:
+      213: 6458625717180791894
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_228
+  - first:
+      213: -1538470536625079887
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_229
+  - first:
+      213: 1774859200657900588
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_230
+  - first:
+      213: -5635397625445081726
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_231
+  - first:
+      213: -3417333216011835464
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_232
+  - first:
+      213: -4714467527127119873
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_233
+  - first:
+      213: -681894788460196681
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_234
+  - first:
+      213: 8419949679599824716
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_235
+  - first:
+      213: 1575873735371463147
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_236
+  - first:
+      213: -5405022297084494405
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_237
+  - first:
+      213: 9155471854371118844
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_238
+  - first:
+      213: 2808950135349774321
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_239
+  - first:
+      213: -5727754403737100935
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_240
+  - first:
+      213: -3410577134888275430
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_241
+  - first:
+      213: 3329247948755485067
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_242
+  - first:
+      213: -3626275251149631971
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_243
+  - first:
+      213: 6249875771185017669
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_244
+  - first:
+      213: -2570345544537186817
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_245
+  - first:
+      213: -1273426483658688244
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_246
+  - first:
+      213: -3022509228472251564
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_247
+  - first:
+      213: 8006088838031637974
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_248
+  - first:
+      213: 6922004269385528439
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_249
+  - first:
+      213: -2502401459084946373
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_250
+  - first:
+      213: 195054337576311381
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_251
+  - first:
+      213: 5940084441690508592
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_252
+  - first:
+      213: 4985410586940299839
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_253
+  - first:
+      213: 891603697391261309
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_254
+  - first:
+      213: -2654029232385197871
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_255
+  - first:
+      213: 5159176641147336870
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_256
+  - first:
+      213: 494861384231396803
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_257
+  - first:
+      213: -938666436688274610
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_258
+  - first:
+      213: -2285521051092657276
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_259
+  - first:
+      213: -4236674560978242953
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_260
+  - first:
+      213: -8295830410860186976
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_261
+  - first:
+      213: -5510706625059567520
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_262
+  - first:
+      213: 4033007979199686140
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_263
+  - first:
+      213: 5464984233418588658
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_264
+  - first:
+      213: -6363422904489429579
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_265
+  - first:
+      213: -4556959456536175113
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_266
+  - first:
+      213: 8871438686202580191
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_267
+  - first:
+      213: 747632861933050889
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_268
+  - first:
+      213: 3324659605230117148
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_269
+  - first:
+      213: 4641626674736562343
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_270
+  - first:
+      213: -8466996156300231880
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_271
+  - first:
+      213: 1237608203319034930
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_272
+  - first:
+      213: -1314069535597071259
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_273
+  - first:
+      213: -7865377469681601199
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_274
+  - first:
+      213: 5484028393261181435
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_275
+  - first:
+      213: -4605420227395705147
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_276
+  - first:
+      213: 7747429448075024694
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_277
+  - first:
+      213: 1629675753073701614
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_278
+  - first:
+      213: 4307585929608634671
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_279
+  - first:
+      213: -7960499074509413754
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_280
+  - first:
+      213: 7980939445010039751
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_281
+  - first:
+      213: 577744750554034552
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_282
+  - first:
+      213: -7378184784917112398
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_283
+  - first:
+      213: 7009263434411707908
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_284
+  - first:
+      213: 1855161466568523851
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_285
+  - first:
+      213: 1758417787023968598
+    second: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_286
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1379
+        width: 43
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3216e9d63433da80800000000000000
+      internalID: -8443347466200935877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1361
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87176e06c1f08d80800000000000000
+      internalID: -8250328684395292785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1339
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce0626739d0b2b50800000000000000
+      internalID: 6569359408443559625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1335
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37ab096563209790800000000000000
+      internalID: -7525476058875058374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_4
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1307
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08a3e716c335d070800000000000000
+      internalID: 8130461628184635404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1300
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8c13f04fba9e8e0800000000000000
+      internalID: -1663609522621396760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1317
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42219bb0409acae0800000000000000
+      internalID: -1528250515839704500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1295
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186c399bd48a0d7f0800000000000000
+      internalID: -589786499406117247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1274
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b20d10b0e4c85800800000000000000
+      internalID: 601447019560370868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_9
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1269
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2cff71001044bfc0800000000000000
+      internalID: -3480086174561731540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1237
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea5a7184c6015fe0800000000000000
+      internalID: -1202172184475575579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1241
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436cf01870e4cd8c0800000000000000
+      internalID: -3973214977110587852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1195
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430e9a1c60b752e60800000000000000
+      internalID: 7936885187259523124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1212
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3f4353fa626b0e0800000000000000
+      internalID: -2254572029498559540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1206
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c9e6bbcf3e12110800000000000000
+      internalID: 1234518447492078664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1152
+        width: 50
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271c147918a86acc0800000000000000
+      internalID: -3700117754645200526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1183
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e486d1a982cf9e0800000000000000
+      internalID: -1586348326357807500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1183
+        width: 39
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5996cfa00be53f0800000000000000
+      internalID: -910096513451321891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1156
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053825649436e5c80800000000000000
+      internalID: -8332113094225263792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_19
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1156
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc3ba88f6ecead40800000000000000
+      internalID: 5597638365297720504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1126
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c932be5c58fe73980800000000000000
+      internalID: -8559109208964127844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_21
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1142
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fde52a55356e3c30800000000000000
+      internalID: 4341018370651844083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_22
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1134
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a239c2a9777f2c240800000000000000
+      internalID: 4810679445044892458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_23
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1134
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4705758bbe944ef20800000000000000
+      internalID: 3450964491231514740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1097
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c52b720c84e88920800000000000000
+      internalID: 2992893242375873991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_25
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1114
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd1d6932c0c05b80800000000000000
+      internalID: -8408008563881075260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_26
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1108
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: effb5b60d63ce4200800000000000000
+      internalID: 166285109290713086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_27
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1108
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8513a910cd9b48680800000000000000
+      internalID: -8753667421130575528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_28
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1090
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee74bf22a76a6570800000000000000
+      internalID: 8460688796251619049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_29
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1084
+        width: 35
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded950a9d23872880800000000000000
+      internalID: -8635789528578810387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_30
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1082
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a747a737d0d0e52a0800000000000000
+      internalID: -6746940840331283334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_31
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1057
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f302f22555f5c7e0800000000000000
+      internalID: -1745719534528887816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1070
+        width: 37
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf3c9838c4df88b0800000000000000
+      internalID: -5147661892652875810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_33
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1062
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9202a5909b9adf800800000000000000
+      internalID: 647860533602164777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_34
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1062
+        width: 40
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8080de62848b100d0800000000000000
+      internalID: -3458280418813605880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_35
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1053
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e772d235abc047f90800000000000000
+      internalID: -6956921529981655170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1070
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb023bafed837830800000000000000
+      internalID: 4067750948954573812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_37
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1067
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39608f0e035cd47d0800000000000000
+      internalID: -2932470968624871789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_38
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1042
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424363c37d78175d0800000000000000
+      internalID: -3066520512764693468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_39
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1041
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61bac3926f7c6f2d0800000000000000
+      internalID: -3245186621406139626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_40
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1029
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d559e896e54af160800000000000000
+      internalID: 7060032222566897105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_41
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1030
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1cb02604bc132d0800000000000000
+      internalID: -3300633574502579797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_42
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1039
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7a5bfa2610d3070800000000000000
+      internalID: 8087622029193619412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_43
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1045
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabc7dc242d8f6430800000000000000
+      internalID: 3778393798897814446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_44
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1044
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0955c34cc1097bd80800000000000000
+      internalID: -8234954940397890160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_45
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1025
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6aad1c7d2d5c380800000000000000
+      internalID: -8951516860216858904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_46
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1008
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4608597c869348800800000000000000
+      internalID: 613678571417075812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_47
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1004
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e458be0cb7d9b4f60800000000000000
+      internalID: 8019676716306498894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_48
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1030
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8d1a62258214370800000000000000
+      internalID: 8304963521148475586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_49
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1015
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff83d7ae4e48c380800000000000000
+      internalID: -8950818159668785159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_50
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1018
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f35cf6db5862e420800000000000000
+      internalID: 2657801473760187378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_51
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1024
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaf6cd1b56ac0160800000000000000
+      internalID: 6993147231671352033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_52
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1024
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2631d2bd80ed2fbb0800000000000000
+      internalID: -4903612914634779806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_53
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1029
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea24c328a26c4ae0800000000000000
+      internalID: -1563766496310318356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_54
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 998
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce643471e71718ad0800000000000000
+      internalID: -2701753515075483924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_55
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 997
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375f5569f864fed50800000000000000
+      internalID: 6768706347477628275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_56
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 992
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81480d9ce7eca9160800000000000000
+      internalID: 7033160812039537688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_57
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 980
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ad6096add485120800000000000000
+      internalID: 2402756001662425719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_58
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 964
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d7b1e436bfb7080800000000000000
+      internalID: -9188474210788606571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_59
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 997
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430234a829278a390800000000000000
+      internalID: -7806863980336308172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_60
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 997
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfefce478ecfbe00800000000000000
+      internalID: 1062795117620883377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_61
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1007
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1265224f6d096eb70800000000000000
+      internalID: 8927982564201879073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_62
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 995
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65741cd2eb4bc210800000000000000
+      internalID: 1354259550681986415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_63
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 995
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da95774b8558cdee0800000000000000
+      internalID: -1234965581775021651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_64
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 976
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d608647da8f989510800000000000000
+      internalID: 1556169089922531437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_65
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 923
+        width: 76
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728527a0ddae20900800000000000000
+      internalID: 649339531378710567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_66
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 937
+        width: 28
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d826ff788df0820800000000000000
+      internalID: 2886763964784610583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_67
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 933
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f324b93086341fd0800000000000000
+      internalID: -2372211179365587975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_68
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 991
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e0c20d396c71520800000000000000
+      internalID: 2672823242022719072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_69
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 833
+        width: 116
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2508f86678b41a040800000000000000
+      internalID: 4657086534591152210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_70
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 960
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cea210f56b4ad020800000000000000
+      internalID: 2367287455328153281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_71
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 933
+        width: 88
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d2a514424bfa5d0800000000000000
+      internalID: -3049020354898285243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_72
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 828
+        width: 27
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bba573d5a98ee2e0800000000000000
+      internalID: -2094585431370388555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_73
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 879
+        width: 88
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74afa6f64f66dc8d0800000000000000
+      internalID: -2824488191264097721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_74
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 897
+        width: 66
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14366ec4f95e339f0800000000000000
+      internalID: -489795462100524223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_75
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 960
+        width: 43
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c165b9f0764ce9970800000000000000
+      internalID: 8763657871832077852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 966
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c991cdcde1f12f10800000000000000
+      internalID: 2243340093068777921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_77
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 897
+        width: 22
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b39574410bc3670800000000000000
+      internalID: 8519878196221000592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_78
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 904
+        width: 39
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d417c5042e11fb8e0800000000000000
+      internalID: -1675600872918453939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_79
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 915
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b548a834fc14ada0800000000000000
+      internalID: -5934586573719321160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_80
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 950
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b9d88dfd298d6e0800000000000000
+      internalID: -1812537359908103394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_81
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 955
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac00d5492df0ea050800000000000000
+      internalID: 5813601566088560842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_82
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 972
+        width: 35
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30117e416a597ad50800000000000000
+      internalID: 6748527107185774851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_83
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 960
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d221ab1232a2fe50800000000000000
+      internalID: 6841709120024814297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_84
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 963
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc00b1398b23173e0800000000000000
+      internalID: -2057807786408214323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_85
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 868
+        width: 39
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4391dfeffc633e90800000000000000
+      internalID: -7047169145408744625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_86
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 878
+        width: 23
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4baef7f07e6aa6e40800000000000000
+      internalID: 5650512193817406132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_87
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 909
+        width: 53
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75beec9de72afeb0800000000000000
+      internalID: -4685388560831957638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_88
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 916
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e037d32ca7c3723a0800000000000000
+      internalID: -6690312223493098738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_89
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 895
+        width: 16
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1b96122b836ad80800000000000000
+      internalID: -8239836130511834695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_90
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 948
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f134786b89b1861a0800000000000000
+      internalID: -6816167693313948897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_91
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 930
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d6e5137684c9470800000000000000
+      internalID: 8402670612813606194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_92
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 930
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5571805752ce1e690800000000000000
+      internalID: -7574513452639053995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_93
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 939
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc53c45d960d60d0800000000000000
+      internalID: -3428076468557357890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_94
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 881
+        width: 25
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6698d61a2dbedeff0800000000000000
+      internalID: -5088734673532570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_95
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 925
+        width: 56
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a951855e049dce750800000000000000
+      internalID: 6335677648552334746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_96
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 810
+        width: 36
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8fdaac32509b450800000000000000
+      internalID: 6104916421159811272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_97
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 875
+        width: 23
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f94b184e27929740800000000000000
+      internalID: 5157350748326676983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_98
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 885
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412db77a7a8169570800000000000000
+      internalID: 8472986857292681748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_99
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 897
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6072b13c3d4eb20800000000000000
+      internalID: 3162885673248556731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_100
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 836
+        width: 29
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6f569f28b7ff8d0800000000000000
+      internalID: -2810391839995726081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_101
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 836
+        width: 29
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d57b353c8226420800000000000000
+      internalID: 2621702752471309606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_102
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 826
+        width: 24
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b519bdbe1db958f0800000000000000
+      internalID: -551201539646483020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_103
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 848
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29eeef65b25d2e9d0800000000000000
+      internalID: -2746398440622723438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_104
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 847
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b355011ddd7d73b80800000000000000
+      internalID: -8415020031023229637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_105
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 877
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a9a7211a1425ee0800000000000000
+      internalID: -1273883584536864104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_106
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 859
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd757acfaa8f9bd20800000000000000
+      internalID: 3294938015665182685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_107
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 870
+        width: 22
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee8e119d06260d60800000000000000
+      internalID: 7856008439705538274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_108
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 895
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ea51402b5af1b30800000000000000
+      internalID: 4260305956507069958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_109
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 839
+        width: 58
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d237942cf5e8d4700800000000000000
+      internalID: 526233273404846893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_110
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 809
+        width: 33
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8642083ebfb2858c0800000000000000
+      internalID: -4010407107319815064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_111
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 419
+        width: 688
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e5cf563eb2d8880800000000000000
+      internalID: -8607175057166541189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_112
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 801
+        width: 22
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c89e9a1224644de0800000000000000
+      internalID: -1349843890666039100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_113
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 752
+        width: 97
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ba74a6339fd7f10800000000000000
+      internalID: 2269243786486328217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_114
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 852
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30157b34c78d869c0800000000000000
+      internalID: -3933656246284496637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_115
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 861
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c394e18c3b2849d70800000000000000
+      internalID: 9049001259962353980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_116
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 740
+        width: 22
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1b8177cc2301430800000000000000
+      internalID: 3751554343352447445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_117
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 819
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472d7b20eadc9fe60800000000000000
+      internalID: 7996648760626631284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_118
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 815
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12346a92ec68d54d0800000000000000
+      internalID: -3144208744814591199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_119
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 776
+        width: 22
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43ce561b4bca31c0800000000000000
+      internalID: -4523079352381947060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_120
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 727
+        width: 22
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2984e9840327e9ae0800000000000000
+      internalID: -1540668470811801454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_121
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 740
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b5ccd5b0b9b6030800000000000000
+      internalID: 3489052809449200445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_122
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 740
+        width: 22
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8dcbcf27844370f0800000000000000
+      internalID: -1120476534871962226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_123
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 776
+        width: 54
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd08259419ca5ab0800000000000000
+      internalID: -5018477744512037428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_124
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 642
+        width: 118
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b4a600e33107820800000000000000
+      internalID: 2913850115924577067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_125
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 647
+        width: 22
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1aca24d120a751c0800000000000000
+      internalID: -4514964034261693921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_126
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 657
+        width: 22
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af67c0ec9b25f870800000000000000
+      internalID: 8715920606631522215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_127
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 668
+        width: 28
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76dc89de20d07f60800000000000000
+      internalID: 8030147035238553213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_128
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 590
+        width: 33
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c904754ea94b190800000000000000
+      internalID: -7947557136895009725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_129
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 677
+        width: 28
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0da04492a205a160800000000000000
+      internalID: 7036032890131492109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_130
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 597
+        width: 22
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a4faf3382102c10800000000000000
+      internalID: 2026640187235191434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_131
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 636
+        width: 28
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665f10c61bcd2bef0800000000000000
+      internalID: -93769987641969306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_132
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 635
+        width: 35
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2d9013a4eabebe0800000000000000
+      internalID: -1446871221595942159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_133
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 596
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f07063254567d6d0800000000000000
+      internalID: -2965790481979510544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_134
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 596
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7c40326bcf26600800000000000000
+      internalID: 460207971146975142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_135
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 574
+        width: 22
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35beee459436b4d60800000000000000
+      internalID: 7875497539996150611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_136
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 574
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfaf4d83b9c366760800000000000000
+      internalID: 7450709270902143740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_137
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 571
+        width: 28
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cc3fb03b631a300800000000000000
+      internalID: 261550395991772191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_138
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 600
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eea40697dd315310800000000000000
+      internalID: 1391961755978346213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_139
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 572
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60693cdb119bd5710800000000000000
+      internalID: 1683705321555727878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_140
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 458
+        width: 69
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45687b311e4e0f1f0800000000000000
+      internalID: -1013058260808792492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_141
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 520
+        width: 24
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33bcc84de2864300800000000000000
+      internalID: 236019986123764543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_142
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 545
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4684b309697847310800000000000000
+      internalID: 1401894464753715300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_143
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 522
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936b497962cd79810800000000000000
+      internalID: 1772127036703553081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_144
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 504
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18d1b2c7e33a3640800000000000000
+      internalID: 5060414201801070618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_145
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 488
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e521e08dcdd49f0800000000000000
+      internalID: -482486764551643506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_146
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 493
+        width: 26
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f6430ec1a0614e0800000000000000
+      internalID: -2011409064437452976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_147
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 524
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73ec21b5602cd4f0800000000000000
+      internalID: -802731012442496129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_148
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 470
+        width: 23
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cd6b2c0eaef7170800000000000000
+      internalID: 8178513699388447783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_149
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 474
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee56d76c905a0080800000000000000
+      internalID: -9220468654400446750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_150
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 398
+        width: 34
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350da639ab9581540800000000000000
+      internalID: 4978828045930123347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_151
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 318
+        width: 33
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5073c82e58ff96c60800000000000000
+      internalID: 7812055979147409157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_152
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 411
+        width: 28
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e953bf5ffbdf54030800000000000000
+      internalID: 3478465288121038238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_153
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 371
+        width: 46
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3f8c499bd19a0e0800000000000000
+      internalID: -2258241055247240276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_154
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 399
+        width: 33
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d190abcd92289a470800000000000000
+      internalID: 8406393295772191005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_155
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 376
+        width: 30
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1a72d499518dd40800000000000000
+      internalID: 5609257084058575278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_156
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 374
+        width: 30
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7f8fcd707189700800000000000000
+      internalID: 547212677265029075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_157
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 418
+        width: 30
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad169f651eef1c680800000000000000
+      internalID: -8736421558341770790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_158
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 398
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3003d6070551bb860800000000000000
+      internalID: 7546649035817168899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_159
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 452
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3841438a9f7bcf20800000000000000
+      internalID: 3443986641658660925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_160
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 398
+        width: 27
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5982569ffa1896350800000000000000
+      internalID: 6010477770506053781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_161
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 401
+        width: 23
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa3dce67b41fdcb0800000000000000
+      internalID: -4837124696702109019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_162
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 439
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5afbcbf5597e3f40800000000000000
+      internalID: 5710134787755997789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_163
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 390
+        width: 28
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7586ac5674365a0800000000000000
+      internalID: -6529296532243982426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_164
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 384
+        width: 30
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af82a359f2bd59340800000000000000
+      internalID: 4870039569484622074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_165
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 382
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408bec065a788fac0800000000000000
+      internalID: -3821155139460351996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_166
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 376
+        width: 38
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea7c3a76c79e79b0800000000000000
+      internalID: -5080456450917238035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_167
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 365
+        width: 29
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903c957c68757fab0800000000000000
+      internalID: -4974411027025640695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_168
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 374
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b01d621cb58dd7c0800000000000000
+      internalID: -4044929847499353930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_169
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 426
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f129db35899f45f20800000000000000
+      internalID: 3410625250461585951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_170
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 364
+        width: 29
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a37b4eb04ac62ad0800000000000000
+      internalID: -2727270144906923095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_171
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 305
+        width: 91
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2b1a72e59910ba0800000000000000
+      internalID: -6124445388576279899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_172
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 283
+        width: 46
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0594816fa86d7d320800000000000000
+      internalID: 2582768803642886480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_173
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 336
+        width: 33
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9235b3b7096de7e80800000000000000
+      internalID: -8178863957227121879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_174
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 336
+        width: 33
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a78286a65bc90230800000000000000
+      internalID: 3605636549707990949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_175
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 331
+        width: 33
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32137299abc4bdd10800000000000000
+      internalID: 2151397611316654371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_176
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 319
+        width: 32
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023787d06340464b0800000000000000
+      internalID: -5448225019010714848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_177
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 310
+        width: 33
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd97551f36aa8eac0800000000000000
+      internalID: -3825620537223841316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_178
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 337
+        width: 31
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99cec6e59171c050800000000000000
+      internalID: 5819057082175768989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_179
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 332
+        width: 31
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5be621694547c80800000000000000
+      internalID: -8325936807570131484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_180
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 333
+        width: 29
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621bf64a954c8bab0800000000000000
+      internalID: -4992024297650278106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_181
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 307
+        width: 28
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c814fc950ac5a79f0800000000000000
+      internalID: -469961367335517812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_182
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 313
+        width: 30
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ebb925061621630800000000000000
+      internalID: 3896283693959593506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_183
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 325
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4d9aefce484f550800000000000000
+      internalID: 6193721540960965809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_184
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 379
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17af1684b0146dfa0800000000000000
+      internalID: -5776357955341256079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_185
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 308
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf58983da15df3730800000000000000
+      internalID: 3981134906813679099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_186
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 246
+        width: 33
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26ac8d5de14ed070800000000000000
+      internalID: 8133010464810247727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_187
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 253
+        width: 33
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5c59049bffbed30800000000000000
+      internalID: 4461941026958198244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_188
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 316
+        width: 73
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b591d2ec6e7830300800000000000000
+      internalID: 217166632415205723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_189
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 250
+        width: 31
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f378bac6acec1900800000000000000
+      internalID: 656659846799062003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_190
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 276
+        width: 31
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98444dac061a34290800000000000000
+      internalID: -7907299083640617847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_191
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 286
+        width: 29
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63baf26570dbbe200800000000000000
+      internalID: 210469646811245366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_192
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 289
+        width: 31
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce691ab650b28cf0800000000000000
+      internalID: -251444742643421491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_193
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 244
+        width: 29
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab369f6fa333d0410800000000000000
+      internalID: 1444867383800456122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_194
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 165
+        width: 40
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04ceb78dfdf2d230800000000000000
+      internalID: 3662268712351613967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_195
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 249
+        width: 29
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5fd23ffb27954a0800000000000000
+      internalID: -6604121209817926218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_196
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 324
+        width: 53
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86191b971f09c1330800000000000000
+      internalID: 3682977962085421416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_197
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 166
+        width: 34
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a78bfab0711393e0800000000000000
+      internalID: -2048274229652387936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_198
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 242
+        width: 33
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c161a962922c0a0800000000000000
+      internalID: -6862877636388578298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_199
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 238
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172f9744e6aef83d0800000000000000
+      internalID: -3202083050720988559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_200
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 136
+        width: 37
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1aca68ec261a3f0800000000000000
+      internalID: -891322612080401979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_201
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 246
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132e33f7124c3f570800000000000000
+      internalID: 8499352569925329457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_202
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 234
+        width: 33
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d131221ec13f100800000000000000
+      internalID: 140487766643514631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_203
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 255
+        width: 17
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2c0c3021cb5aca0800000000000000
+      internalID: -6006187742470290714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_204
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 231
+        width: 31
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f11c6dbbe6015ac0800000000000000
+      internalID: -3868302995369487885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_205
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 238
+        width: 30
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4685441c886765ee0800000000000000
+      internalID: -1272699514955474844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_206
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 256
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad66b5c167885100800000000000000
+      internalID: 96976245987110314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_207
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 308
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b093150e60eff100800000000000000
+      internalID: 144080476235337909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_208
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 234
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c8910162a3b31f0800000000000000
+      internalID: -1064192951789712333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_209
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 234
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe6c950d3cf00ec0800000000000000
+      internalID: -3602602362879054090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_210
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 219
+        width: 31
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16384fa3cf6a78600800000000000000
+      internalID: 470528288334578529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_211
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 251
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c125171c5a55b10800000000000000
+      internalID: 1969662662292937764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_212
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 263
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441500061dbeb3010800000000000000
+      internalID: 1169787812724101444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_213
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 265
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259d76a4a5e5953b0800000000000000
+      internalID: -5523279726104815278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_214
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 237
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a311f76f539b01c0800000000000000
+      internalID: -4536370161670614104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_215
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 246
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f855ae27ad88afa0800000000000000
+      internalID: -5789221571803129613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_216
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 0
+        width: 50
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4914dec678b1c4fe0800000000000000
+      internalID: -1203556731952741996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_217
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 153
+        width: 32
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe18a649353258c80800000000000000
+      internalID: -8321205894617857553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_218
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 84
+        width: 32
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0957aca199a35e850800000000000000
+      internalID: 6405590474258281872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_219
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 243
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49828cb2a0992ab0800000000000000
+      internalID: -5032332079988045494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_220
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 242
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d682e29728dbabf0800000000000000
+      internalID: -311918084692474160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_221
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 242
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97748b5b961de2f30800000000000000
+      internalID: 4552806525268674425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_222
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 166
+        width: 31
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb11679738d9b330800000000000000
+      internalID: 3727247899900320762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_223
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 167
+        width: 31
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3de678e77ae0440800000000000000
+      internalID: 4904041206132954106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_224
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 164
+        width: 28
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870631b2830cfe8c0800000000000000
+      internalID: -3967741399216725896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_225
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 146
+        width: 34
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd6f78038a085fe0800000000000000
+      internalID: -1200197742794674760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_226
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 146
+        width: 34
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2faac1b973c9abd0800000000000000
+      internalID: -2618346780897923286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_227
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 157
+        width: 33
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb5d72ace1045e80800000000000000
+      internalID: -8190919706430055430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_228
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 165
+        width: 39
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c73c9ded5a1a950800000000000000
+      internalID: 6458625717180791894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_229
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 172
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9be07b23146aae0800000000000000
+      internalID: -1538470536625079887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_230
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 160
+        width: 33
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c244c851a0191a810800000000000000
+      internalID: 1774859200657900588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_231
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 164
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d144f97bb0bc1b0800000000000000
+      internalID: -5635397625445081726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_232
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 171
+        width: 33
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7a87cbb813390d0800000000000000
+      internalID: -3417333216011835464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_233
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 224
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7497c23c8d29eb0800000000000000
+      internalID: -4714467527127119873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_234
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 223
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bcc3af7d4c6986f0800000000000000
+      internalID: -681894788460196681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_235
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 76
+        width: 56
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f263f6f9ba9d470800000000000000
+      internalID: 8419949679599824716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_236
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 219
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be91faf10d0aed510800000000000000
+      internalID: 1575873735371463147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_237
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 175
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd763b9bd08df4b0800000000000000
+      internalID: -5405022297084494405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_238
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 155
+        width: 31
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe90eec425ce0f70800000000000000
+      internalID: 9155471854371118844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_239
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 156
+        width: 31
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f70f4104456bf620800000000000000
+      internalID: 2808950135349774321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_240
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 225
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d129c77bde280b0800000000000000
+      internalID: -5727754403737100935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_241
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 150
+        width: 40
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a123ae37a223ba0d0800000000000000
+      internalID: -3410577134888275430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_242
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 42
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81c4cace5dd33e20800000000000000
+      internalID: 3329247948755485067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_243
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 166
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e8f653fd1ecadc0800000000000000
+      internalID: -3626275251149631971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_244
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 78
+        width: 30
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543bdcf86e40cb650800000000000000
+      internalID: 6249875771185017669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_245
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 76
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd5ad3785c445cd0800000000000000
+      internalID: -2570345544537186817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_246
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 76
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09f2f92c51e35ee0800000000000000
+      internalID: -1273426483658688244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_247
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 76
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b4292eed3ed06d0800000000000000
+      internalID: -3022509228472251564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_248
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 83
+        width: 37
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd781f41675b1f60800000000000000
+      internalID: 8006088838031637974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_249
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 87
+        width: 40
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774367a6536ef0060800000000000000
+      internalID: 6922004269385528439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_250
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 83
+        width: 37
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3492d9912fa54dd0800000000000000
+      internalID: -2502401459084946373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_251
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 72
+        width: 38
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a9227f2e8f4b200800000000000000
+      internalID: 195054337576311381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_252
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 84
+        width: 35
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d89cae35b6f6250800000000000000
+      internalID: 5940084441690508592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_253
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 84
+        width: 32
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a5c06d38cbf2540800000000000000
+      internalID: 4985410586940299839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_254
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 81
+        width: 31
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d765e6fb6dc9f5c00800000000000000
+      internalID: 891603697391261309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_255
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 85
+        width: 32
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d87d2c897efa2bd0800000000000000
+      internalID: -2654029232385197871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_256
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 84
+        width: 32
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8741512d3199740800000000000000
+      internalID: 5159176641147336870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_257
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 84
+        width: 31
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5ab2c9ec91ed600800000000000000
+      internalID: 494861384231396803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_258
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 81
+        width: 36
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b1d9e59df29f2f0800000000000000
+      internalID: -938666436688274610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_259
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 75
+        width: 30
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bd1f696b23840e0800000000000000
+      internalID: -2285521051092657276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_260
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 71
+        width: 30
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77235f30fee4435c0800000000000000
+      internalID: -4236674560978242953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_261
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 80
+        width: 31
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2bbcbc13a4fdc80800000000000000
+      internalID: -8295830410860186976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_262
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 0
+        width: 30
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068ceef75890683b0800000000000000
+      internalID: -5510706625059567520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_263
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 34
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf56388a36f18f730800000000000000
+      internalID: 4033007979199686140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_264
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 34
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f18600a43687db40800000000000000
+      internalID: 5464984233418588658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_265
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 33
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5b25e459490b7a0800000000000000
+      internalID: -6363422904489429579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_266
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 0
+        width: 33
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fddd41a48d62c0c0800000000000000
+      internalID: -4556959456536175113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_267
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 0
+        width: 34
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc43c17b7ead1b70800000000000000
+      internalID: 8871438686202580191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_268
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 0
+        width: 31
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c9de57020206a00800000000000000
+      internalID: 747632861933050889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_269
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 0
+        width: 31
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11e4d0db40932e20800000000000000
+      internalID: 3324659605230117148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_270
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 0
+        width: 32
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a086a74ede5a6040800000000000000
+      internalID: 4641626674736562343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_271
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 0
+        width: 32
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b702d1bdf2f7a80800000000000000
+      internalID: -8466996156300231880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_272
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 74
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234c0f19a1edc2110800000000000000
+      internalID: 1237608203319034930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_273
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 0
+        width: 26
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564f29838bc73cde0800000000000000
+      internalID: -1314069535597071259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_274
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 73
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15574472dd098d290800000000000000
+      internalID: -7865377469681601199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_275
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 0
+        width: 26
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf92d7e94ce2b1c40800000000000000
+      internalID: 5484028393261181435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_276
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 0
+        width: 30
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c62ea824b24610c0800000000000000
+      internalID: -4605420227395705147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_277
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 0
+        width: 31
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63999ee0906648b60800000000000000
+      internalID: 7747429448075024694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_278
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee276098675cd9610800000000000000
+      internalID: 1629675753073701614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_279
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 2
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f212bc5949e97cb30800000000000000
+      internalID: 4307585929608634671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_280
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6826a0da440a68190800000000000000
+      internalID: -7960499074509413754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_281
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 32
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c30ab1f32ef1ce60800000000000000
+      internalID: 7980939445010039751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_282
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 2
+        width: 37
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871be932acf840800800000000000000
+      internalID: 577744750554034552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_283
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 2
+        width: 33
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9d2d7870c6b9990800000000000000
+      internalID: -7378184784917112398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_284
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 2
+        width: 34
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e8e39f4f7e54160800000000000000
+      internalID: 7009263434411707908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_285
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 2
+        width: 36
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b404fc7568bdeb910800000000000000
+      internalID: 1855161466568523851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1-1024x2048-Uncompressed-SushibarAtlas_Point-40dbb713_286
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 0
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659ca4a29a7276810800000000000000
+      internalID: 1758417787023968598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
