@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     {
         Ground,
         UnderWater,
+        Sushi,
         UI,
         Load
     }
@@ -41,6 +42,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        state = EState.Ground;
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
 
