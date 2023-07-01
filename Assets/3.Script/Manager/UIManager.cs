@@ -15,6 +15,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject mainUI;
     [SerializeField] private Image background;
     [SerializeField] private Image loadScene;
+    [SerializeField] private GameObject ScoreUI;
+
     [SerializeField] private Slider dashSlider;
     [SerializeField] private Camera cam;
 
@@ -41,6 +43,12 @@ public class UIManager : MonoBehaviour
         mainUI.SetActive(!isOn);
     }
 
+    public void ScoreOn()
+    {
+        ScoreUI.SetActive(true);
+        Image score = ScoreUI.GetComponentInChildren<Image>();
+        score.DOFade(1, 0.2f).SetDelay(0.2f);
+    }
     public void GotoLoadingScene()
     {
         loadScene.enabled = true;

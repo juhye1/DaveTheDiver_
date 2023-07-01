@@ -5,30 +5,58 @@ using Cysharp.Threading.Tasks;
 
 public class Spawner : MonoBehaviour
 {
-    public Transform trans;
+    public Liquid Tea;
+    public Transform SpawnPoint;
+    public ParticleSystem Smoke;
+
+    private List<Liquid> circles;
+    private int randNum;
+    private int count;
+    private Vector3 spawnPoint;
+    private Liquid tea;
 
     private void Awake()
     {
+        circles = new List<Liquid>();
+        count = 0;
+        MakeTea();
         //StartCoroutine(dd());
     }
 
-
-    public void PourTea()
+    private void MakeTea()
     {
-        StartCoroutine(dd());
+        for(int i=0; i<300; i++)
+        {
+            randNum = Random.Range(0, 1);
+            spawnPoint = randNum == 0 ? transform.position : SpawnPoint.position;
+
+            tea = Instantiate(Tea, spawnPoint, Quaternion.identity);
+            tea.transform.SetParent(transform);
+            tea.gameObject.SetActive(false);
+            circles.Add(tea);
+        }
+
     }
-    private IEnumerator dd()
-    {
-        WaitForSeconds dd = new WaitForSeconds(0.2f);
 
-        Instantiate(trans, transform.position, Quaternion.identity);
-        yield return dd;
+    public void SpawnTea()
+    {
+        for(int i=0; i<3; i++)
+        {
+            circles[count].gameObject.SetActive(true);
+            count++;
+        }
+
+        if(count.Equals(90))
+        {
+            Smoke.Play();
+        }
         
     }
 
-    public async UniTaskVoid UniWait()
-    {
-        Instantiate(trans, transform.position, Quaternion.identity);
-        await UniTask.DelayFrame(100);
-    }
+    /*    public async UniTaskVoid UniWait()
+        {
+            Instantiate(trans, transform.position, Quaternion.identity);
+            Instantiate(trans, trans2.position, Quaternion.identity);
+            await UniTask.Delay(20, cancellationToken:System.Threading.CancellationToken.None);   
+        }*/
 }

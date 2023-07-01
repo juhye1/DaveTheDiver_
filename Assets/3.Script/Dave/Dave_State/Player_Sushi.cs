@@ -60,15 +60,15 @@ public class Player_Sushi : PlayerInteraction
     {
         if(pressKey)
         {
-            
-            spawner.UniWait().Forget();
-
+            spawner.SpawnTea();
         }
     }
 
     public void OnPourTea(InputAction.CallbackContext context)
     {
         pour = context.ReadValue<float>() > 0.1f;
+        if(context.canceled)
+            UIManager.Instance.ScoreOn();
     }
 
     private void FixedUpdate()
