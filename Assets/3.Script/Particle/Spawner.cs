@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cysharp.Threading.Tasks;
 
 public class Spawner : MonoBehaviour
 {
@@ -10,20 +11,24 @@ public class Spawner : MonoBehaviour
     {
         //StartCoroutine(dd());
     }
-    private void Start()
+
+
+    public void PourTea()
     {
+        StartCoroutine(dd());
+    }
+    private IEnumerator dd()
+    {
+        WaitForSeconds dd = new WaitForSeconds(0.2f);
+
+        Instantiate(trans, transform.position, Quaternion.identity);
+        yield return dd;
         
     }
 
-    private IEnumerator dd()
+    public async UniTaskVoid UniWait()
     {
-        WaitForSeconds dd = new WaitForSeconds(0.02f);
-
-        for (int i = 0; i < 100; i++)
-
-        {
-            Instantiate(trans, transform.position, Quaternion.identity);
-        yield return dd;
-        }
+        Instantiate(trans, transform.position, Quaternion.identity);
+        await UniTask.DelayFrame(100);
     }
 }

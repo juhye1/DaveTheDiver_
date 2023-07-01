@@ -241,7 +241,7 @@ TextureImporter:
     second: InputAtlas_78
   - first:
       213: -8260301852444327722
-    second: InputAtlas_79
+    second: S
   - first:
       213: -4733090817501471828
     second: InputAtlas_80
@@ -2761,7 +2761,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: InputAtlas_79
+      name: S
       rect:
         serializedVersion: 2
         x: 866

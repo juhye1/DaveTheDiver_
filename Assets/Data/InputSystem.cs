@@ -114,6 +114,15 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PourTea"",
+                    ""type"": ""Button"",
+                    ""id"": ""d8d2e2e5-7c32-4350-be42-da4c9ba655ea"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -180,6 +189,17 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""PC"",
                     ""action"": ""Space"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cbe5c701-b159-4318-8184-6c427b576e20"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PourTea"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -314,6 +334,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_UIMove = m_UI.FindAction("UIMove", throwIfNotFound: true);
         m_UI_Space = m_UI.FindAction("Space", throwIfNotFound: true);
+        m_UI_PourTea = m_UI.FindAction("PourTea", throwIfNotFound: true);
         // Sushi
         m_Sushi = asset.FindActionMap("Sushi", throwIfNotFound: true);
         m_Sushi_Move = m_Sushi.FindAction("Move", throwIfNotFound: true);
@@ -421,12 +442,14 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     private IUIActions m_UIActionsCallbackInterface;
     private readonly InputAction m_UI_UIMove;
     private readonly InputAction m_UI_Space;
+    private readonly InputAction m_UI_PourTea;
     public struct UIActions
     {
         private @InputSystem m_Wrapper;
         public UIActions(@InputSystem wrapper) { m_Wrapper = wrapper; }
         public InputAction @UIMove => m_Wrapper.m_UI_UIMove;
         public InputAction @Space => m_Wrapper.m_UI_Space;
+        public InputAction @PourTea => m_Wrapper.m_UI_PourTea;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -442,6 +465,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @Space.started -= m_Wrapper.m_UIActionsCallbackInterface.OnSpace;
                 @Space.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnSpace;
                 @Space.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnSpace;
+                @PourTea.started -= m_Wrapper.m_UIActionsCallbackInterface.OnPourTea;
+                @PourTea.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnPourTea;
+                @PourTea.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnPourTea;
             }
             m_Wrapper.m_UIActionsCallbackInterface = instance;
             if (instance != null)
@@ -452,6 +478,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @Space.started += instance.OnSpace;
                 @Space.performed += instance.OnSpace;
                 @Space.canceled += instance.OnSpace;
+                @PourTea.started += instance.OnPourTea;
+                @PourTea.performed += instance.OnPourTea;
+                @PourTea.canceled += instance.OnPourTea;
             }
         }
     }
@@ -532,6 +561,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     {
         void OnUIMove(InputAction.CallbackContext context);
         void OnSpace(InputAction.CallbackContext context);
+        void OnPourTea(InputAction.CallbackContext context);
     }
     public interface ISushiActions
     {

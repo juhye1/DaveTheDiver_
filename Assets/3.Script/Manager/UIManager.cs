@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Image background;
     [SerializeField] private Image loadScene;
     [SerializeField] private Slider dashSlider;
+    [SerializeField] private Camera cam;
 
     private void Awake()
     {
@@ -63,11 +64,14 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void SushiUI(bool isOn, GameObject ui)
+    public void SushiUI(bool isOn, GameObject[] ui)
     {
         player.SwitchActionMap(isOn, Player.EState.Sushi);
-        background.enabled = isOn;
-        ui.SetActive(isOn);
+        //background.enabled = isOn;
+        foreach(var dd in ui)
+        {
+            dd.SetActive(isOn);
+        }
     }
 
     public void ShowChapter()
@@ -97,7 +101,7 @@ public class UIManager : MonoBehaviour
     {
         if (dashSlider.IsActive())
         {
-            dashSlider.transform.position = Camera.main.WorldToScreenPoint(player.UIPosition.position);
+            dashSlider.transform.position = cam.WorldToScreenPoint(player.UIPosition.position);
             if (dashSlider.value.Equals(0)) return false;
         }
         return true;

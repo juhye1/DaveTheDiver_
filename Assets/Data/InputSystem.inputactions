@@ -92,6 +92,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "PourTea",
+                    "type": "Button",
+                    "id": "d8d2e2e5-7c32-4350-be42-da4c9ba655ea",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -158,6 +167,17 @@
                     "processors": "",
                     "groups": "PC",
                     "action": "Space",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cbe5c701-b159-4318-8184-6c427b576e20",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PourTea",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Cysharp.Threading.Tasks;
 
 public class Player_Sushi : PlayerInteraction
 {
     private bool dash = false;
     private bool tired = false;
+    private bool pour = false;
+    private Spawner spawner;
 
     private readonly int isTired = Animator.StringToHash("isTired");
     private void Start()
     {
+        spawner = FindObjectOfType<Spawner>();
         state = EState.Sushi;
         lobby.Disable();
         sushi.Enable();
@@ -37,7 +41,7 @@ public class Player_Sushi : PlayerInteraction
 
     }
 
-    protected void DashGauge(bool pressKey)
+    private void DashGauge(bool pressKey)
     {
         bool canDash = UIManager.Instance.CheckDash();
 
@@ -51,6 +55,22 @@ public class Player_Sushi : PlayerInteraction
             speed = settings.TiredSpeed;
         }
     }
+
+    private void PourTea(bool pressKey)
+    {
+        if(pressKey)
+        {
+            
+            spawner.UniWait().Forget();
+
+        }
+    }
+
+    public void OnPourTea(InputAction.CallbackContext context)
+    {
+        pour = context.ReadValue<float>() > 0.1f;
+    }
+
     private void FixedUpdate()
     {
         switch (state)
@@ -60,10 +80,10 @@ public class Player_Sushi : PlayerInteraction
                 Space(pressKey);
                 break;
             case EState.UI:
+                PourTea(pour);
                 break;
             case EState.Sushi:
                 Move();
-                //Space(pressKey);
                 DashGauge(dash);
                 break;
         }

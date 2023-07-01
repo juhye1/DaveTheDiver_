@@ -158,6 +158,7 @@ public class Player : MonoBehaviour
         {
             playerInput.currentActionMap.Disable();
             ui.Enable();
+            this.state = EState.UI;
         }
         else
         {
@@ -165,9 +166,9 @@ public class Player : MonoBehaviour
             switch(state)
             {
                 case EState.Ground:
-                    lobby.Enable(); break;
+                    lobby.Enable(); this.state = state;  break;
                 case EState.Sushi:
-                    sushi.Enable(); break;
+                    sushi.Enable(); this.state = state; break;
             }
         }
     }
