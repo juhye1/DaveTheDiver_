@@ -16,10 +16,6 @@ public class bbvkxlzmfgkrltlfj : MonoBehaviour
     private void Start()
     {
         rigid.AddForce(Vector2.left*0.8f, ForceMode2D.Impulse);
-/*        Vector3 dd = new Vector3(-0.096f, 0.916f, 0);
-        Sequence sequence;
-        sequence = DOTween.Sequence();
-        sequence.Append(t.DOJump(dd, 0.1f, 1, 1f));*/
 
     }
 }

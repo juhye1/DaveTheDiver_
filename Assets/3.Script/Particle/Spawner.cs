@@ -8,7 +8,7 @@ public class Spawner : MonoBehaviour
 
     private void Awake()
     {
-        StartCoroutine(dd());
+        //StartCoroutine(dd());
     }
     private void Start()
     {
@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator dd()
     {
-        WaitForSeconds dd = new WaitForSeconds(0.05f);
+        WaitForSeconds dd = new WaitForSeconds(0.02f);
 
         for (int i = 0; i < 100; i++)
 

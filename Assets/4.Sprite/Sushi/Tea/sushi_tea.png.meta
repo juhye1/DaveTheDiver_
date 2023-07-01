@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 2cf0e123486c51445a9bc8bfe098668a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4092465407515481663
+    second: sushi_tea_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -376,6 +379,27 @@ TextureImporter:
       bones: []
       spriteID: 84aefa056f92386f0800000000000000
       internalID: -683656580537783736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sushi_tea_1
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 675
+        width: 133
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36d886fa9b5bc830800000000000000
+      internalID: 4092465407515481663
       vertices: []
       indices: 
       edges: []
