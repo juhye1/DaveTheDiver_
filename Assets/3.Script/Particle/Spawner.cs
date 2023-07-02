@@ -12,6 +12,7 @@ public class Spawner : MonoBehaviour
     private List<Liquid> circles;
     private int randNum;
     private int count;
+    public int Count { get { return count; } private set { } }
     private Vector3 spawnPoint;
     private Liquid tea;
 
@@ -20,9 +21,7 @@ public class Spawner : MonoBehaviour
         circles = new List<Liquid>();
         count = 0;
         MakeTea();
-        //StartCoroutine(dd());
     }
-
     private void MakeTea()
     {
         for(int i=0; i<300; i++)
@@ -53,10 +52,15 @@ public class Spawner : MonoBehaviour
         
     }
 
-    /*    public async UniTaskVoid UniWait()
+    public void ResetTea()
+    {
+        count = 0;
+        foreach(Liquid liquid in circles)
         {
-            Instantiate(trans, transform.position, Quaternion.identity);
-            Instantiate(trans, trans2.position, Quaternion.identity);
-            await UniTask.Delay(20, cancellationToken:System.Threading.CancellationToken.None);   
-        }*/
+            randNum = Random.Range(0, 1);
+            spawnPoint = randNum == 0 ? transform.position : SpawnPoint.position;
+            liquid.transform.position = spawnPoint;
+            liquid.gameObject.SetActive(false);
+        }
+    }
 }

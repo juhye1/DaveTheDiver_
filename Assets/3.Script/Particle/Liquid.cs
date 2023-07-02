@@ -20,4 +20,10 @@ public class Liquid : MonoBehaviour
         rigid.AddForce(Vector2.left * 0.8f, ForceMode2D.Impulse);
         circleCollider.isTrigger = false;
     }
+
+    private void OnDisable()
+    {
+        rigid.bodyType = RigidbodyType2D.Kinematic;
+        circleCollider.isTrigger = true;
+    }
 }

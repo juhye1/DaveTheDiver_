@@ -7,14 +7,18 @@ public class BaseCustomer : MonoBehaviour
     [SerializeField] protected GameObject interactionUI;
     [SerializeField] protected GameObject interactionUI2;
 
-    private GameObject[] dd;
-    private bool isOn { get; set; } = false;
+    protected BaseInteraction baseInteraction;
+    public bool CanPerform { get; protected set; } = true;
 
-    private void Start()
+    private GameObject[] dd;
+    protected bool isOn { get; set; } = false;
+
+    private void Awake()
     {
+        baseInteraction = GetComponent<BaseInteraction>();
         dd = new GameObject[] { interactionUI, interactionUI2 };
     }
-    public virtual void Tea()
+    public virtual void Interaction()
     {
         UIManager.Instance.SushiUI(!isOn, dd);
         isOn = !isOn;

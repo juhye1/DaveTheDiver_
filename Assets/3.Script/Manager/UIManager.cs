@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         else Destroy(gameObject);
         player = FindObjectOfType<Player>();
@@ -46,8 +46,18 @@ public class UIManager : MonoBehaviour
     public void ScoreOn()
     {
         ScoreUI.SetActive(true);
-        Image score = ScoreUI.GetComponentInChildren<Image>();
-        score.DOFade(1, 0.2f).SetDelay(0.2f);
+        CanvasGroup group = ScoreUI.GetComponent<CanvasGroup>();
+
+        Spawner spawner = FindObjectOfType<Spawner>();
+        Image[] scoreImg = ScoreUI.GetComponentsInChildren<Image>();
+        scoreImg[1].sprite = ScoreManager.Instance.ScoreImage(spawner.Count);
+        scoreImg[1].SetNativeSize();
+
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(group.DOFade(0.3f, 0.4f).SetDelay(3f))
+                .Append(group.DOFade(1, 0.1f));
+
+
     }
     public void GotoLoadingScene()
     {
@@ -76,9 +86,9 @@ public class UIManager : MonoBehaviour
     {
         player.SwitchActionMap(isOn, Player.EState.Sushi);
         //background.enabled = isOn;
-        foreach(var dd in ui)
+        foreach(var u in ui)
         {
-            dd.SetActive(isOn);
+            u.SetActive(isOn);
         }
     }
 

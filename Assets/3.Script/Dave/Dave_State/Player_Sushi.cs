@@ -67,8 +67,17 @@ public class Player_Sushi : PlayerInteraction
     public void OnPourTea(InputAction.CallbackContext context)
     {
         pour = context.ReadValue<float>() > 0.1f;
-        if(context.canceled)
+        if(interaction.InteractionType.Equals(BaseInteraction.EInteractionType.Tick))
+        {
+            if(context.canceled)
             UIManager.Instance.ScoreOn();
+        }
+        else
+        {
+            if(interaction!=null)
+            interaction.Instantaneous();
+        }
+
     }
 
     private void FixedUpdate()
@@ -80,7 +89,11 @@ public class Player_Sushi : PlayerInteraction
                 Space(pressKey);
                 break;
             case EState.UI:
-                PourTea(pour);
+                if(interaction.InteractionType.
+                    Equals(BaseInteraction.EInteractionType.Tick))
+                {
+                    PourTea(pour);
+                }
                 break;
             case EState.Sushi:
                 Move();

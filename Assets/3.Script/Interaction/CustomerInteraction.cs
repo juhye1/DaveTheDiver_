@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class CustomerInteraction : BaseInteraction
 {
+    private void Awake()
+    {
+        customer = GetComponent<BaseCustomer>();
+        interactionType = EInteractionType.Tick;
+    }
+
     private BaseCustomer customer;
 
     public override bool CanPerform()
@@ -11,13 +17,13 @@ public class CustomerInteraction : BaseInteraction
         return true;
     }
 
-    public override void Perform()
+    public override void Instantaneous()
     {
-        customer.Tea();
+        customer.Interaction();
     }
 
-    private void Awake()
+    public override void OverTime()
     {
-        customer = GetComponent<BaseCustomer>();
+        throw new System.NotImplementedException();
     }
 }

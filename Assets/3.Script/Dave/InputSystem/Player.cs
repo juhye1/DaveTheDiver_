@@ -16,11 +16,6 @@ public class Player : MonoBehaviour
         Load
     }
 
-    enum EInteractionType
-    {
-        Enter,
-        Tick
-    }
     [SerializeField] protected PlayerSettings settings;
     public Transform UIPosition;
 
@@ -109,7 +104,7 @@ public class Player : MonoBehaviour
 
             if (interaction != null)
             {
-                interaction.Perform();
+                interaction.Instantaneous();
             }
     }
 
@@ -119,7 +114,7 @@ public class Player : MonoBehaviour
         {
             if(interaction.CanPerform())
             {
-                interaction.Perform();
+                interaction.Instantaneous();
 
             }
         }
