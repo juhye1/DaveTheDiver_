@@ -4,8 +4,10 @@ using UnityEngine;
 using DG.Tweening;
 public class Customer : MonoBehaviour
 {
-    public SpriteRenderer Face;
-    public Transform Goal;
+    private SpriteRenderer Face;
+    private Transform Goal;
+    private Sequence sequence;
+    [SerializeField] private GameObject speechBubble;
 
     /*    public Customer(Sprite rend, Transform goal)
         {
@@ -23,7 +25,10 @@ public class Customer : MonoBehaviour
 
     private void Start()
     {
-        transform.DOLocalMoveX(Goal.position.x, 5f);
+        sequence = DOTween.Sequence();
+        sequence.Append(transform.DOLocalMoveX(Goal.position.x, 5f).OnComplete(() => 
+                                                speechBubble.SetActive(true)));
+        
     }
 
 

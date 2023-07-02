@@ -26,7 +26,6 @@ public class Chair : MonoBehaviour
     private void Awake()
     {
         chairs = GetComponentsInChildren<Transform>();
-        Debug.Log(chairs.Length);
         Chairs = new List<Chairs>();
         index = new List<int>();
 
@@ -61,10 +60,5 @@ public class Chair : MonoBehaviour
                 break;
         }
                 return chairTransforms;
-    }
-
-    public void EmptyChair()
-    {
-
     }
 }
