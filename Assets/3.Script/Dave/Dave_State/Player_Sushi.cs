@@ -71,6 +71,10 @@ public class Player_Sushi : PlayerInteraction
 
         pour = context.ReadValue<float>() > 0.1f;
 
+        if(context.started)
+        {
+            UIManager.Instance.MoveKettle();
+        }
         if(context.canceled)
         {
             UIManager.Instance.ScoreOn();

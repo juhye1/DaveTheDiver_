@@ -31,7 +31,6 @@ public class ScoreManager : MonoBehaviour
 
     public EScore TeaScore(int score)
     {
-        Debug.Log(score);
         if (score < 50)
         {
             Score = EScore.Bad;

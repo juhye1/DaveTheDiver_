@@ -12,7 +12,6 @@ public class Customer_Tea : BaseCustomer
     }
     public override void Interaction()
     {
-        Debug.Log(baseInteraction.InteractionType);
         switch(baseInteraction.InteractionType)
         {
             case BaseInteraction.EInteractionType.Enter:

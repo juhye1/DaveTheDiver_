@@ -17,6 +17,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Image loadScene;
     [SerializeField] private GameObject ScoreUI;
 
+    [SerializeField] private Transform Kettle;
+    [SerializeField] private Transform KettleGoal;
+
     [SerializeField] private Slider dashSlider;
     [SerializeField] private Camera cam;
 
@@ -53,7 +56,7 @@ public class UIManager : MonoBehaviour
         scoreImg[1].SetNativeSize();
 
         Sequence sequence = DOTween.Sequence().SetAutoKill();
-        sequence.Append(group.DOFade(0.3f, 0.4f).SetDelay(3f))
+        sequence.Append(group.DOFade(0.3f, 0.1f).SetDelay(2f))
                 .Append(group.DOFade(1, 0.1f));
 
 
@@ -84,11 +87,20 @@ public class UIManager : MonoBehaviour
     public void SushiUI(bool isOn, GameObject[] ui)
     {
         player.SwitchActionMap(isOn, Player.EState.Sushi);
-        //background.enabled = isOn;
-        foreach(var u in ui)
+        background.enabled = isOn;
+        CanvasGroup group = ScoreUI.GetComponent<CanvasGroup>();
+        group.alpha = 0;
+        foreach (var u in ui)
         {
             u.SetActive(isOn);
         }
+    }
+
+    public void MoveKettle()
+    {
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(Kettle.transform.DOLocalMove(KettleGoal.localPosition, 2))
+                .Join(Kettle.transform.DOLocalRotate(KettleGoal.localEulerAngles, 2));
     }
 
     public void ShowChapter()
