@@ -7,7 +7,6 @@ public class CustomerInteraction : BaseInteraction
     private void Awake()
     {
         customer = GetComponent<BaseCustomer>();
-        interactionType = EInteractionType.Tick;
     }
 
     private BaseCustomer customer;
@@ -17,13 +16,28 @@ public class CustomerInteraction : BaseInteraction
         return true;
     }
 
-    public override void Instantaneous()
+    public override void Perform()
     {
         customer.Interaction();
+        switch(interactionType)
+        {
+            case EInteractionType.Enter:
+                interactionType = EInteractionType.Tick;
+                break;
+            case EInteractionType.Tick:
+                //customer.Interaction();
+                break;
+            case EInteractionType.End:
+                //customer.Interaction();
+                interactionType = EInteractionType.Enter;
+                break;
+        }
     }
 
-    public override void OverTime()
+    public override void ChangeType()
     {
-        throw new System.NotImplementedException();
+        interactionType = EInteractionType.End;
     }
+
+
 }

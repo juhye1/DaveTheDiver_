@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
-
 public class Player : MonoBehaviour
 {
     public enum EState
@@ -104,7 +102,7 @@ public class Player : MonoBehaviour
 
             if (interaction != null)
             {
-                interaction.Instantaneous();
+                interaction.Perform();
             }
     }
 
@@ -114,7 +112,7 @@ public class Player : MonoBehaviour
         {
             if(interaction.CanPerform())
             {
-                interaction.Instantaneous();
+                interaction.Perform();
 
             }
         }

@@ -12,15 +12,22 @@ public class Customer_Tea : BaseCustomer
     }
     public override void Interaction()
     {
-        if(!isOn)
+        Debug.Log(baseInteraction.InteractionType);
+        switch(baseInteraction.InteractionType)
         {
-            base.Interaction();
-        }
-        else
-        {
-            spawner.SpawnTea();
-        }
+            case BaseInteraction.EInteractionType.Enter:
+                spawner.ResetTea();
+                base.Interaction(); 
 
+                break;
+            case BaseInteraction.EInteractionType.Tick:
+                spawner.SpawnTea();
+                break;
+            case BaseInteraction.EInteractionType.End:
+                spawner.ResetTea();
+                base.Interaction();
+                break;
 
+        }
     }
 }

@@ -45,15 +45,14 @@ public class UIManager : MonoBehaviour
 
     public void ScoreOn()
     {
-        ScoreUI.SetActive(true);
         CanvasGroup group = ScoreUI.GetComponent<CanvasGroup>();
-
+        group.alpha = 0;
         Spawner spawner = FindObjectOfType<Spawner>();
         Image[] scoreImg = ScoreUI.GetComponentsInChildren<Image>();
         scoreImg[1].sprite = ScoreManager.Instance.ScoreImage(spawner.Count);
         scoreImg[1].SetNativeSize();
 
-        Sequence sequence = DOTween.Sequence();
+        Sequence sequence = DOTween.Sequence().SetAutoKill();
         sequence.Append(group.DOFade(0.3f, 0.4f).SetDelay(3f))
                 .Append(group.DOFade(1, 0.1f));
 

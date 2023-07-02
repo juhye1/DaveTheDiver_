@@ -31,15 +31,16 @@ public class ScoreManager : MonoBehaviour
 
     public EScore TeaScore(int score)
     {
-        if (score < 100)
+        Debug.Log(score);
+        if (score < 50)
         {
             Score = EScore.Bad;
         }
-        else if (score < 200)
+        else if (score < 150)
         {
             Score = EScore.Good;
         }
-        else if (score < 250)
+        else if (score < 200)
         {
             Score = EScore.Perfect;
         }

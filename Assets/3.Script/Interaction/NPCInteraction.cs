@@ -9,7 +9,7 @@ public class NPCInteraction : BaseInteraction
     {
         npc = GetComponent<BaseNPC>();
     }
-    public override void Instantaneous()
+    public override void Perform()
     {
         npc.Talk();
     }

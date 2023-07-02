@@ -6,6 +6,7 @@ public class BaseCustomer : MonoBehaviour
 {
     [SerializeField] protected GameObject interactionUI;
     [SerializeField] protected GameObject interactionUI2;
+    [SerializeField] protected GameObject ScoreUI;
 
     protected BaseInteraction baseInteraction;
     public bool CanPerform { get; protected set; } = true;
@@ -16,7 +17,7 @@ public class BaseCustomer : MonoBehaviour
     private void Awake()
     {
         baseInteraction = GetComponent<BaseInteraction>();
-        dd = new GameObject[] { interactionUI, interactionUI2 };
+        dd = new GameObject[] { interactionUI, interactionUI2, ScoreUI };
     }
     public virtual void Interaction()
     {

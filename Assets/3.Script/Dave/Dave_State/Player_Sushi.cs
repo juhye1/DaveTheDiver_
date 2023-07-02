@@ -60,24 +60,22 @@ public class Player_Sushi : PlayerInteraction
     {
         if(pressKey)
         {
-            spawner.SpawnTea();
+            interaction.Perform();
+            //spawner.SpawnTea();
         }
     }
 
     public void OnPourTea(InputAction.CallbackContext context)
     {
-        pour = context.ReadValue<float>() > 0.1f;
-        if(interaction.InteractionType.Equals(BaseInteraction.EInteractionType.Tick))
-        {
-            if(context.canceled)
-            UIManager.Instance.ScoreOn();
-        }
-        else
-        {
-            if(interaction!=null)
-            interaction.Instantaneous();
-        }
+        //戚暗 S徹革?焼...........せ.せ.せ.せ..せせ..............ばばばばばばばばばばばばばばばばばばばばばばばばば
 
+        pour = context.ReadValue<float>() > 0.1f;
+
+        if(context.canceled)
+        {
+            UIManager.Instance.ScoreOn();
+            interaction.ChangeType();
+        }
     }
 
     private void FixedUpdate()
@@ -91,9 +89,7 @@ public class Player_Sushi : PlayerInteraction
             case EState.UI:
                 if(interaction.InteractionType.
                     Equals(BaseInteraction.EInteractionType.Tick))
-                {
-                    PourTea(pour);
-                }
+                {PourTea(pour);}
                 break;
             case EState.Sushi:
                 Move();

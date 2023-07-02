@@ -7,11 +7,11 @@ public abstract class BaseInteraction : MonoBehaviour
     public enum EInteractionType
     {
         Enter,
-        Tick
+        Tick,
+        End
     }
     [SerializeField] protected Transform interactionMarker;
     public Vector3 Point => interactionMarker != null ? interactionMarker.position : transform.position;
-    protected List<BaseInteraction> interactions;
     protected bool IsStart;
     public EInteractionType InteractionType => interactionType;
     protected EInteractionType interactionType = EInteractionType.Enter;
@@ -27,8 +27,12 @@ public abstract class BaseInteraction : MonoBehaviour
         }
     }*/
 
-    public abstract void Instantaneous();
-    public abstract void OverTime();
+    public abstract void Perform();
     public abstract bool CanPerform();
+
+    public virtual void ChangeType()
+    {
+        
+    }
 
 }

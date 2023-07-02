@@ -10,7 +10,7 @@ public class ObjectInteraction : BaseInteraction
     {
         baseObject = GetComponent<BaseObject>();
     }
-    public override void Instantaneous()
+    public override void Perform()
     {
         baseObject.Interaction();
     }
