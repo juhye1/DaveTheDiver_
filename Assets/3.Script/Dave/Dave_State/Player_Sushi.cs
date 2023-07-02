@@ -61,14 +61,11 @@ public class Player_Sushi : PlayerInteraction
         if(pressKey)
         {
             interaction.Perform();
-            //spawner.SpawnTea();
         }
     }
 
     public void OnPourTea(InputAction.CallbackContext context)
     {
-        //戚暗 S徹革?焼...........せ.せ.せ.せ..せせ..............ばばばばばばばばばばばばばばばばばばばばばばばばば
-
         pour = context.ReadValue<float>() > 0.1f;
 
         if(context.started)

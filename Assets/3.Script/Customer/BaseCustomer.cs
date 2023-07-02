@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class BaseCustomer : MonoBehaviour
 {
-    [SerializeField] protected GameObject interactionUI;
-    [SerializeField] protected GameObject interactionUI2;
-    [SerializeField] protected GameObject ScoreUI;
-
     protected BaseInteraction baseInteraction;
     public bool CanPerform { get; protected set; } = true;
 
-    private GameObject[] dd;
+    private GameObject[] TeaUI;
     protected bool isOn { get; set; } = false;
 
     private void Awake()
     {
         baseInteraction = GetComponent<BaseInteraction>();
-        dd = new GameObject[] { interactionUI, interactionUI2, ScoreUI };
     }
     public virtual void Interaction()
     {
-        UIManager.Instance.SushiUI(!isOn, dd);
+        UIManager.Instance.SushiUI(!isOn, TeaUI);
         isOn = !isOn;
+    }
+
+    public void Init(GameObject[] gameObjects)
+    {
+        TeaUI = gameObjects;
     }
 }
