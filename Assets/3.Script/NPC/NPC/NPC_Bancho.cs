@@ -6,11 +6,13 @@ public class NPC_Bancho : BaseNPC
 {
     private Bancho_Cooking cooking;
     private Sprite cookedSushi;
+    private int isCook = Animator.StringToHash("isCook");
 
     private void Start()
     {
         state = Estate.Game;
         cooking = GetComponent<Bancho_Cooking>();
+        animator = GetComponent<Animator>();
     }
     public override void Game()
     {
@@ -25,6 +27,11 @@ public class NPC_Bancho : BaseNPC
     public override void RandomAnimation()
     {
         throw new System.NotImplementedException();
+    }
+
+    public void StartCook(bool cook)
+    {
+        animator.SetBool(isCook, cook);
     }
 
 }

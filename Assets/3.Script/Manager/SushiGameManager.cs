@@ -83,4 +83,16 @@ public class SushiGameManager : MonoBehaviour
         SushiGO.SetActive(true);
         Sushi.sprite = sprite;
     }
+
+    public bool DeliverSushi(Sprite sprite)
+    {
+        if(Sushi.sprite.name.Equals(sprite.name))
+        {
+            SushiGO.SetActive(false);
+            return true;
+        }
+
+        return false;
+
+    }
 }

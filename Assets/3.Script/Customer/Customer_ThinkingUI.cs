@@ -44,6 +44,11 @@ public class Customer_ThinkingUI : MonoBehaviour
         sequence.Play();
 
         yield return sequence.WaitForCompletion();
+        //²ô±â
+        for (int i = 0; i < spriteRenderers.Length; i++)
+        {
+            spriteRenderers[i].enabled = false;
+        }
         customer.CustomerOrder();
     }
 }

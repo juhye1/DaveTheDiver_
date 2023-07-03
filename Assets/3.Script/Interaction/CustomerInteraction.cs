@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class CustomerInteraction : BaseInteraction
 {
+    private BaseCustomer baseCustomer;
+    private Customer customer;
     private void Awake()
     {
-        customer = GetComponent<BaseCustomer>();
+        baseCustomer = GetComponent<BaseCustomer>();
+        customer = GetComponent<Customer>();
     }
 
-    private BaseCustomer customer;
 
     public override bool CanPerform()
     {
@@ -18,8 +20,30 @@ public class CustomerInteraction : BaseInteraction
 
     public override void Perform()
     {
-        customer.Interaction();
-        switch(interactionType)
+        switch(customer.OrderType)
+        {
+            case Customer.EOrderType.Tea:
+                Tea();
+                break;
+            case Customer.EOrderType.Sushi:
+                baseCustomer.Sushi();
+                break;
+
+
+        }
+
+
+    }
+
+    public override void ChangeType()
+    {
+        interactionType = EInteractionType.End;
+    }
+
+    public void Tea()
+    {
+        baseCustomer.Tea();
+        switch (interactionType)
         {
             case EInteractionType.Enter:
                 interactionType = EInteractionType.Tick;
@@ -33,11 +57,5 @@ public class CustomerInteraction : BaseInteraction
                 break;
         }
     }
-
-    public override void ChangeType()
-    {
-        interactionType = EInteractionType.End;
-    }
-
 
 }

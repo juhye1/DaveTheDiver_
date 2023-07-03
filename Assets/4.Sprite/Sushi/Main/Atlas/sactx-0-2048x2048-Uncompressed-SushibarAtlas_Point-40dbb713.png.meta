@@ -568,7 +568,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_187
   - first:
       213: -7555613328674570210
-    second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_188
+    second: Bancho_Knife_0
   - first:
       213: -9073108720626217373
     second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_189
@@ -661,7 +661,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_218
   - first:
       213: -8277687403883802557
-    second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_219
+    second: Bancho_Idle_2
   - first:
       213: -5137063070184960422
     second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_220
@@ -772,16 +772,16 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_255
   - first:
       213: -8130298257754417258
-    second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_256
+    second: Bancho_Knife_1
   - first:
       213: 7853956864577902559
     second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_257
   - first:
       213: -7941717510551445999
-    second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_258
+    second: Bancho_Idle_0
   - first:
       213: -7559480050042487744
-    second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_259
+    second: Bancho_Idle_1
   - first:
       213: 7177579338983052292
     second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_260
@@ -838,7 +838,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_277
   - first:
       213: 7857788298014639130
-    second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_278
+    second: Bancho_Knife_3
   - first:
       213: 2648838915815103136
     second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_279
@@ -1000,7 +1000,7 @@ TextureImporter:
     second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_331
   - first:
       213: -2892419926137938575
-    second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_332
+    second: Bancho_Knife_2
   - first:
       213: -1159982646751476524
     second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_333
@@ -5407,7 +5407,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_188
+      name: Bancho_Knife_0
       rect:
         serializedVersion: 2
         x: 2
@@ -6058,13 +6058,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_219
+      name: Bancho_Idle_2
       rect:
         serializedVersion: 2
-        x: 441
-        y: 1399
-        width: 48
-        height: 87
+        x: 442
+        y: 1271
+        width: 43
+        height: 107
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6835,7 +6835,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_256
+      name: Bancho_Knife_1
       rect:
         serializedVersion: 2
         x: 64
@@ -6877,13 +6877,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_258
+      name: Bancho_Idle_0
       rect:
         serializedVersion: 2
         x: 343
-        y: 1288
+        y: 1295
         width: 42
-        height: 112
+        height: 105
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6898,12 +6898,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_259
+      name: Bancho_Idle_1
       rect:
         serializedVersion: 2
-        x: 393
-        y: 1294
-        width: 42
+        x: 391
+        y: 1295
+        width: 44
         height: 106
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -7297,13 +7297,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_278
+      name: Bancho_Knife_3
       rect:
         serializedVersion: 2
-        x: 439
-        y: 1189
-        width: 76
-        height: 187
+        x: 342
+        y: 995
+        width: 51
+        height: 105
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8431,15 +8431,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_332
+      name: Bancho_Knife_2
       rect:
         serializedVersion: 2
-        x: 246
-        y: 1097
-        width: 76
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 287
+        y: 995
+        width: 50
+        height: 105
+      alignment: 9
+      pivot: {x: 0.5000006, y: 0.50315636}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -8707,7 +8707,7 @@ TextureImporter:
       name: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Point-40dbb713_345
       rect:
         serializedVersion: 2
-        x: 2
+        x: 1
         y: 1052
         width: 54
         height: 95

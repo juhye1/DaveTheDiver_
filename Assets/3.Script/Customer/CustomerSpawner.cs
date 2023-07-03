@@ -26,6 +26,7 @@ public class SpeechBubble
     private int num;
     private int rdn;
     private SpeechBubble bubble;
+    private Customer.EOrderType orderType;
 
     public bool Sit { get { return customer.Sit; } private set { } }
 
@@ -57,11 +58,12 @@ public class SpeechBubble
         goal = chair.EmptyChairs();
         for (int i = 0; i < 3; i++)
         {
+            orderType = new Customer.EOrderType();
             Gacha();
 
             Customer _customer = Instantiate(customer, spawnpoints[i], Quaternion.identity);
             _customer.transform.SetParent(transform);
-            _customer.Init(CustomerSprites[num], goal[i], bubble);
+            _customer.Init(CustomerSprites[num], goal[i], bubble, orderType);
             _customer.GetComponent<BaseCustomer>().Init(TeaUI);
             sprites.Remove(num);
 
@@ -107,10 +109,12 @@ public class SpeechBubble
         {
             case 0:
                 bubble.Bubble = BubbleSprites[0];
+                orderType = Customer.EOrderType.Tea;
                 //³ìÂ÷
                 break;
             default:
                 bubble.Bubble = BubbleSprites[1];
+                orderType = Customer.EOrderType.Sushi;
                 //OrderList.Add(OrderSprites[num]);
                 //À½½Ä
                 break;

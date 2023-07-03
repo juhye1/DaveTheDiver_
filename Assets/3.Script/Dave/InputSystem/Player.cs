@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    //원래 이속 0.5 대쉬 0.7
     public enum EState
     {
         Ground,

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ec65b1e0f74b44eb64a840055a5d2a, type: 3}
   m_Name: PlayerSettings
   m_EditorClassIdentifier: 
-  MoveSpeed: 0.5
-  DashSpeed: 0.9
-  TiredSpeed: 0.7
+  MoveSpeed: 1.2
+  DashSpeed: 1.5
+  TiredSpeed: 1.2
   DetectRange: 1
   InteractableMask:
     serializedVersion: 2

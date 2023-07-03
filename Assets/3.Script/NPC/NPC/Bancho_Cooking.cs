@@ -16,8 +16,10 @@ public class Bancho_Cooking : MonoBehaviour
     [SerializeField] private Slider banchoSlider;
     [SerializeField] private GameObject banchoUI;
     [SerializeField] private Sprite[] backgroundSprites;
+    private GameObject clone;
     private Image backgroundImage;
     private Image image;
+    private NPC_Bancho bancho;
     private List<Sprite> OrderList;
     private List<Sprite> CookedList;
     private int first = 0;
@@ -27,6 +29,7 @@ public class Bancho_Cooking : MonoBehaviour
     {
         image = banchoSlider.GetComponentInChildren<Image>();
         backgroundImage = banchoUI.GetComponent<Image>();
+        bancho = GetComponent<NPC_Bancho>();
         OrderList = new List<Sprite>();
         CookedList = new List<Sprite>();
         backgroundImage.sprite = backgroundSprites[0];
@@ -65,18 +68,30 @@ public class Bancho_Cooking : MonoBehaviour
         OrderList.Remove(OrderList[first]);
         yield return new WaitForSeconds(0.5f);
 
+        MakeClone();
+
         if (!NullOrder())
         {
             image.sprite = OrderList[first];
         }
+
+        banchoUI.transform.DOLocalMoveY(10, 1);
+
         banchoSlider.value = 0;
         backgroundImage.sprite = backgroundSprites[0];
         cooked = !cooked;
+    }
+
+    private void MakeClone()
+    {
+        clone = Instantiate(banchoUI, banchoUI.transform.parent);
+        clone.transform.position = banchoUI.transform.position;
     }
     private bool NullOrder()
     {
         bool order = OrderList.Count.Equals(0) ? true : false;
         banchoUI.SetActive(!order);
+        bancho.StartCook(!order);
         return order;
     }
     private void Update()
@@ -91,8 +106,14 @@ public class Bancho_Cooking : MonoBehaviour
 
     public Sprite CookedSushi()
     {
+        Sprite sushi;
         if (!CookedList.Count.Equals(0))
-            return CookedList[first];
+        {
+            Destroy(clone);
+            sushi = CookedList[first];
+            CookedList.Remove(sushi);
+            return sushi;
+        }
         else return null;
     }
 
