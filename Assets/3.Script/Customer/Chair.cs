@@ -21,8 +21,6 @@ public class Chair : MonoBehaviour
     public List<Chairs> Chairs;
     private List<int> index;
 
-    public List<Chairs> EmptyChairs;
-
     private void Awake()
     {
         chairs = GetComponentsInChildren<Transform>();
@@ -35,7 +33,7 @@ public class Chair : MonoBehaviour
             Chairs.Add(chair);
         }
     }
-    public List<Transform> SeatChair()
+    public List<Transform> EmptyChairs()
     {
         List<Transform> chairTransforms = new List<Transform>();
         int num;

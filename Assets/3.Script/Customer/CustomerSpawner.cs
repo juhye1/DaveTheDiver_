@@ -19,11 +19,15 @@ public class SpeechBubble
     [SerializeField] private Sprite[] BubbleSprites;
     [SerializeField] private Sprite[] OrderSprites;
 
+    private List<Sprite> OrderList;
+
     private List<Transform> goal;
     private Chair chair;
     private int num;
     private int rdn;
     private SpeechBubble bubble;
+
+    public bool Sit { get { return customer.Sit; } private set { } }
 
     [SerializeField] protected GameObject[] TeaUI;
 
@@ -36,8 +40,9 @@ public class SpeechBubble
         chair = FindObjectOfType<Chair>();
         sprites = new List<int>();
         goal = new List<Transform>();
+        
 
-        bubble = new SpeechBubble();
+
 
 
         for (int i = 0; i < CustomerSprites.Length; i++)
@@ -47,13 +52,13 @@ public class SpeechBubble
     }
     private void Start()
     {
-
         SpawnCustomer();
     }
 
 
     private void SpawnCustomer()
     {
+        goal = chair.EmptyChairs();
         for (int i = 0; i < 3; i++)
         {
             Gacha();
@@ -70,7 +75,7 @@ public class SpeechBubble
     private void Gacha()
     {
         //의자 뽑기
-        goal = chair.SeatChair();
+
         for (int j = 0; j < 10; j++)
         {
             //얼굴 뽑기
@@ -83,7 +88,10 @@ public class SpeechBubble
         }
         //말풍선, 주문
         //0번이면 무조건 녹차, 1번이면 음식
-        rdn = Random.Range(0, BubbleSprites.Length);
+
+        //음식 > 말풍선 순서가 맞는듯?
+/*        rdn = Random.Range(0, BubbleSprites.Length);
+        bubble = new SpeechBubble();
         bubble.Bubble = BubbleSprites[rdn];
 
         switch(rdn)
@@ -95,9 +103,36 @@ public class SpeechBubble
             case 1:
                 int num = Random.Range(1, OrderSprites.Length);
                 bubble.Order = OrderSprites[num];
+                //OrderList.Add(OrderSprites[num]);
+                //음식
+                break;
+
+        }
+*/
+        bubble = new SpeechBubble();
+        rdn = Random.Range(0, OrderSprites.Length);
+        bubble.Order = OrderSprites[rdn];
+
+        switch (rdn)
+        {
+            case 0:
+                bubble.Bubble = BubbleSprites[0];
+                //녹차
+                break;
+            default:
+                bubble.Bubble = BubbleSprites[1];
+                //OrderList.Add(OrderSprites[num]);
                 //음식
                 break;
 
         }
     }
+
+    public List<Sprite> GetOrderList()
+    {
+        List<Sprite> orderList = OrderList;
+        OrderList.Clear();
+        return orderList;
+    }
+
 }

@@ -8,6 +8,10 @@ public class Customer : MonoBehaviour
     private Transform Goal;
     private Sequence sequence;
     [SerializeField] private GameObject speechBubble;
+    private Bancho_Cooking bancho;
+    private SpeechBubble bubble;
+    private bool sit;
+    public bool Sit => sit;
 
     public void Init(Sprite rend, Transform goal, SpeechBubble bubble)
     {
@@ -18,10 +22,12 @@ public class Customer : MonoBehaviour
         SpriteRenderer[] speechbubble = speechBubble.GetComponentsInChildren<SpriteRenderer>();
         speechbubble[0].sprite = bubble.Bubble;
         speechbubble[1].sprite = bubble.Order;
+        this.bubble = bubble;
     }
 
     private void Start()
     {
+        bancho = FindObjectOfType<Bancho_Cooking>();
         MoveToChair();
         
     }
@@ -30,7 +36,13 @@ public class Customer : MonoBehaviour
     {
         sequence = DOTween.Sequence();
         sequence.Append(transform.DOLocalMoveX(Goal.position.x, 5f).OnComplete(() =>
-                                                speechBubble.SetActive(true)));
+                                                SitChair()));
+    }
+
+    private void SitChair()
+    {
+        speechBubble.SetActive(true);
+        bancho.Order(bubble.Order);
     }
 
 }
