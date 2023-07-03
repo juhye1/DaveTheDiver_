@@ -11,7 +11,14 @@ public class NPCInteraction : BaseInteraction
     }
     public override void Perform()
     {
-        npc.Talk();
+        switch(npc.State)
+        {
+            case BaseNPC.Estate.Talk:
+                npc.Talk(); break;
+            case BaseNPC.Estate.Game:
+                npc.Game(); break;
+
+        }
     }
 
     public override bool CanPerform()

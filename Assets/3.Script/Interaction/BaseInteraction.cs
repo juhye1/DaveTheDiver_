@@ -15,18 +15,6 @@ public abstract class BaseInteraction : MonoBehaviour
     protected bool IsStart;
     public EInteractionType InteractionType => interactionType;
     protected EInteractionType interactionType = EInteractionType.Enter;
-
-/*    public List<BaseInteraction> Interactions
-    {
-        get
-        {
-            if (interactions == null)
-                interactions = new List<BaseInteraction>(GetComponents<BaseInteraction>());
-
-            return interactions;
-        }
-    }*/
-
     public abstract void Perform();
     public abstract bool CanPerform();
 

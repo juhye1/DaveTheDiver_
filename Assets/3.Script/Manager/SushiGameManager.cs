@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreManager : MonoBehaviour
+public class SushiGameManager : MonoBehaviour
 {
     [SerializeField] private Sprite Perfect;
     [SerializeField] private Sprite Good;
     [SerializeField] private Sprite Bad;
+
+
+    [SerializeField] private GameObject SushiGO;
+    private SpriteRenderer Sushi;
 
     [HideInInspector]
     public enum EScore
@@ -17,7 +21,7 @@ public class ScoreManager : MonoBehaviour
         Bad
     }
 
-    public static ScoreManager Instance;
+    public static SushiGameManager Instance;
     public EScore Score;
     private void Awake()
     {
@@ -27,6 +31,9 @@ public class ScoreManager : MonoBehaviour
         }
         else
             Destroy(gameObject);
+
+        Sushi = SushiGO.GetComponentInChildren<SpriteRenderer>();
+        SushiGO.SetActive(false);
     }
 
     public EScore TeaScore(int score)
@@ -69,5 +76,11 @@ public class ScoreManager : MonoBehaviour
                 break;
         }
         return img;
+    }
+
+    public void OnSushi(Sprite sprite)
+    {
+        SushiGO.SetActive(true);
+        Sushi.sprite = sprite;
     }
 }

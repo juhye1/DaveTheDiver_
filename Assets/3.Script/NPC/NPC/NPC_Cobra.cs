@@ -18,7 +18,7 @@ public class NPC_Cobra : BaseNPC
         {
             cobraGunDictionary.Add(i, dialogueDatas[i]);
         }
-        
+        state = Estate.Talk;
     }
     public override void RandomAnimation()
     {
@@ -41,5 +41,10 @@ public class NPC_Cobra : BaseNPC
         dialogueCount = cobraGunDictionary.Count;
         dialogueData = cobraGunDictionary[dialogueNum];
         base.Talk();
+    }
+
+    public override void Game()
+    {
+        Debug.Log("코브라는게임없어");
     }
 }

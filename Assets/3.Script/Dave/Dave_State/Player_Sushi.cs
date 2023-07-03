@@ -9,12 +9,10 @@ public class Player_Sushi : PlayerInteraction
     private bool dash = false;
     private bool tired = false;
     private bool pour = false;
-    private Spawner spawner;
 
     private readonly int isTired = Animator.StringToHash("isTired");
     private void Start()
     {
-        spawner = FindObjectOfType<Spawner>();
         state = EState.Sushi;
         lobby.Disable();
         sushi.Enable();

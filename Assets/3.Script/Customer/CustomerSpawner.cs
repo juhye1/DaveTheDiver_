@@ -53,12 +53,13 @@ public class SpeechBubble
 
     private void SpawnCustomer()
     {
+        List<Vector3> spawnpoints = SpawnPoints();
         goal = chair.EmptyChairs();
         for (int i = 0; i < 3; i++)
         {
             Gacha();
 
-            Customer _customer = Instantiate(customer, spawnPoint.position, Quaternion.identity);
+            Customer _customer = Instantiate(customer, spawnpoints[i], Quaternion.identity);
             _customer.transform.SetParent(transform);
             _customer.Init(CustomerSprites[num], goal[i], bubble);
             _customer.GetComponent<BaseCustomer>().Init(TeaUI);
@@ -66,6 +67,21 @@ public class SpeechBubble
 
         }
     }
+
+    private List<Vector3> SpawnPoints()
+    {
+        List<Vector3> spawnPoints = new List<Vector3>();
+        for(int i=0; i<3; i++)
+        {
+            Vector3 pos = new Vector3(spawnPoint.position.x - 0.2f*i, spawnPoint.position.y, spawnPoint.position.x);
+            spawnPoints.Add(pos);
+
+        }
+
+        return spawnPoints;
+    }    
+
+
 
     private void Gacha()
     {

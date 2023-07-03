@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 public abstract class BaseNPC : MonoBehaviour
 {
+    public enum Estate
+    {
+        Talk,
+        Game
+    }
     protected Animator animator;
     protected DialogueUI dialogueUI;
     protected List<DialogueData> dialogueDatas;
@@ -14,15 +19,14 @@ public abstract class BaseNPC : MonoBehaviour
     protected int dialogueNum;
     protected ETalk ETalkType = ETalk.Start;
 
+    protected Estate state;
+    public Estate State => state;
+
 
     private void Awake()
     {
         dialogueNum = 0;
         animator = GetComponent<Animator>();
-    }
-    private void Start()
-    {
-        NPCManager.Instance.RegisterNPC(this);
     }
 
     public abstract void RandomAnimation();
@@ -51,6 +55,7 @@ public abstract class BaseNPC : MonoBehaviour
                 UIManager.Instance.TalkStart(false);
                 break;
         }
-
     }
+
+    public abstract void Game();
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class Bancho_Cooking : MonoBehaviour
 {
@@ -13,54 +14,86 @@ public class Bancho_Cooking : MonoBehaviour
 
 
     [SerializeField] private Slider banchoSlider;
+    [SerializeField] private GameObject banchoUI;
+    [SerializeField] private Sprite[] backgroundSprites;
+    private Image backgroundImage;
     private Image image;
     private List<Sprite> OrderList;
+    private List<Sprite> CookedList;
+    private int first = 0;
+    private bool cooked = false;
 
     private void Awake()
     {
         image = banchoSlider.GetComponentInChildren<Image>();
+        backgroundImage = banchoUI.GetComponent<Image>();
         OrderList = new List<Sprite>();
+        CookedList = new List<Sprite>();
+        backgroundImage.sprite = backgroundSprites[0];
+
+        banchoUI.SetActive(false);
     }
 
     public void Order(Sprite order)
     {
         //먼저 앉은애 우선?
         OrderList.Add(order);
-        image.sprite = OrderList[0];
+        image.sprite = OrderList[first];
     }
 
-    public void StartCooking()
+    private void StartCooking()
     {
-        banchoSlider.value = Mathf.MoveTowards(banchoSlider.value, 1, Time.deltaTime * 0.1f);
+        banchoSlider.value = Mathf.MoveTowards(banchoSlider.value, 1, Time.deltaTime * 0.3f);
 
-        if(banchoSlider.value.Equals(1))
+       if(banchoSlider.value.Equals(1))
         {
-            ResetSlider();
+            StartCoroutine(ResetSlider());
+            cooked = !cooked;
         }
     }
 
-    private void ResetSlider()
+    private bool Cooked()
     {
-        OrderList.Remove(OrderList[0]);
-        if(!NullOrder())
+        return cooked;
+    }
+
+    private IEnumerator ResetSlider()
+    {
+        backgroundImage.sprite = backgroundSprites[1];
+        banchoUI.transform.DOPunchScale(Vector3.one * 0.5f, 0.3f, 1, 0.5f);
+        CookedList.Add(OrderList[first]);
+        OrderList.Remove(OrderList[first]);
+        yield return new WaitForSeconds(0.5f);
+
+        if (!NullOrder())
         {
-            image.sprite = OrderList[0];
+            image.sprite = OrderList[first];
         }
-        
         banchoSlider.value = 0;
+        backgroundImage.sprite = backgroundSprites[0];
+        cooked = !cooked;
     }
-
     private bool NullOrder()
     {
         bool order = OrderList.Count.Equals(0) ? true : false;
+        banchoUI.SetActive(!order);
         return order;
     }
     private void Update()
     {
         if(!NullOrder())
         {
-            StartCooking();
+            if (!Cooked())
+                StartCooking();
+            else ResetSlider();
         }
+    }
+
+    public Sprite CookedSushi()
+    {
+        if (!CookedList.Count.Equals(0))
+            return CookedList[first];
+        else return null;
     }
 
 

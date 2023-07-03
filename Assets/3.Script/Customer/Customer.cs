@@ -38,7 +38,6 @@ public class Customer : MonoBehaviour
         float distance = transform.position.x - Goal.position.x;
         distance = Mathf.Abs(distance);
         float duration = distance / 1.4f;
-        Debug.Log(duration);
         sequence = DOTween.Sequence();
         sequence.Append(transform.DOLocalMoveX(Goal.position.x, duration).SetEase(Ease.Linear).OnComplete(() =>
                                                 SitChair()));

@@ -52,7 +52,7 @@ public class UIManager : MonoBehaviour
         group.alpha = 0;
         Spawner spawner = FindObjectOfType<Spawner>();
         Image[] scoreImg = ScoreUI.GetComponentsInChildren<Image>();
-        scoreImg[1].sprite = ScoreManager.Instance.ScoreImage(spawner.Count);
+        scoreImg[1].sprite = SushiGameManager.Instance.ScoreImage(spawner.Count);
         scoreImg[1].SetNativeSize();
 
         Sequence sequence = DOTween.Sequence().SetAutoKill();
