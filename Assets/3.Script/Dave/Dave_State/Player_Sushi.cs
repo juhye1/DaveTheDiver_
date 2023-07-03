@@ -58,6 +58,7 @@ public class Player_Sushi : PlayerInteraction
 
     private void PourTea(bool pressKey)
     {
+        //S키 누르면 차 따르기
         if(pressKey)
         {
             interaction.Perform();

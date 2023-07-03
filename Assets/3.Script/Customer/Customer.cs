@@ -9,27 +9,28 @@ public class Customer : MonoBehaviour
     private Sequence sequence;
     [SerializeField] private GameObject speechBubble;
 
-    /*    public Customer(Sprite rend, Transform goal)
-        {
-            this.Face.sprite = rend;
-            this.Goal = goal;
-            //this.Animator = animator;
-        }
-    */
-    public void Init(Sprite rend, Transform goal)
+    public void Init(Sprite rend, Transform goal, SpeechBubble bubble)
     {
         Face = GetComponent<SpriteRenderer>();
         this.Face.sprite = rend;
         this.Goal = goal;
+
+        SpriteRenderer[] speechbubble = speechBubble.GetComponentsInChildren<SpriteRenderer>();
+        speechbubble[0].sprite = bubble.Bubble;
+        speechbubble[1].sprite = bubble.Order;
     }
 
     private void Start()
     {
-        sequence = DOTween.Sequence();
-        sequence.Append(transform.DOLocalMoveX(Goal.position.x, 5f).OnComplete(() => 
-                                                speechBubble.SetActive(true)));
+        MoveToChair();
         
     }
 
+    private void MoveToChair()
+    {
+        sequence = DOTween.Sequence();
+        sequence.Append(transform.DOLocalMoveX(Goal.position.x, 5f).OnComplete(() =>
+                                                speechBubble.SetActive(true)));
+    }
 
 }

@@ -248,6 +248,20 @@ MonoBehaviour:
   - {fileID: 6462430972275928340, guid: 02534b4120ece7b4b8f3fa908f17913f, type: 3}
   - {fileID: -4114304378866513582, guid: 02534b4120ece7b4b8f3fa908f17913f, type: 3}
   - {fileID: -1120476534871962226, guid: f4c9b78b7b1f4c0429dbde7deadaafa4, type: 3}
+  BubbleSprites:
+  - {fileID: -4031938595959965377, guid: c03259a20f11d054ba15b9d960849cdd, type: 3}
+  - {fileID: -7553764107958474814, guid: c03259a20f11d054ba15b9d960849cdd, type: 3}
+  OrderSprites:
+  - {fileID: 6046342013472385420, guid: c03259a20f11d054ba15b9d960849cdd, type: 3}
+  - {fileID: 2871169492295782756, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
+  - {fileID: -7011197152332107856, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
+  - {fileID: 7002341289675288794, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
+  - {fileID: -2375351025177535345, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
+  - {fileID: -6693807185051670954, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
+  - {fileID: -5390559438823612316, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
+  - {fileID: 931808555528793477, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
+  - {fileID: 2185300955204391116, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
+  - {fileID: -128307937754309182, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
   TeaUI:
   - {fileID: 1958454896}
   - {fileID: 1877297346}

@@ -48,13 +48,14 @@ public class Chair : MonoBehaviour
             }
         }
 
-        for(int i=0; i<Chairs.Count; i++)
+        for(int i=0; i<10; i++)
         {
             num = Random.Range(0, Chairs.Count);
             if(index.Contains(num))
             {
                 chairTransforms.Add(Chairs[num].transform);
                 Chairs[num].isEmpty = false;
+                index.Remove(num);
             }
             if (chairTransforms.Count.Equals(3))
                 break;

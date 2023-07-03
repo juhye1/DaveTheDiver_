@@ -130,7 +130,7 @@ public class UIManager : MonoBehaviour
     {
         if (dashSlider.IsActive())
         {
-            dashSlider.transform.position = cam.WorldToScreenPoint(player.UIPosition.position);
+            dashSlider.transform.position = player.UIPosition.position;
             if (dashSlider.value.Equals(0)) return false;
         }
         return true;

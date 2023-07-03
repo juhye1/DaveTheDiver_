@@ -2,15 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class SpeechBubble
+{
+    public Sprite Bubble;
+    public Sprite Order;
+
+
+}
     public class CustomerSpawner : MonoBehaviour
 {
 
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private Customer customer;
     [SerializeField] private Sprite[] CustomerSprites;
+
+    [SerializeField] private Sprite[] BubbleSprites;
+    [SerializeField] private Sprite[] OrderSprites;
+
     private List<Transform> goal;
     private Chair chair;
     private int num;
+    private int rdn;
+    private SpeechBubble bubble;
 
     [SerializeField] protected GameObject[] TeaUI;
 
@@ -23,7 +36,8 @@ using UnityEngine;
         chair = FindObjectOfType<Chair>();
         sprites = new List<int>();
         goal = new List<Transform>();
-        goal = chair.SeatChair();
+
+        bubble = new SpeechBubble();
 
 
         for (int i = 0; i < CustomerSprites.Length; i++)
@@ -33,6 +47,7 @@ using UnityEngine;
     }
     private void Start()
     {
+
         SpawnCustomer();
     }
 
@@ -41,21 +56,47 @@ using UnityEngine;
     {
         for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < 10; j++)
-            {
-                int rdn = Random.Range(0, CustomerSprites.Length);
-                if (sprites.Contains(rdn))
-                {
-                    num = rdn;
-                    break;
-                }
-            }
+            Gacha();
 
             Customer _customer = Instantiate(customer, spawnPoint.position, Quaternion.identity);
             _customer.transform.SetParent(transform);
-            _customer.Init(CustomerSprites[num], goal[i]);
+            _customer.Init(CustomerSprites[num], goal[i], bubble);
             _customer.GetComponent<BaseCustomer>().Init(TeaUI);
             sprites.Remove(num);
+
+        }
+    }
+
+    private void Gacha()
+    {
+        //ÀÇÀÚ »Ì±â
+        goal = chair.SeatChair();
+        for (int j = 0; j < 10; j++)
+        {
+            //¾ó±¼ »Ì±â
+            rdn = Random.Range(0, CustomerSprites.Length);
+            if (sprites.Contains(rdn))
+            {
+                num = rdn;
+                break;
+            }
+        }
+        //¸»Ç³¼±, ÁÖ¹®
+        //0¹øÀÌ¸é ¹«Á¶°Ç ³ìÂ÷, 1¹øÀÌ¸é À½½Ä
+        rdn = Random.Range(0, BubbleSprites.Length);
+        bubble.Bubble = BubbleSprites[rdn];
+
+        switch(rdn)
+        {
+            case 0:
+                bubble.Order = OrderSprites[0];
+                //³ìÂ÷
+                break;
+            case 1:
+                int num = Random.Range(1, OrderSprites.Length);
+                bubble.Order = OrderSprites[num];
+                //À½½Ä
+                break;
 
         }
     }
