@@ -40,11 +40,6 @@ public class SpeechBubble
         chair = FindObjectOfType<Chair>();
         sprites = new List<int>();
         goal = new List<Transform>();
-        
-
-
-
-
         for (int i = 0; i < CustomerSprites.Length; i++)
         {
             sprites.Add(i);
@@ -88,27 +83,6 @@ public class SpeechBubble
         }
         //말풍선, 주문
         //0번이면 무조건 녹차, 1번이면 음식
-
-        //음식 > 말풍선 순서가 맞는듯?
-/*        rdn = Random.Range(0, BubbleSprites.Length);
-        bubble = new SpeechBubble();
-        bubble.Bubble = BubbleSprites[rdn];
-
-        switch(rdn)
-        {
-            case 0:
-                bubble.Order = OrderSprites[0];
-                //녹차
-                break;
-            case 1:
-                int num = Random.Range(1, OrderSprites.Length);
-                bubble.Order = OrderSprites[num];
-                //OrderList.Add(OrderSprites[num]);
-                //음식
-                break;
-
-        }
-*/
         bubble = new SpeechBubble();
         rdn = Random.Range(0, OrderSprites.Length);
         bubble.Order = OrderSprites[rdn];

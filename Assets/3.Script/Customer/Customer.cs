@@ -8,6 +8,7 @@ public class Customer : MonoBehaviour
     private Transform Goal;
     private Sequence sequence;
     [SerializeField] private GameObject speechBubble;
+    [SerializeField] private GameObject thinkingUI;
     private Bancho_Cooking bancho;
     private SpeechBubble bubble;
     private bool sit;
@@ -34,15 +35,24 @@ public class Customer : MonoBehaviour
 
     private void MoveToChair()
     {
+        float distance = transform.position.x - Goal.position.x;
+        distance = Mathf.Abs(distance);
+        float duration = distance / 1.4f;
+        Debug.Log(duration);
         sequence = DOTween.Sequence();
-        sequence.Append(transform.DOLocalMoveX(Goal.position.x, 5f).OnComplete(() =>
+        sequence.Append(transform.DOLocalMoveX(Goal.position.x, duration).SetEase(Ease.Linear).OnComplete(() =>
                                                 SitChair()));
     }
 
     private void SitChair()
     {
+        thinkingUI.SetActive(true);
+
+    }
+
+    public void CustomerOrder()
+    {
         speechBubble.SetActive(true);
         bancho.Order(bubble.Order);
     }
-
 }
