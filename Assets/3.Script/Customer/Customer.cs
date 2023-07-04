@@ -94,8 +94,5 @@ public class Customer : MonoBehaviour
         tmp.DOFade(0, 1f);
         //말풍선 끄고 이모티콘 띄우기
     }
-    private void OnParticleSystemStopped()
-    {
-        Debug.Log("하트끝");
-    }
+
 }

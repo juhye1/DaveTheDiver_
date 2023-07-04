@@ -11,26 +11,22 @@ public class SpeechBubble
 }
 public class CustomerSpawner : MonoBehaviour
 {
-
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private Customer customer;
     [SerializeField] private Sprite[] CustomerSprites;
     [SerializeField] private Sprite[] BubbleSprites;
     [SerializeField] private Sprite[] OrderSprites;
+    [SerializeField] private GameObject[] TeaUI;
 
     private List<Sprite> OrderList;
     private List<Transform> goal;
     private List<int> sprites;
+
     private Chair chair;
     private SpeechBubble bubble;
     private Customer.EOrderType orderType;
     private int num;
     private int rdn;
-
-    public bool Sit { get { return customer.Sit; } private set { } }
-
-    [SerializeField] private GameObject[] TeaUI;
-
 
     //목적지 정해야하고 생긴거 정해야하고 애니메이터까지?
 
