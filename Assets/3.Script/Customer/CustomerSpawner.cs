@@ -9,30 +9,28 @@ public class SpeechBubble
 
 
 }
-    public class CustomerSpawner : MonoBehaviour
+public class CustomerSpawner : MonoBehaviour
 {
 
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private Customer customer;
     [SerializeField] private Sprite[] CustomerSprites;
-
     [SerializeField] private Sprite[] BubbleSprites;
     [SerializeField] private Sprite[] OrderSprites;
 
     private List<Sprite> OrderList;
-
     private List<Transform> goal;
+    private List<int> sprites;
     private Chair chair;
-    private int num;
-    private int rdn;
     private SpeechBubble bubble;
     private Customer.EOrderType orderType;
+    private int num;
+    private int rdn;
 
     public bool Sit { get { return customer.Sit; } private set { } }
 
-    [SerializeField] protected GameObject[] TeaUI;
+    [SerializeField] private GameObject[] TeaUI;
 
-    private List<int> sprites;
 
     //목적지 정해야하고 생긴거 정해야하고 애니메이터까지?
 
@@ -73,16 +71,14 @@ public class SpeechBubble
     private List<Vector3> SpawnPoints()
     {
         List<Vector3> spawnPoints = new List<Vector3>();
-        for(int i=0; i<3; i++)
+        for (int i = 0; i < 3; i++)
         {
-            Vector3 pos = new Vector3(spawnPoint.position.x - 0.2f*i, spawnPoint.position.y, spawnPoint.position.x);
+            Vector3 pos = new Vector3(spawnPoint.position.x - 0.2f * i, spawnPoint.position.y, spawnPoint.position.x);
             spawnPoints.Add(pos);
-
         }
 
         return spawnPoints;
-    }    
-
+    }
 
 
     private void Gacha()
@@ -124,9 +120,9 @@ public class SpeechBubble
 
     public List<Sprite> GetOrderList()
     {
-        List<Sprite> orderList = OrderList;
+        List<Sprite> _orderList = OrderList;
         OrderList.Clear();
-        return orderList;
+        return _orderList;
     }
 
 }

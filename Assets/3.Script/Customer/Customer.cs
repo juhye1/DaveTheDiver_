@@ -10,6 +10,7 @@ public class Customer : MonoBehaviour
         Sushi,
         Tea
     }
+    private Animator[] animators;
     private SpriteRenderer Face;
     private Transform Goal;
     private Sequence sequence;
@@ -22,6 +23,9 @@ public class Customer : MonoBehaviour
     private Bancho_Cooking bancho;
     public SpeechBubble bubble;
     private bool sit;
+
+    private int isSit = Animator.StringToHash("Sit");
+    private int isEat = Animator.StringToHash("Eat");
     public bool Sit => sit;
     public EOrderType OrderType;
     public void Init(Sprite rend, Transform goal, SpeechBubble bubble, EOrderType ordertype)
@@ -39,6 +43,7 @@ public class Customer : MonoBehaviour
 
     private void Start()
     {
+        animators = GetComponentsInChildren<Animator>();
         tmp = GetComponentInChildren<TextMeshPro>();
         heartParticle = GetComponentInChildren<ParticleSystem>();
         bancho = FindObjectOfType<Bancho_Cooking>();
@@ -58,6 +63,10 @@ public class Customer : MonoBehaviour
 
     private void SitChair()
     {
+        foreach(Animator ani in animators)
+        {
+            ani.SetBool(isSit, true);
+        }
         thinkingUI.SetActive(true);
 
     }
@@ -74,6 +83,10 @@ public class Customer : MonoBehaviour
 
     public void Eat()
     {
+        foreach (Animator ani in animators)
+        {
+            ani.SetBool(isEat, true);
+        }
         speechBubble.SetActive(false);
         emoteUI.SetActive(true);
         heartParticle.Play();

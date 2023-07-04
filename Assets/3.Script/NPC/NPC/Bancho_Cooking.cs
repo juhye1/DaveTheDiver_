@@ -74,7 +74,7 @@ public class Bancho_Cooking : MonoBehaviour
         {
             image.sprite = OrderList[first];
         }
-
+            
         banchoUI.transform.DOLocalMoveY(10, 1);
 
         banchoSlider.value = 0;
