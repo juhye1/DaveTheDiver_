@@ -10,15 +10,26 @@ public class Customer : MonoBehaviour
         Sushi,
         Tea
     }
+
+    public enum EState
+    {
+        MoveToChair,
+        SitChair,
+        Order,
+        Eat,
+        GoToHome
+    }
+    [SerializeField] private GameObject speechBubble;
+    [SerializeField] private GameObject thinkingUI;
+    [SerializeField] private GameObject emoteUI;
+
     private Animator[] animators;
     private SpriteRenderer Face;
     private Transform Goal;
     private Sequence sequence;
-    [SerializeField] private GameObject speechBubble;
-    [SerializeField] private GameObject thinkingUI;
-    [SerializeField] private GameObject emoteUI;
-    private ParticleSystem heartParticle;
+    private Customer_Particle heartParticle;
     private TextMeshPro tmp;
+    private Transform home;
 
     private Bancho_Cooking bancho;
     public SpeechBubble bubble;
@@ -26,13 +37,14 @@ public class Customer : MonoBehaviour
 
     private int isSit = Animator.StringToHash("Sit");
     private int isEat = Animator.StringToHash("Eat");
-    public bool Sit => sit;
+    private int isWalk = Animator.StringToHash("isWalk");
     public EOrderType OrderType;
-    public void Init(Sprite rend, Transform goal, SpeechBubble bubble, EOrderType ordertype)
+    public void Init(Sprite rend, Transform goal, SpeechBubble bubble, EOrderType ordertype, Transform home)
     {
         Face = GetComponent<SpriteRenderer>();
         this.Face.sprite = rend;
         this.Goal = goal;
+        this.home = home;
 
         SpriteRenderer[] speechbubble = speechBubble.GetComponentsInChildren<SpriteRenderer>();
         speechbubble[0].sprite = bubble.Bubble;
@@ -45,9 +57,9 @@ public class Customer : MonoBehaviour
     {
         animators = GetComponentsInChildren<Animator>();
         tmp = GetComponentInChildren<TextMeshPro>();
-        heartParticle = GetComponentInChildren<ParticleSystem>();
+        heartParticle = GetComponentInChildren<Customer_Particle>();
         bancho = FindObjectOfType<Bancho_Cooking>();
-        MoveToChair();
+        SwitchState(EState.MoveToChair);
         
     }
 
@@ -59,6 +71,17 @@ public class Customer : MonoBehaviour
         sequence = DOTween.Sequence();
         sequence.Append(transform.DOLocalMoveX(Goal.position.x, duration).SetEase(Ease.Linear).OnComplete(() =>
                                                 SitChair()));
+    }
+
+    private void GoToHome()
+    {
+        Face.flipX = true;
+        foreach (Animator ani in animators)
+        {
+            ani.SetBool(isWalk, true);
+        }
+
+        transform.DOLocalMove(home.position, 5);
     }
 
     private void SitChair()
@@ -81,18 +104,42 @@ public class Customer : MonoBehaviour
         bancho.Order(bubble.Order);
     }
 
-    public void Eat()
+    private void Eat()
     {
         foreach (Animator ani in animators)
         {
             ani.SetBool(isEat, true);
         }
+
         speechBubble.SetActive(false);
         emoteUI.SetActive(true);
-        heartParticle.Play();
+        heartParticle.ParticlePlay();
         tmp.enabled = true;
         tmp.DOFade(0, 1f);
         //¸»Ç³¼± ²ô°í ÀÌ¸ðÆ¼ÄÜ ¶ç¿ì±â
+    }
+
+    public void SwitchState(EState state)
+    {
+        switch(state)
+        {
+            case EState.MoveToChair:
+                MoveToChair();
+                break;
+            case EState.SitChair:
+                SitChair();
+                break;
+            case EState.Order:
+                CustomerOrder();
+                break;
+            case EState.Eat:
+                Eat();
+                break;
+            case EState.GoToHome:
+                GoToHome();
+                break;
+
+        }
     }
 
 }

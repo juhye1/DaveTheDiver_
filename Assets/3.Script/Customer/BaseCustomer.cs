@@ -48,7 +48,7 @@ public class BaseCustomer : MonoBehaviour
         bool check = SushiGameManager.Instance.DeliverSushi(customer.bubble.Order);
         if(check)
         {
-            customer.Eat();
+            customer.SwitchState(Customer.EState.Eat);
             //맞으면 데이브랑 얘 UI끄고,,,,,,,,,,머리위에 이모티콘,,,띄우고,,,,하트 나와야하고,,
 
         }

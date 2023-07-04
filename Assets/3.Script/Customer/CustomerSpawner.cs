@@ -57,7 +57,7 @@ public class CustomerSpawner : MonoBehaviour
 
             Customer _customer = Instantiate(customer, spawnpoints[i], Quaternion.identity);
             _customer.transform.SetParent(transform);
-            _customer.Init(CustomerSprites[num], goal[i], bubble, orderType);
+            _customer.Init(CustomerSprites[num], goal[i], bubble, orderType, spawnPoint);
             _customer.GetComponent<BaseCustomer>().Init(TeaUI);
             sprites.Remove(num);
 

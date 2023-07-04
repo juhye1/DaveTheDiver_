@@ -49,6 +49,6 @@ public class Customer_ThinkingUI : MonoBehaviour
         {
             spriteRenderers[i].enabled = false;
         }
-        customer.CustomerOrder();
+        customer.SwitchState(Customer.EState.Order);
     }
 }
