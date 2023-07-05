@@ -25,6 +25,8 @@ public class Customer : MonoBehaviour
 
     private Animator[] animators;
     private SpriteRenderer Face;
+    private SpriteRenderer[] sprites;
+
     private Transform Goal;
     private Sequence sequence;
     private Customer_Particle heartParticle;
@@ -55,6 +57,7 @@ public class Customer : MonoBehaviour
 
     private void Start()
     {
+        sprites = GetComponentsInChildren<SpriteRenderer>();
         animators = GetComponentsInChildren<Animator>();
         tmp = GetComponentInChildren<TextMeshPro>();
         heartParticle = GetComponentInChildren<Customer_Particle>();
@@ -75,10 +78,14 @@ public class Customer : MonoBehaviour
 
     private void GoToHome()
     {
-        Face.flipX = true;
+        foreach(var sprite in sprites)
+        {
+            sprite.flipX = true;
+        }
         foreach (Animator ani in animators)
         {
             ani.SetBool(isWalk, true);
+            ani.SetBool(isEat, false);
         }
 
         transform.DOLocalMove(home.position, 5);
@@ -109,6 +116,7 @@ public class Customer : MonoBehaviour
         foreach (Animator ani in animators)
         {
             ani.SetBool(isEat, true);
+            ani.SetBool(isSit, false);
         }
 
         speechBubble.SetActive(false);
