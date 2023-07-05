@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 74137f6b893a98a4e94c171d58c99b1e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4180161238437813850
+    second: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Bilinear-fd741c44_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,11 +116,32 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Uncompressed-SushibarAtlas_Bilinear-fd741c44_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1089
+        width: 1919
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e51f8bf7ae20a30800000000000000
+      internalID: 4180161238437813850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9f7eae66c41604e4eaa17502a47b56f7
     internalID: 0
     vertices: []
     indices: 
