@@ -21,6 +21,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Transform KettleGoal;
 
     [SerializeField] private Slider dashSlider;
+    [SerializeField] private Slider throwSlider;
+
     [SerializeField] private Camera cam;
 
     private void Awake()
@@ -125,6 +127,26 @@ public class UIManager : MonoBehaviour
             }
         }
     }
+
+    public bool ThrowUI(bool isDash)
+    {
+        if (isDash)
+        {
+            throwSlider.gameObject.SetActive(true);
+            throwSlider.value = Mathf.MoveTowards(throwSlider.value, 1, Time.deltaTime * 0.5f);
+        }
+        else
+        {
+            throwSlider.value = Mathf.MoveTowards(throwSlider.value, 0, Time.deltaTime * 0.3f);
+            if (throwSlider.value.Equals(0))
+            {
+                throwSlider.gameObject.SetActive(false);
+            }
+        }
+        bool gauge = throwSlider.value.Equals(1) ? true : false;
+        return gauge;
+    }
+
 
     public bool CheckDash()
     {

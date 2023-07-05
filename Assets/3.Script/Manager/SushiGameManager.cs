@@ -11,7 +11,7 @@ public class SushiGameManager : MonoBehaviour
 
 
     [SerializeField] private GameObject SushiGO;
-    private SpriteRenderer Sushi;
+    [SerializeField] private Image Sushi;
 
     [HideInInspector]
     public enum EScore
@@ -32,7 +32,6 @@ public class SushiGameManager : MonoBehaviour
         else
             Destroy(gameObject);
 
-        Sushi = SushiGO.GetComponentInChildren<SpriteRenderer>();
         SushiGO.SetActive(false);
     }
 
@@ -82,6 +81,11 @@ public class SushiGameManager : MonoBehaviour
     {
         SushiGO.SetActive(true);
         Sushi.sprite = sprite;
+    }
+
+    public void OffSushi()
+    {
+        SushiGO.SetActive(false);
     }
 
     public bool DeliverSushi(Sprite sprite)

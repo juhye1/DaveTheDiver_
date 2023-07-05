@@ -116,6 +116,7 @@ public class Customer : MonoBehaviour
         {
             ani.SetBool(isWalk, true);
             ani.SetBool(isEat, false);
+            ani.SetBool(isAngry, false);
         }
 
         transform.DOLocalMove(home.position, 5);

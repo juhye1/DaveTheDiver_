@@ -40,11 +40,20 @@ public class Player_Sushi : PlayerInteraction
 
     }
 
-    public void ThrowAway(InputAction.CallbackContext context)
+    public void OnThrowAway(InputAction.CallbackContext context)
     {
         throwaway = context.ReadValue<float>() > 0.1f;
     }
 
+    private void ThrowSushi(bool pressKey)
+    {
+       bool throwsushi = UIManager.Instance.ThrowUI(pressKey);
+
+        if(throwsushi)
+        {
+            SushiGameManager.Instance.OffSushi();
+        }
+    }
     private void DashGauge(bool pressKey)
     {
         bool canDash = UIManager.Instance.CheckDash();
@@ -100,6 +109,7 @@ public class Player_Sushi : PlayerInteraction
             case EState.Sushi:
                 Move();
                 DashGauge(dash);
+                ThrowSushi(throwaway);
                 break;
         }
     }
