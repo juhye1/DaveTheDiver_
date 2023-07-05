@@ -45,10 +45,10 @@ public class Customer_ThinkingUI : MonoBehaviour
 
         yield return sequence.WaitForCompletion();
         //²ô±â
-        for (int i = 0; i < spriteRenderers.Length; i++)
+/*        for (int i = 0; i < spriteRenderers.Length; i++)
         {
             spriteRenderers[i].enabled = false;
-        }
+        }*/
         customer.SwitchState(Customer.EState.Order);
     }
 }

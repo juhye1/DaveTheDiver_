@@ -9,6 +9,7 @@ public class Player_Sushi : PlayerInteraction
     private bool dash = false;
     private bool tired = false;
     private bool pour = false;
+    private bool throwaway = false;
 
     private readonly int isTired = Animator.StringToHash("isTired");
     private void Start()
@@ -37,6 +38,11 @@ public class Player_Sushi : PlayerInteraction
             speed = settings.MoveSpeed;
         }
 
+    }
+
+    public void ThrowAway(InputAction.CallbackContext context)
+    {
+        throwaway = context.ReadValue<float>() > 0.1f;
     }
 
     private void DashGauge(bool pressKey)

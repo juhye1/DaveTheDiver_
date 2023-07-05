@@ -8,12 +8,14 @@ public class BubbleController : MonoBehaviour
     //분노 게이지
     //흔들ㄹㅣㄱㅔ 
     [SerializeField] private Transform angryGauge;
+    private Customer customer;
     private Sequence sequence;
     private SpriteMask spriteMask;
     private SpriteRenderer bubbleShape;
 
     private void Start()
     {
+        customer = GetComponentInParent<Customer>();
         bubbleShape = GetComponent<SpriteRenderer>();
         spriteMask = GetComponent<SpriteMask>();
 
@@ -27,6 +29,7 @@ public class BubbleController : MonoBehaviour
                 .Join(transform.DOShakePosition(10, new Vector3(0, 0.025f, 0), 5, 0).SetEase(Ease.OutCirc));
 
         sequence.Play();
+        sequence.OnComplete(() => ff());
     }
 
     private void OnDisable()
@@ -34,4 +37,9 @@ public class BubbleController : MonoBehaviour
         sequence.Kill();
     }
 
+    private void ff()
+    {
+        customer.SwitchState(Customer.EState.Angry);
+        //화내기
+    }
 }

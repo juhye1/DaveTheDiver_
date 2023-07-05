@@ -20,11 +20,12 @@ public class Customer : MonoBehaviour
         Eat,
         Tea,
         Good,
+        Angry,
         GoToHome
     }
     [SerializeField] private GameObject speechBubble;
     [SerializeField] private GameObject thinkingUI;
-    [SerializeField] private GameObject emoteUI;
+    [SerializeField] private Emote_Customer emoteUI;
 
     private Animator[] animators;
     private SpriteRenderer[] sprites;
@@ -46,6 +47,7 @@ public class Customer : MonoBehaviour
     private int isEat = Animator.StringToHash("Eat");
     private int isWalk = Animator.StringToHash("isWalk");
     private int isGood = Animator.StringToHash("isGood");
+    private int isAngry = Animator.StringToHash("isAngry");
     public EOrderType OrderType;
     public void Init(Transform goal, SpeechBubble bubble, SpeechBubble spareBubble,EOrderType ordertype, Transform home,
                     SpriteLibraryAsset libraryAsset)
@@ -66,7 +68,7 @@ public class Customer : MonoBehaviour
 
     private void Start()
     {
-
+        emoteUI = GetComponentInChildren<Emote_Customer>();
         sprites = GetComponentsInChildren<SpriteRenderer>();
         animators = GetComponentsInChildren<Animator>();
         tmp = GetComponentInChildren<TextMeshPro>();
@@ -95,6 +97,15 @@ public class Customer : MonoBehaviour
         }
     }
 
+    private void Angry()
+    {
+        foreach (Animator ani in animators)
+        {
+            ani.SetBool(isAngry, true);
+        }
+        speechBubble.SetActive(false);
+        emoteUI.PlayEmote(EState.Angry);
+    }
     public void GoToHome()
     {
         foreach (var sprite in sprites)
@@ -123,6 +134,7 @@ public class Customer : MonoBehaviour
     public void CustomerOrder()
     {
         speechBubble.SetActive(true);
+        thinkingUI.SetActive(false);
 
         if (OrderType.Equals(EOrderType.Tea)) return;
 
@@ -138,7 +150,7 @@ public class Customer : MonoBehaviour
         }
 
         speechBubble.SetActive(false);
-        emoteUI.SetActive(true);
+        emoteUI.PlayEmote(EState.Eat);
         particle.HeartParticlePlay();
         tmp.enabled = true;
         tmp.DOFade(0, 1f);
@@ -173,6 +185,9 @@ public class Customer : MonoBehaviour
                 break;
             case EState.Tea:
                 Tea();
+                break;
+            case EState.Angry:
+                Angry();
                 break;
             case EState.Good:
                 Good();

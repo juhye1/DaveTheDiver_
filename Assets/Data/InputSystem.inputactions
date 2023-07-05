@@ -213,6 +213,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ThrowAway",
+                    "type": "Button",
+                    "id": "7f8caa5e-1062-4d7f-8ae2-944af58c8ac7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -268,6 +277,17 @@
                     "processors": "",
                     "groups": "PC",
                     "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a4dac89e-fd25-40c9-b47a-bc65b7393ff2",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ThrowAway",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

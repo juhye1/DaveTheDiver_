@@ -24,8 +24,8 @@ public class Customer_Particle : MonoBehaviour
     }
     private void OnParticleSystemStopped()
     {
-        customer.SwitchState(Customer.EState.Good);
         GoldEffect();
+        customer.SwitchState(Customer.EState.Good);
     }
 
     public void HeartParticlePlay()
@@ -41,7 +41,7 @@ public class Customer_Particle : MonoBehaviour
     {
         goldTransform.gameObject.SetActive(true);
         goldText.text = gold.ToString();
-        goldTransform.DOLocalMoveY(0.3f, 0.5f).SetEase(Ease.OutBounce).OnComplete(() => 
+        goldTransform.DOLocalMoveY(0.3f, 0.3f).SetEase(Ease.OutBounce).OnComplete(() => 
         goldTransform.gameObject.SetActive(false));
         GoldManager.Instance.UpdateGoldUI(gold);
     }

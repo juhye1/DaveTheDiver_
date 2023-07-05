@@ -235,6 +235,15 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ThrowAway"",
+                    ""type"": ""Button"",
+                    ""id"": ""7f8caa5e-1062-4d7f-8ae2-944af58c8ac7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -292,6 +301,17 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a4dac89e-fd25-40c9-b47a-bc65b7393ff2"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ThrowAway"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -340,6 +360,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         m_Sushi_Move = m_Sushi.FindAction("Move", throwIfNotFound: true);
         m_Sushi_Space = m_Sushi.FindAction("Space", throwIfNotFound: true);
         m_Sushi_Dash = m_Sushi.FindAction("Dash", throwIfNotFound: true);
+        m_Sushi_ThrowAway = m_Sushi.FindAction("ThrowAway", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -492,6 +513,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     private readonly InputAction m_Sushi_Move;
     private readonly InputAction m_Sushi_Space;
     private readonly InputAction m_Sushi_Dash;
+    private readonly InputAction m_Sushi_ThrowAway;
     public struct SushiActions
     {
         private @InputSystem m_Wrapper;
@@ -499,6 +521,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Sushi_Move;
         public InputAction @Space => m_Wrapper.m_Sushi_Space;
         public InputAction @Dash => m_Wrapper.m_Sushi_Dash;
+        public InputAction @ThrowAway => m_Wrapper.m_Sushi_ThrowAway;
         public InputActionMap Get() { return m_Wrapper.m_Sushi; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -517,6 +540,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @Dash.started -= m_Wrapper.m_SushiActionsCallbackInterface.OnDash;
                 @Dash.performed -= m_Wrapper.m_SushiActionsCallbackInterface.OnDash;
                 @Dash.canceled -= m_Wrapper.m_SushiActionsCallbackInterface.OnDash;
+                @ThrowAway.started -= m_Wrapper.m_SushiActionsCallbackInterface.OnThrowAway;
+                @ThrowAway.performed -= m_Wrapper.m_SushiActionsCallbackInterface.OnThrowAway;
+                @ThrowAway.canceled -= m_Wrapper.m_SushiActionsCallbackInterface.OnThrowAway;
             }
             m_Wrapper.m_SushiActionsCallbackInterface = instance;
             if (instance != null)
@@ -530,6 +556,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @Dash.started += instance.OnDash;
                 @Dash.performed += instance.OnDash;
                 @Dash.canceled += instance.OnDash;
+                @ThrowAway.started += instance.OnThrowAway;
+                @ThrowAway.performed += instance.OnThrowAway;
+                @ThrowAway.canceled += instance.OnThrowAway;
             }
         }
     }
@@ -568,5 +597,6 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnSpace(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnThrowAway(InputAction.CallbackContext context);
     }
 }

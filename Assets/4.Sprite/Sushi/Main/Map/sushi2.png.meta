@@ -188,7 +188,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -442,10 +442,10 @@ TextureImporter:
       name: sushi2_9
       rect:
         serializedVersion: 2
-        x: 336
+        x: 318
         y: 697
-        width: 46
-        height: 144
+        width: 75
+        height: 165
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,7 +463,7 @@ TextureImporter:
       name: sushi2_10
       rect:
         serializedVersion: 2
-        x: 447
+        x: 446
         y: 688
         width: 75
         height: 165
@@ -484,10 +484,10 @@ TextureImporter:
       name: sushi2_11
       rect:
         serializedVersion: 2
-        x: 540
+        x: 532
         y: 688
-        width: 62
-        height: 147
+        width: 75
+        height: 165
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +505,10 @@ TextureImporter:
       name: sushi2_12
       rect:
         serializedVersion: 2
-        x: 635
+        x: 631
         y: 688
-        width: 73
-        height: 147
+        width: 75
+        height: 165
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -526,10 +526,10 @@ TextureImporter:
       name: sushi2_13
       rect:
         serializedVersion: 2
-        x: 752
+        x: 745
         y: 689
-        width: 60
-        height: 157
+        width: 75
+        height: 166
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
