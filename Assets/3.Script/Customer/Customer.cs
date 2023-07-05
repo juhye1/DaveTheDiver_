@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.U2D.Animation;
 using TMPro;
 using DG.Tweening;
 public class Customer : MonoBehaviour
@@ -24,7 +25,6 @@ public class Customer : MonoBehaviour
     [SerializeField] private GameObject emoteUI;
 
     private Animator[] animators;
-    private SpriteRenderer Face;
     private SpriteRenderer[] sprites;
 
     private Transform Goal;
@@ -32,6 +32,7 @@ public class Customer : MonoBehaviour
     private Customer_Particle heartParticle;
     private TextMeshPro tmp;
     private Transform home;
+    private SpriteLibrary spriteLibrary;
 
     private Bancho_Cooking bancho;
     public SpeechBubble bubble;
@@ -41,10 +42,9 @@ public class Customer : MonoBehaviour
     private int isEat = Animator.StringToHash("Eat");
     private int isWalk = Animator.StringToHash("isWalk");
     public EOrderType OrderType;
-    public void Init(Sprite rend, Transform goal, SpeechBubble bubble, EOrderType ordertype, Transform home)
+    public void Init(Transform goal, SpeechBubble bubble, EOrderType ordertype, Transform home,
+                    SpriteLibraryAsset libraryAsset)
     {
-        Face = GetComponent<SpriteRenderer>();
-        this.Face.sprite = rend;
         this.Goal = goal;
         this.home = home;
 
@@ -53,10 +53,14 @@ public class Customer : MonoBehaviour
         speechbubble[1].sprite = bubble.Order;
         this.bubble = bubble;
         this.OrderType = ordertype;
+
+        spriteLibrary = GetComponentInChildren<SpriteLibrary>();
+        spriteLibrary.spriteLibraryAsset = libraryAsset;
     }
 
     private void Start()
     {
+
         sprites = GetComponentsInChildren<SpriteRenderer>();
         animators = GetComponentsInChildren<Animator>();
         tmp = GetComponentInChildren<TextMeshPro>();

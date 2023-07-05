@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Experimental.U2D.Animation;
 using UnityEngine;
 
 public class SpeechBubble
@@ -13,14 +14,17 @@ public class CustomerSpawner : MonoBehaviour
 {
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private Customer customer;
-    [SerializeField] private Sprite[] CustomerSprites;
+
     [SerializeField] private Sprite[] BubbleSprites;
     [SerializeField] private Sprite[] OrderSprites;
+
     [SerializeField] private GameObject[] TeaUI;
+    [SerializeField] private SpriteLibraryAsset[] spriteLibraryAsset;
+
 
     private List<Sprite> OrderList;
     private List<Transform> goal;
-    private List<int> sprites;
+    private List<int> clothes;
 
     private Chair chair;
     private SpeechBubble bubble;
@@ -33,11 +37,11 @@ public class CustomerSpawner : MonoBehaviour
     private void Awake()
     {
         chair = FindObjectOfType<Chair>();
-        sprites = new List<int>();
+        clothes = new List<int>();
         goal = new List<Transform>();
-        for (int i = 0; i < CustomerSprites.Length; i++)
+        for (int i = 0; i < spriteLibraryAsset.Length; i++)
         {
-            sprites.Add(i);
+            clothes.Add(i);
         }
     }
     private void Start()
@@ -57,9 +61,9 @@ public class CustomerSpawner : MonoBehaviour
 
             Customer _customer = Instantiate(customer, spawnpoints[i], Quaternion.identity);
             _customer.transform.SetParent(transform);
-            _customer.Init(CustomerSprites[num], goal[i], bubble, orderType, spawnPoint);
+            _customer.Init(goal[i], bubble, orderType, spawnPoint, spriteLibraryAsset[num]);
             _customer.GetComponent<BaseCustomer>().Init(TeaUI);
-            sprites.Remove(num);
+            clothes.Remove(num);
 
         }
     }
@@ -84,8 +88,8 @@ public class CustomerSpawner : MonoBehaviour
         for (int j = 0; j < 10; j++)
         {
             //¾ó±¼ »Ì±â
-            rdn = Random.Range(0, CustomerSprites.Length);
-            if (sprites.Contains(rdn))
+            rdn = Random.Range(0, spriteLibraryAsset.Length);
+            if (clothes.Contains(rdn))
             {
                 num = rdn;
                 break;
