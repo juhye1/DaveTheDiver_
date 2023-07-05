@@ -18,6 +18,8 @@ public class Customer : MonoBehaviour
         SitChair,
         Order,
         Eat,
+        Tea,
+        Good,
         GoToHome
     }
     [SerializeField] private GameObject speechBubble;
@@ -27,32 +29,36 @@ public class Customer : MonoBehaviour
     private Animator[] animators;
     private SpriteRenderer[] sprites;
 
+
     private Transform Goal;
     private Sequence sequence;
-    private Customer_Particle heartParticle;
     private TextMeshPro tmp;
     private Transform home;
     private SpriteLibrary spriteLibrary;
 
+    private Customer_Particle particle;
     private Bancho_Cooking bancho;
     public SpeechBubble bubble;
-    private bool sit;
+    private SpeechBubble spareBubble;
+    private SpriteRenderer[] speechBubbleSprites;
 
     private int isSit = Animator.StringToHash("Sit");
     private int isEat = Animator.StringToHash("Eat");
     private int isWalk = Animator.StringToHash("isWalk");
+    private int isGood = Animator.StringToHash("isGood");
     public EOrderType OrderType;
-    public void Init(Transform goal, SpeechBubble bubble, EOrderType ordertype, Transform home,
+    public void Init(Transform goal, SpeechBubble bubble, SpeechBubble spareBubble,EOrderType ordertype, Transform home,
                     SpriteLibraryAsset libraryAsset)
     {
         this.Goal = goal;
         this.home = home;
 
-        SpriteRenderer[] speechbubble = speechBubble.GetComponentsInChildren<SpriteRenderer>();
-        speechbubble[0].sprite = bubble.Bubble;
-        speechbubble[1].sprite = bubble.Order;
+        speechBubbleSprites = speechBubble.GetComponentsInChildren<SpriteRenderer>();
+        speechBubbleSprites[0].sprite = bubble.Bubble;
+        speechBubbleSprites[1].sprite = bubble.Order;
         this.bubble = bubble;
         this.OrderType = ordertype;
+        this.spareBubble = spareBubble;
 
         spriteLibrary = GetComponentInChildren<SpriteLibrary>();
         spriteLibrary.spriteLibraryAsset = libraryAsset;
@@ -64,7 +70,7 @@ public class Customer : MonoBehaviour
         sprites = GetComponentsInChildren<SpriteRenderer>();
         animators = GetComponentsInChildren<Animator>();
         tmp = GetComponentInChildren<TextMeshPro>();
-        heartParticle = GetComponentInChildren<Customer_Particle>();
+        particle = GetComponentInChildren<Customer_Particle>();
         bancho = FindObjectOfType<Bancho_Cooking>();
         SwitchState(EState.MoveToChair);
         
@@ -80,9 +86,18 @@ public class Customer : MonoBehaviour
                                                 SitChair()));
     }
 
-    private void GoToHome()
+    private void Good()
     {
-        foreach(var sprite in sprites)
+        foreach (Animator ani in animators)
+        {
+            ani.SetBool(isGood, true);
+            ani.SetBool(isEat, false);
+        }
+    }
+
+    public void GoToHome()
+    {
+        foreach (var sprite in sprites)
         {
             sprite.flipX = true;
         }
@@ -108,7 +123,6 @@ public class Customer : MonoBehaviour
     public void CustomerOrder()
     {
         speechBubble.SetActive(true);
-        speechBubble.transform.DOShakePosition(10, new Vector3(0, 0.02f, 0), 3,0).SetEase(Ease.Linear);
 
         if (OrderType.Equals(EOrderType.Tea)) return;
 
@@ -125,10 +139,20 @@ public class Customer : MonoBehaviour
 
         speechBubble.SetActive(false);
         emoteUI.SetActive(true);
-        heartParticle.ParticlePlay();
+        particle.HeartParticlePlay();
         tmp.enabled = true;
         tmp.DOFade(0, 1f);
         //¸»Ç³¼± ²ô°í ÀÌ¸ðÆ¼ÄÜ ¶ç¿ì±â
+    }
+
+    private void Tea()
+    {
+        speechBubble.SetActive(false);
+        thinkingUI.SetActive(true);
+        particle.GreenParticlePlay();
+        speechBubbleSprites[0].sprite = spareBubble.Bubble;
+        speechBubbleSprites[1].sprite = spareBubble.Order;
+
     }
 
     public void SwitchState(EState state)
@@ -146,6 +170,12 @@ public class Customer : MonoBehaviour
                 break;
             case EState.Eat:
                 Eat();
+                break;
+            case EState.Tea:
+                Tea();
+                break;
+            case EState.Good:
+                Good();
                 break;
             case EState.GoToHome:
                 GoToHome();

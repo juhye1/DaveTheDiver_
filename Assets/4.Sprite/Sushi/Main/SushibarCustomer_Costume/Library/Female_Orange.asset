@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
-  m_Name: Female_Blue
+  m_Name: Female_Orange
   m_EditorClassIdentifier: 
   m_Labels:
   - m_Name: Walk
@@ -64,3 +64,24 @@ MonoBehaviour:
     - m_Name: 1
       m_Hash: -2082672713
       m_Sprite: {fileID: 21300000, guid: ccf99eb1952b99e48946145bb29204c1, type: 3}
+  - m_Name: Good
+    m_Hash: -860429908
+    m_CategoryList:
+    - m_Name: 1
+      m_Hash: -2082672713
+      m_Sprite: {fileID: 21300000, guid: fa79ea533c5127a4c91f6e000000dde9, type: 3}
+    - m_Name: 2
+      m_Hash: 450215437
+      m_Sprite: {fileID: 21300000, guid: f11e64d45ca2c9b4fba6ededde8a4f9f, type: 3}
+    - m_Name: 3
+      m_Hash: 1842515611
+      m_Sprite: {fileID: 21300000, guid: f572207b6e345f44f8302b2b501ba51f, type: 3}
+  - m_Name: Anger
+    m_Hash: -1823386493
+    m_CategoryList:
+    - m_Name: 1
+      m_Hash: -2082672713
+      m_Sprite: {fileID: 21300000, guid: 613d9acaf4d7e1b4eb5de981654d5319, type: 3}
+    - m_Name: 2
+      m_Hash: 450215437
+      m_Sprite: {fileID: 21300000, guid: de072c5de839d2b4083865517e85bb35, type: 3}

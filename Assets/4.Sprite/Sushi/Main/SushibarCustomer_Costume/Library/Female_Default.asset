@@ -64,3 +64,24 @@ MonoBehaviour:
     - m_Name: 1
       m_Hash: -2082672713
       m_Sprite: {fileID: 21300000, guid: 881051c9f10a87a4db54917d9d557f42, type: 3}
+  - m_Name: Good
+    m_Hash: -860429908
+    m_CategoryList:
+    - m_Name: 1
+      m_Hash: -2082672713
+      m_Sprite: {fileID: 21300000, guid: 265030da2c7340c46a9c3f9664d22f10, type: 3}
+    - m_Name: 2
+      m_Hash: 450215437
+      m_Sprite: {fileID: 21300000, guid: 4a4756d616ce9104fbd74d9396931e75, type: 3}
+    - m_Name: 3
+      m_Hash: 1842515611
+      m_Sprite: {fileID: 21300000, guid: a1bd7f4412ee96447828eb0fe8a32ce5, type: 3}
+  - m_Name: Anger
+    m_Hash: -1823386493
+    m_CategoryList:
+    - m_Name: 1
+      m_Hash: -2082672713
+      m_Sprite: {fileID: 21300000, guid: 0cbc418a00a762e46821d126447c58fe, type: 3}
+    - m_Name: 2
+      m_Hash: 450215437
+      m_Sprite: {fileID: 21300000, guid: 1a87b9b2be2d3ec478c73071b7af025a, type: 3}

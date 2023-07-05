@@ -28,6 +28,7 @@ public class CustomerSpawner : MonoBehaviour
 
     private Chair chair;
     private SpeechBubble bubble;
+    private SpeechBubble spareBubble;
     private Customer.EOrderType orderType;
     private int num;
     private int rdn;
@@ -61,7 +62,7 @@ public class CustomerSpawner : MonoBehaviour
 
             Customer _customer = Instantiate(customer, spawnpoints[i], Quaternion.identity);
             _customer.transform.SetParent(transform);
-            _customer.Init(goal[i], bubble, orderType, spawnPoint, spriteLibraryAsset[num]);
+            _customer.Init(goal[i], bubble, spareBubble, orderType, spawnPoint, spriteLibraryAsset[num]);
             _customer.GetComponent<BaseCustomer>().Init(TeaUI);
             clothes.Remove(num);
 
@@ -116,6 +117,9 @@ public class CustomerSpawner : MonoBehaviour
                 break;
 
         }
+        spareBubble = new SpeechBubble();
+        spareBubble.Bubble = BubbleSprites[1];
+        spareBubble.Order = OrderSprites[Random.Range(1, OrderSprites.Length)];
     }
 
     public List<Sprite> GetOrderList()
