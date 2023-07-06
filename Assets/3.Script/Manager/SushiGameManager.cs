@@ -11,11 +11,15 @@ public class SushiGameManager : MonoBehaviour
 
 
     [SerializeField] private GameObject SushiGO;
+    [SerializeField] private CloseUI closeUI;
+    [SerializeField] private ClockUI clockUI;
     [SerializeField] private OpenUI openUI;
 
     [SerializeField] private Image Sushi;
     [SerializeField] private CustomerSpawner customerSpawner;
 
+    public bool isGameStart { get { return _start; } private set { } }
+    private bool _start = false;
     [HideInInspector]
     public enum EScore
     {
@@ -38,6 +42,10 @@ public class SushiGameManager : MonoBehaviour
         SushiGO.SetActive(false);
     }
 
+    private void Start()
+    {
+        openUI.gameObject.SetActive(true);
+    }
     public EScore TeaScore(int score)
     {
         if (score < 50)
@@ -110,9 +118,17 @@ public class SushiGameManager : MonoBehaviour
 
     public void SushiGameStart()
     {
+        _start = true;
         customerSpawner.gameObject.SetActive(true);
     }
+    public void SushiGameEnd()
+    {
+        _start = false;
+        customerSpawner.gameObject.SetActive(false);
+        clockUI.gameObject.SetActive(false);
+        closeUI.OFFSushi();
 
+    }
     public void UpdateCustomer(Customer customer)
     {
         customerSpawner.UpdateCustomer(customer);
