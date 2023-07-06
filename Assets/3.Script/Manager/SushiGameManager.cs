@@ -112,4 +112,9 @@ public class SushiGameManager : MonoBehaviour
     {
         customerSpawner.gameObject.SetActive(true);
     }
+
+    public void UpdateCustomer(Customer customer)
+    {
+        customerSpawner.UpdateCustomer(customer);
+    }
 }

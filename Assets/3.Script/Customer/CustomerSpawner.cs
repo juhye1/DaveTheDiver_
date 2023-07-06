@@ -7,8 +7,6 @@ public class SpeechBubble
 {
     public Sprite Bubble;
     public Sprite Order;
-
-
 }
 public class CustomerSpawner : MonoBehaviour
 {
@@ -21,10 +19,12 @@ public class CustomerSpawner : MonoBehaviour
     [SerializeField] private GameObject[] TeaUI;
     [SerializeField] private SpriteLibraryAsset[] spriteLibraryAsset;
 
+    private Dictionary<int, SpriteLibraryAsset> spriteLibraryDictionary;
+
 
     private List<Sprite> OrderList;
     private List<Transform> goal;
-    private List<int> clothes;
+    private List<int> closet;
 
     private Chair chair;
     private SpeechBubble bubble;
@@ -37,12 +37,14 @@ public class CustomerSpawner : MonoBehaviour
 
     private void Awake()
     {
+        spriteLibraryDictionary = new Dictionary<int, SpriteLibraryAsset>();
         chair = FindObjectOfType<Chair>();
-        clothes = new List<int>();
+        closet = new List<int>();
         goal = new List<Transform>();
         for (int i = 0; i < spriteLibraryAsset.Length; i++)
         {
-            clothes.Add(i);
+            spriteLibraryDictionary.Add(i, spriteLibraryAsset[i]);
+            closet.Add(i);
         }
     }
     private void Start()
@@ -62,11 +64,23 @@ public class CustomerSpawner : MonoBehaviour
 
             Customer _customer = Instantiate(customer, spawnpoints[i], Quaternion.identity);
             _customer.transform.SetParent(transform);
-            _customer.Init(goal[i], bubble, spareBubble, orderType, spawnPoint, spriteLibraryAsset[num]);
+            _customer.Init(goal[i], bubble, spareBubble, orderType, spawnPoint, spriteLibraryDictionary[num], num);
             _customer.GetComponent<BaseCustomer>().Init(TeaUI);
-            clothes.Remove(num);
+            spriteLibraryDictionary.Remove(num);
 
         }
+    }
+
+    public void UpdateCustomer(Customer _customer)
+    {
+        orderType = new Customer.EOrderType();
+        Transform _goal = chair.EmptyOneChair();
+        Gacha();
+
+        spriteLibraryDictionary.Add(_customer.clothes, spriteLibraryDictionary[_customer.clothes]);
+        _customer.Init(_goal, bubble, spareBubble, orderType, spawnPoint, spriteLibraryAsset[num], num);
+        spriteLibraryDictionary.Remove(num);
+
     }
 
     private List<Vector3> SpawnPoints()
@@ -90,7 +104,7 @@ public class CustomerSpawner : MonoBehaviour
         {
             //¾ó±¼ »Ì±â
             rdn = Random.Range(0, spriteLibraryAsset.Length);
-            if (clothes.Contains(rdn))
+            if (spriteLibraryDictionary.ContainsKey(rdn))
             {
                 num = rdn;
                 break;

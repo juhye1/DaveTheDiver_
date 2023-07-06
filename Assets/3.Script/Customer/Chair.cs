@@ -60,4 +60,30 @@ public class Chair : MonoBehaviour
         }
                 return chairTransforms;
     }
+
+    public Transform EmptyOneChair()
+    {
+        int num;
+        Transform chairTransform = Chairs[0].transform;
+
+        foreach (var chair in Chairs)
+        {
+            if (chair.isEmpty)
+            {
+                index.Add(chair.index);
+            }
+        }
+        for (int i = 0; i < 10; i++)
+        {
+            num = Random.Range(0, Chairs.Count);
+            if (index.Contains(num))
+            {
+                Chairs[num].isEmpty = false;
+                chairTransform = Chairs[num].transform;
+                index.Remove(num);
+            }
+        }
+
+        return chairTransform;
+    }
 }

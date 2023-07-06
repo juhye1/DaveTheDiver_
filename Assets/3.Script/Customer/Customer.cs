@@ -39,9 +39,11 @@ public class Customer : MonoBehaviour
 
     private Customer_Particle particle;
     private Bancho_Cooking bancho;
-    public SpeechBubble bubble;
     private SpeechBubble spareBubble;
     private SpriteRenderer[] speechBubbleSprites;
+
+    public SpeechBubble bubble;
+    public int clothes;
 
     private int isSit = Animator.StringToHash("Sit");
     private int isEat = Animator.StringToHash("Eat");
@@ -50,10 +52,11 @@ public class Customer : MonoBehaviour
     private int isAngry = Animator.StringToHash("isAngry");
     public EOrderType OrderType;
     public void Init(Transform goal, SpeechBubble bubble, SpeechBubble spareBubble,EOrderType ordertype, Transform home,
-                    SpriteLibraryAsset libraryAsset)
+                    SpriteLibraryAsset libraryAsset, int clothes)
     {
         this.Goal = goal;
         this.home = home;
+        this.clothes = clothes;
 
         speechBubbleSprites = speechBubble.GetComponentsInChildren<SpriteRenderer>();
         speechBubbleSprites[0].sprite = bubble.Bubble;
@@ -119,7 +122,10 @@ public class Customer : MonoBehaviour
             ani.SetBool(isAngry, false);
         }
 
-        transform.DOLocalMove(home.position, 5);
+        Sequence sequence = DOTween.Sequence().Pause();
+        sequence.Append(transform.DOLocalMove(home.position, 5))
+                .AppendInterval(3f);
+        sequence.OnComplete(() => SushiGameManager.Instance.UpdateCustomer(this));
     }
 
     private void SitChair()
