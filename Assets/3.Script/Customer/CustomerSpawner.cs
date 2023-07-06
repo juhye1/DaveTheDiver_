@@ -23,7 +23,7 @@ public class CustomerSpawner : MonoBehaviour
 
 
     private List<Sprite> OrderList;
-    private List<Transform> goal;
+    private List<Chairs> goal;
     private List<int> closet;
 
     private Chair chair;
@@ -40,7 +40,7 @@ public class CustomerSpawner : MonoBehaviour
         spriteLibraryDictionary = new Dictionary<int, SpriteLibraryAsset>();
         chair = FindObjectOfType<Chair>();
         closet = new List<int>();
-        goal = new List<Transform>();
+        goal = new List<Chairs>();
         for (int i = 0; i < spriteLibraryAsset.Length; i++)
         {
             spriteLibraryDictionary.Add(i, spriteLibraryAsset[i]);
@@ -73,8 +73,9 @@ public class CustomerSpawner : MonoBehaviour
 
     public void UpdateCustomer(Customer _customer)
     {
+        chair.UpdateChair(_customer.chair);
         orderType = new Customer.EOrderType();
-        Transform _goal = chair.EmptyOneChair();
+        Chairs _goal = chair.EmptyOneChair();
         Gacha();
 
         spriteLibraryDictionary.Add(_customer.clothes, spriteLibraryAsset[_customer.clothes]);

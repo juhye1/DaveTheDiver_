@@ -42,7 +42,7 @@ public class Customer : MonoBehaviour
     private Bancho_Cooking bancho;
     private SpeechBubble spareBubble;
     public SpeechBubble bubble;
-    private Chair chair;
+    public Chairs chair;
 
     public int clothes;
 
@@ -52,10 +52,11 @@ public class Customer : MonoBehaviour
     private int isGood = Animator.StringToHash("isGood");
     private int isAngry = Animator.StringToHash("isAngry");
     public EOrderType OrderType;
-    public void Init(Transform goal, SpeechBubble bubble, SpeechBubble spareBubble,EOrderType ordertype, Transform home,
+    public void Init(Chairs chair, SpeechBubble bubble, SpeechBubble spareBubble,EOrderType ordertype, Transform home,
                     SpriteLibraryAsset libraryAsset, int clothes)
     {
-        this.Goal = goal;
+        this.chair = chair;
+        this.Goal = chair.transform;
         this.home = home;
         this.clothes = clothes;
 
@@ -87,7 +88,7 @@ public class Customer : MonoBehaviour
         float distance = transform.position.x - Goal.position.x;
         distance = Mathf.Abs(distance);
         float duration = distance / 1.4f;
-        sequence = DOTween.Sequence();
+        sequence = DOTween.Sequence().SetAutoKill();
         sequence.Append(transform.DOLocalMoveX(Goal.position.x, duration).SetEase(Ease.Linear).OnComplete(() =>
                                                 SitChair()));
     }
@@ -123,7 +124,7 @@ public class Customer : MonoBehaviour
             ani.SetBool(isAngry, false);
         }
 
-        Sequence sequence = DOTween.Sequence().Pause();
+        Sequence sequence = DOTween.Sequence().Pause().SetAutoKill();
         sequence.Append(transform.DOLocalMove(home.position, 5))
                 .AppendInterval(1.5f);
 
@@ -136,6 +137,14 @@ public class Customer : MonoBehaviour
         foreach (var sprite in sprites)
         {
             sprite.flipX = false;
+        }
+
+        foreach (Animator ani in animators)
+        {
+            ani.SetBool(isEat, false);
+            ani.SetBool(isAngry, false);
+            ani.SetBool(isGood, false);
+            ani.SetBool(isSit, false);
         }
         SushiGameManager.Instance.UpdateCustomer(this);
     }
@@ -181,8 +190,9 @@ public class Customer : MonoBehaviour
         speechBubble.SetActive(false);
         thinkingUI.SetActive(true);
         particle.GreenParticlePlay();
-        speechBubbleSprites[0].sprite = spareBubble.Bubble;
-        speechBubbleSprites[1].sprite = spareBubble.Order;
+        bubble = spareBubble;
+        speechBubbleSprites[0].sprite = bubble.Bubble;
+        speechBubbleSprites[1].sprite = bubble.Order;
         OrderType = EOrderType.Sushi;
 
     }

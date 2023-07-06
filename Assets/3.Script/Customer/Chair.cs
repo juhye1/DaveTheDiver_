@@ -33,9 +33,9 @@ public class Chair : MonoBehaviour
             Chairs.Add(chair);
         }
     }
-    public List<Transform> EmptyChairs()
+    public List<Chairs> EmptyChairs()
     {
-        List<Transform> chairTransforms = new List<Transform>();
+        List<Chairs> chairList = new List<Chairs>();
         int num;
 
         foreach(var chair in Chairs)
@@ -51,29 +51,25 @@ public class Chair : MonoBehaviour
             num = Random.Range(0, Chairs.Count);
             if(index.Contains(num))
             {
-                chairTransforms.Add(Chairs[num].transform);
+                chairList.Add(Chairs[num]);
                 Chairs[num].isEmpty = false;
                 index.Remove(num);
             }
 
-            if (chairTransforms.Count.Equals(3))
+            if (chairList.Count.Equals(3))
             {
-                index.Clear();
-                foreach(var chair in Chairs)
-                {
-                    chair.isEmpty = true;
-                    index.Add(chair.index);
-                }
                 break;
             }
         }
-                return chairTransforms;
+                return chairList;
     }
 
-    public Transform EmptyOneChair()
+    public Chairs EmptyOneChair()
     {
         int num;
-        Transform chairTransform = Chairs[0].transform;
+        Chairs chairTransform;
+
+        index.Clear();
 
         foreach (var chair in Chairs)
         {
@@ -82,17 +78,25 @@ public class Chair : MonoBehaviour
                 index.Add(chair.index);
             }
         }
+
         for (int i = 0; i < 10; i++)
         {
             num = Random.Range(0, Chairs.Count);
             if (index.Contains(num))
             {
                 Chairs[num].isEmpty = false;
-                chairTransform = Chairs[num].transform;
-                index.Remove(num);
+                chairTransform = Chairs[num];
+                return chairTransform;
             }
         }
 
-        return chairTransform;
+        Debug.Log("의자가없나");
+        return null;
+
+    }
+
+    public void UpdateChair(Chairs chairs)
+    {
+        Chairs[chairs.index].isEmpty = true;
     }
 }
