@@ -10,6 +10,7 @@ public class Player_Sushi : PlayerInteraction
     private bool tired = false;
     private bool pour = false;
     private bool throwaway = false;
+    private bool startKey = false;
 
     private readonly int isTired = Animator.StringToHash("isTired");
     private void Start()
@@ -44,6 +45,23 @@ public class Player_Sushi : PlayerInteraction
     {
         throwaway = context.ReadValue<float>() > 0.1f;
     }
+
+    public void OnStart(InputAction.CallbackContext context)
+    {
+        startKey = context.ReadValue<float>() > 0.1f;
+    }
+
+
+    private void StartSushi(bool pressKey)
+    {
+        bool start = UIManager.Instance.SliderUp(pressKey, ESlider.Start);
+
+        if (start)
+        {
+            SushiGameManager.Instance.OpenSushi();
+        }
+    }
+
 
     private void ThrowSushi(bool pressKey)
     {
@@ -107,6 +125,7 @@ public class Player_Sushi : PlayerInteraction
                 {PourTea(pour);}
                 break;
             case EState.Sushi:
+                StartSushi(startKey);
                 Move();
                 DashGauge(dash);
                 ThrowSushi(throwaway);

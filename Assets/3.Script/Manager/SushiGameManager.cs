@@ -11,7 +11,10 @@ public class SushiGameManager : MonoBehaviour
 
 
     [SerializeField] private GameObject SushiGO;
+    [SerializeField] private OpenUI openUI;
+
     [SerializeField] private Image Sushi;
+    [SerializeField] private CustomerSpawner customerSpawner;
 
     [HideInInspector]
     public enum EScore
@@ -88,6 +91,11 @@ public class SushiGameManager : MonoBehaviour
         SushiGO.SetActive(false);
     }
 
+    public void OpenSushi()
+    {
+        openUI.OpenSushi();
+    }
+
     public bool DeliverSushi(Sprite sprite)
     {
         if(Sushi.sprite.name.Equals(sprite.name))
@@ -98,5 +106,10 @@ public class SushiGameManager : MonoBehaviour
 
         return false;
 
+    }
+
+    public void SushiGameStart()
+    {
+        customerSpawner.gameObject.SetActive(true);
     }
 }

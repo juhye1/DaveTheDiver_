@@ -15,6 +15,15 @@ public class Player : MonoBehaviour
         Load
     }
 
+    public enum ESlider
+    {
+        LoadScene,
+        Trash,
+        Start
+    }
+
+
+
     [SerializeField] protected PlayerSettings settings;
     public Transform UIPosition;
 

@@ -22,6 +22,8 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private Slider dashSlider;
     [SerializeField] private Slider throwSlider;
+    [SerializeField] private Slider startSlider;
+    private Slider _slider;
 
     [SerializeField] private Camera cam;
 
@@ -128,9 +130,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public bool ThrowUI(bool isDash)
+    public bool ThrowUI(bool isThrow)
     {
-        if (isDash)
+        if (isThrow)
         {
             throwSlider.gameObject.SetActive(true);
             throwSlider.value = Mathf.MoveTowards(throwSlider.value, 1, Time.deltaTime * 0.5f);
@@ -146,6 +148,63 @@ public class UIManager : MonoBehaviour
         bool gauge = throwSlider.value.Equals(1) ? true : false;
         return gauge;
     }
+
+    public bool StartUI(bool isStart)
+    {
+        if (isStart)
+        {
+            startSlider.gameObject.SetActive(true);
+            startSlider.value = Mathf.MoveTowards(startSlider.value, 1, Time.deltaTime * 0.5f);
+        }
+        else
+        {
+            startSlider.value = Mathf.MoveTowards(startSlider.value, 0, Time.deltaTime * 0.3f);
+            if (startSlider.value.Equals(0))
+            {
+                startSlider.gameObject.SetActive(false);
+            }
+        }
+        bool gauge = throwSlider.value.Equals(1) ? true : false;
+        return gauge;
+    }
+
+    public bool SliderUp(bool inputKey, Player.ESlider slider)
+    {
+
+        switch(slider)
+        {
+            case Player.ESlider.LoadScene:
+                //나중에 스페이스바 슬라이더 넣기
+
+                break;
+            case Player.ESlider.Trash:
+                _slider = throwSlider;
+
+                break;
+            case Player.ESlider.Start:
+                _slider = startSlider;
+                break;
+        }
+
+        if (inputKey)
+        {
+            _slider.gameObject.SetActive(true);
+            _slider.value = Mathf.MoveTowards(_slider.value, 1, Time.deltaTime * 0.5f);
+        }
+        else
+        {
+            _slider.value = Mathf.MoveTowards(_slider.value, 0, Time.deltaTime * 0.3f);
+            if (_slider.value.Equals(0))
+            {
+                _slider.gameObject.SetActive(false);
+            }
+        }
+        bool gauge = _slider.value.Equals(1) ? true : false;
+        return gauge;
+
+
+    }
+
 
 
     public bool CheckDash()
