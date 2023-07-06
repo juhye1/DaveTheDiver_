@@ -77,9 +77,10 @@ public class CustomerSpawner : MonoBehaviour
         Transform _goal = chair.EmptyOneChair();
         Gacha();
 
-        spriteLibraryDictionary.Add(_customer.clothes, spriteLibraryDictionary[_customer.clothes]);
+        spriteLibraryDictionary.Add(_customer.clothes, spriteLibraryAsset[_customer.clothes]);
         _customer.Init(_goal, bubble, spareBubble, orderType, spawnPoint, spriteLibraryAsset[num], num);
         spriteLibraryDictionary.Remove(num);
+        _customer.SwitchState(Customer.EState.MoveToChair);
 
     }
 

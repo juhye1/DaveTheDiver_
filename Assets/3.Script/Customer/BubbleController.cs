@@ -13,31 +13,36 @@ public class BubbleController : MonoBehaviour
     private SpriteMask spriteMask;
     private SpriteRenderer bubbleShape;
 
-    private void Start()
+    private void Awake()
     {
         customer = GetComponentInParent<Customer>();
         bubbleShape = GetComponent<SpriteRenderer>();
         spriteMask = GetComponent<SpriteMask>();
-
-        spriteMask.sprite = bubbleShape.sprite;
-    }
-    private void OnEnable()
-    {
-        sequence = DOTween.Sequence().Pause();
+        sequence = DOTween.Sequence().Pause().SetAutoKill(false);
         sequence.Append(transform.DOShakePosition(10, new Vector3(0, 0.015f, 0), 3, 0).SetEase(Ease.Linear))
                 .Append(angryGauge.DOLocalMoveY(0, 10f))
                 .Join(transform.DOShakePosition(10, new Vector3(0, 0.025f, 0), 5, 0).SetEase(Ease.OutCirc));
+    }
+    private void Start()
+    {
+        spriteMask.sprite = bubbleShape.sprite;
 
+    }
+    private void OnEnable()
+    {
+        //분노 게이지 올리기
+        spriteMask.sprite = bubbleShape.sprite;
+        sequence.Restart();
         sequence.Play();
-        sequence.OnComplete(() => ff());
+        sequence.OnComplete(() => CustomerAngry());
     }
 
     private void OnDisable()
     {
-        sequence.Kill();
+        sequence.Pause();
     }
 
-    private void ff()
+    private void CustomerAngry()
     {
         customer.SwitchState(Customer.EState.Angry);
         //화내기

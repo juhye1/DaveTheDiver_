@@ -55,8 +55,17 @@ public class Chair : MonoBehaviour
                 Chairs[num].isEmpty = false;
                 index.Remove(num);
             }
+
             if (chairTransforms.Count.Equals(3))
+            {
+                index.Clear();
+                foreach(var chair in Chairs)
+                {
+                    chair.isEmpty = true;
+                    index.Add(chair.index);
+                }
                 break;
+            }
         }
                 return chairTransforms;
     }

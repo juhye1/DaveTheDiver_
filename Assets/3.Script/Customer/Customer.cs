@@ -36,13 +36,14 @@ public class Customer : MonoBehaviour
     private TextMeshPro tmp;
     private Transform home;
     private SpriteLibrary spriteLibrary;
+    private SpriteRenderer[] speechBubbleSprites;
 
     private Customer_Particle particle;
     private Bancho_Cooking bancho;
     private SpeechBubble spareBubble;
-    private SpriteRenderer[] speechBubbleSprites;
-
     public SpeechBubble bubble;
+    private Chair chair;
+
     public int clothes;
 
     private int isSit = Animator.StringToHash("Sit");
@@ -124,8 +125,19 @@ public class Customer : MonoBehaviour
 
         Sequence sequence = DOTween.Sequence().Pause();
         sequence.Append(transform.DOLocalMove(home.position, 5))
-                .AppendInterval(3f);
-        sequence.OnComplete(() => SushiGameManager.Instance.UpdateCustomer(this));
+                .AppendInterval(1.5f);
+
+        sequence.Play();
+        sequence.OnComplete(() => ResetCustomer());
+    }
+
+    private void ResetCustomer()
+    {
+        foreach (var sprite in sprites)
+        {
+            sprite.flipX = false;
+        }
+        SushiGameManager.Instance.UpdateCustomer(this);
     }
 
     private void SitChair()
@@ -160,7 +172,7 @@ public class Customer : MonoBehaviour
         emoteUI.PlayEmote(EState.Eat);
         particle.HeartParticlePlay();
         tmp.enabled = true;
-        tmp.DOFade(0, 1f);
+        tmp.DOFade(0, 1f).OnComplete(()=>tmp.enabled = false);
         //¸»Ç³¼± ²ô°í ÀÌ¸ðÆ¼ÄÜ ¶ç¿ì±â
     }
 
@@ -171,6 +183,7 @@ public class Customer : MonoBehaviour
         particle.GreenParticlePlay();
         speechBubbleSprites[0].sprite = spareBubble.Bubble;
         speechBubbleSprites[1].sprite = spareBubble.Order;
+        OrderType = EOrderType.Sushi;
 
     }
 
