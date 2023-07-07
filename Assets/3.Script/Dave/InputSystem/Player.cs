@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
 
     protected SpriteRenderer spriteRenderer;
 
+    protected Rigidbody2D rigid;
 
 
     private UIInput uiInput;
@@ -57,6 +58,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
@@ -71,25 +73,45 @@ public class Player : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         cachedMove = context.ReadValue<Vector2>();
+        animator.SetFloat("MoveX", cachedMove.x);
+        animator.SetFloat("MoveY", cachedMove.y);
 
-        if (cachedMove.x != 0)
+        //바다
+
+        if (cachedMove.x < 0)
         {
-            animator.SetBool(isMove, true);
-            if (cachedMove.x < 0)
-            {
-                spriteRenderer.flipX = false;
-                //transform.localScale = left;
-            }
-            else if (cachedMove.x > 0)
-            {
-                spriteRenderer.flipX = true;
-                //transform.localScale = Vector2.one;
-            }
+            spriteRenderer.flipX = true;
+            //transform.localScale = left;
         }
-        else
+        else if (cachedMove.x > 0)
         {
-            animator.SetBool(isMove, false);
+            spriteRenderer.flipX = false;
+            //transform.localScale = Vector2.one;
         }
+
+
+        //바다
+
+
+        //이건 나머지
+        /*        if (cachedMove.x != 0)
+                {
+                    animator.SetBool(isMove, true);
+                    if (cachedMove.x < 0)
+                    {
+                        spriteRenderer.flipX = false;
+                        //transform.localScale = left;
+                    }
+                    else if (cachedMove.x > 0)
+                    {
+                        spriteRenderer.flipX = true;
+                        //transform.localScale = Vector2.one;
+                    }
+                }
+                else
+                {
+                    animator.SetBool(isMove, false);
+                }*/
     }
 
     public void OnUIMove(InputAction.CallbackContext context)
@@ -122,7 +144,8 @@ public class Player : MonoBehaviour
         //대시 누르면 빨라지고, 애니메이션 나오고, 옆에 스태미나 나와야함
         //스태미나 없으면 지쳐야함
         dash = context.ReadValue<float>() > 0.1f;
-        if (tired) return;
+
+        if (state.Equals(EState.Sushi)&&tired) return;
 
 
         if (context.started)
@@ -153,9 +176,23 @@ public class Player : MonoBehaviour
 
     protected void Move()
     {
-        Vector3 desiredMovement = cachedMove * transform.right;
-        transform.position += desiredMovement * speed * Time.deltaTime;
+        //Vector3 desiredMovement = cachedMove * transform.right;
+        //transform.position += desiredMovement * speed * Time.deltaTime;
 
+        //transform.Translate(Vector2.one*0.1f * cachedMove);
+        rigid.velocity = cachedMove * 5;
+        if(cachedMove!=Vector2.zero)
+        {
+            Quaternion target = Quaternion.LookRotation(transform.forward, cachedMove);
+            Quaternion rotation = Quaternion.RotateTowards(transform.rotation, target,Time.deltaTime*30);
+/*            float d = target.eulerAngles.x;
+            float f = target.eulerAngles.y;
+            float g = target.eulerAngles.z;
+            transform.eulerAngles = new Vector3(d,f,-g);*/
+            rigid.MoveRotation(rotation);
+        }
+
+        
     }
 
     #endregion

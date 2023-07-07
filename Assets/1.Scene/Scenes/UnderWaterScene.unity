@@ -2293,7 +2293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914555893}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.0239997, y: 9.559999, z: -10}
+  m_LocalPosition: {x: 3.409999, y: 8.386, z: -11.807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1962622817}
@@ -5107,7 +5107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910469217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.0239997, y: 9.559999, z: -10}
+  m_LocalPosition: {x: 3.409999, y: 8.386, z: -11.807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5842,7 +5842,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034323491}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3, y: 13.3, z: 0}
+  m_LocalPosition: {x: 7.49, y: 14.2, z: -1.11}
   m_LocalScale: {x: 3.4, y: 3.4, z: 3.4}
   m_Children:
   - {fileID: 2196971285242473733}
@@ -6110,19 +6110,19 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2196971285242473732}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!212 &2196971285242473730
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6165,7 +6165,7 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: b1bc7f366f97c014e943bd95ae8e41d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.25, y: 0.56}
@@ -6192,7 +6192,7 @@ MonoBehaviour:
   m_DeviceLostEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2196971285242473732}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -6213,7 +6213,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2196971285242473735}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
@@ -6245,7 +6245,7 @@ MonoBehaviour:
     m_ActionName: Lobby/Space[/Keyboard/space]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2196971285242473735}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
@@ -6261,7 +6261,7 @@ MonoBehaviour:
     m_ActionName: UI/UIMove[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2196971285242473735}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: OnSpace
         m_Mode: 0
@@ -6277,7 +6277,7 @@ MonoBehaviour:
     m_ActionName: UI/Space[/Keyboard/space]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2196971285242473735}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
@@ -6293,7 +6293,7 @@ MonoBehaviour:
     m_ActionName: Sushi/Move[/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2196971285242473735}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: OnSpace
         m_Mode: 0
@@ -6309,7 +6309,7 @@ MonoBehaviour:
     m_ActionName: Sushi/Space[/Keyboard/space]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2196971285242473735}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player_Sushi, Assembly-CSharp
         m_MethodName: OnDash
         m_Mode: 0
@@ -6325,7 +6325,7 @@ MonoBehaviour:
     m_ActionName: Sushi/Dash[/Keyboard/leftShift]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2196971285242473735}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player_Sushi, Assembly-CSharp
         m_MethodName: OnPourTea
         m_Mode: 0
@@ -6341,7 +6341,7 @@ MonoBehaviour:
     m_ActionName: UI/PourTea[/Keyboard/s]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2196971285242473735}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player_Sushi, Assembly-CSharp
         m_MethodName: OnThrowAway
         m_Mode: 0
@@ -6357,7 +6357,7 @@ MonoBehaviour:
     m_ActionName: Sushi/ThrowAway[/Keyboard/s]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2196971285242473735}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player_Sushi, Assembly-CSharp
         m_MethodName: OnStart
         m_Mode: 0
@@ -6372,12 +6372,24 @@ MonoBehaviour:
     m_ActionId: 657ae905-eb2f-4944-8a19-2f2c4fe34ad2
     m_ActionName: Sushi/Start[/Keyboard/y]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2196971285242473736}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 54e36f16-0e63-4887-be52-353598db8b85
     m_ActionName: UnderWater/New action[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: PC
-  m_DefaultActionMap: 28fd4b9b-2dc0-46df-8ed9-a1189c510673
+  m_DefaultActionMap: UnderWater
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1 &2196971285242473732
@@ -6393,6 +6405,7 @@ GameObject:
   - component: {fileID: 2196971285242473731}
   - component: {fileID: 2196971285242473729}
   - component: {fileID: 2196971285242473734}
+  - component: {fileID: 2196971285242473736}
   - component: {fileID: 2196971285242473735}
   m_Layer: 0
   m_Name: '!!Character_Dave'
@@ -6408,8 +6421,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2196971285242473732}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.86, y: -1.1, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2, y: -1.71, z: -0.20500013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2196971284508823527}
@@ -6435,7 +6448,26 @@ CapsuleCollider2D:
   m_Offset: {x: 4.3451798e-21, y: 0.015311897}
   m_Size: {x: 0.8, y: 0.9693762}
   m_Direction: 0
---- !u!114 &2196971285242473735
+--- !u!95 &2196971285242473735
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196971285242473732}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8bd30afcf3d615a4898a9d8a32b47093, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2196971285242473736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6444,7 +6476,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2196971285242473732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 113312db62032b046bc5168e8dec711b, type: 3}
+  m_Script: {fileID: 11500000, guid: d71c86f59597b214fa52d91f832544b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: 6b7cf1083d49e70429b1b1524c375f23, type: 2}
