@@ -125,7 +125,7 @@ public class SushiGameManager : MonoBehaviour
     {
         _start = false;
         customerSpawner.gameObject.SetActive(false);
-        clockUI.gameObject.SetActive(false);
+        clockUI.enabled = false;
         closeUI.OFFSushi();
 
     }
