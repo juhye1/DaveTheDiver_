@@ -6,7 +6,7 @@ using Cysharp.Threading.Tasks;
 
 public class Player_Sushi : PlayerInteraction
 {
-    private bool dash = false;
+
     private bool tired = false;
     private bool pour = false;
     private bool throwaway = false;
@@ -25,7 +25,7 @@ public class Player_Sushi : PlayerInteraction
         //스태미나 없으면 지쳐야함
         dash = context.ReadValue<float>() > 0.1f;
         if (tired) return;
-        
+
 
         if (context.started)
         {
@@ -33,7 +33,7 @@ public class Player_Sushi : PlayerInteraction
             speed = settings.DashSpeed;
         }
 
-        else if(context.canceled)
+        else if (context.canceled)
         {
             animator.SetBool(isDash, false);
             speed = settings.MoveSpeed;

@@ -334,6 +334,78 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""UnderWater"",
+            ""id"": ""28fd4b9b-2dc0-46df-8ed9-a1189c510673"",
+            ""actions"": [
+                {
+                    ""name"": ""New action"",
+                    ""type"": ""Value"",
+                    ""id"": ""54e36f16-0e63-4887-be52-353598db8b85"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""e267a8eb-c0dc-4260-977a-e2ada805330d"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""4e5cb30c-d4ff-4759-bdf6-3cf63cc4b3a7"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""65de9f3e-d502-4ce2-a5ab-8dd87e719a23"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""0567fbaf-ad09-4822-ad81-ceff32f6778a"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""a2ffa40d-15b5-40f2-a71a-4891d6053a40"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -382,6 +454,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         m_Sushi_Dash = m_Sushi.FindAction("Dash", throwIfNotFound: true);
         m_Sushi_ThrowAway = m_Sushi.FindAction("ThrowAway", throwIfNotFound: true);
         m_Sushi_Start = m_Sushi.FindAction("Start", throwIfNotFound: true);
+        // UnderWater
+        m_UnderWater = asset.FindActionMap("UnderWater", throwIfNotFound: true);
+        m_UnderWater_Newaction = m_UnderWater.FindAction("New action", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -592,6 +667,39 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         }
     }
     public SushiActions @Sushi => new SushiActions(this);
+
+    // UnderWater
+    private readonly InputActionMap m_UnderWater;
+    private IUnderWaterActions m_UnderWaterActionsCallbackInterface;
+    private readonly InputAction m_UnderWater_Newaction;
+    public struct UnderWaterActions
+    {
+        private @InputSystem m_Wrapper;
+        public UnderWaterActions(@InputSystem wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Newaction => m_Wrapper.m_UnderWater_Newaction;
+        public InputActionMap Get() { return m_Wrapper.m_UnderWater; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(UnderWaterActions set) { return set.Get(); }
+        public void SetCallbacks(IUnderWaterActions instance)
+        {
+            if (m_Wrapper.m_UnderWaterActionsCallbackInterface != null)
+            {
+                @Newaction.started -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnNewaction;
+                @Newaction.performed -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnNewaction;
+                @Newaction.canceled -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnNewaction;
+            }
+            m_Wrapper.m_UnderWaterActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Newaction.started += instance.OnNewaction;
+                @Newaction.performed += instance.OnNewaction;
+                @Newaction.canceled += instance.OnNewaction;
+            }
+        }
+    }
+    public UnderWaterActions @UnderWater => new UnderWaterActions(this);
     private int m_PCSchemeIndex = -1;
     public InputControlScheme PCScheme
     {
@@ -628,5 +736,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         void OnDash(InputAction.CallbackContext context);
         void OnThrowAway(InputAction.CallbackContext context);
         void OnStart(InputAction.CallbackContext context);
+    }
+    public interface IUnderWaterActions
+    {
+        void OnNewaction(InputAction.CallbackContext context);
     }
 }

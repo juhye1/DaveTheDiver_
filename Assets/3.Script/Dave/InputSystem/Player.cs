@@ -28,11 +28,12 @@ public class Player : MonoBehaviour
     public Transform UIPosition;
 
     private Vector2 cachedMove = Vector2.zero;
-    private Vector2 left = new Vector2(-1, 1);
     [HideInInspector]
     public Vector3 Point { get;protected set; }
     protected bool pressKey = false;
+    protected bool dash = false;
     protected float speed;
+    protected bool tired = false;
 
     protected PlayerInput playerInput;
     protected Animator animator;
@@ -114,6 +115,28 @@ public class Player : MonoBehaviour
             {
                 interaction.Perform();
             }
+    }
+
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        //대시 누르면 빨라지고, 애니메이션 나오고, 옆에 스태미나 나와야함
+        //스태미나 없으면 지쳐야함
+        dash = context.ReadValue<float>() > 0.1f;
+        if (tired) return;
+
+
+        if (context.started)
+        {
+            animator.SetBool(isDash, true);
+            speed = settings.DashSpeed;
+        }
+
+        else if (context.canceled)
+        {
+            animator.SetBool(isDash, false);
+            speed = settings.MoveSpeed;
+        }
+
     }
 
     protected void Space(bool pressKey)
