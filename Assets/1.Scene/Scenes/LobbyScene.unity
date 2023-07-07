@@ -5065,6 +5065,13 @@ MonoBehaviour:
   mainUI: {fileID: 1804510268}
   background: {fileID: 1204241140}
   loadScene: {fileID: 903191280}
+  ScoreUI: {fileID: 0}
+  Kettle: {fileID: 0}
+  KettleGoal: {fileID: 0}
+  dashSlider: {fileID: 0}
+  throwSlider: {fileID: 0}
+  startSlider: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!114 &477834125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20865,6 +20872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: 6b7cf1083d49e70429b1b1524c375f23, type: 2}
+  UIPosition: {fileID: 0}
 --- !u!50 &1883525039
 Rigidbody2D:
   serializedVersion: 4
@@ -86532,7 +86540,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 232a3d1bcf82eeb4bb1938365a309707, type: 2}
+  - {fileID: 2100000, guid: c135bf91eb02cc54fbfba514b0cc708d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
