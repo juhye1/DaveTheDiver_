@@ -13,12 +13,19 @@ public class Player_Underwater : PlayerInteraction
         BottomToSide
     }
 
+    public enum TT
+    {
+        Side,
+        Up,
+        Bottom
+    }
+
     private Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
     private Vector2 dd;
     private float blend = 0;
     private EWaterState waterState;
     private EDirection Edirection;
-    private EDirection curruentDirection;
+    private TT ett;
 
     private void Start()
     {
@@ -43,7 +50,7 @@ public class Player_Underwater : PlayerInteraction
         {
             if (cachedMove.Equals(dir))
             {
-                curruentDirection = dir;
+                ett = TT.Side;
                 break;
             }
         }
@@ -56,6 +63,14 @@ public class Player_Underwater : PlayerInteraction
     {
         Debug.Log(waterState);
         rigid.velocity = cachedMove * 5;
+
+        if (cachedMove.x != 0 && cachedMove.y != 0)
+        {
+            blend = Mathf.Lerp(blend, 0.6f, Time.deltaTime);
+            animator.SetFloat("Blend", blend);
+        }
+        else
+            blend = 0;
 
     }
     private void FixedUpdate()
