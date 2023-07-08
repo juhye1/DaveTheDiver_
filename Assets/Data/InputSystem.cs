@@ -340,7 +340,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
             ""id"": ""28fd4b9b-2dc0-46df-8ed9-a1189c510673"",
             ""actions"": [
                 {
-                    ""name"": ""Move"",
+                    ""name"": ""OnUnderWaterMove"",
                     ""type"": ""Value"",
                     ""id"": ""54e36f16-0e63-4887-be52-353598db8b85"",
                     ""expectedControlType"": ""Vector2"",
@@ -357,7 +357,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""OnUnderWaterMove"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -368,7 +368,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""OnUnderWaterMove"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -379,7 +379,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""OnUnderWaterMove"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -390,7 +390,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""OnUnderWaterMove"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -401,7 +401,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""OnUnderWaterMove"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
@@ -456,7 +456,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         m_Sushi_Start = m_Sushi.FindAction("Start", throwIfNotFound: true);
         // UnderWater
         m_UnderWater = asset.FindActionMap("UnderWater", throwIfNotFound: true);
-        m_UnderWater_Move = m_UnderWater.FindAction("Move", throwIfNotFound: true);
+        m_UnderWater_OnUnderWaterMove = m_UnderWater.FindAction("OnUnderWaterMove", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -671,12 +671,12 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     // UnderWater
     private readonly InputActionMap m_UnderWater;
     private IUnderWaterActions m_UnderWaterActionsCallbackInterface;
-    private readonly InputAction m_UnderWater_Move;
+    private readonly InputAction m_UnderWater_OnUnderWaterMove;
     public struct UnderWaterActions
     {
         private @InputSystem m_Wrapper;
         public UnderWaterActions(@InputSystem wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Move => m_Wrapper.m_UnderWater_Move;
+        public InputAction @OnUnderWaterMove => m_Wrapper.m_UnderWater_OnUnderWaterMove;
         public InputActionMap Get() { return m_Wrapper.m_UnderWater; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -686,16 +686,16 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_UnderWaterActionsCallbackInterface != null)
             {
-                @Move.started -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnMove;
-                @Move.performed -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnMove;
-                @Move.canceled -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnMove;
+                @OnUnderWaterMove.started -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnOnUnderWaterMove;
+                @OnUnderWaterMove.performed -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnOnUnderWaterMove;
+                @OnUnderWaterMove.canceled -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnOnUnderWaterMove;
             }
             m_Wrapper.m_UnderWaterActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Move.started += instance.OnMove;
-                @Move.performed += instance.OnMove;
-                @Move.canceled += instance.OnMove;
+                @OnUnderWaterMove.started += instance.OnOnUnderWaterMove;
+                @OnUnderWaterMove.performed += instance.OnOnUnderWaterMove;
+                @OnUnderWaterMove.canceled += instance.OnOnUnderWaterMove;
             }
         }
     }
@@ -739,6 +739,6 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     }
     public interface IUnderWaterActions
     {
-        void OnMove(InputAction.CallbackContext context);
+        void OnOnUnderWaterMove(InputAction.CallbackContext context);
     }
 }

@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
     [SerializeField] protected PlayerSettings settings;
     public Transform UIPosition;
 
-    private Vector2 cachedMove = Vector2.zero;
+    protected Vector2 cachedMove = Vector2.zero;
     [HideInInspector]
     public Vector3 Point { get;protected set; }
     protected bool pressKey = false;
@@ -73,19 +73,22 @@ public class Player : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         cachedMove = context.ReadValue<Vector2>();
-        animator.SetFloat("MoveX", cachedMove.x);
-        animator.SetFloat("MoveY", cachedMove.y);
+
+            animator.SetFloat("MoveX", cachedMove.x);
+            animator.SetFloat("MoveY", cachedMove.y);
+        //animator.SetFloat("MoveX", cachedMove.x);
+        //animator.SetFloat("MoveY", cachedMove.y);
 
         //바다
 
         if (cachedMove.x < 0)
         {
-            spriteRenderer.flipX = true;
+            //spriteRenderer.flipX = true;
             //transform.localScale = left;
         }
         else if (cachedMove.x > 0)
         {
-            spriteRenderer.flipX = false;
+            //spriteRenderer.flipX = false;
             //transform.localScale = Vector2.one;
         }
 
@@ -180,17 +183,48 @@ public class Player : MonoBehaviour
         //transform.position += desiredMovement * speed * Time.deltaTime;
 
         //transform.Translate(Vector2.one*0.1f * cachedMove);
-        rigid.velocity = cachedMove * 5;
+/*        rigid.velocity = cachedMove * 5;
+
+        if(cachedMove!=Vector2.zero&&cachedMove!=Vector2.down&&
+            cachedMove!=Vector2.left&& cachedMove != Vector2.right&&cachedMove!=Vector2.up)
+        {
+            //대각선일때
+            blend = Mathf.Lerp(blend, 0.5f, Time.deltaTime);
+            animator.SetFloat("Blend", blend);
+        }
+        else
+        {
+            blend = 0;
+            //blend = Mathf.Lerp(blend, 0, Time.deltaTime);
+            animator.SetFloat("Blend", blend);
+        }*/
+/*
         if(cachedMove!=Vector2.zero)
         {
-            Quaternion target = Quaternion.LookRotation(transform.forward, cachedMove);
-            Quaternion rotation = Quaternion.RotateTowards(transform.rotation, target,Time.deltaTime*30);
-/*            float d = target.eulerAngles.x;
-            float f = target.eulerAngles.y;
-            float g = target.eulerAngles.z;
-            transform.eulerAngles = new Vector3(d,f,-g);*/
-            rigid.MoveRotation(rotation);
+            blend = Mathf.Lerp(blend, 1, 10 * Time.deltaTime);
+            //우측 위로 올라가는 대각선 움직임
+            if(cachedMove.x>0&&cachedMove.y>0)
+            {
+                animator.SetFloat("BlendRight", blend);
+                animator.SetFloat("Blend", 1);
+
+            }
+            else
+            {
+                animator.SetFloat("Blend", 0);
+                animator.SetFloat("BlendLeft", blend);
+
+            }
         }
+        else
+        {
+            blend = 0;
+            //blend = Mathf.Lerp(blend, 0, 10 * Time.deltaTime);
+            animator.SetFloat("Blend", 2);
+            animator.SetFloat("BlendLeft", 0);
+            animator.SetFloat("BlendRight", 0);
+
+        }*/
 
         
     }

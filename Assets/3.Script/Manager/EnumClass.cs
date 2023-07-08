@@ -36,3 +36,7 @@ public enum ELoadScene
     Loading,
     Sushi
 }
+public enum EDirection
+{
+    Right, Left, Up, Down, Zero
+}

@@ -5,10 +5,7 @@ using UnityEngine.UI;
 
 public class UIInput : MonoBehaviour
 {
-    public enum EDirection
-    {
-        Right, Left, Up, Down
-    }
+
 
     private RectTransform[] transforms;
     [SerializeField] private RectTransform select;
