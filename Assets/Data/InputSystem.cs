@@ -350,9 +350,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""OnRightButton"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""adf47970-9cd7-45a2-a395-6a2be3e33c50"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -417,7 +417,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""3e814c7e-33a2-4733-a255-97a603977196"",
-                    ""path"": ""<Mouse>/position"",
+                    ""path"": ""<Mouse>/rightButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

@@ -148,7 +148,8 @@ public class Player_Underwater : PlayerInteraction
     public void OnRightButton(InputAction.CallbackContext context)
     {
         Debug.Log(context);
-        press = Mouse.current.rightButton.isPressed;
+        press = context.ReadValue<float>() > 0.1f;
+        //press = Mouse.current.rightButton.isPressed;
         Debug.Log(press);
         if (press)
         {
@@ -190,12 +191,20 @@ public class Player_Underwater : PlayerInteraction
 
     }
 
-    private void Update()
+    private void MoveMousePosition(bool press)
     {
-        if(press)
+        if (press)
         {
+            MousePosition = Mouse.current.position.ReadValue();
             CameraManager.Instance.ZoomIn();
         }
+        else
+            CameraManager.Instance.ZoomOut();
+    }
+
+    private void Update()
+    {
+        MoveMousePosition(press);
         
     }
 

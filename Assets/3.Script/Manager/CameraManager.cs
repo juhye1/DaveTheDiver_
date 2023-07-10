@@ -22,7 +22,7 @@ public class CameraManager : Singleton<CameraManager>
 
     public void ZoomOut()
     {
-        virtualCamera.m_Lens.FieldOfView = 70;
+        virtualCamera.m_Lens.FieldOfView = Mathf.Lerp(virtualCamera.m_Lens.FieldOfView, 70, Time.deltaTime*10);
 
     }
 }
