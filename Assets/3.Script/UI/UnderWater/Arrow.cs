@@ -4,22 +4,18 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
-    private Camera mainCamera;
-    private RectTransform rectTransform;
-    private Vector3 screenPosition;
     [SerializeField] private Transform dave;
     [SerializeField] private Transform point;
     [SerializeField] private RectTransform arrow;
-    [SerializeField] private RectTransform dd;
+
     private Player_Underwater player;
-    private Vector2 Direction => player.MousePosition;
+    private Camera mainCamera;
+    private Vector3 screenPosition;
     // Start is called before the first frame update
     void Start()
     {
-        rectTransform = GetComponent<RectTransform>();
         player = FindObjectOfType<Player_Underwater>();
         mainCamera = Camera.main;
-        //rectTransform.pivot = dave.position;
     }
 
     // Update is called once per frame

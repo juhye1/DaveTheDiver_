@@ -15,7 +15,7 @@ public class Player_Underwater : PlayerInteraction
     private Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
     private float blend = 0;
     private float goal = 0;
-    private bool dd;
+    private bool press;
     public Vector2 MousePosition;
    
 
@@ -147,10 +147,14 @@ public class Player_Underwater : PlayerInteraction
 
     public void OnRightButton(InputAction.CallbackContext context)
     {
-        if(Mouse.current.rightButton.isPressed)
+        Debug.Log(context);
+        press = Mouse.current.rightButton.isPressed;
+        Debug.Log(press);
+        if (press)
         {
             MousePosition = Mouse.current.position.ReadValue();
         }
+        UIManager.Instance.PowerGaugeOn(press);
         
     } 
     private void UnderwaterMove()
@@ -184,6 +188,15 @@ public class Player_Underwater : PlayerInteraction
         }
         animator.SetFloat("Blend", blend);
 
+    }
+
+    private void Update()
+    {
+        if(press)
+        {
+            CameraManager.Instance.ZoomIn();
+        }
+        
     }
 
     private void FixedUpdate()

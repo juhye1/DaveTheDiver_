@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Image background;
     [SerializeField] private Image loadScene;
     [SerializeField] private GameObject ScoreUI;
+    [SerializeField] private GameObject powerGauge;
 
     [SerializeField] private Transform Kettle;
     [SerializeField] private Transform KettleGoal;
@@ -43,6 +44,9 @@ public class UIManager : MonoBehaviour
 /*        dialogueUI.SetActive(false);
         chapterUI.SetActive(false);*/
     }
+
+
+    #region Lobby
     public void TalkStart(bool isOn)
     {
         player.SwitchActionMap(isOn, Player.EState.Ground);
@@ -221,5 +225,21 @@ public class UIManager : MonoBehaviour
     public void EndTired()
     {
         dashSlider.value = 0.1f;
+    }
+
+    #endregion
+
+
+    public void PowerGaugeOn(bool isOn)
+    {
+        powerGauge.SetActive(isOn);
+        if(isOn)
+        {
+            CameraManager.Instance.ZoomIn();
+        }
+        else
+        {
+            CameraManager.Instance.ZoomOut();
+        }
     }
 }
