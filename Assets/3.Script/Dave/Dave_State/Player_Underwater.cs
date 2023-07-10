@@ -25,9 +25,11 @@ public class Player_Underwater : PlayerInteraction
     private EDirection oldDirection = EDirection.Zero;
     private EDirection[] eDirections;
     private EWaterState waterState;
+    private Player_Arms playerArms;
 
     private void Start()
     {
+        playerArms = GetComponentInChildren<Player_Arms>();
         AddDirection();
     }
     private void AddDirection()
@@ -147,13 +149,15 @@ public class Player_Underwater : PlayerInteraction
 
     public void OnRightButton(InputAction.CallbackContext context)
     {
-        Debug.Log(context);
         press = context.ReadValue<float>() > 0.1f;
-        //press = Mouse.current.rightButton.isPressed;
-        Debug.Log(press);
         if (press)
         {
+            animator.SetBool("isAttack", true);
             MousePosition = Mouse.current.position.ReadValue();
+        }
+        else
+        {
+            animator.SetBool("isAttack", false);
         }
         UIManager.Instance.PowerGaugeOn(press);
         
@@ -196,10 +200,14 @@ public class Player_Underwater : PlayerInteraction
         if (press)
         {
             MousePosition = Mouse.current.position.ReadValue();
+            playerArms.MoveArms();
             CameraManager.Instance.ZoomIn();
         }
         else
+        {
             CameraManager.Instance.ZoomOut();
+            playerArms.OffArms();
+        }
     }
 
     private void Update()

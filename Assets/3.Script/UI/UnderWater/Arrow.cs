@@ -21,15 +21,16 @@ public class Arrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(point.position);
         screenPosition = mainCamera.WorldToScreenPoint(point.position);
         transform.position = screenPosition;
      
        if(player!=null)
         {
             Vector3 dirVec = player.MousePosition - (Vector2)transform.position;
-            float ff = Mathf.Atan2(dirVec.y, dirVec.x) * Mathf.Rad2Deg;
-            ff = Mathf.Clamp(ff, -23, 23);
-            arrow.rotation = Quaternion.Euler(0, 0, ff);
+            float dir = Mathf.Atan2(dirVec.y, dirVec.x) * Mathf.Rad2Deg;
+            dir = Mathf.Clamp(dir, -23, 23);
+            arrow.rotation = Quaternion.Euler(0, 0, dir);
 
         }
     }

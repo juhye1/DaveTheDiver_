@@ -11,7 +11,7 @@ public class CameraManager : Singleton<CameraManager>
     private void Start()
     {
         virtualCamera = GetComponent<CinemachineVirtualCamera>();
-        virtualCamera.m_Lens.FieldOfView = 70;
+        virtualCamera.m_Lens.FieldOfView = defaultFieldOfView;
     }
 
     public void ZoomIn()
