@@ -334,6 +334,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "OnLeftButton",
+                    "type": "Button",
+                    "id": "3fa30d55-4de4-4264-8ed2-7ced4b5114b9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -400,6 +409,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "OnRightButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "349cb602-a593-4815-b783-987cb04c4ff3",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnLeftButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

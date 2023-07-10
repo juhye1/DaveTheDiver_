@@ -21,7 +21,6 @@ public class Arrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(point.position);
         screenPosition = mainCamera.WorldToScreenPoint(point.position);
         transform.position = screenPosition;
      

@@ -15,7 +15,8 @@ public class Player_Underwater : PlayerInteraction
     private Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
     private float blend = 0;
     private float goal = 0;
-    private bool press;
+    private bool pressRightButton = false;
+    private bool pressLeftButton = false;
     public Vector2 MousePosition;
    
 
@@ -149,8 +150,8 @@ public class Player_Underwater : PlayerInteraction
 
     public void OnRightButton(InputAction.CallbackContext context)
     {
-        press = context.ReadValue<float>() > 0.1f;
-        if (press)
+        pressRightButton = context.ReadValue<float>() > 0.1f;
+        if (pressRightButton)
         {
             animator.SetBool("isAttack", true);
             MousePosition = Mouse.current.position.ReadValue();
@@ -159,9 +160,24 @@ public class Player_Underwater : PlayerInteraction
         {
             animator.SetBool("isAttack", false);
         }
-        UIManager.Instance.PowerGaugeOn(press);
+        UIManager.Instance.PowerGaugeOn(pressRightButton);
         
-    } 
+    }
+
+    public void OnLeftButton(InputAction.CallbackContext context)
+    {
+        pressLeftButton = context.ReadValue<float>() > 0.1f;
+        if (pressLeftButton&&pressRightButton)
+        {
+            animator.SetBool("isFight", true);
+        }
+        else
+        {
+            animator.SetBool("isFight", false);
+
+        }
+
+    }
     private void UnderwaterMove()
     {
         curruentAngle = transform.localEulerAngles.z;
@@ -212,7 +228,7 @@ public class Player_Underwater : PlayerInteraction
 
     private void Update()
     {
-        MoveMousePosition(press);
+        MoveMousePosition(pressRightButton);
         
     }
 
