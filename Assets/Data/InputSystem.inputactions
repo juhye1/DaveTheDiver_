@@ -325,6 +325,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "OnRightButton",
+                    "type": "Value",
+                    "id": "adf47970-9cd7-45a2-a395-6a2be3e33c50",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -382,6 +391,17 @@
                     "action": "OnUnderWaterMove",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "3e814c7e-33a2-4733-a255-97a603977196",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnRightButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

@@ -15,6 +15,9 @@ public class Player_Underwater : PlayerInteraction
     private Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
     private float blend = 0;
     private float goal = 0;
+    private bool dd;
+    public Vector2 MousePosition;
+   
 
     private float angle = 0;
     private float curruentAngle = 0;
@@ -60,28 +63,26 @@ public class Player_Underwater : PlayerInteraction
         }
         //현재 방향 업데이트
 
+        goal = 1;
         switch (currentDirection)
         {
             case EDirection.Right:
                 angle = 180;
-                goal = 1;
                 break;
             case EDirection.Left:
                 angle = 0;
-                goal = 1;
                 break;
             case EDirection.Up:
                 angle = -90;
-                goal = 1;
                 break;
             case EDirection.Down:
                 angle = -270;
-                goal = 1;
                 break;
             case EDirection.Zero:
                 angle = 0;
                 goal = 0;
                 break;
+
             case EDirection.Diagonal:
                 if (cachedMove.x > 0 && cachedMove.y > 0)
                 {
@@ -143,6 +144,15 @@ public class Player_Underwater : PlayerInteraction
 
 
     }
+
+    public void OnRightButton(InputAction.CallbackContext context)
+    {
+        if(Mouse.current.rightButton.isPressed)
+        {
+            MousePosition = Mouse.current.position.ReadValue();
+        }
+        
+    } 
     private void UnderwaterMove()
     {
         curruentAngle = transform.localEulerAngles.z;

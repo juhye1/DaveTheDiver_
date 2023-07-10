@@ -347,6 +347,15 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""OnRightButton"",
+                    ""type"": ""Value"",
+                    ""id"": ""adf47970-9cd7-45a2-a395-6a2be3e33c50"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -404,6 +413,17 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""action"": ""OnUnderWaterMove"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3e814c7e-33a2-4733-a255-97a603977196"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OnRightButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -457,6 +477,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         // UnderWater
         m_UnderWater = asset.FindActionMap("UnderWater", throwIfNotFound: true);
         m_UnderWater_OnUnderWaterMove = m_UnderWater.FindAction("OnUnderWaterMove", throwIfNotFound: true);
+        m_UnderWater_OnRightButton = m_UnderWater.FindAction("OnRightButton", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -672,11 +693,13 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_UnderWater;
     private IUnderWaterActions m_UnderWaterActionsCallbackInterface;
     private readonly InputAction m_UnderWater_OnUnderWaterMove;
+    private readonly InputAction m_UnderWater_OnRightButton;
     public struct UnderWaterActions
     {
         private @InputSystem m_Wrapper;
         public UnderWaterActions(@InputSystem wrapper) { m_Wrapper = wrapper; }
         public InputAction @OnUnderWaterMove => m_Wrapper.m_UnderWater_OnUnderWaterMove;
+        public InputAction @OnRightButton => m_Wrapper.m_UnderWater_OnRightButton;
         public InputActionMap Get() { return m_Wrapper.m_UnderWater; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -689,6 +712,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @OnUnderWaterMove.started -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnOnUnderWaterMove;
                 @OnUnderWaterMove.performed -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnOnUnderWaterMove;
                 @OnUnderWaterMove.canceled -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnOnUnderWaterMove;
+                @OnRightButton.started -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnOnRightButton;
+                @OnRightButton.performed -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnOnRightButton;
+                @OnRightButton.canceled -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnOnRightButton;
             }
             m_Wrapper.m_UnderWaterActionsCallbackInterface = instance;
             if (instance != null)
@@ -696,6 +722,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @OnUnderWaterMove.started += instance.OnOnUnderWaterMove;
                 @OnUnderWaterMove.performed += instance.OnOnUnderWaterMove;
                 @OnUnderWaterMove.canceled += instance.OnOnUnderWaterMove;
+                @OnRightButton.started += instance.OnOnRightButton;
+                @OnRightButton.performed += instance.OnOnRightButton;
+                @OnRightButton.canceled += instance.OnOnRightButton;
             }
         }
     }
@@ -740,5 +769,6 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     public interface IUnderWaterActions
     {
         void OnOnUnderWaterMove(InputAction.CallbackContext context);
+        void OnOnRightButton(InputAction.CallbackContext context);
     }
 }
