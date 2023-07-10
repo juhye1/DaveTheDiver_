@@ -38,5 +38,5 @@ public enum ELoadScene
 }
 public enum EDirection
 {
-    Right, Left, Up, Down, Zero
+    Right, Left, Up, Down, Zero, Diagonal
 }
