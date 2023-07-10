@@ -7,19 +7,21 @@ public class Player_Underwater : PlayerInteraction
 {
     public enum EWaterState
     {
-        SideToUp,
-        UpToSide,
-        SideToBottom,
-        BottomToSide
+        DiagonalToStraight,
+        StraightToDiagonal,
+        StraightToStraight,
     }
 
     private Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
     private float blend = 0;
     private float goal = 0;
-    private EWaterState waterState;
+
+    private float angle = 0;
+    private float curruentAngle = 0;
     private EDirection currentDirection = EDirection.Zero;
     private EDirection oldDirection = EDirection.Zero;
     private EDirection[] eDirections;
+    private EWaterState waterState;
 
     private void Start()
     {
@@ -56,26 +58,50 @@ public class Player_Underwater : PlayerInteraction
                 break;
             }
         }
-                Debug.Log(currentDirection);
+        //현재 방향 업데이트
+        Debug.Log(currentDirection);
 
         switch(currentDirection)
         {
             case EDirection.Right:
+                angle = 180;
                 goal = 2;
                 break;
             case EDirection.Left:
+                angle = 0;
                 goal = 2;
                 break;
             case EDirection.Up:
+                angle = -90;
                 goal = 0;
                 break;
             case EDirection.Down:
+                angle = -270;
                 goal = 0;
                 break;
             case EDirection.Zero:
+                angle = 0;
                 goal = 0;
                 break;
             case EDirection.Diagonal:
+                if(cachedMove.x>0&&cachedMove.y>0)
+                {
+                    angle = 135;
+                }
+                else if(cachedMove.x>0&&cachedMove.y<0)
+                {
+                    angle = -225;
+                }
+                else if (cachedMove.x < 0 && cachedMove.y < 0)
+                {
+                    angle = -315;
+                }
+                else if (cachedMove.x < 0 && cachedMove.y > 0)
+                {
+                    angle = -45;
+                }
+
+
                 goal = 1;
                 break;
         }
@@ -91,32 +117,19 @@ public class Player_Underwater : PlayerInteraction
         //대각선 -> 일직선
         if(eDirections[0].Equals(EDirection.Diagonal)&&!eDirections[1].Equals(EDirection.Diagonal))
         {
-            switch(eDirections[1])
-            {
-                case EDirection.Down:
-                    goal = 0;
-                    break;
-                case EDirection.Up:
-                    goal = 0;
-                    break;
-                case EDirection.Right:
-                    goal = 2;
-                    break;
-                case EDirection.Left:
-                    goal = 2;
-                    break;
-
-            }
+            waterState = EWaterState.DiagonalToStraight;
         }
 
         //일직선 -> 대각선
         else if(eDirections[1].Equals(EDirection.Diagonal) && !eDirections[0].Equals(EDirection.Diagonal))
         {
+            waterState = EWaterState.StraightToDiagonal;
             goal = 1;
         }
         //일직선 -> 일직선
         else if(!eDirections[0].Equals(EDirection.Diagonal) && !eDirections[1].Equals(EDirection.Diagonal))
         {
+            waterState = EWaterState.StraightToStraight;
             switch (eDirections[1])
             {
                 case EDirection.Down:
@@ -141,12 +154,33 @@ public class Player_Underwater : PlayerInteraction
 
         oldDirection = currentDirection;
 
+        //Debug.Log(curruentAngle);
 
     }
     private void UnderwaterMove()
     {
+        curruentAngle = transform.localEulerAngles.z;
         rigid.velocity = cachedMove * 5;
-        Debug.Log(transform.localEulerAngles);
+
+
+        switch(waterState)
+        {
+            case EWaterState.DiagonalToStraight:
+                curruentAngle = Mathf.LerpAngle(curruentAngle, angle, Time.deltaTime);
+                transform.eulerAngles = new Vector3(0, 0, curruentAngle);
+/*                Debug.Log(currentDirection);
+                Debug.Log(angle);
+                Debug.Log(curruentAngle);*/
+                break;
+            case EWaterState.StraightToDiagonal:
+                curruentAngle = Mathf.LerpAngle(curruentAngle, angle, Time.deltaTime);
+                transform.eulerAngles = new Vector3(0, 0, curruentAngle);
+                break;
+            case EWaterState.StraightToStraight:
+                transform.eulerAngles = new Vector3(0, 0, angle);
+                break;
+        }
+
 
         if (!currentDirection.Equals(EDirection.Zero))
         {
@@ -154,7 +188,7 @@ public class Player_Underwater : PlayerInteraction
         }
         else
         {
-            //Debug.Log("가만히 있는중");
+
             blend = 0;
         }
         animator.SetFloat("Blend", blend);
