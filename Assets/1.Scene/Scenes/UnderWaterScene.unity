@@ -17736,6 +17736,8 @@ GameObject:
   - component: {fileID: 2196971285242473736}
   - component: {fileID: 2196971285242473735}
   - component: {fileID: 2196971285242473737}
+  - component: {fileID: 2196971285242473738}
+  - component: {fileID: 2196971285242473739}
   m_Layer: 0
   m_Name: '!!Character_Dave'
   m_TagString: Untagged
@@ -17828,6 +17830,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d26fa9fbac841e48a394b86524a2204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InitialState: 0
+--- !u!114 &2196971285242473738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196971285242473732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c3215b04658bd4692f46b53efc691b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   harpoon: {fileID: 2106646686}
   arms: {fileID: 1559370578}
+--- !u!114 &2196971285242473739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196971285242473732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bb29f87b3b072a43905239b919e3dfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   InitialState: 0

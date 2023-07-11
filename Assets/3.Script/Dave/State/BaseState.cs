@@ -8,8 +8,8 @@ public abstract class BaseState : MonoBehaviour
 
     protected Animator animator;
     protected Player_Underwater player;
-    [SerializeField] protected Harpoon harpoon;
-    [SerializeField] protected Player_Arms arms;
+    protected Harpoon harpoon;
+    protected Player_Arms arms;
 
     public bool HasFinished { get; protected set; } = false;
 
@@ -22,6 +22,12 @@ public abstract class BaseState : MonoBehaviour
     {
         //이거 나중에 이사보내야함
         Init();
+    }
+
+    public void dd(Harpoon harpoon, Player_Arms arms)
+    {
+        this.harpoon = harpoon;
+        this.arms = arms;
     }
 
     protected abstract void Init();

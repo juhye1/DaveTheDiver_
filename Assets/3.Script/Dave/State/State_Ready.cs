@@ -109,7 +109,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 }
                 break;
             case EState.Shoot:
-                
+                HasFinished = !HasFinished;
                 //여기서 옆 스크립트로 이사가기
 
 /*                if(CameraManager.Instance.ZoomZoomIn())

@@ -4,14 +4,25 @@ using UnityEngine;
 
 public class StateBrain : MonoBehaviour
 {
+    private List<BaseState> baseStates;
     private BaseState activeState;
     private BaseState readyState;
     private BaseState attackState;
 
+    [SerializeField] private Harpoon harpoon;
+    [SerializeField] private Player_Arms arms;
+
     private void Awake()
     {
+        baseStates = new List<BaseState>();
         readyState = GetComponent<State_Ready>();
         attackState = GetComponent<State_Attack>();
+        baseStates.Add(readyState);
+        baseStates.Add(attackState);
+        foreach(BaseState state in baseStates)
+        {
+            state.dd(harpoon, arms);
+        }
 
         activeState = readyState;
     }
@@ -37,8 +48,12 @@ public class StateBrain : MonoBehaviour
 
     private void ChangeState()
     {
-        activeState = attackState;
-        activeState.Begin();
+        if(activeState==null)
+        {
+            activeState = attackState;
+           activeState.Begin();
+
+        }
     }
 
 
