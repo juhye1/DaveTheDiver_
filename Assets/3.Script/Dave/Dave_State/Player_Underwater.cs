@@ -12,21 +12,23 @@ public class Player_Underwater : PlayerInteraction
         StraightToStraight,
     }
 
+
     private Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
+    private Player_Arms playerArms;
+
     private float blend = 0;
     private float goal = 0;
+    private float angle = 0;
+    private float curruentAngle = 0;
+
     private bool pressRightButton = false;
     private bool pressLeftButton = false;
     public Vector2 MousePosition;
-   
 
-    private float angle = 0;
-    private float curruentAngle = 0;
     private EDirection currentDirection = EDirection.Zero;
     private EDirection oldDirection = EDirection.Zero;
     private EDirection[] eDirections;
     private EWaterState waterState;
-    private Player_Arms playerArms;
 
     private void Start()
     {
@@ -211,16 +213,25 @@ public class Player_Underwater : PlayerInteraction
 
     }
 
+
+
     private void MoveMousePosition(bool press)
     {
         if (press)
         {
             MousePosition = Mouse.current.position.ReadValue();
+            if (MousePosition.x < 700)
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
+            }
+            else
+                transform.eulerAngles = new Vector3(0, 0, 0);
             playerArms.MoveArms();
             CameraManager.Instance.ZoomIn();
         }
         else
         {
+            transform.eulerAngles = new Vector3(0, 0, 0);
             CameraManager.Instance.ZoomOut();
             playerArms.OffArms();
         }
@@ -229,7 +240,7 @@ public class Player_Underwater : PlayerInteraction
     private void Update()
     {
         MoveMousePosition(pressRightButton);
-        
+
     }
 
     private void FixedUpdate()

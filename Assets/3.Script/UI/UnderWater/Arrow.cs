@@ -11,14 +11,18 @@ public class Arrow : MonoBehaviour
     private Player_Underwater player;
     private Camera mainCamera;
     private Vector3 screenPosition;
-    // Start is called before the first frame update
+    private float y = 180;
+
+    private Vector2 LeftVector;
+    private Vector2 RightVector;
     void Start()
     {
         player = FindObjectOfType<Player_Underwater>();
         mainCamera = Camera.main;
+        LeftVector = new Vector2(0, 180);
+        RightVector = new Vector2(0, 0);
     }
 
-    // Update is called once per frame
     void Update()
     {
         screenPosition = mainCamera.WorldToScreenPoint(point.position);
@@ -29,7 +33,18 @@ public class Arrow : MonoBehaviour
             Vector3 dirVec = player.MousePosition - (Vector2)transform.position;
             float dir = Mathf.Atan2(dirVec.y, dirVec.x) * Mathf.Rad2Deg;
             dir = Mathf.Clamp(dir, -23, 23);
-            arrow.rotation = Quaternion.Euler(0, 0, dir);
+
+            if (player.MousePosition.x < 700)
+            {
+                arrow.localRotation = Quaternion.Euler(0, 0, dir);
+                transform.eulerAngles = LeftVector;
+            }
+            else
+            {
+                arrow.localRotation = Quaternion.Euler(0, y, dir);
+                transform.eulerAngles = RightVector;
+
+            }
 
         }
     }
