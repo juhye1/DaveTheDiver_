@@ -32,12 +32,12 @@ public class Arrow : MonoBehaviour
         {
             Vector3 dirVec = player.MousePosition - (Vector2)transform.position;
             float dir = Mathf.Atan2(dirVec.y, dirVec.x) * Mathf.Rad2Deg;
-            dir = Mathf.Clamp(dir, -23, 23);
+            //dir = Mathf.Clamp(dir, -23, 23);
 
             if (player.MousePosition.x < 700)
             {
-                arrow.localRotation = Quaternion.Euler(0, 0, dir);
                 transform.eulerAngles = LeftVector;
+                arrow.localRotation = Quaternion.Euler(0, 0, dir);
             }
             else
             {

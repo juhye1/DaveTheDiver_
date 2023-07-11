@@ -19,14 +19,13 @@ public class Player_Arms : MonoBehaviour
         if (player.MousePosition.x > 700)
         {
             transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, arrow.localEulerAngles.z);
+            arm.localRotation = Quaternion.Euler(0, 0, 0);
 
         }
         else
         {
             transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, arrow.localEulerAngles.z);
             arm.localRotation = Quaternion.Euler(180, 0, 0);
-            //Debug.Log(arrow.localEulerAngles.z);
-            //stransform.rotation = Quaternion.Euler(0, 0, arrow.localEulerAngles.z);
         }
     }
 

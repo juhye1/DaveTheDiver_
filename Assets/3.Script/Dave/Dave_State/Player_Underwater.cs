@@ -161,6 +161,8 @@ public class Player_Underwater : PlayerInteraction
         else
         {
             animator.SetBool("isAttack", false);
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            playerArms.OffArms();
         }
         UIManager.Instance.PowerGaugeOn(pressRightButton);
         
@@ -231,9 +233,8 @@ public class Player_Underwater : PlayerInteraction
         }
         else
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
             CameraManager.Instance.ZoomOut();
-            playerArms.OffArms();
+
         }
     }
 
