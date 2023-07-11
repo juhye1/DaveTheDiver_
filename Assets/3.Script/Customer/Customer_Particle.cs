@@ -24,8 +24,6 @@ public class Customer_Particle : MonoBehaviour
     }
     private void OnParticleSystemStopped()
     {
-/*        Debug.Log("F");
-        heartParticle.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);*/
         GoldEffect();
         customer.SwitchState(Customer.EState.Good);
     }

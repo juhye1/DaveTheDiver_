@@ -37,12 +37,12 @@ public class Arrow : MonoBehaviour
             if (player.MousePosition.x < 700)
             {
                 transform.eulerAngles = LeftVector;
-                arrow.localRotation = Quaternion.Euler(0, 0, dir);
+                arrow.localRotation = Quaternion.Euler(0, y, dir);
             }
             else
             {
-                arrow.localRotation = Quaternion.Euler(0, y, dir);
                 transform.eulerAngles = RightVector;
+                arrow.localRotation = Quaternion.Euler(0, 0, dir);
 
             }
 

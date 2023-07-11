@@ -15,14 +15,18 @@ public class Player_Underwater : PlayerInteraction
 
     private Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
     private Player_Arms playerArms;
+    [SerializeField] private Harpoon harpoon;
 
     private float blend = 0;
     private float goal = 0;
     private float angle = 0;
     private float curruentAngle = 0;
 
-    private bool pressRightButton = false;
-    private bool pressLeftButton = false;
+    [HideInInspector]
+    public bool PressRightButton { get; private set; } = false;
+    [HideInInspector]
+    public bool PressLeftButton { get; private set; } = false;
+    [HideInInspector]
     public Vector2 MousePosition;
 
     private EDirection currentDirection = EDirection.Zero;
@@ -152,34 +156,48 @@ public class Player_Underwater : PlayerInteraction
 
     public void OnRightButton(InputAction.CallbackContext context)
     {
-        pressRightButton = context.ReadValue<float>() > 0.1f;
-        if (pressRightButton)
+        PressRightButton = context.ReadValue<float>() > 0.1f;
+        if (PressRightButton)
         {
-            animator.SetBool("isAttack", true);
+            animator.SetBool("isReady", true);
             MousePosition = Mouse.current.position.ReadValue();
         }
         else
         {
-            animator.SetBool("isAttack", false);
+            animator.SetBool("isReady", false);
             transform.eulerAngles = new Vector3(0, 0, 0);
-            playerArms.OffArms();
+            //playerArms.OffArms();
         }
-        UIManager.Instance.PowerGaugeOn(pressRightButton);
+        UIManager.Instance.PowerGaugeOn(PressRightButton);
         
     }
 
     public void OnLeftButton(InputAction.CallbackContext context)
     {
-        pressLeftButton = context.ReadValue<float>() > 0.1f;
-        if (pressLeftButton&&pressRightButton)
-        {
-            animator.SetBool("isFight", true);
-        }
-        else
-        {
-            animator.SetBool("isFight", false);
+        PressLeftButton = context.ReadValue<float>() > 0.1f;
 
+        //작살 공격
+        if (PressLeftButton&&PressRightButton)
+        {
+            animator.SetBool("isFire", true);
+            harpoon.Shooting();
+            UIManager.Instance.PowerGaugeOn(false);
         }
+/*        else
+        {
+            Debug.Log("돌아와");
+            animator.SetBool("isFight", false);
+            harpoon.Return();
+
+        }*/
+
+    }
+
+    public void Return()
+    {
+        animator.SetBool("isFire", false);
+        playerArms.OffArms();
+        harpoon.gameObject.SetActive(false);
 
     }
     private void UnderwaterMove()
@@ -215,8 +233,6 @@ public class Player_Underwater : PlayerInteraction
 
     }
 
-
-
     private void MoveMousePosition(bool press)
     {
         if (press)
@@ -240,7 +256,7 @@ public class Player_Underwater : PlayerInteraction
 
     private void Update()
     {
-        MoveMousePosition(pressRightButton);
+        MoveMousePosition(PressRightButton);
 
     }
 
