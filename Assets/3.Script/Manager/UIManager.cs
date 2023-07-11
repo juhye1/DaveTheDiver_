@@ -234,13 +234,5 @@ public class UIManager : MonoBehaviour
     public void PowerGaugeOn(bool isOn)
     {
         powerGauge.SetActive(isOn);
-        if(isOn)
-        {
-            CameraManager.Instance.ZoomIn();
-        }
-        else
-        {
-            CameraManager.Instance.ZoomOut();
-        }
     }
 }

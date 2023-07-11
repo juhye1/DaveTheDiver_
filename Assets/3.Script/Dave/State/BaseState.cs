@@ -7,9 +7,9 @@ public abstract class BaseState : MonoBehaviour
     //다같이 공유해서 쓸 것들
 
     protected Animator animator;
-    protected Harpoon harpoon;
-    protected Player_Arms arms;
     protected Player_Underwater player;
+    [SerializeField] protected Harpoon harpoon;
+    [SerializeField] protected Player_Arms arms;
 
     public bool HasFinished { get; protected set; } = false;
 
@@ -17,13 +17,13 @@ public abstract class BaseState : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         player = GetComponent<Player_Underwater>();
-        arms = FindObjectOfType<Player_Arms>();
-        harpoon = FindObjectOfType<Harpoon>();
     }
     private void Start()
     {
+        //이거 나중에 이사보내야함
         Init();
     }
+
     protected abstract void Init();
     public abstract void Begin();
     public abstract void Tick();

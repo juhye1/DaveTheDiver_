@@ -21,6 +21,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
     }
     protected override void OnEnter()
     {
+        Debug.Log(State);
         switch (State)
         {
             case EState.Idle:
@@ -41,6 +42,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
 
             case EState.Clear:
                 animator.SetBool("isReady", false);
+                arms.OffArms();
                 UIManager.Instance.PowerGaugeOn(false);
                 break;
 
@@ -61,8 +63,6 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
             case EState.Shoot:
                 CameraManager.Instance.ZoomZoomIn();
                 break;
-
-            //CameraManager.Instance.ZoomOut();
             case EState.Clear:
                 CameraManager.Instance.ZoomOut();
                 break;
@@ -105,15 +105,18 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 //둘 다 뗐다면
                 else if(!player.PressRightButton &&!player.PressLeftButton)
                 {
-                    return EState.Idle;
+                    return EState.Clear;
                 }
                 break;
             case EState.Shoot:
+                
+                //여기서 옆 스크립트로 이사가기
+
 /*                if(CameraManager.Instance.ZoomZoomIn())
                 HasFinished = true;
 */
-               //만약에 물고기가 걸렸다면
-               //안걸렸다면
+               //만약에 물고기가 걸렸다면 Fight로 
+               //안걸렸다면 Pull로
                 break;
 
         }

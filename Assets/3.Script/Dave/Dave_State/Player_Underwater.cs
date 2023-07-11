@@ -245,11 +245,11 @@ public class Player_Underwater : PlayerInteraction
             else
                 transform.eulerAngles = new Vector3(0, 0, 0);
             playerArms.MoveArms();
-            CameraManager.Instance.ZoomIn();
+            //CameraManager.Instance.ZoomIn();
         }
         else
         {
-            CameraManager.Instance.ZoomOut();
+            //CameraManager.Instance.ZoomOut();
 
         }
     }

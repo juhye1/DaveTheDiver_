@@ -17828,4 +17828,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d26fa9fbac841e48a394b86524a2204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialState: 1
+  harpoon: {fileID: 2106646686}
+  arms: {fileID: 1559370578}
+  InitialState: 0

@@ -52,7 +52,7 @@ public class Harpoon : MonoBehaviour
 
     private void Update()
     {
-        if(isStart)
+/*        if(isStart)
         {
             lineRenderer.SetPosition(0, home);
             lineRenderer.SetPosition(1, transform.localPosition);
@@ -65,7 +65,7 @@ public class Harpoon : MonoBehaviour
                 time -= Time.deltaTime; 
 
             }
-        }
+        }*/
     }
 
 }
