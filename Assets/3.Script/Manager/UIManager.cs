@@ -41,6 +41,7 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         mainUI.SetActive(true);
+        powerGauge.SetActive(false);
 /*        dialogueUI.SetActive(false);
         chapterUI.SetActive(false);*/
     }
