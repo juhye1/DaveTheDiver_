@@ -185,8 +185,7 @@ public class Player_Underwater : PlayerInteraction
 
     public void Recoil(Vector2 dir)
     {
-        //rigid.velocity = Vector2.zero;
-        rigid.AddRelativeForce(dir*-3, ForceMode2D.Impulse);
+        rigid.AddRelativeForce(dir * -3, ForceMode2D.Impulse);
     }
     private void UnderwaterMove()
     {
