@@ -39,9 +39,12 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
                 harpoon.Shoot();
                 break;
             case EState.Pull:
-                //animator.SetBool("isPull", true);
+                harpoon.Return();
+                animator.SetBool("isFight", true);
+                //Pull은 그냥 땡기는거고 Fight가 바둥바둥하는거
                 break;
             case EState.Fail:
+                harpoon.Return();
                 //arms.FailArms();
                 //animator.SetBool("isFail", true);
                 break;
@@ -61,15 +64,16 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
                 break;
 
             case EState.Pull:
-                CameraManager.Instance.ZoomZoomIn();
+                CameraManager.Instance.ZoomZoomIn(harpoon.transform);
+                //harpoon.CheckReturn();
                 break;
             case EState.Fail:
 
                 CameraManager.Instance.ZoomOut();
-                harpoon.Return();
+                //harpoon.CheckReturn();
                 break;
             case EState.Fight:
-                CameraManager.Instance.ZoomZoomIn();
+                //CameraManager.Instance.ZoomZoomIn();
                 break;
         }
     }
@@ -79,8 +83,10 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
         switch (State)
         {
             case EState.Fire:
+                player.SwitchActionState(Player_Underwater.EActionState.Attack);
                 break;
             case EState.Pull:
+
                 break;
             case EState.Fail:
 
@@ -97,8 +103,15 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
             case EState.Fire:
                 if(harpoon.Shooting())
                 {
-                    //이게 트루면 끝까지 날아간거
-                    return EState.Fail;
+                    switch(harpoon.HarpoonState)
+                    {
+                        case Harpoon.EState.Success:
+                            return EState.Pull;
+
+                        case Harpoon.EState.Fail:
+                            return EState.Fail;
+                    }
+
                 }
                 break;
                 //if 물고기를 잡았다면 return Pull
@@ -106,19 +119,21 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
                 //if 큰 물고기를 잡았다면 retun Fight
                 //발사랑 돌아오는거랑도 나눠?
             case EState.Pull:
-                animator.SetBool("isPull", true);
+                if (harpoon.CheckReturn())
+                {
+                    HasFinished = !HasFinished;
+                }
+                //  animator.SetBool("isPull", true);
                 break;
             case EState.Fail:
-                if(harpoon.Return())
+                if(harpoon.CheckReturn())
                 {
-                    //arms.OffArms();
-                    Debug.Log("끝");
                     HasFinished = !HasFinished;
                 }
 
                 break;
             case EState.Fight:
-                animator.SetBool("isFight", true);
+                //animator.SetBool("isFight", true);
                 break;
         }
 

@@ -211,6 +211,7 @@ public class Player_Underwater : PlayerInteraction
     {
         rigid.AddRelativeForce(dir * -3, ForceMode2D.Impulse);
     }
+
     private void UnderwaterMove()
     {
         curruentAngle = transform.localEulerAngles.z;

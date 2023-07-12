@@ -35,8 +35,10 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
         {
             case EState.Idle:
                 player.SwitchActionState(Player_Underwater.EActionState.Underwater);
+                
                 animator.SetBool("isFail", false);
                 animator.SetBool("isFire", false);
+                animator.SetBool("isFight", false);
                 animator.SetBool("isReady", false);
                 dagger.gameObject.SetActive(false);
                 arms.OffArms();
@@ -75,6 +77,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
         switch(State)
         {
             case EState.Idle:
+                CameraManager.Instance.ZoomOut();
                 break;
             case EState.Ready:
                 CameraManager.Instance.ZoomIn();
@@ -83,7 +86,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 //파워게이지 UI뜨게 만드는거랑
                 break;
             case EState.Shoot:
-                CameraManager.Instance.ZoomZoomIn();
+                //CameraManager.Instance.ZoomZoomIn();
                 break;
             case EState.Clear:
                 CameraManager.Instance.ZoomOut();

@@ -9,12 +9,6 @@ public class Player_Arms : MonoBehaviour
     [SerializeField] private Transform arrow;
     [SerializeField] private Transform arm;
 
-    private void Awake()
-    {
-/*        animator = GetComponentInChildren<Animator>();
-        player = GetComponentInParent<Player_Underwater>();
-        arm.gameObject.SetActive(false);*/
-    }
 
     private void Start()
     {
