@@ -10,7 +10,6 @@ public class PlayerDagger : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
-
     public void isDagger(bool isDagger)
     {
         animator.SetBool("isDagger", isDagger);

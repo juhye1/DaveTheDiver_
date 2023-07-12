@@ -182,6 +182,24 @@ public class Player_Underwater : PlayerInteraction
     {
         PressLeftButton = context.ReadValue<float>() > 0.1f;
     }
+
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        //나중에 산소 UI랑 파티클 넣기
+        dash = context.ReadValue<float>() > 0.1f;
+
+        if (context.started)
+        {
+            speed = settings.DashSpeed;
+        }
+
+        else if (context.canceled)
+        {
+            speed = settings.MoveSpeed;
+        }
+    }
+
+
     //애니메이터
     public void EndDagger()
     {
@@ -196,7 +214,7 @@ public class Player_Underwater : PlayerInteraction
     private void UnderwaterMove()
     {
         curruentAngle = transform.localEulerAngles.z;
-        rigid.velocity = cachedMove * 5;
+        rigid.velocity = cachedMove * speed;
 
 
         switch(waterState)

@@ -11,6 +11,13 @@ public class Player_Arms : MonoBehaviour
 
     private void Awake()
     {
+/*        animator = GetComponentInChildren<Animator>();
+        player = GetComponentInParent<Player_Underwater>();
+        arm.gameObject.SetActive(false);*/
+    }
+
+    private void Start()
+    {
         animator = GetComponentInChildren<Animator>();
         player = GetComponentInParent<Player_Underwater>();
         arm.gameObject.SetActive(false);

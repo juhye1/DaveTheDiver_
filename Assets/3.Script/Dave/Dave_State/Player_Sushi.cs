@@ -30,7 +30,29 @@ public class Player_Sushi : PlayerInteraction
         startKey = context.ReadValue<float>() > 0.1f;
     }
 
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        //대시 누르면 빨라지고, 애니메이션 나오고, 옆에 스태미나 나와야함
+        //스태미나 없으면 지쳐야함
+        dash = context.ReadValue<float>() > 0.1f;
 
+        //if (state.Equals(EState.Sushi) && tired) return;
+        if (state.Equals(EState.Sushi) && tired) return;
+
+
+        if (context.started)
+        {
+            animator.SetBool(isDash, true);
+            speed = settings.DashSpeed;
+        }
+
+        else if (context.canceled)
+        {
+            animator.SetBool(isDash, false);
+            speed = settings.MoveSpeed;
+        }
+
+    }
     private void StartSushi(bool pressKey)
     {
         bool start = UIManager.Instance.SliderUp(pressKey, ESlider.Start);
