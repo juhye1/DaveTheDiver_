@@ -19,6 +19,7 @@ public class StateBrain : MonoBehaviour
     protected Player_Underwater player;
     [SerializeField] private Harpoon harpoon;
     [SerializeField] private Player_Arms arms;
+    [SerializeField] private PlayerDagger dagger;
 
     private void Awake()
     {
@@ -70,8 +71,8 @@ public class StateBrain : MonoBehaviour
 
     private void Init()
     {
-        AttackState = new State_Attack(harpoon, arms, animator, player);
-        ReadyState = new State_Ready(harpoon, arms, animator, player);
+        AttackState = new State_Attack(harpoon, arms, animator, player, dagger);
+        ReadyState = new State_Ready(harpoon, arms, animator, player, dagger);
         activeState = ReadyState;
         State = EState.Ready;
     }

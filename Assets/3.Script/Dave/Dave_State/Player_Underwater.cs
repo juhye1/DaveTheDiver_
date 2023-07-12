@@ -37,6 +37,7 @@ public class Player_Underwater : PlayerInteraction
     private EDirection[] eDirections;
     private EWaterState waterState;
     private EActionState actionState = EActionState.Underwater;
+    public EActionState ActionState => actionState;
 
     private void Start()
     {
@@ -180,7 +181,12 @@ public class Player_Underwater : PlayerInteraction
     public void OnLeftButton(InputAction.CallbackContext context)
     {
         PressLeftButton = context.ReadValue<float>() > 0.1f;
-
+    }
+    //애니메이터
+    public void EndDagger()
+    {
+        animator.SetBool("isDagger", false);
+        SwitchActionState(EActionState.Underwater);
     }
 
     public void Recoil(Vector2 dir)

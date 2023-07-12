@@ -111,7 +111,7 @@ public class Player_Sushi : PlayerInteraction
                 break;
         }
     }
-
+    //애니메이터
     public void EndTired()
     {
         UIManager.Instance.EndTired();

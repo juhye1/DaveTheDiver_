@@ -48,8 +48,12 @@ public class Player_Arms : MonoBehaviour
 
     public void OffArms()
     {
-        animator.SetBool("isPull", false);
-        animator.SetBool("isFail", false);
+        if(animator!=null)
+        {
+             animator.SetBool("isPull", false);
+            animator.SetBool("isFail", false);
+
+        }
         arm.gameObject.SetActive(false);
 
     }

@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class State_Ready : BaseStateMachine<State_Ready.EState>
 {
-    public State_Ready(Harpoon harpoon, Player_Arms arms, Animator animator, Player_Underwater player) :
-                    base(harpoon, arms, animator, player)
+    public State_Ready(Harpoon harpoon, Player_Arms arms, Animator animator, Player_Underwater player, PlayerDagger dagger) :
+                    base(harpoon, arms, animator, player,dagger)
     {
 
     }
     public enum EState
     {
         Idle,
+        Dagger,
         Ready,
         Shoot,
         Clear
@@ -20,6 +21,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
     protected override void Init()
     {
         AddState(EState.Idle);
+        AddState(EState.Dagger);
         AddState(EState.Ready);
         AddState(EState.Shoot);
         AddState(EState.Clear);
@@ -36,8 +38,16 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 animator.SetBool("isFail", false);
                 animator.SetBool("isFire", false);
                 animator.SetBool("isReady", false);
+                dagger.gameObject.SetActive(false);
                 arms.OffArms();
                 UIManager.Instance.PowerGaugeOn(false);
+                break;
+
+            case EState.Dagger:
+                player.SwitchActionState(Player_Underwater.EActionState.Attack);
+                animator.SetBool("isDagger", true);
+                dagger.gameObject.SetActive(true);
+                dagger.isDagger(true); 
                 break;
 
             case EState.Ready:
@@ -78,6 +88,8 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
             case EState.Clear:
                 CameraManager.Instance.ZoomOut();
                 break;
+            case EState.Dagger:
+                break;
         }
     }
 
@@ -90,6 +102,9 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 //애니메이터 바꾸기
                 break;
             case EState.Shoot:
+                break;
+            case EState.Dagger:
+                dagger.OffDagger();
                 break;
         }
     }
@@ -104,7 +119,22 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 {
                     return EState.Ready;
                 }
+
+
+                else if(!player.PressRightButton && player.PressLeftButton)
+                {
+                    return EState.Dagger;
+                }
                 break;
+
+            case EState.Dagger:
+                if(!player.ActionState.Equals(Player_Underwater.EActionState.Attack))
+                {
+
+                    return EState.Idle;
+                }
+                break;
+
             case EState.Ready:
                 //우클릭만 누르고 있다면
                 //좌클릭을 눌렀다면

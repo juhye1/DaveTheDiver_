@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class State_Attack : BaseStateMachine<State_Attack.EState>
 {
-    public State_Attack(Harpoon harpoon, Player_Arms arms, Animator animator, Player_Underwater player) : 
-                    base(harpoon, arms, animator, player)
+    public State_Attack(Harpoon harpoon, Player_Arms arms, Animator animator, Player_Underwater player, PlayerDagger dagger) : 
+                    base(harpoon, arms, animator, player, dagger)
     {
 
     }
