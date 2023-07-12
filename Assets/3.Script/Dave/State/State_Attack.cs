@@ -64,6 +64,7 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
                 break;
 
             case EState.Pull:
+                arms.PullArms();
                 CameraManager.Instance.ZoomZoomIn(harpoon.transform);
                 //harpoon.CheckReturn();
                 break;
@@ -86,6 +87,8 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
                 player.SwitchActionState(Player_Underwater.EActionState.Attack);
                 break;
             case EState.Pull:
+                Debug.Log("¿¨");
+
 
                 break;
             case EState.Fail:
@@ -121,6 +124,7 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
             case EState.Pull:
                 if (harpoon.CheckReturn())
                 {
+                    UIManager.Instance.InfoUIOn();
                     HasFinished = !HasFinished;
                 }
                 //  animator.SetBool("isPull", true);
@@ -128,6 +132,7 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
             case EState.Fail:
                 if(harpoon.CheckReturn())
                 {
+                    
                     HasFinished = !HasFinished;
                 }
 

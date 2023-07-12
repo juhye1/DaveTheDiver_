@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Image loadScene;
     [SerializeField] private GameObject ScoreUI;
     [SerializeField] private GameObject powerGauge;
+    [SerializeField] private InfoUI infoUI;
 
     [SerializeField] private Transform Kettle;
     [SerializeField] private Transform KettleGoal;
@@ -234,5 +235,10 @@ public class UIManager : MonoBehaviour
     public void PowerGaugeOn(bool isOn)
     {
         powerGauge.SetActive(isOn);
+    }
+
+    public void InfoUIOn()
+    {
+        infoUI.InfoOn();
     }
 }
