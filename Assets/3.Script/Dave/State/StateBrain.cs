@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class StateBrain : MonoBehaviour
 {
-    private BaseStateMachine<State_Attack.EState> fattackState;
-
-    private List<BaseState> baseStates;
+    public enum EState
+    {
+        Ready, Attack
+    }
 
     private BaseState activeState;
     private State_Attack AttackState;
     private State_Ready ReadyState;
+    private EState State;
 
 
     protected Animator animator;
@@ -23,9 +25,6 @@ public class StateBrain : MonoBehaviour
         player = GetComponent<Player_Underwater>();
         animator = GetComponent<Animator>();
         Init();
-
-        //attackState = new BaseStateMachine<State_Attack.EState>(harpoon, arms, animator, player);
-        //activeState = rdy;
     }
 
     private void Start()
@@ -49,9 +48,21 @@ public class StateBrain : MonoBehaviour
 
     private void ChangeState()
     {
-        if(activeState==null)
+        if(activeState == null)
         {
-           activeState = AttackState;
+            switch(State)
+            {
+                case EState.Ready:
+                    activeState = AttackState;
+                    State = EState.Attack;
+                    break;
+                case EState.Attack:
+                    activeState = ReadyState;
+                    State = EState.Ready;
+                    break;
+
+
+            }
            activeState.Begin();
 
         }
@@ -61,9 +72,8 @@ public class StateBrain : MonoBehaviour
     {
         AttackState = new State_Attack(harpoon, arms, animator, player);
         ReadyState = new State_Ready(harpoon, arms, animator, player);
-
-        baseStates = new List<BaseState> { AttackState, ReadyState };
         activeState = ReadyState;
+        State = EState.Ready;
     }
 
 }

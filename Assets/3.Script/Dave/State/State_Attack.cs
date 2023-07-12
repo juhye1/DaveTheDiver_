@@ -9,6 +9,8 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
     {
 
     }
+
+   
     public enum EState
     {
         Fire,
@@ -23,22 +25,25 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
         AddState(EState.Fire);
         AddState(EState.Fail);
         AddState(EState.Fight);
+
+        InitialState = EState.Fire;
     }
 
     protected override void OnEnter()
     {
-        harpoon.Shoot();
         Debug.Log(State);
-        //쏘는건 다 똑같고
         switch (State)
         {
             case EState.Fire:
+                player.Recoil();
+                harpoon.Shoot();
                 break;
             case EState.Pull:
                 //animator.SetBool("isPull", true);
                 break;
             case EState.Fail:
-                animator.SetBool("isFail", true);
+                //arms.FailArms();
+                //animator.SetBool("isFail", true);
                 break;
             case EState.Fight:
                 //animator.SetBool("isFight", true);
@@ -71,7 +76,18 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
 
     protected override void OnExit()
     {
-        base.OnExit();
+        switch (State)
+        {
+            case EState.Fire:
+                break;
+            case EState.Pull:
+                break;
+            case EState.Fail:
+
+                break;
+            case EState.Fight:
+                break;
+        }
     }
 
     protected override EState CheckTransition()
@@ -95,8 +111,10 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
             case EState.Fail:
                 if(harpoon.Return())
                 {
-                    animator.SetBool("isFail", false);
+
+                    //arms.OffArms();
                     Debug.Log("끝");
+                    HasFinished = !HasFinished;
                 }
 
                 break;

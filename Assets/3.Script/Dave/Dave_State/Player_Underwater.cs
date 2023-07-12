@@ -5,6 +5,14 @@ using UnityEngine.InputSystem;
 
 public class Player_Underwater : PlayerInteraction
 {
+    private InputActionMap Attack;
+    private InputActionMap Underwater;
+
+    public enum EActionState
+    {
+        Attack, Underwater
+    }
+
     public enum EWaterState
     {
         DiagonalToStraight,
@@ -14,8 +22,6 @@ public class Player_Underwater : PlayerInteraction
 
 
     private Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
-    private Player_Arms playerArms;
-    [SerializeField] private Harpoon harpoon;
 
     private float blend = 0;
     private float goal = 0;
@@ -36,7 +42,8 @@ public class Player_Underwater : PlayerInteraction
 
     private void Start()
     {
-        playerArms = GetComponentInChildren<Player_Arms>();
+        Attack = playerInput.actions.FindActionMap("Attack");
+        Underwater = playerInput.actions.FindActionMap("UnderWater");
         AddDirection();
     }
     private void AddDirection()
@@ -159,45 +166,42 @@ public class Player_Underwater : PlayerInteraction
         PressRightButton = context.ReadValue<float>() > 0.1f;
         if (PressRightButton)
         {
-            //animator.SetBool("isReady", true);
             MousePosition = Mouse.current.position.ReadValue();
         }
         else
         {
-            //animator.SetBool("isReady", false);
             transform.eulerAngles = new Vector3(0, 0, 0);
-            //playerArms.OffArms();
         }
-        //UIManager.Instance.PowerGaugeOn(PressRightButton);
         
+    }
+
+    public void SwitchActionMap(EActionState state)
+    {
+        playerInput.currentActionMap.Disable();
+        switch(state)
+        {
+            case EActionState.Attack:
+                Underwater.Enable();
+                break;
+            case EActionState.Underwater:
+                Attack.Enable();
+                break;
+        }
+
     }
 
     public void OnLeftButton(InputAction.CallbackContext context)
     {
         PressLeftButton = context.ReadValue<float>() > 0.1f;
 
-        //작살 공격
-/*        if (PressLeftButton&&PressRightButton)
-        {
-            animator.SetBool("isFire", true);
-            harpoon.Shooting();
-            UIManager.Instance.PowerGaugeOn(false);
-        }*/
-/*        else
-        {
-            Debug.Log("돌아와");
-            animator.SetBool("isFight", false);
-            harpoon.Return();
-
-        }*/
-
     }
 
-    public void Return()
+    public void Recoil()
     {
-        animator.SetBool("isFire", false);
-        playerArms.OffArms();
-        harpoon.gameObject.SetActive(false);
+        rigid.velocity = Vector2.zero;
+        Debug.Log("뒤로 밀려나기");
+        rigid.AddForce(Vector2.right*10, ForceMode2D.Impulse);
+
 
     }
     private void UnderwaterMove()
@@ -246,11 +250,6 @@ public class Player_Underwater : PlayerInteraction
                 transform.eulerAngles = new Vector3(0, 0, 0);
             //playerArms.MoveArms();
             //CameraManager.Instance.ZoomIn();
-        }
-        else
-        {
-            //CameraManager.Instance.ZoomOut();
-
         }
     }
 

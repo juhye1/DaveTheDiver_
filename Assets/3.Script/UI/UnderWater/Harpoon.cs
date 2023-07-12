@@ -7,17 +7,15 @@ public class Harpoon : MonoBehaviour
 {
     [SerializeField]private LineRenderer lineRenderer;
     private Rigidbody2D harpoonRigidbody;
-    private Player_Underwater player;
     private Transform harpoonTransform;
     private Vector3 home;
 
-    private float speed = 7;
-    private float time = 1;
+    private float speed = 10;
+    private float time = 1f;
     //private bool isStart = false;
 
     private void Awake()
     {
-        player = FindObjectOfType<Player_Underwater>();
         harpoonTransform = GetComponent<Transform>();
         harpoonRigidbody = GetComponent<Rigidbody2D>();
         lineRenderer.enabled = false;
@@ -26,6 +24,8 @@ public class Harpoon : MonoBehaviour
 
     private void OnEnable()
     {
+        harpoonTransform.localPosition = home;
+        harpoonRigidbody.velocity = Vector2.zero;
         //ÁÂÅ¬¸¯ÇÏ¸é
     }
 
@@ -41,8 +41,7 @@ public class Harpoon : MonoBehaviour
 
     public bool Shooting()
     {
-        lineRenderer.SetPosition(0, home);
-        lineRenderer.SetPosition(1, transform.localPosition);
+        Line();
         if (time > 0)
         {
             time -= Time.deltaTime;
@@ -53,33 +52,30 @@ public class Harpoon : MonoBehaviour
     }
     public bool Return()
     {
-        harpoonRigidbody.bodyType = RigidbodyType2D.Kinematic;
-        transform.localPosition = Vector2.MoveTowards(transform.localPosition, home, Time.deltaTime*10);
+        Line();
+
         if(transform.localPosition.Equals(home))
         {
             lineRenderer.enabled = false;
             return true;
-            //player.Return();
+        }
+        else
+        {
+            harpoonRigidbody.bodyType = RigidbodyType2D.Kinematic;
+            transform.localPosition = Vector2.MoveTowards(transform.localPosition, home, Time.deltaTime * 10);
         }
         return false;
     }
 
-    private void Update()
+    private void Line()
     {
-/*        if(isStart)
-        {
-            lineRenderer.SetPosition(0, home);
-            lineRenderer.SetPosition(1, transform.localPosition);
-            if(time<0)
-            {
-                Return();
-            }
-            else
-            {
-                time -= Time.deltaTime; 
-
-            }
-        }*/
+        lineRenderer.SetPosition(0, home);
+        lineRenderer.SetPosition(1, transform.localPosition);
+    }
+    private void OnDisable()
+    {
+        harpoonTransform.localPosition = home;
+        time = 1;
     }
 
 }

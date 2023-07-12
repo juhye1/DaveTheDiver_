@@ -5,11 +5,13 @@ using UnityEngine;
 public class Player_Arms : MonoBehaviour
 {
     private Player_Underwater player;
+    private Animator animator;
     [SerializeField] private Transform arrow;
     [SerializeField] private Transform arm;
 
     private void Awake()
     {
+        animator = GetComponentInChildren<Animator>();
         player = GetComponentInParent<Player_Underwater>();
         arm.gameObject.SetActive(false);
     }
@@ -29,8 +31,20 @@ public class Player_Arms : MonoBehaviour
         }
     }
 
+    public void FailArms()
+    {
+        animator.SetBool("isFail", true);
+    }
+
+    public void PullArms()
+    {
+        animator.SetBool("isPull", true);
+    }
+
     public void OffArms()
     {
+        animator.SetBool("isPull", false);
+        animator.SetBool("isFail", false);
         arm.gameObject.SetActive(false);
 
     }

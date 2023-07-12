@@ -23,6 +23,8 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
         AddState(EState.Ready);
         AddState(EState.Shoot);
         AddState(EState.Clear);
+
+        InitialState = EState.Idle;
     }
     protected override void OnEnter()
     {
@@ -30,11 +32,16 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
         switch (State)
         {
             case EState.Idle:
+                player.SwitchActionMap(Player_Underwater.EActionState.Underwater);
+                animator.SetBool("isFail", false);
+                animator.SetBool("isFire", false);
                 animator.SetBool("isReady", false);
+                arms.OffArms();
                 UIManager.Instance.PowerGaugeOn(false);
                 break;
 
             case EState.Ready:
+                player.SwitchActionMap(Player_Underwater.EActionState.Attack);
                 animator.SetBool("isReady", true);
                 UIManager.Instance.PowerGaugeOn(true);
                 //파워게이지 UI뜨게 만드는거랑
@@ -81,8 +88,6 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
         switch (State)
         {
             case EState.Ready:
-                animator.SetBool("isReady", false);
-
                 //파워게이지 끄기
                 //애니메이터 바꾸기
                 break;
@@ -116,7 +121,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 }
                 break;
             case EState.Shoot:
-                //HasFinished = !HasFinished;
+                HasFinished = !HasFinished;
                 break;
 
             case EState.Clear:
