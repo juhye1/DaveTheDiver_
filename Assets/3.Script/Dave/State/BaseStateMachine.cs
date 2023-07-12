@@ -5,6 +5,15 @@ using System;
 
 public class BaseStateMachine<T> : BaseState
 {
+    public BaseStateMachine(Harpoon harpoon, Player_Arms arms, Animator animator, Player_Underwater player) : 
+        base(harpoon, arms, animator, player)
+    {
+/*        this.harpoon = harpoon;
+        this.arms = arms;
+        this.animator = animator;
+        this.player = player;*/
+    }
+
     class StateConfig
     {
         public Action OnEnter;
@@ -72,6 +81,7 @@ public class BaseStateMachine<T> : BaseState
 
     public sealed override void Begin()
     {
+        Init();
         State = InitialState;
         HasFinished = false;
         StateMachine[State].OnEnter();

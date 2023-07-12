@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class State_Ready : BaseStateMachine<State_Ready.EState>
 {
+    public State_Ready(Harpoon harpoon, Player_Arms arms, Animator animator, Player_Underwater player) :
+                    base(harpoon, arms, animator, player)
+    {
+
+    }
     public enum EState
     {
         Idle,
@@ -37,6 +42,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 break;
             case EState.Shoot:
                 animator.SetBool("isFire", true);
+                //harpoon.Shooting();
                 UIManager.Instance.PowerGaugeOn(false);
                 break;
 
@@ -57,6 +63,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 break;
             case EState.Ready:
                 CameraManager.Instance.ZoomIn();
+                arms.MoveArms();
                 UIManager.Instance.PowerGaugeOn(true);
                 //파워게이지 UI뜨게 만드는거랑
                 break;
@@ -109,14 +116,22 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 }
                 break;
             case EState.Shoot:
-                HasFinished = !HasFinished;
+                //HasFinished = !HasFinished;
+                break;
+
+            case EState.Clear:
+                if (player.PressRightButton && !player.PressLeftButton)
+                {
+                    return EState.Ready;
+                }
+
                 //여기서 옆 스크립트로 이사가기
 
-/*                if(CameraManager.Instance.ZoomZoomIn())
-                HasFinished = true;
-*/
-               //만약에 물고기가 걸렸다면 Fight로 
-               //안걸렸다면 Pull로
+                /*                if(CameraManager.Instance.ZoomZoomIn())
+                                HasFinished = true;
+                */
+                //만약에 물고기가 걸렸다면 Fight로 
+                //안걸렸다면 Pull로
                 break;
 
         }

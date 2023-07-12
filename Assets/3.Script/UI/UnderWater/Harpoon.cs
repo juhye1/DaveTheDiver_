@@ -12,7 +12,7 @@ public class Harpoon : MonoBehaviour
     private Vector3 home;
 
     private float speed = 7;
-    //private float time = 1;
+    private float time = 1;
     //private bool isStart = false;
 
     private void Awake()
@@ -29,7 +29,7 @@ public class Harpoon : MonoBehaviour
         //좌클릭하면
     }
 
-    public void Shooting()
+    public void Shoot()
     {
         //누른 시간에 비례해서 멀리가나?
         harpoonRigidbody.bodyType = RigidbodyType2D.Dynamic;
@@ -39,6 +39,18 @@ public class Harpoon : MonoBehaviour
         //이거 끝나면 팔 끄기
     }
 
+    public bool Shooting()
+    {
+        lineRenderer.SetPosition(0, home);
+        lineRenderer.SetPosition(1, transform.localPosition);
+        if (time > 0)
+        {
+            time -= Time.deltaTime;
+            return false;
+        }
+        else return true;
+
+    }
     public bool Return()
     {
         harpoonRigidbody.bodyType = RigidbodyType2D.Kinematic;

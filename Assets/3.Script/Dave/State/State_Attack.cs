@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class State_Attack : BaseStateMachine<State_Attack.EState>
 {
+    public State_Attack(Harpoon harpoon, Player_Arms arms, Animator animator, Player_Underwater player) : 
+                    base(harpoon, arms, animator, player)
+    {
+
+    }
     public enum EState
     {
         Fire,
@@ -22,8 +27,8 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
 
     protected override void OnEnter()
     {
-        harpoon.Shooting();
-        Debug.Log("봐주세요");
+        harpoon.Shoot();
+        Debug.Log(State);
         //쏘는건 다 똑같고
         switch (State)
         {
@@ -46,6 +51,10 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
 
         switch (State)
         {
+            case EState.Fire:
+                harpoon.Shooting();
+                break;
+
             case EState.Pull:
                 CameraManager.Instance.ZoomZoomIn();
                 break;
@@ -70,8 +79,12 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
         switch (State)
         {
             case EState.Fire:
-
-                return EState.Fail;
+                if(harpoon.Shooting())
+                {
+                    //이게 트루면 끝까지 날아간거
+                    return EState.Fail;
+                }
+                break;
                 //if 물고기를 잡았다면 return Pull
                 //if 허공이라면 return Fail
                 //if 큰 물고기를 잡았다면 retun Fight

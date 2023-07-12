@@ -4,27 +4,28 @@ using UnityEngine;
 
 public class StateBrain : MonoBehaviour
 {
-    private List<BaseState> baseStates;
-    private BaseState activeState;
-    private BaseState readyState;
-    private BaseState attackState;
+    private BaseStateMachine<State_Attack.EState> fattackState;
 
+    private List<BaseState> baseStates;
+
+    private BaseState activeState;
+    private State_Attack AttackState;
+    private State_Ready ReadyState;
+
+
+    protected Animator animator;
+    protected Player_Underwater player;
     [SerializeField] private Harpoon harpoon;
     [SerializeField] private Player_Arms arms;
 
     private void Awake()
     {
-        baseStates = new List<BaseState>();
-        readyState = GetComponent<State_Ready>();
-        attackState = GetComponent<State_Attack>();
-        baseStates.Add(readyState);
-        baseStates.Add(attackState);
-        foreach(BaseState state in baseStates)
-        {
-            state.dd(harpoon, arms);
-        }
+        player = GetComponent<Player_Underwater>();
+        animator = GetComponent<Animator>();
+        Init();
 
-        activeState = readyState;
+        //attackState = new BaseStateMachine<State_Attack.EState>(harpoon, arms, animator, player);
+        //activeState = rdy;
     }
 
     private void Start()
@@ -50,11 +51,19 @@ public class StateBrain : MonoBehaviour
     {
         if(activeState==null)
         {
-            activeState = attackState;
+           activeState = AttackState;
            activeState.Begin();
 
         }
     }
 
+    private void Init()
+    {
+        AttackState = new State_Attack(harpoon, arms, animator, player);
+        ReadyState = new State_Ready(harpoon, arms, animator, player);
+
+        baseStates = new List<BaseState> { AttackState, ReadyState };
+        activeState = ReadyState;
+    }
 
 }

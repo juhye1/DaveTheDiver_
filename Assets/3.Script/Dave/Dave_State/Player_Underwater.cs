@@ -159,16 +159,16 @@ public class Player_Underwater : PlayerInteraction
         PressRightButton = context.ReadValue<float>() > 0.1f;
         if (PressRightButton)
         {
-            animator.SetBool("isReady", true);
+            //animator.SetBool("isReady", true);
             MousePosition = Mouse.current.position.ReadValue();
         }
         else
         {
-            animator.SetBool("isReady", false);
+            //animator.SetBool("isReady", false);
             transform.eulerAngles = new Vector3(0, 0, 0);
             //playerArms.OffArms();
         }
-        UIManager.Instance.PowerGaugeOn(PressRightButton);
+        //UIManager.Instance.PowerGaugeOn(PressRightButton);
         
     }
 
@@ -177,12 +177,12 @@ public class Player_Underwater : PlayerInteraction
         PressLeftButton = context.ReadValue<float>() > 0.1f;
 
         //작살 공격
-        if (PressLeftButton&&PressRightButton)
+/*        if (PressLeftButton&&PressRightButton)
         {
             animator.SetBool("isFire", true);
             harpoon.Shooting();
             UIManager.Instance.PowerGaugeOn(false);
-        }
+        }*/
 /*        else
         {
             Debug.Log("돌아와");
@@ -244,7 +244,7 @@ public class Player_Underwater : PlayerInteraction
             }
             else
                 transform.eulerAngles = new Vector3(0, 0, 0);
-            playerArms.MoveArms();
+            //playerArms.MoveArms();
             //CameraManager.Instance.ZoomIn();
         }
         else
