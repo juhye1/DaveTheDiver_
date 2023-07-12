@@ -446,54 +446,6 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
-        },
-        {
-            ""name"": ""Attack"",
-            ""id"": ""6a378c3b-ecf6-4293-8d4a-38d0dfee0d0a"",
-            ""actions"": [
-                {
-                    ""name"": ""OnLeftButton"",
-                    ""type"": ""Button"",
-                    ""id"": ""bdd1a21f-52cd-4dc0-a304-db2b4709590e"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""OnRightButton"",
-                    ""type"": ""Button"",
-                    ""id"": ""00501cf8-69d1-4fc7-9d8c-17e4680ee26e"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""58b2aa75-7cf8-4f21-94f2-48390f6a5b50"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""OnRightButton"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""207fd087-f06a-4f5a-8b04-3c66e1a2d212"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""OnLeftButton"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
         }
     ],
     ""controlSchemes"": [
@@ -547,10 +499,6 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         m_UnderWater_OnUnderWaterMove = m_UnderWater.FindAction("OnUnderWaterMove", throwIfNotFound: true);
         m_UnderWater_OnRightButton = m_UnderWater.FindAction("OnRightButton", throwIfNotFound: true);
         m_UnderWater_OnLeftButton = m_UnderWater.FindAction("OnLeftButton", throwIfNotFound: true);
-        // Attack
-        m_Attack = asset.FindActionMap("Attack", throwIfNotFound: true);
-        m_Attack_OnLeftButton = m_Attack.FindAction("OnLeftButton", throwIfNotFound: true);
-        m_Attack_OnRightButton = m_Attack.FindAction("OnRightButton", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -810,47 +758,6 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         }
     }
     public UnderWaterActions @UnderWater => new UnderWaterActions(this);
-
-    // Attack
-    private readonly InputActionMap m_Attack;
-    private IAttackActions m_AttackActionsCallbackInterface;
-    private readonly InputAction m_Attack_OnLeftButton;
-    private readonly InputAction m_Attack_OnRightButton;
-    public struct AttackActions
-    {
-        private @InputSystem m_Wrapper;
-        public AttackActions(@InputSystem wrapper) { m_Wrapper = wrapper; }
-        public InputAction @OnLeftButton => m_Wrapper.m_Attack_OnLeftButton;
-        public InputAction @OnRightButton => m_Wrapper.m_Attack_OnRightButton;
-        public InputActionMap Get() { return m_Wrapper.m_Attack; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(AttackActions set) { return set.Get(); }
-        public void SetCallbacks(IAttackActions instance)
-        {
-            if (m_Wrapper.m_AttackActionsCallbackInterface != null)
-            {
-                @OnLeftButton.started -= m_Wrapper.m_AttackActionsCallbackInterface.OnOnLeftButton;
-                @OnLeftButton.performed -= m_Wrapper.m_AttackActionsCallbackInterface.OnOnLeftButton;
-                @OnLeftButton.canceled -= m_Wrapper.m_AttackActionsCallbackInterface.OnOnLeftButton;
-                @OnRightButton.started -= m_Wrapper.m_AttackActionsCallbackInterface.OnOnRightButton;
-                @OnRightButton.performed -= m_Wrapper.m_AttackActionsCallbackInterface.OnOnRightButton;
-                @OnRightButton.canceled -= m_Wrapper.m_AttackActionsCallbackInterface.OnOnRightButton;
-            }
-            m_Wrapper.m_AttackActionsCallbackInterface = instance;
-            if (instance != null)
-            {
-                @OnLeftButton.started += instance.OnOnLeftButton;
-                @OnLeftButton.performed += instance.OnOnLeftButton;
-                @OnLeftButton.canceled += instance.OnOnLeftButton;
-                @OnRightButton.started += instance.OnOnRightButton;
-                @OnRightButton.performed += instance.OnOnRightButton;
-                @OnRightButton.canceled += instance.OnOnRightButton;
-            }
-        }
-    }
-    public AttackActions @Attack => new AttackActions(this);
     private int m_PCSchemeIndex = -1;
     public InputControlScheme PCScheme
     {
@@ -893,10 +800,5 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         void OnOnUnderWaterMove(InputAction.CallbackContext context);
         void OnOnRightButton(InputAction.CallbackContext context);
         void OnOnLeftButton(InputAction.CallbackContext context);
-    }
-    public interface IAttackActions
-    {
-        void OnOnLeftButton(InputAction.CallbackContext context);
-        void OnOnRightButton(InputAction.CallbackContext context);
     }
 }

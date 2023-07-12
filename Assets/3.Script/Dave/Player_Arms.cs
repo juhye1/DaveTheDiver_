@@ -31,6 +31,11 @@ public class Player_Arms : MonoBehaviour
         }
     }
 
+    public Vector2 ArmsDir()
+    {
+        return arm.right;
+    }
+
     public void FailArms()
     {
         animator.SetBool("isFail", true);

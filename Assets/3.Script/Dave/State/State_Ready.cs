@@ -32,7 +32,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
         switch (State)
         {
             case EState.Idle:
-                player.SwitchActionMap(Player_Underwater.EActionState.Underwater);
+                player.SwitchActionState(Player_Underwater.EActionState.Underwater);
                 animator.SetBool("isFail", false);
                 animator.SetBool("isFire", false);
                 animator.SetBool("isReady", false);
@@ -41,19 +41,17 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 break;
 
             case EState.Ready:
-                player.SwitchActionMap(Player_Underwater.EActionState.Attack);
+                player.SwitchActionState(Player_Underwater.EActionState.Attack);
                 animator.SetBool("isReady", true);
                 UIManager.Instance.PowerGaugeOn(true);
-                //파워게이지 UI뜨게 만드는거랑
-                //애니메이터
                 break;
             case EState.Shoot:
                 animator.SetBool("isFire", true);
-                //harpoon.Shooting();
                 UIManager.Instance.PowerGaugeOn(false);
                 break;
 
             case EState.Clear:
+                player.SwitchActionState(Player_Underwater.EActionState.Underwater);
                 animator.SetBool("isReady", false);
                 arms.OffArms();
                 UIManager.Instance.PowerGaugeOn(false);

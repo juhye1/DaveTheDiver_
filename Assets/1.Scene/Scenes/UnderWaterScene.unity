@@ -17715,6 +17715,38 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 3fa30d55-4de4-4264-8ed2-7ced4b5114b9
     m_ActionName: UnderWater/OnLeftButton[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2196971285242473736}
+        m_TargetAssemblyTypeName: Player_Underwater, Assembly-CSharp
+        m_MethodName: OnLeftButton
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: bdd1a21f-52cd-4dc0-a304-db2b4709590e
+    m_ActionName: Attack/OnLeftButton[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2196971285242473736}
+        m_TargetAssemblyTypeName: Player_Underwater, Assembly-CSharp
+        m_MethodName: OnRightButton
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 00501cf8-69d1-4fc7-9d8c-17e4680ee26e
+    m_ActionName: Attack/OnRightButton[/Mouse/rightButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: PC
   m_DefaultActionMap: UnderWater
@@ -17814,7 +17846,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: 6b7cf1083d49e70429b1b1524c375f23, type: 2}
   UIPosition: {fileID: 324914662}
-  harpoon: {fileID: 2106646686}
   MousePosition: {x: 0, y: 0}
 --- !u!114 &2196971285242473738
 MonoBehaviour:

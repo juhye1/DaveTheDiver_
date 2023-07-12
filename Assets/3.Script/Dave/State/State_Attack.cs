@@ -35,7 +35,7 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
         switch (State)
         {
             case EState.Fire:
-                player.Recoil();
+                player.Recoil(arms.ArmsDir());
                 harpoon.Shoot();
                 break;
             case EState.Pull:
@@ -111,7 +111,6 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
             case EState.Fail:
                 if(harpoon.Return())
                 {
-
                     //arms.OffArms();
                     Debug.Log("³¡");
                     HasFinished = !HasFinished;

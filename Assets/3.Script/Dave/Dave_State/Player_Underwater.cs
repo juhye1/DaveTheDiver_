@@ -5,9 +5,6 @@ using UnityEngine.InputSystem;
 
 public class Player_Underwater : PlayerInteraction
 {
-    private InputActionMap Attack;
-    private InputActionMap Underwater;
-
     public enum EActionState
     {
         Attack, Underwater
@@ -39,11 +36,10 @@ public class Player_Underwater : PlayerInteraction
     private EDirection oldDirection = EDirection.Zero;
     private EDirection[] eDirections;
     private EWaterState waterState;
+    private EActionState actionState = EActionState.Underwater;
 
     private void Start()
     {
-        Attack = playerInput.actions.FindActionMap("Attack");
-        Underwater = playerInput.actions.FindActionMap("UnderWater");
         AddDirection();
     }
     private void AddDirection()
@@ -175,19 +171,10 @@ public class Player_Underwater : PlayerInteraction
         
     }
 
-    public void SwitchActionMap(EActionState state)
+    public void SwitchActionState(EActionState state)
     {
-        playerInput.currentActionMap.Disable();
-        switch(state)
-        {
-            case EActionState.Attack:
-                Underwater.Enable();
-                break;
-            case EActionState.Underwater:
-                Attack.Enable();
-                break;
-        }
-
+        rigid.velocity = Vector2.zero;
+        actionState = state;
     }
 
     public void OnLeftButton(InputAction.CallbackContext context)
@@ -196,13 +183,10 @@ public class Player_Underwater : PlayerInteraction
 
     }
 
-    public void Recoil()
+    public void Recoil(Vector2 dir)
     {
-        rigid.velocity = Vector2.zero;
-        Debug.Log("뒤로 밀려나기");
-        rigid.AddForce(Vector2.right*10, ForceMode2D.Impulse);
-
-
+        //rigid.velocity = Vector2.zero;
+        rigid.AddRelativeForce(dir*-3, ForceMode2D.Impulse);
     }
     private void UnderwaterMove()
     {
@@ -248,8 +232,6 @@ public class Player_Underwater : PlayerInteraction
             }
             else
                 transform.eulerAngles = new Vector3(0, 0, 0);
-            //playerArms.MoveArms();
-            //CameraManager.Instance.ZoomIn();
         }
     }
 
@@ -261,6 +243,14 @@ public class Player_Underwater : PlayerInteraction
 
     private void FixedUpdate()
     {
-        UnderwaterMove();
+        switch(actionState)
+        {
+            case EActionState.Attack:
+                break;
+            case EActionState.Underwater:
+                UnderwaterMove();
+                break;
+
+        }
     }
 }
