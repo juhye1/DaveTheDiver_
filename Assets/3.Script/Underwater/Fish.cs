@@ -17,7 +17,9 @@ public class Fish : MonoBehaviour
 
     private void Awake()
     {
+
         skeletonAnimation = GetComponent<SkeletonAnimation>();
+        skeletonAnimation.Initialize(true);
     }
 
     private void Start()
@@ -41,8 +43,8 @@ public class Fish : MonoBehaviour
         }
 
         skeletonAnimation.state.SetAnimation(0, runAnimationName, true);
-        skeletonAnimation.loop = true;
-        skeletonAnimation.timeScale = 1;
+        //skeletonAnimation.loop = true;
+        //skeletonAnimation.timeScale = 1;
     }
 
     public void Fishing(Transform harpoon)
