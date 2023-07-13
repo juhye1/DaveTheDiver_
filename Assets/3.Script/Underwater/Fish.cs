@@ -10,6 +10,7 @@ public class Fish : MonoBehaviour
         swim, sprint, die 
     }
     private SkeletonAnimation skeletonAnimation;
+    private Boid boid;
     private EFishState fishState;
 
     [SpineAnimation]
@@ -17,7 +18,7 @@ public class Fish : MonoBehaviour
 
     private void Awake()
     {
-
+        boid = GetComponent<Boid>();
         skeletonAnimation = GetComponent<SkeletonAnimation>();
         skeletonAnimation.Initialize(true);
     }
@@ -49,8 +50,10 @@ public class Fish : MonoBehaviour
 
     public void Fishing(Transform harpoon)
     {
+        BoidsManager.Instance.RemoveBoid(boid);
         transform.SetParent(harpoon);
         transform.localPosition = Vector3.zero;
+        //transform.localScale = Vector3.one;
     }
 
 }

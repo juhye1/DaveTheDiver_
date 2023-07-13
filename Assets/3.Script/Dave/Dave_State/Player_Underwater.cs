@@ -165,10 +165,6 @@ public class Player_Underwater : PlayerInteraction
         {
             MousePosition = Mouse.current.position.ReadValue();
         }
-        else
-        {
-            //transform.eulerAngles = new Vector3(0, 0, 0);
-        }
         
     }
 
@@ -245,8 +241,9 @@ public class Player_Underwater : PlayerInteraction
 
     }
 
-    private void MoveMousePosition(bool press)
+    private void MoveMousePosition()
     {
+        bool press = PressRightButton || PressLeftButton ? true : false;
         if (press)
         {
             MousePosition = Mouse.current.position.ReadValue();
@@ -261,7 +258,7 @@ public class Player_Underwater : PlayerInteraction
 
     private void Update()
     {
-        MoveMousePosition(PressRightButton);
+        MoveMousePosition();
 
     }
 

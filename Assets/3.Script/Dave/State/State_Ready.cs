@@ -160,6 +160,10 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 {
                     return EState.Ready;
                 }
+                else if (!player.PressRightButton && player.PressLeftButton)
+                {
+                    return EState.Dagger;
+                }
 
                 //여기서 옆 스크립트로 이사가기
 

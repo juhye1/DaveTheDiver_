@@ -36,7 +36,7 @@ public class Harpoon : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag("Fish"))
+        if (collision.CompareTag("Fish")&& fish == null)
         {
             fish = collision.GetComponent<Fish>();
             fish.Fishing(point);
@@ -89,13 +89,9 @@ public class Harpoon : MonoBehaviour
         {
             case EState.Success:
                 transform.DOLocalMove(home, 1.5f).SetEase(Ease.InExpo).OnComplete(() => isHome = !isHome);
-                
-                //transform.localPosition = Vector2.MoveTowards(transform.localPosition, home, Time.deltaTime * 2);
-                //transform.DOLocalMove(home, 3).SetEase(Ease.InQuint);
                 break;
             case EState.Fail:
                 transform.DOLocalMove(home, 0.5f).SetEase(Ease.InExpo).OnComplete(() => isHome = !isHome);
-                //transform.localPosition = Vector2.MoveTowards(transform.localPosition, home, Time.deltaTime * 10);
                 break;
         }
 
