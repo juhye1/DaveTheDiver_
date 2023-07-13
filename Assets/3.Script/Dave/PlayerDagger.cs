@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class PlayerDagger : MonoBehaviour
 {
-    private Animator animator;
+    [SerializeField]private Animator animator;
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        //animator.gameObject.SetActive(false);
     }
     public void isDagger(bool isDagger)
     {
+        animator.gameObject.SetActive(true);
         animator.SetBool("isDagger", isDagger);
     }
 
     public void OffDagger()
     {
-        gameObject.SetActive(false);
+        animator.gameObject.SetActive(false);
     }
 
     private void OnDisable()

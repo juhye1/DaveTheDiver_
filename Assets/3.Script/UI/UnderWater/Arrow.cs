@@ -4,46 +4,41 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
-    [SerializeField] private Transform dave;
     [SerializeField] private Transform point;
+    [SerializeField] private Transform daveArm;
     [SerializeField] private RectTransform arrow;
+    [SerializeField] private RectTransform gauge;
 
     private Player_Underwater player;
     private Camera mainCamera;
-    private Vector3 screenPosition;
-    private float y = 180;
-
-    private Vector2 LeftVector;
-    private Vector2 RightVector;
+    private Vector2 screenPosition;
+    private Vector2 playerScreenPosition;
     void Start()
     {
         player = FindObjectOfType<Player_Underwater>();
         mainCamera = Camera.main;
-        LeftVector = new Vector2(0, 180);
-        RightVector = new Vector2(0, 0);
     }
 
     void Update()
     {
         screenPosition = mainCamera.WorldToScreenPoint(point.position);
         transform.position = screenPosition;
+        transform.rotation = point.rotation;
      
-       if(player!=null)
+       if(player != null)
         {
-            Vector3 dirVec = player.MousePosition - (Vector2)transform.position;
-            float dir = Mathf.Atan2(dirVec.y, dirVec.x) * Mathf.Rad2Deg;
+            playerScreenPosition = mainCamera.WorldToScreenPoint(daveArm.position);
+            Vector2 offset = player.MousePosition - playerScreenPosition;
+            float dir = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
             dir = Mathf.Clamp(dir, -20, 20);
 
-            if (player.MousePosition.x < 700)
+            if (player.MousePosition.x > 700)
             {
-                transform.eulerAngles = LeftVector;
-                arrow.localRotation = Quaternion.Euler(0, y, dir);
+                arrow.localRotation = Quaternion.Euler(0, 0, dir);
             }
             else
             {
-                transform.eulerAngles = RightVector;
-                arrow.localRotation = Quaternion.Euler(0, 0, dir);
-
+                arrow.localRotation = Quaternion.Euler(0, 180, dir);
             }
 
         }

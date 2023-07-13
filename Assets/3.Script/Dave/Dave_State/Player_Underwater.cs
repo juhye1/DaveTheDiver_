@@ -167,7 +167,7 @@ public class Player_Underwater : PlayerInteraction
         }
         else
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            //transform.eulerAngles = new Vector3(0, 0, 0);
         }
         
     }

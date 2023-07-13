@@ -94,7 +94,7 @@ public class Harpoon : MonoBehaviour
                 //transform.DOLocalMove(home, 3).SetEase(Ease.InQuint);
                 break;
             case EState.Fail:
-                transform.DOLocalMove(home, 1f).SetEase(Ease.InExpo).OnComplete(() => isHome = !isHome);
+                transform.DOLocalMove(home, 0.5f).SetEase(Ease.InExpo).OnComplete(() => isHome = !isHome);
                 //transform.localPosition = Vector2.MoveTowards(transform.localPosition, home, Time.deltaTime * 10);
                 break;
         }

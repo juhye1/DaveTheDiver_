@@ -40,7 +40,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 animator.SetBool("isFire", false);
                 animator.SetBool("isFight", false);
                 animator.SetBool("isReady", false);
-                dagger.gameObject.SetActive(false);
+                dagger.OffDagger();
                 arms.OffArms();
                 UIManager.Instance.PowerGaugeOn(false);
                 break;
@@ -48,7 +48,6 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
             case EState.Dagger:
                 player.SwitchActionState(Player_Underwater.EActionState.Attack);
                 animator.SetBool("isDagger", true);
-                dagger.gameObject.SetActive(true);
                 dagger.isDagger(true); 
                 break;
 
@@ -66,6 +65,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
                 player.SwitchActionState(Player_Underwater.EActionState.Underwater);
                 animator.SetBool("isReady", false);
                 arms.OffArms();
+                dagger.OffDagger();
                 UIManager.Instance.PowerGaugeOn(false);
                 break;
 

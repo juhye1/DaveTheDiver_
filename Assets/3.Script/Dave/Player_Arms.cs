@@ -21,15 +21,12 @@ public class Player_Arms : MonoBehaviour
         arm.gameObject.SetActive(true);
         if (player.MousePosition.x > 700)
         {
-            transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, arrow.localEulerAngles.z);
-            arm.localRotation = Quaternion.Euler(0, 0, 0);
+            arm.localRotation = Quaternion.Euler(0, 0, arrow.localEulerAngles.z);
 
         }
         else
         {
-            transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, arrow.localEulerAngles.z);
-            arm.localRotation = Quaternion.Euler(180, 0, 0);
-        }
+            arm.localRotation = Quaternion.Euler(180, 180, -arrow.localEulerAngles.z);        }
     }
 
     public Vector2 ArmsDir()
