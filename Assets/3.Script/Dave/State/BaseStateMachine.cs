@@ -8,10 +8,6 @@ public class BaseStateMachine<T> : BaseState
     public BaseStateMachine(Harpoon harpoon, Player_Arms arms, Animator animator, Player_Underwater player, PlayerDagger dagger) : 
         base(harpoon, arms, animator, player, dagger)
     {
-/*        this.harpoon = harpoon;
-        this.arms = arms;
-        this.animator = animator;
-        this.player = player;*/
     }
 
     class StateConfig

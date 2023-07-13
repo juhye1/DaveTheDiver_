@@ -7,7 +7,7 @@ public class NPC_Cobra : BaseNPC
     private readonly int beer = Animator.StringToHash("Beer");
     private readonly int idle = Animator.StringToHash("Idle");
     private Dictionary<int, DialogueData> cobraGunDictionary;
-    private EType EcobraGun = EType.Cobra_Gun;
+    private ENPCType EcobraGun = ENPCType.Cobra_Gun;
     
 
     private void Start()

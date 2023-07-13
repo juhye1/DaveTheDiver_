@@ -6,7 +6,7 @@ public class DataManager : MonoBehaviour
 {
     public static DataManager Instance { get; private set; } = null;
     [SerializeField] private Dialogue dialogue;
-    private Dictionary<EType, List<DialogueData>> dialogueDictionary;
+    private Dictionary<ENPCType, List<DialogueData>> dialogueDictionary;
 
     private List<DialogueData> dialogueList;
 
@@ -22,23 +22,23 @@ public class DataManager : MonoBehaviour
         Init();
     }
 
-    public List<DialogueData> LoadData(EType key)
+    public List<DialogueData> LoadData(ENPCType key)
     {
         return dialogueDictionary[key];
     }
 
     private void Init()
     {
-        dialogueDictionary = new Dictionary<EType, List<DialogueData>>();
+        dialogueDictionary = new Dictionary<ENPCType, List<DialogueData>>();
         dialogueList = new List<DialogueData>();
         for (int i = 0; i < dialogue.dataArray.Length; i++)
         {
-            if (dialogue.dataArray[i].ETYPE == EType.Cobra_Gun)
+            if (dialogue.dataArray[i].ETYPE == ENPCType.Cobra_Gun)
             {
                 dialogueList.Add(dialogue.dataArray[i]);
             }
         }
-        dialogueDictionary.Add(EType.Cobra_Gun, dialogueList);
+        dialogueDictionary.Add(ENPCType.Cobra_Gun, dialogueList);
     }
 
 }

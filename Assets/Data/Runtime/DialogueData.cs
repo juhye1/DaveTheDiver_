@@ -9,8 +9,8 @@ using System.Collections;
 public class DialogueData
 {
   [SerializeField]
-  EType etype;
-  public EType ETYPE { get {return etype; } set { this.etype = value;} }
+  ENPCType etype;
+  public ENPCType ETYPE { get {return etype; } set { this.etype = value;} }
   
   [SerializeField]
   int number;

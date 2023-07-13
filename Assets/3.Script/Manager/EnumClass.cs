@@ -16,7 +16,7 @@ public enum EName
     Unknown
 }
 
-public enum EType
+public enum ENPCType
 {
     Cobra_Gun
 }
