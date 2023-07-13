@@ -18,12 +18,6 @@ public class UIInput : MonoBehaviour
         AddDirection();
 
     }
-
-    public void PourTea()
-    {
-
-    }
-
     public void Inventory(Vector2 dir)
     {
         EDirection edir = direction[dir];

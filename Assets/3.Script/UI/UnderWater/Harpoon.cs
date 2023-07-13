@@ -16,7 +16,7 @@ public class Harpoon : MonoBehaviour
     private Rigidbody2D harpoonRigidbody;
     private Transform harpoonTransform;
     private Vector3 home;
-    private Fish fish;
+    private FishAnimator fish;
 
     private EState harpoonState;
     public EState HarpoonState => harpoonState;
@@ -38,7 +38,7 @@ public class Harpoon : MonoBehaviour
 
         if (collision.CompareTag("Fish")&& fish == null)
         {
-            fish = collision.GetComponent<Fish>();
+            fish = collision.GetComponent<FishAnimator>();
             fish.Fishing(point);
             harpoonState = EState.Success;
             Debug.Log("Çä¹°°í±â");
