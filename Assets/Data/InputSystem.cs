@@ -116,6 +116,15 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""ESC"",
+                    ""type"": ""Button"",
+                    ""id"": ""41df20c6-ebf3-4ef5-8917-e6320aebc785"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""PourTea"",
                     ""type"": ""Button"",
                     ""id"": ""d8d2e2e5-7c32-4350-be42-da4c9ba655ea"",
@@ -200,6 +209,17 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""PourTea"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b5572947-b0b4-48dd-b531-e1fecbc00dca"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PC"",
+                    ""action"": ""ESC"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -374,6 +394,15 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ESC"",
+                    ""type"": ""Button"",
+                    ""id"": ""7c4ab1b5-97f8-4824-ad6e-9fa602ea24fa"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -464,6 +493,17 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bae3377d-402b-4ad4-9a55-fa04e233196b"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ESC"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -506,6 +546,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_UIMove = m_UI.FindAction("UIMove", throwIfNotFound: true);
         m_UI_Space = m_UI.FindAction("Space", throwIfNotFound: true);
+        m_UI_ESC = m_UI.FindAction("ESC", throwIfNotFound: true);
         m_UI_PourTea = m_UI.FindAction("PourTea", throwIfNotFound: true);
         // Sushi
         m_Sushi = asset.FindActionMap("Sushi", throwIfNotFound: true);
@@ -520,6 +561,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         m_UnderWater_OnRightButton = m_UnderWater.FindAction("OnRightButton", throwIfNotFound: true);
         m_UnderWater_OnLeftButton = m_UnderWater.FindAction("OnLeftButton", throwIfNotFound: true);
         m_UnderWater_Dash = m_UnderWater.FindAction("Dash", throwIfNotFound: true);
+        m_UnderWater_ESC = m_UnderWater.FindAction("ESC", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -622,6 +664,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     private IUIActions m_UIActionsCallbackInterface;
     private readonly InputAction m_UI_UIMove;
     private readonly InputAction m_UI_Space;
+    private readonly InputAction m_UI_ESC;
     private readonly InputAction m_UI_PourTea;
     public struct UIActions
     {
@@ -629,6 +672,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         public UIActions(@InputSystem wrapper) { m_Wrapper = wrapper; }
         public InputAction @UIMove => m_Wrapper.m_UI_UIMove;
         public InputAction @Space => m_Wrapper.m_UI_Space;
+        public InputAction @ESC => m_Wrapper.m_UI_ESC;
         public InputAction @PourTea => m_Wrapper.m_UI_PourTea;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
@@ -645,6 +689,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @Space.started -= m_Wrapper.m_UIActionsCallbackInterface.OnSpace;
                 @Space.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnSpace;
                 @Space.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnSpace;
+                @ESC.started -= m_Wrapper.m_UIActionsCallbackInterface.OnESC;
+                @ESC.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnESC;
+                @ESC.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnESC;
                 @PourTea.started -= m_Wrapper.m_UIActionsCallbackInterface.OnPourTea;
                 @PourTea.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnPourTea;
                 @PourTea.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnPourTea;
@@ -658,6 +705,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @Space.started += instance.OnSpace;
                 @Space.performed += instance.OnSpace;
                 @Space.canceled += instance.OnSpace;
+                @ESC.started += instance.OnESC;
+                @ESC.performed += instance.OnESC;
+                @ESC.canceled += instance.OnESC;
                 @PourTea.started += instance.OnPourTea;
                 @PourTea.performed += instance.OnPourTea;
                 @PourTea.canceled += instance.OnPourTea;
@@ -738,6 +788,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     private readonly InputAction m_UnderWater_OnRightButton;
     private readonly InputAction m_UnderWater_OnLeftButton;
     private readonly InputAction m_UnderWater_Dash;
+    private readonly InputAction m_UnderWater_ESC;
     public struct UnderWaterActions
     {
         private @InputSystem m_Wrapper;
@@ -746,6 +797,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         public InputAction @OnRightButton => m_Wrapper.m_UnderWater_OnRightButton;
         public InputAction @OnLeftButton => m_Wrapper.m_UnderWater_OnLeftButton;
         public InputAction @Dash => m_Wrapper.m_UnderWater_Dash;
+        public InputAction @ESC => m_Wrapper.m_UnderWater_ESC;
         public InputActionMap Get() { return m_Wrapper.m_UnderWater; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -767,6 +819,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @Dash.started -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnDash;
                 @Dash.performed -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnDash;
                 @Dash.canceled -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnDash;
+                @ESC.started -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnESC;
+                @ESC.performed -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnESC;
+                @ESC.canceled -= m_Wrapper.m_UnderWaterActionsCallbackInterface.OnESC;
             }
             m_Wrapper.m_UnderWaterActionsCallbackInterface = instance;
             if (instance != null)
@@ -783,6 +838,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @Dash.started += instance.OnDash;
                 @Dash.performed += instance.OnDash;
                 @Dash.canceled += instance.OnDash;
+                @ESC.started += instance.OnESC;
+                @ESC.performed += instance.OnESC;
+                @ESC.canceled += instance.OnESC;
             }
         }
     }
@@ -814,6 +872,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     {
         void OnUIMove(InputAction.CallbackContext context);
         void OnSpace(InputAction.CallbackContext context);
+        void OnESC(InputAction.CallbackContext context);
         void OnPourTea(InputAction.CallbackContext context);
     }
     public interface ISushiActions
@@ -830,5 +889,6 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         void OnOnRightButton(InputAction.CallbackContext context);
         void OnOnLeftButton(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnESC(InputAction.CallbackContext context);
     }
 }

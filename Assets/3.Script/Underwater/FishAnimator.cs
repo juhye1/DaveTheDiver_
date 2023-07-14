@@ -48,12 +48,4 @@ public class FishAnimator : MonoBehaviour
         //skeletonAnimation.timeScale = 1;
     }
 
-    public void Fishing(Transform harpoon)
-    {
-        BoidsManager.Instance.RemoveBoid(boid);
-        transform.SetParent(harpoon);
-        transform.localPosition = Vector3.zero;
-        //transform.localScale = Vector3.one;
-    }
-
 }

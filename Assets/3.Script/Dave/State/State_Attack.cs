@@ -124,10 +124,8 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
             case EState.Pull:
                 if (harpoon.CheckReturn())
                 {
-                    UIManager.Instance.InfoUIOn();
                     HasFinished = !HasFinished;
                 }
-                //  animator.SetBool("isPull", true);
                 break;
             case EState.Fail:
                 if(harpoon.CheckReturn())

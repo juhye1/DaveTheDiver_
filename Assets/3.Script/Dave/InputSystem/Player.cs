@@ -47,6 +47,7 @@ public class Player : MonoBehaviour
     protected InputActionMap lobby;
     protected InputActionMap ui;
     protected InputActionMap sushi;
+    protected InputActionMap underWater;
 
     protected SpriteRenderer spriteRenderer;
 
@@ -67,6 +68,7 @@ public class Player : MonoBehaviour
         lobby = playerInput.actions.FindActionMap("Lobby");
         ui = playerInput.actions.FindActionMap("UI");
         sushi = playerInput.actions.FindActionMap("Sushi");
+        underWater = playerInput.actions.FindActionMap("UnderWater");
     }
 
     #region InputSystem
@@ -247,6 +249,8 @@ public class Player : MonoBehaviour
                     lobby.Enable(); this.state = state;  break;
                 case EState.Sushi:
                     sushi.Enable(); this.state = state; break;
+                case EState.UnderWater:
+                    underWater.Enable(); this.state = state; break;
             }
         }
     }

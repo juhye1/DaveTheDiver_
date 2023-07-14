@@ -29,7 +29,6 @@ public class InfoUI : MonoBehaviour
     }
     public void InfoOn()
     {
-        sequence.Play();
     }
 
 
@@ -40,6 +39,8 @@ public class InfoUI : MonoBehaviour
         Rank.text = $"Rank<b><color=#487690><size=30>{rank}";
         Weight.text = $"{weight} <color=#487690>kg";
         Star.StarOn(star);
+
+        sequence.Play();
     }
 
 
@@ -50,7 +51,7 @@ public class InfoUI : MonoBehaviour
 
     private void Effect()
     {
-        sequence = DOTween.Sequence().Pause();
+        sequence = DOTween.Sequence().Pause().SetDelay(2);
         sequence.Append(transform.DOLocalMoveX(-180, 0.5f).SetEase(Ease.InQuart))
                 .AppendInterval(1)
                 .Append(transform.DOLocalMoveX(home.x, 0.5f).SetEase(Ease.InQuart));

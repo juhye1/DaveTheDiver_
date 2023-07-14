@@ -41,6 +41,7 @@ public class Player_Underwater : PlayerInteraction
 
     private void Start()
     {
+        state = EState.UnderWater;
         AddDirection();
     }
     private void AddDirection()
@@ -179,6 +180,22 @@ public class Player_Underwater : PlayerInteraction
         PressLeftButton = context.ReadValue<float>() > 0.1f;
     }
 
+    public void OnESC(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            switch(state)
+            {
+                case EState.UnderWater:
+                    UIManager.Instance.PaueUIOn(true);
+                    break;
+                case EState.UI:
+                    UIManager.Instance.PaueUIOn(false);
+                    break;
+            }
+            //여기서 액션맵 바꾸고 UI 띄우기
+        }
+    }
     public void OnDash(InputAction.CallbackContext context)
     {
         //나중에 산소 UI랑 파티클 넣기

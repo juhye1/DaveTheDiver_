@@ -3,44 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIInput : MonoBehaviour
+public abstract class UIInput : MonoBehaviour
 {
+    protected RectTransform[] transforms;
+    [SerializeField] protected RectTransform select;
+    protected Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
 
-
-    private RectTransform[] transforms;
-    [SerializeField] private RectTransform select;
-    private Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
-    private int num;
     private void Awake()
     {
-        num = 1;
-        transforms = GetComponentsInChildren<RectTransform>();
         AddDirection();
 
     }
-    public void Inventory(Vector2 dir)
-    {
-        EDirection edir = direction[dir];
-
-        switch (edir)
-        {
-            case EDirection.Up:
-                num -= 8;
-                break;
-            case EDirection.Down:
-                num += 8;
-                break;
-            case EDirection.Right:
-                num++;
-                break;
-            case EDirection.Left:
-                num--;
-                break;
-        }
-
-        num = Mathf.Clamp(num, 1, 32);
-        select.anchoredPosition = transforms[num].anchoredPosition;
-    }
+    public abstract void Inventory(Vector2 dir);
 
     private void AddDirection()
     {

@@ -94,6 +94,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "ESC",
+                    "type": "Button",
+                    "id": "41df20c6-ebf3-4ef5-8917-e6320aebc785",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "PourTea",
                     "type": "Button",
                     "id": "d8d2e2e5-7c32-4350-be42-da4c9ba655ea",
@@ -178,6 +187,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "PourTea",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b5572947-b0b4-48dd-b531-e1fecbc00dca",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "ESC",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -352,6 +372,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ESC",
+                    "type": "Button",
+                    "id": "7c4ab1b5-97f8-4824-ad6e-9fa602ea24fa",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -440,6 +469,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bae3377d-402b-4ad4-9a55-fa04e233196b",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ESC",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

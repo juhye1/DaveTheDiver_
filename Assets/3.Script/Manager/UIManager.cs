@@ -10,24 +10,30 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance = null;
     private Player player;
 
+    [Header("로비")]
     [SerializeField] private GameObject dialogueUI;
     [SerializeField] private GameObject chapterUI;
     [SerializeField] private GameObject mainUI;
     [SerializeField] private Image background;
     [SerializeField] private Image loadScene;
+    [SerializeField] private Slider startSlider;
+
+    [Header("스시집")]
     [SerializeField] private GameObject ScoreUI;
+    [SerializeField] private Transform KettleGoal;
+    [SerializeField] private Transform Kettle;
+    [SerializeField] private Slider throwSlider;
+    [SerializeField] private Slider dashSlider;
+
+    [Header("바다")]
     [SerializeField] private GameObject powerGauge;
     [SerializeField] private InfoUI infoUI;
+    [SerializeField] private PauseUI pauseUI;
+    //[SerializeField] private Camera cam;
 
-    [SerializeField] private Transform Kettle;
-    [SerializeField] private Transform KettleGoal;
 
-    [SerializeField] private Slider dashSlider;
-    [SerializeField] private Slider throwSlider;
-    [SerializeField] private Slider startSlider;
     private Slider _slider;
 
-    [SerializeField] private Camera cam;
 
     private void Awake()
     {
@@ -237,8 +243,9 @@ public class UIManager : MonoBehaviour
         powerGauge.SetActive(isOn);
     }
 
-    public void InfoUIOn()
+    public void PaueUIOn(bool isOn)
     {
-        infoUI.InfoOn();
+        pauseUI.UIOn(isOn);
+        player.SwitchActionMap(isOn, Player.EState.UnderWater);
     }
 }

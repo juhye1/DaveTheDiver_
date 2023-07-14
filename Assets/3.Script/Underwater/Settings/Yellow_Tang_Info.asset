@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa3219a15754c854386ced57e7cf0177, type: 3}
-  m_Name: FishInformation
+  m_Name: Yellow_Tang_Info
   m_EditorClassIdentifier: 
   Name: "\uC610\uB85C\uC6B0\uD0F1"
   Type: 0
