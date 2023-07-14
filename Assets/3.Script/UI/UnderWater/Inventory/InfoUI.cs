@@ -15,9 +15,8 @@ public class InfoUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI Rank;
     [SerializeField] private TextMeshProUGUI Weight;
 
-    private BaseInformation information;
-    private ScriptableObject mm;
-
+    private Information information;
+    private FishInformation dd;
     private Vector2 home = new Vector2(-600, -104);
     private Sequence sequence;
 
@@ -28,26 +27,31 @@ public class InfoUI : MonoBehaviour
         Effect();
 
     }
-
-    private void UpdateUI(BaseInformation info)
+    public void InfoOn()
     {
-        mm = info.Information;
-        switch (info.Type)
+        var dd = InventoryManager.Instance.Load();
+
+        information = InventoryManager.Instance.Load();
+        UpdateUI();
+        sequence.Play();
+    }
+
+
+    private void UpdateUI()
+    {
+        Name.text = information.Name;
+
+        switch (information.Type)
         {
-            case BaseInformation.EType.Fish:
-                info.Information.
+            case InventoryManager.EType.Fish:
+                Face.sprite = information.Face;
+                Rank.text = 
+                //info.Information.
                 break;
         
         
         }
 
-    }
-
-    public void InfoOn()
-    {
-        information = InventoryManager.Instance.Load();
-
-        sequence.Play();
     }
 
 
