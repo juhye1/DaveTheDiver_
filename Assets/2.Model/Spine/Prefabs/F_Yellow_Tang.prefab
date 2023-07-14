@@ -4988,4 +4988,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5986b7a80ccb3894b990c2a37b89e4d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishInfo: {fileID: 11400000, guid: 954c904bca17d8e409a153942233e7b8, type: 2}
+  fishInfo: {fileID: 11400000, guid: 391e1423e9bdd94498e2a320d86a8381, type: 2}

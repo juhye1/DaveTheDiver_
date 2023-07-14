@@ -42,6 +42,7 @@ public class BoidsManager : Singleton<BoidsManager>
                 boidData[i].position = boids[i].position;
                 boidData[i].direction = boids[i].forward;
             }
+            if (numBoids.Equals(0)) return;
 
             var boidBuffer = new ComputeBuffer(numBoids, BoidData.Size);
             boidBuffer.SetData(boidData);

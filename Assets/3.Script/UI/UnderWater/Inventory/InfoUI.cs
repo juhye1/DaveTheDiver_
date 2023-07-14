@@ -16,7 +16,7 @@ public class InfoUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI Weight;
 
     private Information information;
-    private FishInformation dd;
+    private ItemInformation dd;
     private Vector2 home = new Vector2(-600, -104);
     private Sequence sequence;
 
@@ -24,14 +24,9 @@ public class InfoUI : MonoBehaviour
     private void Awake()
     {
         transform.localPosition = home;
-        Effect();
+        //Effect();
 
     }
-    public void InfoOn()
-    {
-    }
-
-
     public void UpdateUI(Sprite face, string name, float weight, string rank="-", int star=0)
     {
         Face.sprite = face;
@@ -40,20 +35,17 @@ public class InfoUI : MonoBehaviour
         Weight.text = $"{weight} <color=#487690>kg";
         Star.StarOn(star);
 
-        sequence.Play();
-    }
-
-
-    private void OnDisable()
-    {
-        transform.localPosition = home;
-    }
-
-    private void Effect()
-    {
-        sequence = DOTween.Sequence().Pause().SetDelay(2);
+        sequence = DOTween.Sequence().SetDelay(1);
         sequence.Append(transform.DOLocalMoveX(-180, 0.5f).SetEase(Ease.InQuart))
                 .AppendInterval(1)
                 .Append(transform.DOLocalMoveX(home.x, 0.5f).SetEase(Ease.InQuart));
     }
+
+/*    private void Effect()
+    {
+        sequence = DOTween.Sequence().Pause().SetDelay(1).SetAutoKill(false);
+        sequence.Append(transform.DOLocalMoveX(-180, 0.5f).SetEase(Ease.InQuart))
+                .AppendInterval(1)
+                .Append(transform.DOLocalMoveX(home.x, 0.5f).SetEase(Ease.InQuart));
+    }*/
 }
