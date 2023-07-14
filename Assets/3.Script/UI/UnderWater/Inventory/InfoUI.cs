@@ -29,29 +29,17 @@ public class InfoUI : MonoBehaviour
     }
     public void InfoOn()
     {
-        var dd = InventoryManager.Instance.Load();
-
-        information = InventoryManager.Instance.Load();
-        UpdateUI();
         sequence.Play();
     }
 
 
-    private void UpdateUI()
+    public void UpdateUI(Sprite face, string name, float weight, string rank="-", int star=0)
     {
-        Name.text = information.Name;
-
-        switch (information.Type)
-        {
-            case InventoryManager.EType.Fish:
-                Face.sprite = information.Face;
-                Rank.text = 
-                //info.Information.
-                break;
-        
-        
-        }
-
+        Face.sprite = face;
+        Name.text = name;
+        Rank.text = $"Rank<b><color=#487690><size=30>{rank}";
+        Weight.text = $"{weight} <color=#487690>kg";
+        Star.StarOn(star);
     }
 
 

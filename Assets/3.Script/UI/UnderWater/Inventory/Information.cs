@@ -2,10 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Information<T> : BaseInformation
+public class Information
 {
-    public override BaseInformation GetInformation()
-    {
-        return this;
-    }
+
 }

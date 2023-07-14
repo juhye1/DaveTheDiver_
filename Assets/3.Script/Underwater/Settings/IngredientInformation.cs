@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class IngredientInformation : Information<IngredientInformation>
+[CreateAssetMenu(fileName = "IngredientInformation", menuName = "ScriptableObject/IngredientInformation")]
+public class IngredientInformation : BaseInformation
 {
-
+    public float Weight;
 }

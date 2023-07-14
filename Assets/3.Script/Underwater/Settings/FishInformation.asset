@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa3219a15754c854386ced57e7cf0177, type: 3}
   m_Name: FishInformation
   m_EditorClassIdentifier: 
-  Name: 
+  Name: "\uC610\uB85C\uC6B0\uD0F1"
   Type: 0
-  Face: {fileID: 0}
-  SushiName: 
-  Weight: 0
-  Rank: 0
-  Raiting: 0
-  Price: 0
-  SushiSprite: {fileID: 0}
+  Face: {fileID: 21300000, guid: 6ca6b48ba4c320f4683036d7768d7f45, type: 3}
+  SushiName: "\uC610\uB85C\uC6B0\uD0F1 \uCD08\uBC25"
+  Weight: 0.4
+  Rank: 1
+  Raiting: 2
+  Price: 1
+  SushiSprite: {fileID: 21300000, guid: e07b75f9e156c3749af55b4f33817ee6, type: 3}

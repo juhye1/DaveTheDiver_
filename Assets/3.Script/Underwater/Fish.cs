@@ -5,7 +5,7 @@ using UnityEngine;
 public class Fish : MonoBehaviour
 {
     private Boid boid;
-    [SerializeField] private Information<FishInformation> fishInfo;
+    [SerializeField] private FishInformation fishInfo;
     
     private void Awake()
     {
@@ -17,7 +17,7 @@ public class Fish : MonoBehaviour
         //군집 알고리즘 떼기
         BoidsManager.Instance.RemoveBoid(boid);
         //인벤 토리 저장
-        InventoryManager.Instance.Save<FishInformation>(fishInfo);
+        InventoryManager.Instance.SaveFish(fishInfo);
 
         transform.SetParent(harpoon);
         transform.localPosition = Vector3.zero;

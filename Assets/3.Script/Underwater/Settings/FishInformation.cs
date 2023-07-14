@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "FishInformation", menuName = "ScriptableObject/FishInformation")]
-public class FishInformation : Information<FishInformation>
+public class FishInformation : BaseInformation
 {
     [Header("Name")]
     public string SushiName;

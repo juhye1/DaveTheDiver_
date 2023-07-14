@@ -37,9 +37,38 @@ public class InventoryManager : Singleton<InventoryManager>
         FishDictionary = new Dictionary<string, FishInformation>();
         Ingredient = new Dictionary<string, IngredientInformation>();
     }
-    public void Save<T>(T information) where T : IngredientInformation
+
+    //저장하는건 다 바다에서만
+    //불러오는건 바다, 로비, 스시집 다
+    //아 그냥 여기서 UI를 불러오고싶은데???? 미래를 버릴까,,,,,,,,?
+    public void SaveFish(FishInformation information)
     {
-/*        information = 
+        InfoUI infoUI = FindObjectOfType<InfoUI>();
+        infoUI.UpdateUI(information.Face, information.Name, information.Weight,
+                        information.Rank.ToString(), information.Raiting);
+        FishDictionary.Add(information.Name, information);
+    }
+
+    public void SaveIngredient(IngredientInformation information)
+    {
+        InfoUI infoUI = FindObjectOfType<InfoUI>();
+        infoUI.UpdateUI(information.Face, information.Name, information.Weight);
+        Ingredient.Add(information.Name, information);
+    }
+
+    public void Load<T>()
+    {
+        //멀리턴할건데?
+    }
+
+
+
+
+
+
+/*    public void Save<T>(T information) where T : Information<T>
+    {
+*//*        information = 
         T info = information;*//*
         switch (information.Type)
         {
@@ -51,41 +80,22 @@ public class InventoryManager : Singleton<InventoryManager>
                 break;
         }
 
-        Information = information;*/
+        Information = information;*//*
 
         UpdateInventory();
-    }
+    }*/
 
-    public void Save<T>(T information) where T : FishInformation
+/*    public void UpdateInventory()
     {
-        /*        information = 
-                T info = information;*/
-        switch (information.Type)
-        {
-            case EType.Fish:
-                //FishDictionary.Add(information.Name, information.GetInformation());
-                break;
-            case EType.Item:
-                Ingredient.Add(information.Name, );
-                break;
-        }
-
-        Information = information;
-
-        UpdateInventory();
-    }
-
-    public void UpdateInventory()
-    {
-/*
+*//*
         InventoryDictionary[EType.Fish] = FishDictionary;
-        InventoryDictionary[EType.Item] = Ingredient;*/
+        InventoryDictionary[EType.Item] = Ingredient;*//*
 
-    }
+    }*/
 
-    public BaseInformation Load()
+/*    public BaseInformation Load()
     {
         return Information;
-    }
+    }*/
 
 }

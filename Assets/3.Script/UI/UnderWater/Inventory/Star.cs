@@ -17,8 +17,16 @@ public class Star : MonoBehaviour
 
     public void StarOn(int star)
     {
-        ResetStar();
+        if(star == 0)
+        {
+            foreach(Image img in stars)
+            {
+                img.enabled = false;
+            }
+            return;
+        }
         
+        ResetStar();
         for (int i = 0; i < star; i++)
         {
             stars[i].sprite = OnStar;
@@ -29,6 +37,7 @@ public class Star : MonoBehaviour
     {
         for (int i = 0; i < stars.Length; i++)
         {
+            stars[i].enabled = true;
             stars[i].sprite = OffStar;
         }
     }
