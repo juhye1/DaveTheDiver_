@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player_Lobby : PlayerInteraction
 {
@@ -12,8 +13,10 @@ public class Player_Lobby : PlayerInteraction
     public void Ready()
     {
         animator.SetBool(isReady, true);
-        SwitchActionMap(true, EState.UI);
+        ActionMapDisable();
     }
+
+
     //애니메이터
     public void GoToUnderWater()
     {
@@ -30,10 +33,6 @@ public class Player_Lobby : PlayerInteraction
                 Space(pressKey);
                 break;
             case EState.UI:
-                break;
-            case EState.Sushi:
-                Move();
-                Space(pressKey);
                 break;
         }
     }

@@ -85,11 +85,13 @@ public class Player : MonoBehaviour
             animator.SetBool(isMove, true);
             if (cachedMove.x < 0)
             {
-                spriteRenderer.flipX = true;
+                bool flip = state == EState.Lobby ? true : false;
+                spriteRenderer.flipX = flip;
             }
             else if (cachedMove.x > 0)
             {
-                spriteRenderer.flipX = false ;
+                bool flip = state == EState.Lobby ? false : true;
+                spriteRenderer.flipX = flip ;
             }
         }
         else
@@ -150,24 +152,8 @@ public class Player : MonoBehaviour
     #endregion
 
 
-/*    private void FixedUpdate()
-    {
-        switch(state)
-        {
-            case EState.Ground:
-                Move();
-                Space(pressKey);
-                break;
-            case EState.UI:
-                break;
-            case EState.Sushi:
-                Move();
-                Space(pressKey);
-                break;
-        }
-    }*/
-
-    public void SwitchActionMap(bool isOn, EState state)
+    //UI로만 바꾸는듯?
+    public void SwitchActionMapUI(bool isOn, EState state)
     {
         if (isOn)
         {
@@ -186,25 +172,33 @@ public class Player : MonoBehaviour
                     sushi.Enable(); this.state = state; break;
                 case EState.UnderWater:
                     underWater.Enable(); this.state = state; break;
+                    
             }
         }
     }
 
-    public void LoadScene(ELoadScene scene)
+    public void ActionMapDisable()
     {
-        ELoadScene sceneType = scene;
-        switch(scene)
+        playerInput.currentActionMap.Disable();
+        state = EState.Load;
+        Debug.Log("정지");
+    }
+
+    public void ActionMapEnable(EState state)
+    {
+        playerInput.currentActionMap.Disable();
+
+        switch (state)
         {
-            case ELoadScene.UnderWater:
-                state = EState.Load;
-                animator.SetTrigger(isReady);
-                break;
-            case ELoadScene.Sushi:
-                state = EState.Load;
-                animator.SetTrigger(isReady);
-                Debug.Log("스시집");
-                break;
+            case EState.Lobby:
+                lobby.Enable(); this.state = state; break;
+            case EState.Sushi:
+                sushi.Enable(); this.state = state; break;
+            case EState.UnderWater:
+                underWater.Enable(); this.state = state; break;
+
         }
+
     }
 
 }

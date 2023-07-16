@@ -15,20 +15,19 @@ public class InputKeyUI : MonoBehaviour
     [SerializeField] private Image keyImage;
     [SerializeField] private GameObject InputGO;
     [SerializeField] private EState State;
+    private Slider slider;
 
     private Player_Lobby LobbyPlayer;
-    private PlayerInteraction playerInteraction;
     private Object_DiveTrigger diveTrigger;
+
+    private PlayerInteraction playerInteraction;
     private Vector3 screenPosition;
-    private Slider slider;
     private bool isOn => playerInteraction.Interaction();
     private void Awake()
     {
         background.enabled = false;
         slider = GetComponentInChildren<Slider>();
-        diveTrigger = FindObjectOfType<Object_DiveTrigger>();
-        playerInteraction = FindObjectOfType<PlayerInteraction>();
-        LobbyPlayer = FindObjectOfType<Player_Lobby>();
+        CheckScene();
     }
 
     private void Update()
@@ -74,6 +73,23 @@ public class InputKeyUI : MonoBehaviour
     public void OnBG(bool isOn)
     {
         background.enabled = isOn;
+    }
+
+    private void CheckScene()
+    {
+        playerInteraction = FindObjectOfType<PlayerInteraction>();
+        switch (State)
+        {
+            case EState.Lobby:
+                diveTrigger = FindObjectOfType<Object_DiveTrigger>();
+                LobbyPlayer = FindObjectOfType<Player_Lobby>();
+                break;
+            case EState.Sushi:
+                break;
+            case EState.UnderWater:
+                break;
+        }
+
     }
 
 }

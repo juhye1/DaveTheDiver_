@@ -74,14 +74,14 @@ public class UIManager : MonoBehaviour
     #region Lobby
     public void TalkStart(bool isOn)
     {
-        player.SwitchActionMap(isOn, Player.EState.Lobby);
+        player.SwitchActionMapUI(isOn, Player.EState.Lobby);
         dialogueUI.SetActive(isOn);
         mainUI.SetActive(!isOn);
     }
 
     public void InteractionUI(bool isOn, GameObject ui)
     {
-        player.SwitchActionMap(isOn, Player.EState.Lobby);
+        player.SwitchActionMapUI(isOn, Player.EState.Lobby);
         background.enabled = isOn;
         mainUI.SetActive(!isOn);
         if(isOn)
@@ -113,7 +113,7 @@ public class UIManager : MonoBehaviour
     }
     public void SushiUI(bool isOn, GameObject[] ui)
     {
-        player.SwitchActionMap(isOn, Player.EState.Sushi);
+        player.SwitchActionMapUI(isOn, Player.EState.Sushi);
         background.enabled = isOn;
         CanvasGroup group = ScoreUI.GetComponent<CanvasGroup>();
         group.alpha = 0;
@@ -257,6 +257,6 @@ public class UIManager : MonoBehaviour
     public void PaueUIOn(bool isOn)
     {
         pauseUI.UIOn(isOn);
-        player.SwitchActionMap(isOn, Player.EState.UnderWater);
+        player.SwitchActionMapUI(isOn, Player.EState.UnderWater);
     }
 }

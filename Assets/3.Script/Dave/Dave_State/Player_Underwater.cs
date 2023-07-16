@@ -41,6 +41,7 @@ public class Player_Underwater : PlayerInteraction
 
     private void Start()
     {
+        SwitchActionMapUI(false, EState.UnderWater);
         state = EState.UnderWater;
         AddDirection();
     }

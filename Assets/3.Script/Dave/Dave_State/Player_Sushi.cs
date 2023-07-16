@@ -16,9 +16,10 @@ public class Player_Sushi : PlayerInteraction
     private void Start()
     {
         state = EState.Sushi;
-        lobby.Disable();
-        sushi.Enable();
+        ActionMapEnable(EState.Sushi);
     }
+
+
 
     public void OnThrowAway(InputAction.CallbackContext context)
     {
@@ -116,14 +117,9 @@ public class Player_Sushi : PlayerInteraction
     {
         switch (state)
         {
-            case EState.Lobby:
-                Move();
-                Space(pressKey);
-                break;
             case EState.UI:
-                if(interaction.InteractionType.
-                    Equals(BaseInteraction.EInteractionType.Tick))
-                {PourTea(pour);}
+                if(interaction.InteractionType.Equals(BaseInteraction.EInteractionType.Tick))
+                PourTea(pour);
                 break;
 
             case EState.Sushi:
