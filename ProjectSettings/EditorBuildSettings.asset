@@ -11,5 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1.Scene/Scenes/LoadingScene.unity
     guid: c8b9efcf614fdce42b13519ecd50f717
+  - enabled: 1
+    path: Assets/1.Scene/Scenes/UnderWaterScene.unity
+    guid: 0311e451dc469d140879dc746ea99d75
+  - enabled: 1
+    path: Assets/1.Scene/Scenes/SushiScene.unity
+    guid: 598a4a882badd2c4fb360ec64342c1ef
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a00fe426fb542cc41848684f2fce67ce, type: 2}

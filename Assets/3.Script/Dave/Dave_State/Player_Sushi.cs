@@ -116,7 +116,7 @@ public class Player_Sushi : PlayerInteraction
     {
         switch (state)
         {
-            case EState.Ground:
+            case EState.Lobby:
                 Move();
                 Space(pressKey);
                 break;
@@ -125,6 +125,7 @@ public class Player_Sushi : PlayerInteraction
                     Equals(BaseInteraction.EInteractionType.Tick))
                 {PourTea(pour);}
                 break;
+
             case EState.Sushi:
                 StartSushi(startKey);
                 Move();

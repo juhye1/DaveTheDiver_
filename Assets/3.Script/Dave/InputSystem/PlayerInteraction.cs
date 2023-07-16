@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerInteraction : Player
 {
+    private BaseInteraction movePointinteraction;
     public bool Interaction()
     {
         if (state.Equals(EState.UI))
@@ -24,9 +25,11 @@ public class PlayerInteraction : Player
 
     }
 
+
+
     public bool MovePoint(BaseInteraction baseInteraction)
     {
-        if (!state.Equals(EState.Ground))
+        if (!state.Equals(EState.Lobby))
             return false;
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, settings.DetectRange, settings.MovePointMask);
@@ -44,10 +47,5 @@ public class PlayerInteraction : Player
             movePointinteraction = null;
         }
         return false;
-    }
-
-    public void GotoLoadingScene()
-    {
-        UIManager.Instance.GotoLoadingScene();
     }
 }

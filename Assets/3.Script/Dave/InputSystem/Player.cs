@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     //원래 이속 0.5 대쉬 0.7
     public enum EState
     {
-        Ground,
+        Lobby,
         UnderWater,
         Sushi,
         UI,
@@ -31,6 +31,9 @@ public class Player : MonoBehaviour
     [HideInInspector]
     public Vector3 Point { get;protected set; }
     protected bool pressKey = false;
+    public bool PressKey => pressKey;
+
+
     protected bool dash = false;
     protected float speed;
     protected bool tired = false;
@@ -38,7 +41,7 @@ public class Player : MonoBehaviour
     protected PlayerInput playerInput;
     protected Animator animator;
     protected BaseInteraction interaction;
-    protected BaseInteraction movePointinteraction;
+
 
     protected readonly int isMove = Animator.StringToHash("isMove");
     protected readonly int isReady = Animator.StringToHash("isReady");
@@ -75,48 +78,24 @@ public class Player : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         cachedMove = context.ReadValue<Vector2>();
+        // 로비, 스시집
 
-            animator.SetFloat("MoveX", cachedMove.x);
-            animator.SetFloat("MoveY", cachedMove.y);
-        //animator.SetFloat("MoveX", cachedMove.x);
-        //animator.SetFloat("MoveY", cachedMove.y);
-
-        //바다
-
-        if (cachedMove.x < 0)
+        if (cachedMove.x != 0)
         {
-            //spriteRenderer.flipX = true;
-            //transform.localScale = left;
+            animator.SetBool(isMove, true);
+            if (cachedMove.x < 0)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if (cachedMove.x > 0)
+            {
+                spriteRenderer.flipX = false ;
+            }
         }
-        else if (cachedMove.x > 0)
+        else
         {
-            //spriteRenderer.flipX = false;
-            //transform.localScale = Vector2.one;
+            animator.SetBool(isMove, false);
         }
-
-
-        //바다
-
-
-        //이건 나머지
-        /*        if (cachedMove.x != 0)
-                {
-                    animator.SetBool(isMove, true);
-                    if (cachedMove.x < 0)
-                    {
-                        spriteRenderer.flipX = false;
-                        //transform.localScale = left;
-                    }
-                    else if (cachedMove.x > 0)
-                    {
-                        spriteRenderer.flipX = true;
-                        //transform.localScale = Vector2.one;
-                    }
-                }
-                else
-                {
-                    animator.SetBool(isMove, false);
-                }*/
     }
 
     public void OnUIMove(InputAction.CallbackContext context)
@@ -134,6 +113,7 @@ public class Player : MonoBehaviour
 
     public void OnSpace(InputAction.CallbackContext context)
     {
+        //한번 누르는건 여기서 하면되고
         pressKey = context.ReadValue<float>() > 0.1f;
         if (!context.started)
             return;
@@ -144,11 +124,9 @@ public class Player : MonoBehaviour
             }
     }
 
-    //이거 나중에 스시집으로 옮기자
-
-
     protected void Space(bool pressKey)
     {
+        //얘는 넘어가는거만 하면 되자너
         if(pressKey&&interaction!=null)
         {
             if(interaction.CanPerform())
@@ -162,54 +140,11 @@ public class Player : MonoBehaviour
     //움직이는거 rigidbody로 통일?
     protected void Move()
     {
+        rigid.velocity = cachedMove * speed;
         //Vector3 desiredMovement = cachedMove * transform.right;
         //transform.position += desiredMovement * speed * Time.deltaTime;
 
         //transform.Translate(Vector2.one*0.1f * cachedMove);
-/*        rigid.velocity = cachedMove * 5;
-
-        if(cachedMove!=Vector2.zero&&cachedMove!=Vector2.down&&
-            cachedMove!=Vector2.left&& cachedMove != Vector2.right&&cachedMove!=Vector2.up)
-        {
-            //대각선일때
-            blend = Mathf.Lerp(blend, 0.5f, Time.deltaTime);
-            animator.SetFloat("Blend", blend);
-        }
-        else
-        {
-            blend = 0;
-            //blend = Mathf.Lerp(blend, 0, Time.deltaTime);
-            animator.SetFloat("Blend", blend);
-        }*/
-/*
-        if(cachedMove!=Vector2.zero)
-        {
-            blend = Mathf.Lerp(blend, 1, 10 * Time.deltaTime);
-            //우측 위로 올라가는 대각선 움직임
-            if(cachedMove.x>0&&cachedMove.y>0)
-            {
-                animator.SetFloat("BlendRight", blend);
-                animator.SetFloat("Blend", 1);
-
-            }
-            else
-            {
-                animator.SetFloat("Blend", 0);
-                animator.SetFloat("BlendLeft", blend);
-
-            }
-        }
-        else
-        {
-            blend = 0;
-            //blend = Mathf.Lerp(blend, 0, 10 * Time.deltaTime);
-            animator.SetFloat("Blend", 2);
-            animator.SetFloat("BlendLeft", 0);
-            animator.SetFloat("BlendRight", 0);
-
-        }*/
-
-        
     }
 
     #endregion
@@ -245,7 +180,7 @@ public class Player : MonoBehaviour
             ui.Disable();
             switch(state)
             {
-                case EState.Ground:
+                case EState.Lobby:
                     lobby.Enable(); this.state = state;  break;
                 case EState.Sushi:
                     sushi.Enable(); this.state = state; break;

@@ -7,8 +7,16 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+
+    public enum EState
+    {
+        Lobby,
+        Sushi,
+        UnderWater
+    }
     public static UIManager Instance = null;
     private Player player;
+    [SerializeField] private EState UIState;
 
     [Header("·Îºñ")]
     [SerializeField] private GameObject dialogueUI;
@@ -48,7 +56,16 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         mainUI.SetActive(true);
-        powerGauge.SetActive(false);
+        switch(UIState)
+        {
+            case EState.Lobby:
+                break;
+            case EState.Sushi:
+                break;
+            case EState.UnderWater:
+                powerGauge.SetActive(false);
+                break;
+        }
 /*        dialogueUI.SetActive(false);
         chapterUI.SetActive(false);*/
     }
@@ -57,9 +74,26 @@ public class UIManager : MonoBehaviour
     #region Lobby
     public void TalkStart(bool isOn)
     {
-        player.SwitchActionMap(isOn, Player.EState.Ground);
+        player.SwitchActionMap(isOn, Player.EState.Lobby);
         dialogueUI.SetActive(isOn);
         mainUI.SetActive(!isOn);
+    }
+
+    public void InteractionUI(bool isOn, GameObject ui)
+    {
+        player.SwitchActionMap(isOn, Player.EState.Lobby);
+        background.enabled = isOn;
+        mainUI.SetActive(!isOn);
+        if(isOn)
+        {
+            ui.SetActive(isOn);
+            ui.transform.localPosition = new Vector2(0, -1000);
+            ui.transform.DOLocalMoveY(72, 1).SetEase(Ease.OutBounce); 
+        }
+        else
+        {
+            ui.transform.DOLocalMoveY(-1000, 0.5f).OnComplete(() => ui.SetActive(false));
+        }
     }
 
     public void ScoreOn()
@@ -77,29 +111,6 @@ public class UIManager : MonoBehaviour
 
 
     }
-    public void GotoLoadingScene()
-    {
-        loadScene.enabled = true;
-        loadScene.DOFade(1, 3).OnComplete(()=>SceneManager.LoadScene("LoadingScene"));
-    }
-
-    public void InteractionUI(bool isOn, GameObject ui)
-    {
-        player.SwitchActionMap(isOn, Player.EState.Ground);
-        background.enabled = isOn;
-        mainUI.SetActive(!isOn);
-        if(isOn)
-        {
-            ui.SetActive(isOn);
-            ui.transform.localPosition = new Vector2(0, -1000);
-            ui.transform.DOLocalMoveY(72, 1).SetEase(Ease.OutBounce); 
-        }
-        else
-        {
-            ui.transform.DOLocalMoveY(-1000, 0.5f).OnComplete(() => ui.SetActive(false));
-        }
-    }
-
     public void SushiUI(bool isOn, GameObject[] ui)
     {
         player.SwitchActionMap(isOn, Player.EState.Sushi);

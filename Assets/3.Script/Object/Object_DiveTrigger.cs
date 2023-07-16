@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Object_DiveTrigger : BaseObject
 {
+    public bool isDiveTrigger => on;
+
 
     public override void Interaction()
     {
@@ -11,15 +13,10 @@ public class Object_DiveTrigger : BaseObject
         {
             inputKeyUI = FindObjectOfType<InputKeyUI>();
         }
-        if(inputKeyUI.FillSlider())
-        {
-            player.LoadScene(ELoadScene.UnderWater);
-            CanPerform = !CanPerform;
-        }
     }
 
     private void Update()
     {
-        interactionUI.SetActive(on);
+        movePointUI.OnDiveUI(on);
     }
 }

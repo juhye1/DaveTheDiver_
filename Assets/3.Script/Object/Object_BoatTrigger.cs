@@ -6,18 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class Object_BoatTrigger : BaseObject
 {
-    private SpriteRenderer spriteRenderer;
-    private Transform spriteTransform;
-    private Color color;
-    private Color defaultColor;
+    public enum EState
+    {
+        Off, On
+    }
+
+    [SerializeField] private Transform Point;
+    [SerializeField] private Transform newPoint;
+
+    private Vector3 point;
+    private Vector3 newpoint;
+    private EState state;
 
     private void Start()
     {
-        spriteTransform = GetComponent<Transform>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        defaultColor = spriteRenderer.color;
-        color = spriteRenderer.color;
-        color.a = 1;
+        state = EState.Off;
+        point = Point.position;
+        newpoint = newPoint.position;
+        CanPerform = !CanPerform;
+
 
     }
     public override void Interaction()
@@ -26,30 +33,31 @@ public class Object_BoatTrigger : BaseObject
         {
             inputKeyUI = FindObjectOfType<InputKeyUI>();
         }
-        if (inputKeyUI.FillSlider())
+        //isOn = !isOn;
+
+        switch(state)
         {
-            player.LoadScene(ELoadScene.Sushi);
-            CanPerform = !CanPerform;
+            case EState.Off:
+                movePointUI.OnSushiUI();
+                Point.position = newpoint;
+                state = EState.On;
+                break;
+            case EState.On:
+                GameManager.Instance.LoadScene(GameManager.EScene.Sushi);
+                //여기서 ESC 누르면 OFF로 가야되고
+                //한 번 더 누르면 씬 넘기기
+                Debug.Log("씬넘겨용");
+                break;
+
+
+
         }
     }
 
     private void Update()
     {
-        UIOn(on);
+        movePointUI.OnBoatUI(on);
+        //UIOn(on);
     }
 
-    private void UIOn(bool on)
-    {
-        if (on)
-        {
-            spriteRenderer.color = color;
-            spriteTransform.localScale = Vector2.one * 1.2f;
-        }
-        else
-        {
-            spriteRenderer.color = defaultColor;
-            spriteTransform.localScale = Vector2.one;
-
-        }
-    }
 }

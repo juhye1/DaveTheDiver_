@@ -7,6 +7,8 @@ public class BaseObject : MonoBehaviour
 {
     public bool CanPerform { get; protected set; } = true;
     [SerializeField] protected GameObject interactionUI;
+
+    protected MovePointUI movePointUI;
     protected InputKeyUI inputKeyUI;
     protected PlayerInteraction player;
     protected BaseInteraction interaction;
@@ -14,10 +16,11 @@ public class BaseObject : MonoBehaviour
 
     private void Awake()
     {
+        movePointUI = FindObjectOfType<MovePointUI>();
         interaction = GetComponent<BaseInteraction>();
         player = FindObjectOfType<PlayerInteraction>();
     }
-    private bool isOn { get; set; } = false;
+    protected bool isOn { get; set; } = false;
 
     public virtual void Interaction()
     {
