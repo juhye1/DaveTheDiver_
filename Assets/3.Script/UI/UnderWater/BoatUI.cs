@@ -51,7 +51,7 @@ public class BoatUI : UIInput
         sequence = DOTween.Sequence().Pause();
         sequence.Append(Background.DOFade(0.3f, 1))
             .Append(BoatGO.DOLocalMoveY(-200, 1).SetEase(Ease.OutBounce))
-            .Append(ExitGO.DOLocalMoveY(-320, 1).SetEase(Ease.OutBounce));
+            .Append(ExitGO.DOLocalMoveY(-320, 0.5f).SetEase(Ease.OutBounce));
         hideVector = new Vector2(0, -600);
 
         UIList = new List<GameObject>();
