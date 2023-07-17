@@ -18,6 +18,7 @@ public class InfoUI : MonoBehaviour
     private Information information;
     private ItemInformation dd;
     private Vector2 home = new Vector2(-600, -104);
+    private Vector2 goal = new Vector2(-180, -104);
     private Sequence sequence;
 
 
@@ -36,7 +37,7 @@ public class InfoUI : MonoBehaviour
         Star.StarOn(star);
 
         sequence = DOTween.Sequence().SetDelay(1);
-        sequence.Append(transform.DOLocalMoveX(-180, 0.5f).SetEase(Ease.InQuart))
+        sequence.Append(transform.DOLocalMoveX(goal.x, 0.5f).SetEase(Ease.InQuart))
                 .AppendInterval(1)
                 .Append(transform.DOLocalMoveX(home.x, 0.5f).SetEase(Ease.InQuart));
     }
