@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
 public class BaseObject : MonoBehaviour
 {
     public bool CanPerform { get; protected set; } = true;

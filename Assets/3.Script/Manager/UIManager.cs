@@ -38,6 +38,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private InfoUI infoUI;
     [SerializeField] private PauseUI pauseUI;
     [SerializeField] private BoatUI boatUI;
+    [SerializeField] private InputKeyUI inputKeyUI;
+
     //[SerializeField] private Camera cam;
 
 
@@ -80,9 +82,9 @@ public class UIManager : MonoBehaviour
         mainUI.SetActive(!isOn);
     }
 
-    public void InteractionUI(bool isOn, GameObject ui)
+    public void InteractionUI(bool isOn, GameObject ui, Player.EState state=Player.EState.Lobby)
     {
-        player.SwitchActionMapUI(isOn, Player.EState.Lobby);
+        player.SwitchActionMapUI(isOn, state);
         background.enabled = isOn;
         mainUI.SetActive(!isOn);
         if(isOn)
@@ -267,5 +269,10 @@ public class UIManager : MonoBehaviour
         player.InputUI = boatUI;
         player.SwitchActionMapUI(true, Player.EState.UnderWater);
         boatUI.BoatUIOn();
+    }
+
+    public void InputKeyDisable()
+    {
+
     }
 }

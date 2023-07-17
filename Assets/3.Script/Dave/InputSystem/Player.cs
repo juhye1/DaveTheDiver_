@@ -105,13 +105,13 @@ public class Player : MonoBehaviour
     {
         if (!context.started)
             return;
-
-        if (uiInput==null)
-        {
-            uiInput = FindObjectOfType<UIInput>();
-        }
         cachedMove = context.ReadValue<Vector2>();
-        InputUI.MoveUI(cachedMove);
+
+        if (InputUI != null)
+        {
+            InputUI.MoveUI(cachedMove);
+
+        }
     }
 
     public void OnSpace(InputAction.CallbackContext context)
@@ -121,10 +121,10 @@ public class Player : MonoBehaviour
         if (!context.started)
             return;
 
-            if (interaction != null)
-            {
-                interaction.Perform();
-            }
+        if (interaction != null)
+        {
+            interaction.Perform();
+        }
     }
 
     protected void Space(bool pressKey)

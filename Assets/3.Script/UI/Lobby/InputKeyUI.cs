@@ -19,6 +19,7 @@ public class InputKeyUI : MonoBehaviour
 
     private Player_Lobby LobbyPlayer;
     private Object_DiveTrigger diveTrigger;
+    private BoatUI waterToBoat;
 
     private PlayerInteraction playerInteraction;
     private Vector3 screenPosition;
@@ -34,11 +35,23 @@ public class InputKeyUI : MonoBehaviour
     {
         if (isOn)
         {
-            screenPosition = Camera.main.WorldToScreenPoint(playerInteraction.Point);
-            transform.position = screenPosition;
-            keyImage.enabled = true;
-
-            FillSlider(playerInteraction.PressKey && diveTrigger.isDiveTrigger);
+            switch (State)
+            {
+                case EState.Lobby:
+                    keyImage.enabled = true;
+                    FillSlider(playerInteraction.PressKey && diveTrigger.isDiveTrigger);
+                    screenPosition = Camera.main.WorldToScreenPoint(playerInteraction.Point);
+                    transform.position = screenPosition;
+                    break;
+                case EState.UnderWater:
+                    screenPosition = playerInteraction.Point;
+                    transform.position = screenPosition;
+                    if(waterToBoat.InputKeyUIOn)
+                    {
+                        keyImage.enabled = true;
+                    }
+                    break;
+            }
         }
         else
         {
@@ -87,6 +100,7 @@ public class InputKeyUI : MonoBehaviour
             case EState.Sushi:
                 break;
             case EState.UnderWater:
+                waterToBoat = FindObjectOfType<BoatUI>();
                 break;
         }
 

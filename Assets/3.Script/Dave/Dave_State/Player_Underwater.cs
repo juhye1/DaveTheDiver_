@@ -265,8 +265,8 @@ public class Player_Underwater : PlayerInteraction
         if (press)
         {
             MousePosition = Mouse.current.position.ReadValue();
-            Vector3 dd = Camera.main.WorldToScreenPoint(transform.position);
-            if (MousePosition.x < dd.x)
+            //Vector3 dd = Camera.main.WorldToScreenPoint(transform.position);
+            if (MousePosition.x < 700)
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
             }

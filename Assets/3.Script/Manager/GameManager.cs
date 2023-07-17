@@ -5,7 +5,7 @@ using DG.Tweening;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameManager : Singleton<GameManager>
+public class GameManager : DontDestroySingleton<GameManager>
 {
 
     [SerializeField] private Image loadScene;
@@ -15,11 +15,6 @@ public class GameManager : Singleton<GameManager>
     public enum EScene
     { 
         Loading, Lobby, UnderWater, Sushi
-    }
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-
     }
 
     public void LoadScene(EScene scene)
