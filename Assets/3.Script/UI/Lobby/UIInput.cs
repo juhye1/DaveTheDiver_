@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public abstract class UIInput : MonoBehaviour
 {
-    protected RectTransform[] transforms;
+    [SerializeField] protected RectTransform[] transforms;
     [SerializeField] protected RectTransform select;
     protected Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
 
@@ -14,7 +14,7 @@ public abstract class UIInput : MonoBehaviour
         AddDirection();
 
     }
-    public abstract void Inventory(Vector2 dir);
+    public abstract void MoveUI(Vector2 dir);
 
     private void AddDirection()
     {

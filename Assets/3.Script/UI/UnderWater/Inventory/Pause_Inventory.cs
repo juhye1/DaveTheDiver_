@@ -47,7 +47,7 @@ public class Pause_Inventory : UIInput
         //가까운것중에 해당 방향에 있는걸로 이동
         var dd = InventoryList.OrderBy(n => Vector2.Distance(select.position, n.position)).ToList();
     }
-    public override void Inventory(Vector2 dir)
+    public override void MoveUI(Vector2 dir)
     {
 
 

@@ -265,7 +265,8 @@ public class Player_Underwater : PlayerInteraction
         if (press)
         {
             MousePosition = Mouse.current.position.ReadValue();
-            if (MousePosition.x < 700)
+            Vector3 dd = Camera.main.WorldToScreenPoint(transform.position);
+            if (MousePosition.x < dd.x)
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
             }
@@ -282,14 +283,25 @@ public class Player_Underwater : PlayerInteraction
 
     private void FixedUpdate()
     {
-        switch(actionState)
+        if (state.Equals(EState.UnderWater))
         {
-            case EActionState.Attack:
-                break;
-            case EActionState.Underwater:
-                UnderwaterMove();
-                break;
+            switch (actionState)
+            {
+                case EActionState.Attack:
+                    break;
+                case EActionState.Underwater:
+                    UnderwaterMove();
+                    break;
 
+            }
         }
+        else
+        //UI
+        {
+            rigid.bodyType = RigidbodyType2D.Kinematic;
+            rigid.velocity = Vector2.zero;
+            transform.localRotation = Quaternion.identity;
+        }
+
     }
 }

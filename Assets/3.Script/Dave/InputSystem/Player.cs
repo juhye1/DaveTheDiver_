@@ -23,7 +23,6 @@ public class Player : MonoBehaviour
     }
 
 
-
     [SerializeField] protected PlayerSettings settings;
     public Transform UIPosition;
 
@@ -41,6 +40,8 @@ public class Player : MonoBehaviour
     protected PlayerInput playerInput;
     protected Animator animator;
     protected BaseInteraction interaction;
+
+    public UIInput InputUI;
 
 
     protected readonly int isMove = Animator.StringToHash("isMove");
@@ -110,7 +111,7 @@ public class Player : MonoBehaviour
             uiInput = FindObjectOfType<UIInput>();
         }
         cachedMove = context.ReadValue<Vector2>();
-        uiInput.Inventory(cachedMove);
+        InputUI.MoveUI(cachedMove);
     }
 
     public void OnSpace(InputAction.CallbackContext context)

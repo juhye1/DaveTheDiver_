@@ -11,7 +11,7 @@ public class DiverBox_Inventory : UIInput
         transforms = GetComponentsInChildren<RectTransform>();
 
     }
-    public override void Inventory(Vector2 dir)
+    public override void MoveUI(Vector2 dir)
     {
         EDirection edir = direction[dir];
 

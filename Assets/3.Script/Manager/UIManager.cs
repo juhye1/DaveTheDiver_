@@ -37,6 +37,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject powerGauge;
     [SerializeField] private InfoUI infoUI;
     [SerializeField] private PauseUI pauseUI;
+    [SerializeField] private BoatUI boatUI;
     //[SerializeField] private Camera cam;
 
 
@@ -256,7 +257,15 @@ public class UIManager : MonoBehaviour
 
     public void PaueUIOn(bool isOn)
     {
+        //player.InputUI = pauseUI;
         pauseUI.UIOn(isOn);
         player.SwitchActionMapUI(isOn, Player.EState.UnderWater);
+    }
+
+    public void BoatUIOn()
+    {
+        player.InputUI = boatUI;
+        player.SwitchActionMapUI(true, Player.EState.UnderWater);
+        boatUI.BoatUIOn();
     }
 }
