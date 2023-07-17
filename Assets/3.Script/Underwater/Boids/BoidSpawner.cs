@@ -19,7 +19,7 @@ public class BoidSpawner : MonoBehaviour
             Vector3 pos = transform.position + Random.insideUnitSphere * spawnRadius;
             Boid boid = Instantiate(prefab);
             boid.transform.SetParent(transform);
-            boid.transform.position = pos;
+            boid.transform.position = new Vector2(pos.x, pos.y);
             boid.transform.right = Random.insideUnitSphere;
 
             //boid.SetColour(colour);

@@ -31,7 +31,6 @@ public class Boid : MonoBehaviour
 
     void Awake()
     {
-        //material = transform.GetComponentInChildren<MeshRenderer>().material;
         cachedTransform = transform;
     }
 
@@ -46,15 +45,6 @@ public class Boid : MonoBehaviour
         float startSpeed = (settings.minSpeed + settings.maxSpeed) / 2;
         velocity = transform.forward * startSpeed;
     }
-
-    public void SetColour(Color col)
-    {
-        if (material != null)
-        {
-            material.color = col;
-        }
-    }
-
     public void UpdateBoid()
     {
         Vector3 acceleration = Vector3.zero;

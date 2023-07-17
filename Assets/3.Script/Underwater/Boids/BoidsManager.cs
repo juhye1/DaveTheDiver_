@@ -6,19 +6,22 @@ public class BoidsManager : Singleton<BoidsManager>
 {
     const int threadGroupSize = 1024;
 
+    private Player_Underwater player;
     public BoidSettings settings;
     public ComputeShader compute;
-    List<Boid> boids;
+    private List<Boid> boids;
     Boid[] boidss;
+    private Transform captain;
 
     void Start()
     {
+        player = FindObjectOfType<Player_Underwater>();
         boids = new List<Boid>();
         boidss = FindObjectsOfType<Boid>();
         foreach (Boid b in boidss)
         {
             boids.Add(b);
-            b.Initialize(settings, null);
+            b.Initialize(settings, player.transform);
         }
 
     }
