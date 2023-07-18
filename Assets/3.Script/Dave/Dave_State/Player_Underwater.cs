@@ -252,9 +252,24 @@ public class Player_Underwater : PlayerInteraction
 
 
         if (currentDirection.Equals(EDirection.Zero))
-        {   
+        {
+
+            switch (eDirections[0])
+
+            {
+                case EDirection.Left:
+                    transform.eulerAngles = new Vector3(0, 180, 0);
+                    break;
+                case EDirection.Right:
+                    transform.eulerAngles = new Vector3(0, 0, 0);
+                    break;
+
+
+            }
             blend = 0;
         }
+
+
         animator.SetFloat("Blend", blend);
 
     }
@@ -265,8 +280,8 @@ public class Player_Underwater : PlayerInteraction
         if (press)
         {
             MousePosition = Mouse.current.position.ReadValue();
-            //Vector3 dd = Camera.main.WorldToScreenPoint(transform.position);
-            if (MousePosition.x < 700)
+            Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+            if (MousePosition.x < pos.x)
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
             }

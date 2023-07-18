@@ -41,6 +41,7 @@ public class Object_BoatTrigger : BaseObject
                 state = EState.On;
                 break;
             case EState.On:
+                inputKeyUI.UIOn(false);
                 GameManager.Instance.LoadScene(GameManager.EScene.Sushi);
                 //여기서 ESC 누르면 OFF로 가야되고
                 //한 번 더 누르면 씬 넘기기

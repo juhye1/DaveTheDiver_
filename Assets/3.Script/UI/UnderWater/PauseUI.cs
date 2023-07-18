@@ -10,7 +10,7 @@ public class PauseUI : MonoBehaviour
     private List<ItemInformation> itemList;
     //재료랑 물고기랑 통일해도될거같기도..
 
-    private void Awake()
+    private void Start()
     {
         foreach(var dd in itemSlot)
         {

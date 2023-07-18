@@ -44,14 +44,14 @@ public class DiveLogUI : MonoBehaviour
 
     public void DiveLogUIOn()
     {
-        DiveLogTransform.DOLocalMoveY(0, 1).SetEase(Ease.OutBounce);
+        DiveLogTransform.DOLocalMoveY(0, 0.7f).SetEase(Ease.OutBounce);
     }
 
     public void FishLogUIOn()
     {
         DiveLogTransform.localPosition = home;
         DiveLogTransform.gameObject.SetActive(false);
-        FishLogTransform.DOLocalMoveY(0, 1).SetEase(Ease.OutBounce).OnComplete(() => inputKeyUI.UIOn(true));
+        FishLogTransform.DOLocalMoveY(0, 0.7f).SetEase(Ease.OutBounce).OnComplete(() => inputKeyUI.UIOn(true));
         
     }
 
