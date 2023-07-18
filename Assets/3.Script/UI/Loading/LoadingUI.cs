@@ -17,6 +17,7 @@ public class LoadingUI : MonoBehaviour
     }
     private void Start()
     {
+        GameManager.Instance.ResetLoadSceneEffect();
         CanvasGroup.DOFade(1, 0.5f).OnComplete(() => StartCoroutine(LoadScene()));
     }
 

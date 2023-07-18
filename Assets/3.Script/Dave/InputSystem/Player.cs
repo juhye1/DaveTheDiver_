@@ -60,6 +60,7 @@ public class Player : MonoBehaviour
 
     private UIInput uiInput;
     protected EState state;
+    public EState State => state;
 
     private void Awake()
     {
@@ -120,6 +121,8 @@ public class Player : MonoBehaviour
         pressKey = context.ReadValue<float>() > 0.1f;
         if (!context.started)
             return;
+
+        Debug.Log(interaction.name);
 
         if (interaction != null)
         {

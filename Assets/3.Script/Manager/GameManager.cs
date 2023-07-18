@@ -43,11 +43,22 @@ public class GameManager : DontDestroySingleton<GameManager>
     private void LoadingScene()
     {
         //로비로 갈땐 로딩씬이 없다
-        string sceneName = scene == EScene.SushiToLobby ? "LobbyScene" : "LoadingScene";
+        string sceneName = scene == EScene.SushiToLobby || scene == EScene.UnderWaterToLobby 
+                                    ? "LobbyScene" : "LoadingScene";
         loadScene.enabled = true;
-        loadScene.DOFade(1, 3).OnComplete(() => SceneManager.LoadScene(sceneName));
+        loadScene.DOFade(1, 2).OnComplete(() => SceneManager.LoadScene(sceneName));
     }
 
+
+
+    //다음씬에서 해주기
+    public void ResetLoadSceneEffect()
+    {
+        Color color = loadScene.color;
+        color.a = 0;
+        loadScene.color = color;
+        loadScene.enabled = false;
+    }
 
     
 }

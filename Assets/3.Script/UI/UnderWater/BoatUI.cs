@@ -20,8 +20,6 @@ public class BoatUI : UIInput
     private Object_WaterToBoat WaterToBoat;
     private List<GameObject> UIList;
 
-    private bool inputKeyUIOn = false;
-    public bool InputKeyUIOn => inputKeyUIOn;
     public EState State => state;
 
     private EState state = EState.GotoBoat;
@@ -33,6 +31,7 @@ public class BoatUI : UIInput
 
     public void BoatUIOn()
     {
+        inputKeyUI.UIOn(false);
         foreach (GameObject go in UIList)
         {
             go.SetActive(true);
@@ -42,6 +41,7 @@ public class BoatUI : UIInput
 
     public override void MoveUI(Vector2 dir)
     {
+
         EDirection edir = direction[dir];
         switch (edir)
         {
@@ -60,8 +60,8 @@ public class BoatUI : UIInput
 
     private void OnCompleteSet()
     {
-        inputKeyUIOn = !inputKeyUIOn;
         select.anchoredPosition = BoatGO.anchoredPosition;
+        inputKeyUI.UIOn(true);
     }
 
     private void ResetUI()

@@ -81,9 +81,15 @@ public class UIManager : MonoBehaviour
         mainUI.SetActive(!isOn);
     }
 
+    public void SetBlur(bool isOn)
+    {
+        UIBlur.enabled = isOn;
+    }
+
     public void DiveLog()
     { 
-        UIBlur.enabled = true;
+        player.SwitchActionMapUI(true, Player.EState.Lobby);
+        SetBlur(true);
         diveLogUI.DiveLogUIOn();
     }
     public void InteractionUI(bool isOn, GameObject ui, Player.EState state=Player.EState.Lobby)
@@ -272,6 +278,7 @@ public class UIManager : MonoBehaviour
     {
         player.InputUI = boatUI;
         player.SwitchActionMapUI(true, Player.EState.UnderWater);
+        inputKeyUI.UIOn(false);
         boatUI.BoatUIOn();
     }
 }

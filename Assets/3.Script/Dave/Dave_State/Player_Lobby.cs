@@ -22,7 +22,10 @@ public class Player_Lobby : PlayerInteraction
     {
         GameManager.Instance.LoadScene(GameManager.EScene.UnderWater);
     }
-
+    private void Update()
+    {
+        Interaction();
+    }
 
     private void FixedUpdate()
     {

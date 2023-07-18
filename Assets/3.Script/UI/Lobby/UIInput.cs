@@ -7,10 +7,12 @@ public abstract class UIInput : MonoBehaviour
 {
     [SerializeField] protected RectTransform[] transforms;
     [SerializeField] protected RectTransform select;
+    protected InputKeyUI inputKeyUI;
     protected Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
 
     private void Awake()
     {
+        inputKeyUI = FindObjectOfType<InputKeyUI>();
         AddDirection();
 
     }

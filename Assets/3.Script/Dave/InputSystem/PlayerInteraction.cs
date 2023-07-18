@@ -7,21 +7,22 @@ public class PlayerInteraction : Player
     private BaseInteraction movePointinteraction;
     public bool Interaction()
     {
-/*        if (state.Equals(EState.UI))
-            return false;
-*/
+        //UI일때도 이거해야해~~~~~~~~~~~
+
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, settings.DetectRange, settings.InteractableMask);
         if (hit.collider != null)
         {
             interaction = hit.transform.GetComponent<BaseInteraction>();
             Point = interaction.Point;
-            return true;
+
+            if (!state.Equals(EState.UI))
+                return true;
         }
         else
         {
             interaction = null;
         }
-        return false;
+            return false;
 
     }
 
@@ -29,14 +30,17 @@ public class PlayerInteraction : Player
 
     public bool MovePoint(BaseInteraction baseInteraction)
     {
-        if (state.Equals(EState.UI))
-            return false;
+
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, settings.DetectRange, settings.MovePointMask);
         if (hit.collider != null)
         {
             movePointinteraction = hit.transform.GetComponent<BaseInteraction>();
             Point = movePointinteraction.Point;
+
+            if (state.Equals(EState.Load) || state.Equals(EState.UI))
+                return false;
+
             if (baseInteraction == movePointinteraction)
             {
                 return true;

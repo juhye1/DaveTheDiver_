@@ -11,6 +11,7 @@ public class InputKeyUI : MonoBehaviour
     }
 
 
+
     [SerializeField] private Image background;
     [SerializeField] private Image keyImage;
     [SerializeField] private GameObject InputGO;
@@ -19,6 +20,7 @@ public class InputKeyUI : MonoBehaviour
 
     private Player_Lobby LobbyPlayer;
     private Object_DiveTrigger diveTrigger;
+    private DiveLogUI diveLogUI;
     private BoatUI waterToBoat;
 
     private PlayerInteraction playerInteraction;
@@ -33,31 +35,39 @@ public class InputKeyUI : MonoBehaviour
 
     private void Update()
     {
-        if (isOn)
+        if (playerInteraction.Point != null)
         {
-            switch (State)
+            screenPosition = playerInteraction.Point;
+        }
+        if (CheckPlayer())
+        {
+            if (isOn)
             {
-                case EState.Lobby:
-                    keyImage.enabled = true;
-                    FillSlider(playerInteraction.PressKey && diveTrigger.isDiveTrigger);
-                    screenPosition = Camera.main.WorldToScreenPoint(playerInteraction.Point);
-                    transform.position = screenPosition;
-                    break;
-                case EState.UnderWater:
-                    screenPosition = playerInteraction.Point;
-                    transform.position = screenPosition;
-                    if(waterToBoat.InputKeyUIOn)
-                    {
-                        keyImage.enabled = true;
-                    }
-                    break;
+                switch (State)
+                {
+                    case EState.Lobby:
+                        FillSlider(playerInteraction.PressKey && diveTrigger.isDiveTrigger);
+                        screenPosition = Camera.main.WorldToScreenPoint(playerInteraction.Point);
+                        transform.position = screenPosition;
+                        break;
+
+
+                    case EState.UnderWater:
+                        screenPosition = playerInteraction.Point;
+                        transform.position = screenPosition;
+                        break;
+                }
             }
         }
         else
         {
-            keyImage.enabled = false;
-
+            if (keyImage.enabled)
+            {
+                transform.position = screenPosition;
+            }
         }
+
+
     }
 
     public bool FillSlider(bool pressKey)
@@ -96,6 +106,7 @@ public class InputKeyUI : MonoBehaviour
             case EState.Lobby:
                 diveTrigger = FindObjectOfType<Object_DiveTrigger>();
                 LobbyPlayer = FindObjectOfType<Player_Lobby>();
+                diveLogUI = FindObjectOfType<DiveLogUI>();
                 break;
             case EState.Sushi:
                 break;
@@ -104,6 +115,18 @@ public class InputKeyUI : MonoBehaviour
                 break;
         }
 
+    }
+
+    public void UIOn(bool on)
+    {
+        keyImage.enabled = on;
+    }
+
+    public bool CheckPlayer()
+    {
+        if (playerInteraction.State.Equals(Player.EState.UI))
+            return false;
+        else return true;
     }
 
 }
