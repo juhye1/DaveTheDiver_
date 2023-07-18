@@ -20,7 +20,7 @@ public class DiveLogUI : MonoBehaviour
 
     [SerializeField] private RectTransform BanchoImage;
     private InputKeyUI inputKeyUI;
-    private Player player;
+    private Player_Lobby player;
     //바다에 있다가 로비로 왔을때만 떠야되고
     //머 잡아왔는지 떠야함
     //뒤에 블러 켜야하고
@@ -29,7 +29,7 @@ public class DiveLogUI : MonoBehaviour
     private void Awake()
     {
         inputKeyUI = FindObjectOfType<InputKeyUI>();
-        player = FindObjectOfType<Player>();
+        player = FindObjectOfType<Player_Lobby>();
         sequence = DOTween.Sequence().Pause();
         sequence.Append(BanchoImage.DOScale(1, 1).SetEase(Ease.InCirc))
                 .AppendInterval(1)
@@ -62,6 +62,7 @@ public class DiveLogUI : MonoBehaviour
         FishLogTransform.gameObject.SetActive(false);
         BanchoImage.gameObject.SetActive(true);
         UIManager.Instance.SetBlur(false);
+        player.ToBancho(true);
         sequence.Play().OnComplete(() => CompleteSet());
     }
 
@@ -69,6 +70,7 @@ public class DiveLogUI : MonoBehaviour
     {
         inputKeyUI.UIOn(true);
         BanchoImage.gameObject.SetActive(false);
+        player.ToBancho(false);
         player.SwitchActionMapUI(false , Player.EState.Lobby);
     }
 

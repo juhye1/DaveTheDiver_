@@ -10,13 +10,13 @@ public class Arrow : MonoBehaviour
     [SerializeField] private RectTransform gauge;
 
     private Player_Underwater player;
-    private Camera mainCamera;
+    [SerializeField] private Camera mainCamera;
     private Vector2 screenPosition;
     private Vector2 playerScreenPosition;
     void Start()
     {
         player = FindObjectOfType<Player_Underwater>();
-        mainCamera = Camera.main;
+        //mainCamera = Camera.main;
     }
 
     void Update()

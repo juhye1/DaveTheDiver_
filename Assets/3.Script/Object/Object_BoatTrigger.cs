@@ -33,8 +33,6 @@ public class Object_BoatTrigger : BaseObject
         {
             inputKeyUI = FindObjectOfType<InputKeyUI>();
         }
-        //isOn = !isOn;
-
         switch(state)
         {
             case EState.Off:

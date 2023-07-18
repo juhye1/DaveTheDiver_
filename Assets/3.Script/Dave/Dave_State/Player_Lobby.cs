@@ -22,6 +22,11 @@ public class Player_Lobby : PlayerInteraction
     {
         GameManager.Instance.LoadScene(GameManager.EScene.UnderWater);
     }
+
+    public void ToBancho(bool bancho)
+    {
+        animator.SetBool("isToBancho", bancho);
+    }
     private void Update()
     {
         Interaction();
