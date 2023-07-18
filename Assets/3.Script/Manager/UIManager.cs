@@ -16,7 +16,9 @@ public class UIManager : MonoBehaviour
     }
     public static UIManager Instance = null;
     private Player player;
+    private Slider _slider;
     [SerializeField] private EState UIState;
+    [SerializeField] private Image UIBlur;
 
     [Header("로비")]
     [SerializeField] private GameObject dialogueUI;
@@ -25,6 +27,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Image background;
     [SerializeField] private Image loadScene;
     [SerializeField] private Slider startSlider;
+    [SerializeField] private DiveLogUI diveLogUI;
 
     [Header("스시집")]
     [SerializeField] private GameObject ScoreUI;
@@ -40,10 +43,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private BoatUI boatUI;
     [SerializeField] private InputKeyUI inputKeyUI;
 
-    //[SerializeField] private Camera cam;
 
-
-    private Slider _slider;
 
 
     private void Awake()
@@ -51,7 +51,6 @@ public class UIManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            //DontDestroyOnLoad(gameObject);
         }
         else Destroy(gameObject);
         player = FindObjectOfType<Player>();
@@ -82,6 +81,11 @@ public class UIManager : MonoBehaviour
         mainUI.SetActive(!isOn);
     }
 
+    public void DiveLog()
+    { 
+        UIBlur.enabled = true;
+        diveLogUI.DiveLogUIOn();
+    }
     public void InteractionUI(bool isOn, GameObject ui, Player.EState state=Player.EState.Lobby)
     {
         player.SwitchActionMapUI(isOn, state);
@@ -269,10 +273,5 @@ public class UIManager : MonoBehaviour
         player.InputUI = boatUI;
         player.SwitchActionMapUI(true, Player.EState.UnderWater);
         boatUI.BoatUIOn();
-    }
-
-    public void InputKeyDisable()
-    {
-
     }
 }

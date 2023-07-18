@@ -18,13 +18,13 @@ float viewRadius;
 float avoidRadius;
 
 [numthreads(threadGroupSize,1,1)]
-void CSMain (uint3 id : SV_DispatchThreadID)
+void CSMain (int id : SV_DispatchThreadID)
 {
     for (int indexB = 0; indexB < numBoids; indexB ++) {
         if (id.x != indexB) {
             Boid boidB = boids[indexB];
             float3 offset = boidB.position - boids[id.x].position;
-            float sqrDst = offset.x * offset.x + offset.y * offset.y + offset.z * offset.z;
+            float sqrDst = offset.x * offset.x + offset.y * offset.y;
 
             if (sqrDst < viewRadius * viewRadius) {
                 boids[id.x].numFlockmates += 1;

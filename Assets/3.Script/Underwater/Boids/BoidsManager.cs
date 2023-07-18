@@ -10,15 +10,15 @@ public class BoidsManager : Singleton<BoidsManager>
     public BoidSettings settings;
     public ComputeShader compute;
     private List<Boid> boids;
-    Boid[] boidss;
+    Boid[] boidArray;
     private Transform captain;
 
     void Start()
     {
         player = FindObjectOfType<Player_Underwater>();
         boids = new List<Boid>();
-        boidss = FindObjectsOfType<Boid>();
-        foreach (Boid b in boidss)
+        boidArray = FindObjectsOfType<Boid>();
+        foreach (Boid b in boidArray)
         {
             boids.Add(b);
             b.Initialize(settings, player.transform);
