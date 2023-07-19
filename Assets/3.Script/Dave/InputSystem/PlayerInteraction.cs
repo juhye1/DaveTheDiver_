@@ -15,7 +15,7 @@ public class PlayerInteraction : Player
             interaction = hit.transform.GetComponent<BaseInteraction>();
             Point = interaction.Point;
 
-            if (!state.Equals(EState.UI))
+            if (!state.Equals(EState.UI)||!state.Equals(EState.Load))
                 return true;
         }
         else

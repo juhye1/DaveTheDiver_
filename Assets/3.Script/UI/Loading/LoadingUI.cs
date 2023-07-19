@@ -12,6 +12,7 @@ public class LoadingUI : MonoBehaviour
     private CanvasGroup CanvasGroup;
     private GameManager.EScene scene;
     [SerializeField] private Image[] images;
+    [SerializeField] private GameObject[] Marlin;
     [SerializeField] private Image line;
     [SerializeField] private Sprite[] lineSprites;
     [SerializeField] private TextMeshProUGUI tipTMP;
@@ -36,9 +37,10 @@ public class LoadingUI : MonoBehaviour
                 tipTMP.text = SushiTip;
                 break;
             case GameManager.EScene.UnderWater:
-                images[1].enabled = true;
-                tipTMP.text = UnderWaterTip;
+                Marlin[0].SetActive(true);
+                Marlin[1].SetActive(true);
                 line.sprite = lineSprites[1];
+                tipTMP.text = UnderWaterTip;
                 break;
         }
 

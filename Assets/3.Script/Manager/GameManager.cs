@@ -8,7 +8,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : DontDestroySingleton<GameManager>
 {
 
-    [SerializeField] private Image loadScene;
+    [SerializeField] private Image loadSceneWhite;
+    [SerializeField] private Image loadSceneBlack;
 
     public static string NextSceneName => nextSceneName;
     private static string nextSceneName;
@@ -45,8 +46,8 @@ public class GameManager : DontDestroySingleton<GameManager>
         //로비로 갈땐 로딩씬이 없다
         string sceneName = scene == EScene.SushiToLobby || scene == EScene.UnderWaterToLobby 
                                     ? "LobbyScene" : "LoadingScene";
-        loadScene.enabled = true;
-        loadScene.DOFade(1, 2).OnComplete(() => SceneManager.LoadScene(sceneName));
+        loadSceneWhite.enabled = true;
+        loadSceneWhite.DOFade(1, 2).OnComplete(() => SceneManager.LoadScene(sceneName));
     }
 
 
@@ -54,11 +55,17 @@ public class GameManager : DontDestroySingleton<GameManager>
     //다음씬에서 해주기
     public void ResetLoadSceneEffect()
     {
-        Color color = loadScene.color;
+        Color color = loadSceneWhite.color;
         color.a = 0;
-        loadScene.color = color;
-        loadScene.enabled = false;
+        loadSceneWhite.color = color;
+        loadSceneWhite.enabled = false;
     }
 
+    public void LoadSceneEffect()
+    {
+        loadSceneBlack.color = Color.black;
+        loadSceneBlack.enabled = true;
+        loadSceneBlack.DOFade(0, 1);
+    }
     
 }

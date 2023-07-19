@@ -126,7 +126,7 @@ public class InputKeyUI : MonoBehaviour
 
     public bool CheckPlayer()
     {
-        if (playerInteraction.State.Equals(Player.EState.UI))
+        if (playerInteraction.State.Equals(Player.EState.UI)|| playerInteraction.State.Equals(Player.EState.Load))
             return false;
         else return true;
     }

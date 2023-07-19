@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SushiGameManager : MonoBehaviour
+public class SushiGameManager : Singleton<SushiGameManager>
 {
     [SerializeField] private Sprite Perfect;
     [SerializeField] private Sprite Good;
@@ -28,18 +28,13 @@ public class SushiGameManager : MonoBehaviour
         Bad
     }
 
-    public static SushiGameManager Instance;
     public EScore Score;
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-            Destroy(gameObject);
 
         SushiGO.SetActive(false);
+        GameManager.Instance.ResetLoadSceneEffect();
+        GameManager.Instance.LoadSceneEffect();
     }
 
     private void Start()
