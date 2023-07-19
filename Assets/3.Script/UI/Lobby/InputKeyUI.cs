@@ -48,8 +48,7 @@ public class InputKeyUI : MonoBehaviour
                         FillSlider(playerInteraction.PressKey && diveTrigger.isDiveTrigger);
                         screenPosition = Camera.main.WorldToScreenPoint(playerInteraction.Point);
                         transform.position = screenPosition;
-                        if (isOn) UIOn(true);
-                        else UIOn(false);
+
 
                         break;
 
@@ -63,10 +62,7 @@ public class InputKeyUI : MonoBehaviour
         }
         else
         {
-            if (keyImage.enabled)
-            {
-                transform.position = screenPosition;
-            }
+            UIOn(false);
         }
 
 

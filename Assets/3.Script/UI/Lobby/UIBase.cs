@@ -12,5 +12,6 @@ public abstract class UIBase : MonoBehaviour
     private void Awake()
     {
         inputKeyUI = FindObjectOfType<InputKeyUI>();
+        inputUI = GetComponent<UIInput>();
     }
 }

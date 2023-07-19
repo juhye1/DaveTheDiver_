@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Object_DiveLogTrigger : BaseObject
+public class Input_DiveLogUI : UIInput
 {
     public enum EState
     {
@@ -18,13 +18,16 @@ public class Object_DiveLogTrigger : BaseObject
 
     private void Start()
     {
-        diveLogUI = interactionUI.GetComponent<DiveLogUI>();
-        CanPerform = !CanPerform;
+        diveLogUI = GetComponent<DiveLogUI>();
+    }
+    public override void MoveUI(Vector2 dir)
+    {
+        throw new System.NotImplementedException();
     }
 
-    public override void Interaction()
+    public override void Space()
     {
-/*        switch (state)
+        switch (state)
         {
             case EState.DiveLog:
                 diveLogUI.FishLogUIOn();
@@ -35,15 +38,6 @@ public class Object_DiveLogTrigger : BaseObject
                 Debug.Log("수조로 보내기");
                 LobbyManager.Instance.SetDiveLogCollider(false);
                 break;
-        }*/
-
-    }
-
-    private void Update()
-    {
-        if (movePoint)
-        {
-            UIManager.Instance.DiveLog();
         }
     }
 }

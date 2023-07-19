@@ -34,7 +34,10 @@ public class BoatUI : UIBase
         {
             go.SetActive(true);
         }
-        sequence.Play();
+        sequence = DOTween.Sequence();
+        sequence.Append(Background.DOFade(0.3f, 1))
+            .Append(BoatGO.DOLocalMoveY(-200, 0.5f).SetEase(Ease.OutBounce))
+            .Append(ExitGO.DOLocalMoveY(-320, 0.5f).SetEase(Ease.OutBounce)).OnComplete(() => OnCompleteSet());
     }
 
 
@@ -47,7 +50,7 @@ public class BoatUI : UIBase
 
     private void ResetUI()
     {
-        sequence = DOTween.Sequence().Pause();
+        sequence = DOTween.Sequence().Pause().SetAutoKill(false);
         sequence.Append(Background.DOFade(0.3f, 1))
             .Append(BoatGO.DOLocalMoveY(-200, 0.5f).SetEase(Ease.OutBounce))
             .Append(ExitGO.DOLocalMoveY(-320, 0.5f).SetEase(Ease.OutBounce)).OnComplete(() => OnCompleteSet());
@@ -71,6 +74,11 @@ public class BoatUI : UIBase
 
     public override void OFFUI()
     {
+
+        BoatGO.localPosition = hideVector;
+        ExitGO.localPosition = hideVector;
+        select.anchoredPosition = BoatGO.anchoredPosition;
+
         foreach (GameObject go in UIList)
         {
             go.SetActive(false);

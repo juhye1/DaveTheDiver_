@@ -5,10 +5,9 @@ using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
 
-public class DiveLogUI : MonoBehaviour
+public class DiveLogUI : UIBase
 {
     private Sequence sequence;
-    private InputKeyUI inputKeyUI;
     private Player_Lobby player;
 
     private Vector2 home;
@@ -30,9 +29,8 @@ public class DiveLogUI : MonoBehaviour
     [SerializeField] private RectTransform BanchoImage;
 
 
-    private void Awake()
+    private void Start()
     {
-        inputKeyUI = FindObjectOfType<InputKeyUI>();
         player = FindObjectOfType<Player_Lobby>();
         sequence = DOTween.Sequence().Pause();
         sequence.Append(BanchoImage.DOScale(1, 1).SetEase(Ease.InCirc))
@@ -48,19 +46,22 @@ public class DiveLogUI : MonoBehaviour
 
     public void DiveLogUIOn()
     {
+        UIInputManager.Instance.SetInputUI(inputUI);
+        UIInputManager.Instance.SetUIState(UIInputManager.EState.OnUI);
         UpdateUI();
         DiveLogTransform.DOLocalMoveY(0, 0.7f).SetEase(Ease.OutBounce);
     }
 
     public void FishLogUIOn()
     {
+
         DiveLogTransform.localPosition = home;
         DiveLogTransform.gameObject.SetActive(false);
         FishLogTransform.DOLocalMoveY(0, 0.7f).SetEase(Ease.OutBounce).OnComplete(() => inputKeyUI.UIOn(true));
-        
+
     }
 
-    public void OFFUI()
+    public override void OFFUI()
     {
         inputKeyUI.UIOn(false);
         FishLogTransform.localPosition = home;
@@ -76,7 +77,7 @@ public class DiveLogUI : MonoBehaviour
         inputKeyUI.UIOn(true);
         BanchoImage.gameObject.SetActive(false);
         player.ToBancho(false);
-        player.SwitchActionMapUI(false , Player.EState.Lobby);
+        UIInputManager.Instance.SetUIState(UIInputManager.EState.ExitUI);
     }
 
     private void UpdateUI()

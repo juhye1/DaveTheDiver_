@@ -201,6 +201,7 @@ public class Player : MonoBehaviour
 
         }
 
+        UIInputManager.Instance.SetUIState(UIInputManager.EState.EnterUI);
     }
 
 }
