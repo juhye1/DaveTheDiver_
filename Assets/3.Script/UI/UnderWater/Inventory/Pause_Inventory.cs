@@ -24,7 +24,7 @@ public class Pause_Inventory : UIInput
 
     private void Start()
     {
-        Init();
+        //Init();
     }
 
     private void Init()

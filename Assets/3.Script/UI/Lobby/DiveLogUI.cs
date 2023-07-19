@@ -20,7 +20,11 @@ public class DiveLogUI : MonoBehaviour
 
     [Header("Fish Log")]
     [SerializeField] private RectTransform FishLogTransform;
-    [SerializeField] ItemSlot[] itemSlot;
+    [SerializeField] private FishSlot[] FishSlot;
+    [SerializeField] private Sprite BlankBox;
+    [SerializeField] private Sprite FishBox;
+
+    private List<ItemInformation> FishList;
 
     [Header("Bancho")]
     [SerializeField] private RectTransform BanchoImage;
@@ -44,6 +48,7 @@ public class DiveLogUI : MonoBehaviour
 
     public void DiveLogUIOn()
     {
+        UpdateUI();
         DiveLogTransform.DOLocalMoveY(0, 0.7f).SetEase(Ease.OutBounce);
     }
 
@@ -72,6 +77,25 @@ public class DiveLogUI : MonoBehaviour
         BanchoImage.gameObject.SetActive(false);
         player.ToBancho(false);
         player.SwitchActionMapUI(false , Player.EState.Lobby);
+    }
+
+    private void UpdateUI()
+    {
+        FishList = InventoryManager.Instance.LoadItem();
+
+        if (FishList != null)
+        {
+            for (int i = 0; i < FishList.Count; i++)
+            {
+                FishSlot[i].gameObject.SetActive(true);
+                FishSlot[i].Background.sprite = FishBox;
+                FishSlot[i].Init(FishList[i]);
+            }
+        }
+
+
+        //리스트 길이 만큼 slot 키고 업데이트하기
+
     }
 
 }

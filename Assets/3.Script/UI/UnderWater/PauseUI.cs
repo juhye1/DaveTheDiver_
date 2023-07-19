@@ -12,10 +12,11 @@ public class PauseUI : MonoBehaviour
 
     private void Start()
     {
-        foreach(var dd in itemSlot)
+        foreach(var slot in itemSlot)
         {
-            dd.gameObject.SetActive(false);
+            slot.gameObject.SetActive(false);
         }
+        pauseUI.transform.localPosition = Vector2.zero;
         pauseUI.SetActive(false);
         
     }
@@ -26,7 +27,7 @@ public class PauseUI : MonoBehaviour
         pauseUI.SetActive(isOn);
     }
 
-    public void UpdateItem()
+    private void UpdateItem()
     {
         itemList = InventoryManager.Instance.LoadItem();
 

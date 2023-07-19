@@ -41,14 +41,16 @@ public class InputKeyUI : MonoBehaviour
         }
         if (CheckPlayer())
         {
-            if (isOn)
-            {
+
                 switch (State)
                 {
                     case EState.Lobby:
                         FillSlider(playerInteraction.PressKey && diveTrigger.isDiveTrigger);
                         screenPosition = Camera.main.WorldToScreenPoint(playerInteraction.Point);
                         transform.position = screenPosition;
+                        if (isOn) UIOn(true);
+                        else UIOn(false);
+
                         break;
 
 
@@ -57,7 +59,7 @@ public class InputKeyUI : MonoBehaviour
                         transform.position = screenPosition;
                         break;
                 }
-            }
+            
         }
         else
         {

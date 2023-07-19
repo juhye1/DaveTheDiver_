@@ -31,21 +31,12 @@ public class InventoryManager : DontDestroySingleton<InventoryManager>
     //아 그냥 여기서 UI를 불러오고싶은데???? 미래를 버릴까,,,,,,,,?
     public void SaveItem(ItemInformation information)
     {
-        Debug.Log("너야?");
         InfoUI infoUI = FindObjectOfType<InfoUI>();
         infoUI.UpdateUI(information.Face, information.Name, information.Weight,
                         information.Rank.ToString(), information.Raiting);
         //ItemDictionary.Add(information.Name, information);
         ItemList.Add(information);
     }
-
-/*    public void SaveIngredient(IngredientInformation information)
-    {
-        InfoUI infoUI = FindObjectOfType<InfoUI>();
-        infoUI.UpdateUI(information.Face, information.Name, information.Weight);
-        Ingredient.Add(information.Name, information);
-    }
-*/
     public List<ItemInformation> LoadItem()
     {
         if (ItemList.Count > 0)

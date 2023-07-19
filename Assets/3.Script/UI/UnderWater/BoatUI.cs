@@ -66,6 +66,7 @@ public class BoatUI : UIInput
 
     private void ResetUI()
     {
+        //transform.localPosition = Vector2.zero;
         sequence = DOTween.Sequence().Pause();
         sequence.Append(Background.DOFade(0.3f, 1))
             .Append(BoatGO.DOLocalMoveY(-200, 0.5f).SetEase(Ease.OutBounce))
