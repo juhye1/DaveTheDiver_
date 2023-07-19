@@ -35,6 +35,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Transform Kettle;
     [SerializeField] private Slider throwSlider;
     [SerializeField] private Slider dashSlider;
+    [SerializeField] private MenuUI menuUI;
 
     [Header("바다")]
     [SerializeField] private GameObject powerGauge;
@@ -74,6 +75,12 @@ public class UIManager : MonoBehaviour
 
 
     #region Lobby
+
+    public void ShowChapter()
+    {
+        mainUI.gameObject.SetActive(false);
+        chapterUI.gameObject.SetActive(true);
+    }
     public void TalkStart(bool isOn)
     {
         player.SwitchActionMapUI(isOn, Player.EState.Lobby);
@@ -109,6 +116,26 @@ public class UIManager : MonoBehaviour
         }
     }
 
+
+    #endregion
+
+
+
+    #region Sushi
+
+    public void SushiUI(bool isOn, GameObject[] ui)
+    {
+        player.SwitchActionMapUI(isOn, Player.EState.Sushi);
+        background.enabled = isOn;
+        CanvasGroup group = ScoreUI.GetComponent<CanvasGroup>();
+        group.alpha = 0;
+        foreach (var u in ui)
+        {
+            u.SetActive(isOn);
+        }
+    }
+
+    #region Game
     public void ScoreOn()
     {
         CanvasGroup group = ScoreUI.GetComponent<CanvasGroup>();
@@ -124,67 +151,6 @@ public class UIManager : MonoBehaviour
 
 
     }
-    public void SushiUI(bool isOn, GameObject[] ui)
-    {
-        player.SwitchActionMapUI(isOn, Player.EState.Sushi);
-        background.enabled = isOn;
-        CanvasGroup group = ScoreUI.GetComponent<CanvasGroup>();
-        group.alpha = 0;
-        foreach (var u in ui)
-        {
-            u.SetActive(isOn);
-        }
-    }
-
-    public void MoveKettle()
-    {
-        Sequence sequence = DOTween.Sequence();
-        sequence.Append(Kettle.transform.DOLocalMove(KettleGoal.localPosition, 2))
-                .Join(Kettle.transform.DOLocalRotate(KettleGoal.localEulerAngles, 2));
-    }
-
-    public void ShowChapter()
-    {
-        mainUI.gameObject.SetActive(false);
-        chapterUI.gameObject.SetActive(true);
-    }
-
-    public void DashUI(bool isDash)
-    {
-        if (isDash)
-        {
-            dashSlider.gameObject.SetActive(true);
-            dashSlider.value = Mathf.MoveTowards(dashSlider.value, 0, Time.deltaTime * 0.5f);
-        }
-        else
-        {
-            dashSlider.value = Mathf.MoveTowards(dashSlider.value, 1, Time.deltaTime * 0.3f);
-            if(dashSlider.value.Equals(1))
-            {
-                dashSlider.gameObject.SetActive(false);
-            }
-        }
-    }
-
-    public bool ThrowUI(bool isThrow)
-    {
-        if (isThrow)
-        {
-            throwSlider.gameObject.SetActive(true);
-            throwSlider.value = Mathf.MoveTowards(throwSlider.value, 1, Time.deltaTime * 0.5f);
-        }
-        else
-        {
-            throwSlider.value = Mathf.MoveTowards(throwSlider.value, 0, Time.deltaTime * 0.3f);
-            if (throwSlider.value.Equals(0))
-            {
-                throwSlider.gameObject.SetActive(false);
-            }
-        }
-        bool gauge = throwSlider.value.Equals(1) ? true : false;
-        return gauge;
-    }
-
     public bool StartUI(bool isStart)
     {
         if (isStart)
@@ -204,10 +170,16 @@ public class UIManager : MonoBehaviour
         return gauge;
     }
 
+    public void MoveKettle()
+    {
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(Kettle.transform.DOLocalMove(KettleGoal.localPosition, 2))
+                .Join(Kettle.transform.DOLocalRotate(KettleGoal.localEulerAngles, 2));
+    }
     public bool SliderUp(bool inputKey, Player.ESlider slider)
     {
 
-        switch(slider)
+        switch (slider)
         {
             case Player.ESlider.LoadScene:
                 //나중에 스페이스바 슬라이더 넣기
@@ -241,8 +213,45 @@ public class UIManager : MonoBehaviour
 
     }
 
+    public bool ThrowUI(bool isThrow)
+    {
+        if (isThrow)
+        {
+            throwSlider.gameObject.SetActive(true);
+            throwSlider.value = Mathf.MoveTowards(throwSlider.value, 1, Time.deltaTime * 0.5f);
+        }
+        else
+        {
+            throwSlider.value = Mathf.MoveTowards(throwSlider.value, 0, Time.deltaTime * 0.3f);
+            if (throwSlider.value.Equals(0))
+            {
+                throwSlider.gameObject.SetActive(false);
+            }
+        }
+        bool gauge = throwSlider.value.Equals(1) ? true : false;
+        return gauge;
+    }
+    #endregion
 
 
+
+    #region Move
+    public void DashUI(bool isDash)
+    {
+        if (isDash)
+        {
+            dashSlider.gameObject.SetActive(true);
+            dashSlider.value = Mathf.MoveTowards(dashSlider.value, 0, Time.deltaTime * 0.5f);
+        }
+        else
+        {
+            dashSlider.value = Mathf.MoveTowards(dashSlider.value, 1, Time.deltaTime * 0.3f);
+            if(dashSlider.value.Equals(1))
+            {
+                dashSlider.gameObject.SetActive(false);
+            }
+        }
+    }
     public bool CheckDash()
     {
         if (dashSlider.IsActive())
@@ -252,16 +261,32 @@ public class UIManager : MonoBehaviour
         }
         return true;
     }
-
-
     public void EndTired()
     {
         dashSlider.value = 0.1f;
     }
 
+
+
+    #endregion
+
+    public void SushiMenuUI()
+    {
+        menuUI.OnFirstUI();
+    }
+
+
+
+
+
+
+
+
     #endregion
 
 
+
+    #region UnderWater
     public void PowerGaugeOn(bool isOn)
     {
         powerGauge.SetActive(isOn);
@@ -276,9 +301,9 @@ public class UIManager : MonoBehaviour
 
     public void BoatUIOn()
     {
-        player.InputUI = boatUI;
-        player.SwitchActionMapUI(true, Player.EState.UnderWater);
-        inputKeyUI.UIOn(false);
         boatUI.BoatUIOn();
+        inputKeyUI.UIOn(false);
     }
+
+    #endregion
 }

@@ -41,7 +41,7 @@ public class Object_DiveLogTrigger : BaseObject
 
     private void Update()
     {
-        if (on)
+        if (movePoint)
         {
             UIManager.Instance.DiveLog();
         }

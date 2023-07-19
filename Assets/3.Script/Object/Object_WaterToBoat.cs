@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Object_WaterToBoat : BaseObject
 {
-    private BoatUI boatUI;
+    private Input_BoatUI boatUI;
     [SerializeField] private Transform Point;
     [SerializeField] private Transform newPoint;
     private Vector3 point;
@@ -12,7 +12,7 @@ public class Object_WaterToBoat : BaseObject
 
     private void Start()
     {
-        boatUI = FindObjectOfType<BoatUI>();
+        boatUI = FindObjectOfType<Input_BoatUI>();
         point = Point.position;
         newpoint = newPoint.position;
         CanPerform = !CanPerform;
@@ -37,10 +37,11 @@ public class Object_WaterToBoat : BaseObject
 
         switch (boatUI.State)
         {
-            case BoatUI.EState.GotoBoat:
+            case Input_BoatUI.EState.GotoBoat:
                 GameManager.Instance.LoadScene(GameManager.EScene.UnderWaterToLobby);
                 break;
-            case BoatUI.EState.Cancel:
+            case Input_BoatUI.EState.Cancel:
+                boatUI.CancelUI();
                 Debug.Log("UI²¨");
                 break;
         }
@@ -49,7 +50,7 @@ public class Object_WaterToBoat : BaseObject
 
     private void Update()
     {
-        if(on)
+        if(movePoint)
         {
             UIManager.Instance.BoatUIOn();
         }

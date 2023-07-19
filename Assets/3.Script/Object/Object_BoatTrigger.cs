@@ -57,7 +57,7 @@ public class Object_BoatTrigger : BaseObject
     private void Update()
     {
         if(player.State.Equals(Player.EState.Lobby))
-        movePointUI.OnBoatUI(on);
+        movePointUI.OnBoatUI(movePoint);
         //UIOn(on);
     }
 

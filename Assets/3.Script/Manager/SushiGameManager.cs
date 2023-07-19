@@ -34,7 +34,7 @@ public class SushiGameManager : Singleton<SushiGameManager>
 
         SushiGO.SetActive(false);
         GameManager.Instance.ResetLoadSceneEffect();
-        GameManager.Instance.LoadSceneEffect();
+        //GameManager.Instance.LoadSceneEffect();
     }
 
     private void Start()

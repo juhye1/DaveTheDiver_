@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 using UnityEngine.InputSystem;
 
 public class Player_Underwater : PlayerInteraction
@@ -41,8 +42,8 @@ public class Player_Underwater : PlayerInteraction
 
     private void Start()
     {
-        SwitchActionMapUI(false, EState.UnderWater);
         state = EState.UnderWater;
+        ActionMapEnable(EState.UnderWater);
         AddDirection();
     }
     private void AddDirection()
@@ -290,6 +291,11 @@ public class Player_Underwater : PlayerInteraction
         }
     }
 
+    public void MoveDown()
+    {
+        //transform.DOLocalMoveY(1, 1);
+    }
+
     private void Update()
     {
         MoveMousePosition();
@@ -318,5 +324,6 @@ public class Player_Underwater : PlayerInteraction
             transform.localRotation = Quaternion.identity;
         }
 
+       
     }
 }

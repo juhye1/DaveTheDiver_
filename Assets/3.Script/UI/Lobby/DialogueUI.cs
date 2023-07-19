@@ -16,8 +16,13 @@ public struct Speaker
     public Transform Panel;
 }
 
-public class DialogueUI : UIBase
+public class DialogueUI : MonoBehaviour
 {
+    protected Sequence sequence;
+    protected TextMeshProUGUI tmp;
+    protected CanvasGroup canvasGroup;
+
+
     [SerializeField] private Speaker[] speaker;
     private Speaker curruentSpeaker;
     private PortraitData portraitData;

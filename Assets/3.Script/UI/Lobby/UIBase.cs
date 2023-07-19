@@ -5,8 +5,12 @@ using DG.Tweening;
 using TMPro;
 public abstract class UIBase : MonoBehaviour
 {
-    protected Sequence sequence;
-    protected TextMeshProUGUI tmp;
-    protected CanvasGroup canvasGroup;
+    protected UIInput inputUI;
+    protected InputKeyUI inputKeyUI;
+    public abstract void OFFUI();
 
+    private void Awake()
+    {
+        inputKeyUI = FindObjectOfType<InputKeyUI>();
+    }
 }

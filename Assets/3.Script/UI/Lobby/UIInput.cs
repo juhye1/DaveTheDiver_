@@ -8,15 +8,25 @@ public abstract class UIInput : MonoBehaviour
     [SerializeField] protected RectTransform[] transforms;
     [SerializeField] protected RectTransform select;
     protected InputKeyUI inputKeyUI;
+    protected UIBase uiBase;
+    protected int num;
     protected Dictionary<Vector2, EDirection> direction = new Dictionary<Vector2, EDirection>();
 
     private void Awake()
     {
         inputKeyUI = FindObjectOfType<InputKeyUI>();
+        uiBase = GetComponent<UIBase>();
         AddDirection();
 
     }
     public abstract void MoveUI(Vector2 dir);
+    public abstract void Space();
+
+    public virtual void CancelUI()
+    {
+        uiBase.OFFUI();
+        UIInputManager.Instance.SetUIState(UIInputManager.EState.ExitUI);
+    }
 
     private void AddDirection()
     {

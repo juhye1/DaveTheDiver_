@@ -2,35 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiverBox_Inventory : UIInput
+public class Input_MenuUI : UIInput
 {
+    private List<RectTransform> SlotList;
     private void Start()
     {
-        num = 1;
-        transforms = GetComponentsInChildren<RectTransform>();
-
+        num = 0;
+        SlotList = new List<RectTransform>();
+        SlotList.AddRange(transforms);
     }
     public override void MoveUI(Vector2 dir)
     {
+        Debug.Log(dir);
         EDirection edir = direction[dir];
 
         switch (edir)
         {
             case EDirection.Up:
-                num -= 8;
+                num -= 1;
                 break;
             case EDirection.Down:
-                num += 8;
-                break;
-            case EDirection.Right:
-                num++;
-                break;
-            case EDirection.Left:
-                num--;
+                num += 1;
                 break;
         }
 
-        num = Mathf.Clamp(num, 1, 32);
+        num = Mathf.Clamp(num, 0, SlotList.Count);
         select.anchoredPosition = transforms[num].anchoredPosition;
     }
 

@@ -10,7 +10,7 @@ public class BaseObject : MonoBehaviour
     protected InputKeyUI inputKeyUI;
     protected PlayerInteraction player;
     protected BaseInteraction interaction;
-    protected bool on => player.MovePoint(interaction);
+    protected bool movePoint => player.MovePoint(interaction);
 
     private void Awake()
     {

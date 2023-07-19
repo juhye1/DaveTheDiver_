@@ -12,7 +12,6 @@ public class Pause_Inventory : UIInput
         Item,
         Mission
     }
-    private int num = 0;
     private EState state = EState.Item;
 
     [SerializeField] private RectTransform[] Equipment;
@@ -24,6 +23,7 @@ public class Pause_Inventory : UIInput
 
     private void Start()
     {
+        num = 0;
         //Init();
     }
 
@@ -152,5 +152,15 @@ public class Pause_Inventory : UIInput
         num = Mathf.Clamp(num, 1, 32);
         select.anchoredPosition = transforms[num].anchoredPosition;
         select.sizeDelta = Equipment[num].sizeDelta;
+    }
+
+    public override void CancelUI()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void Space()
+    {
+        throw new System.NotImplementedException();
     }
 }

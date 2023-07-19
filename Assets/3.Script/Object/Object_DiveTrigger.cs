@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Object_DiveTrigger : BaseObject
 {
-    public bool isDiveTrigger => on;
+    public bool isDiveTrigger => movePoint;
 
 
     public override void Interaction()
@@ -17,6 +17,6 @@ public class Object_DiveTrigger : BaseObject
 
     private void Update()
     {
-        movePointUI.OnDiveUI(on);
+        movePointUI.OnDiveUI(movePoint);
     }
 }

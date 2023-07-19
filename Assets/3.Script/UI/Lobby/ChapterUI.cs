@@ -4,8 +4,13 @@ using UnityEngine;
 using DG.Tweening;
 using TMPro;
 
-public class ChapterUI : UIBase
+public class ChapterUI : MonoBehaviour
 {
+    protected Sequence sequence;
+    protected TextMeshProUGUI tmp;
+    protected CanvasGroup canvasGroup;
+
+
     [SerializeField] private Transform line;
 
     private void Awake()

@@ -132,6 +132,15 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumberOne"",
+                    ""type"": ""Button"",
+                    ""id"": ""9037da84-e87e-4d07-ae4b-b30ed6e0481d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -220,6 +229,17 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""PC"",
                     ""action"": ""ESC"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c63c3017-bf0a-4816-b021-555590ee91dd"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumberOne"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -548,6 +568,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         m_UI_Space = m_UI.FindAction("Space", throwIfNotFound: true);
         m_UI_ESC = m_UI.FindAction("ESC", throwIfNotFound: true);
         m_UI_PourTea = m_UI.FindAction("PourTea", throwIfNotFound: true);
+        m_UI_NumberOne = m_UI.FindAction("NumberOne", throwIfNotFound: true);
         // Sushi
         m_Sushi = asset.FindActionMap("Sushi", throwIfNotFound: true);
         m_Sushi_Move = m_Sushi.FindAction("Move", throwIfNotFound: true);
@@ -666,6 +687,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_Space;
     private readonly InputAction m_UI_ESC;
     private readonly InputAction m_UI_PourTea;
+    private readonly InputAction m_UI_NumberOne;
     public struct UIActions
     {
         private @InputSystem m_Wrapper;
@@ -674,6 +696,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         public InputAction @Space => m_Wrapper.m_UI_Space;
         public InputAction @ESC => m_Wrapper.m_UI_ESC;
         public InputAction @PourTea => m_Wrapper.m_UI_PourTea;
+        public InputAction @NumberOne => m_Wrapper.m_UI_NumberOne;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -695,6 +718,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @PourTea.started -= m_Wrapper.m_UIActionsCallbackInterface.OnPourTea;
                 @PourTea.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnPourTea;
                 @PourTea.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnPourTea;
+                @NumberOne.started -= m_Wrapper.m_UIActionsCallbackInterface.OnNumberOne;
+                @NumberOne.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnNumberOne;
+                @NumberOne.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnNumberOne;
             }
             m_Wrapper.m_UIActionsCallbackInterface = instance;
             if (instance != null)
@@ -711,6 +737,9 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
                 @PourTea.started += instance.OnPourTea;
                 @PourTea.performed += instance.OnPourTea;
                 @PourTea.canceled += instance.OnPourTea;
+                @NumberOne.started += instance.OnNumberOne;
+                @NumberOne.performed += instance.OnNumberOne;
+                @NumberOne.canceled += instance.OnNumberOne;
             }
         }
     }
@@ -874,6 +903,7 @@ public partial class @InputSystem : IInputActionCollection2, IDisposable
         void OnSpace(InputAction.CallbackContext context);
         void OnESC(InputAction.CallbackContext context);
         void OnPourTea(InputAction.CallbackContext context);
+        void OnNumberOne(InputAction.CallbackContext context);
     }
     public interface ISushiActions
     {

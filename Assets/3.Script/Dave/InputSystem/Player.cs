@@ -122,12 +122,10 @@ public class Player : MonoBehaviour
         if (!context.started)
             return;
 
-        Debug.Log(interaction.name);
-
-        if (interaction != null)
+/*        if (interaction != null)
         {
             interaction.Perform();
-        }
+        }*/
     }
 
     protected void Space(bool pressKey)
