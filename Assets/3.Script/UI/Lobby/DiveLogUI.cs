@@ -8,6 +8,9 @@ using DG.Tweening;
 public class DiveLogUI : MonoBehaviour
 {
     private Sequence sequence;
+    private InputKeyUI inputKeyUI;
+    private Player_Lobby player;
+
     private Vector2 home;
 
     [Header("Dive Log")]
@@ -17,14 +20,11 @@ public class DiveLogUI : MonoBehaviour
 
     [Header("Fish Log")]
     [SerializeField] private RectTransform FishLogTransform;
+    [SerializeField] ItemSlot[] itemSlot;
 
+    [Header("Bancho")]
     [SerializeField] private RectTransform BanchoImage;
-    private InputKeyUI inputKeyUI;
-    private Player_Lobby player;
-    //바다에 있다가 로비로 왔을때만 떠야되고
-    //머 잡아왔는지 떠야함
-    //뒤에 블러 켜야하고
-    //
+
 
     private void Awake()
     {
