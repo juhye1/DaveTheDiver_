@@ -121,11 +121,6 @@ public class Player : MonoBehaviour
         pressKey = context.ReadValue<float>() > 0.1f;
         if (!context.started)
             return;
-
-/*        if (interaction != null)
-        {
-            interaction.Perform();
-        }*/
     }
 
     protected void Space(bool pressKey)
@@ -200,8 +195,6 @@ public class Player : MonoBehaviour
                 underWater.Enable(); this.state = state; break;
 
         }
-
-        UIInputManager.Instance.SetUIState(UIInputManager.EState.EnterUI);
     }
 
 }

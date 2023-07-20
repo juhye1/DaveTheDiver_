@@ -24,6 +24,7 @@ public class DiveLogUI : UIBase
     [SerializeField] private Sprite FishBox;
 
     private List<ItemInformation> FishList;
+    private Dictionary<string, List<ItemInformation>> FishDictionary;
 
     [Header("Bancho")]
     [SerializeField] private RectTransform BanchoImage;
@@ -82,8 +83,26 @@ public class DiveLogUI : UIBase
 
     private void UpdateUI()
     {
-        FishList = InventoryManager.Instance.LoadItem();
+        //FishList = InventoryManager.Instance.LoadItem();
+        FishDictionary = InventoryManager.Instance.LoadDictionary();
 
+
+        List<string> keys = new List<string>(FishDictionary.Keys);
+
+        //총 개수 곱하기 raiting
+        for(int i =0; i<keys.Count; i++)
+        {
+            FishSlot[i].gameObject.SetActive(true);
+            FishSlot[i].Background.sprite = FishBox;
+
+            ItemInformation info = FishDictionary[keys[i]][0];
+            int count = FishDictionary[keys[i]].Count;
+            info.Raiting *=count;
+            FishSlot[i].Init(info);
+
+        }
+
+/*
         if (FishList != null)
         {
             for (int i = 0; i < FishList.Count; i++)
@@ -92,7 +111,7 @@ public class DiveLogUI : UIBase
                 FishSlot[i].Background.sprite = FishBox;
                 FishSlot[i].Init(FishList[i]);
             }
-        }
+        }*/
 
 
         //리스트 길이 만큼 slot 키고 업데이트하기

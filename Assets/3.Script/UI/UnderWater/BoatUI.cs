@@ -37,8 +37,8 @@ public class BoatUI : UIBase
         }
         sequence = DOTween.Sequence();
         sequence.Append(Background.DOFade(0.3f, 1))
-            .Append(BoatGO.DOLocalMoveY(-200, 0.5f).SetEase(Ease.OutBounce))
-            .Append(ExitGO.DOLocalMoveY(-320, 0.5f).SetEase(Ease.OutBounce)).OnComplete(() => OnCompleteSet());
+            .Append(BoatGO.DOLocalMoveY(-200, 0.3f).SetEase(Ease.OutBounce))
+            .Append(ExitGO.DOLocalMoveY(-320, 0.3f).SetEase(Ease.OutBounce)).OnComplete(() => OnCompleteSet());
     }
 
 

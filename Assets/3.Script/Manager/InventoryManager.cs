@@ -10,30 +10,41 @@ public class InventoryManager : DontDestroySingleton<InventoryManager>
     }
 
 
-    private Dictionary<EType, Dictionary<string, BaseInformation>> InventoryDictionary;
     private Dictionary<string, ItemInformation> ItemDictionary;
     //private Dictionary<string, IngredientInformation> Ingredient;
 
     private List<ItemInformation> ItemList;
     private BaseInformation Information;
 
+    private Dictionary<string, List<ItemInformation>> FishDictionary;
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
         ItemList = new List<ItemInformation>();
-        InventoryDictionary = new Dictionary<EType, Dictionary<string, BaseInformation>>();
-        ItemDictionary = new Dictionary<string, ItemInformation>();
+        FishDictionary = new Dictionary<string, List<ItemInformation>>();
         //Ingredient = new Dictionary<string, IngredientInformation>();
     }
 
-    //저장하는건 다 바다에서만
-    //불러오는건 바다, 로비, 스시집 다
-    //아 그냥 여기서 UI를 불러오고싶은데???? 미래를 버릴까,,,,,,,,?
     public void SaveItem(ItemInformation information)
     {
         InfoUI infoUI = FindObjectOfType<InfoUI>();
         infoUI.UpdateUI(information.Face, information.Name, information.Weight,
                         information.Rank.ToString(), information.Raiting);
+        //새로운 물고기
+        if(!FishDictionary.ContainsKey(information.Name))
+        {
+            //여기서 New! 떠도 좋을듯??
+            List<ItemInformation> list = new List<ItemInformation>();
+            list.Add(information);
+            FishDictionary.Add(information.Name, list);
+        }
+        else
+        {
+            FishDictionary[information.Name].Add(information);
+            //이렇게하고 List길이를 받으면~~~~~~~~~~~~~~총개수~~~~~~~~~~~~~~~~~~
+        }
+
         //ItemDictionary.Add(information.Name, information);
         ItemList.Add(information);
     }
@@ -47,4 +58,8 @@ public class InventoryManager : DontDestroySingleton<InventoryManager>
         //멀리턴할건데?
     }
 
+    public Dictionary<string, List<ItemInformation>> LoadDictionary()
+    {
+        return FishDictionary;
+    }
 }

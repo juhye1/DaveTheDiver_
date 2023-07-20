@@ -107,7 +107,7 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
             case EState.Shoot:
                 break;
             case EState.Dagger:
-                dagger.OffDagger();
+                //dagger.OffDagger();
                 break;
         }
     }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseUI : MonoBehaviour
+public class PauseUI : UIBase
 {
     [SerializeField] GameObject pauseUI;
     [SerializeField] ItemSlot[] itemSlot;
@@ -43,5 +43,10 @@ public class PauseUI : MonoBehaviour
 
         //리스트 길이 만큼 slot 키고 업데이트하기
 
+    }
+
+    public override void OFFUI()
+    {
+        pauseUI.SetActive(false);
     }
 }

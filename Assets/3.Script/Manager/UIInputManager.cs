@@ -15,10 +15,12 @@ public class UIInputManager : Singleton<UIInputManager>
     [SerializeField] private EState State;
     [SerializeField] private Player.EState playerState;
     private Vector2 cachedMove;
+    private InputKeyUI inputKeyUI;
     private void Awake()
     {
         State = EState.EnterUI;
         player = FindObjectOfType<Player>();
+        inputKeyUI = FindObjectOfType<InputKeyUI>();
         //UIInput = GetComponent<PlayerInput>();
         //UIInput.currentActionMap.Disable();
 
@@ -36,6 +38,9 @@ public class UIInputManager : Singleton<UIInputManager>
         {
             case EState.ExitUI:
                 player.ActionMapEnable(playerState);
+                inputKeyUI.UIOn(true);
+                InputUI = null;
+
                 switch (playerState)
                 {
                     case Player.EState.Sushi:
@@ -113,8 +118,7 @@ public class UIInputManager : Singleton<UIInputManager>
 
     public void OnSpace(InputAction.CallbackContext context)
     {
-        //if (!State.Equals(EState.OnUI) || !context.started) return;
-        if (!context.started) return;
+        if (State.Equals(EState.ExitUI) || !context.started) return;   
 
         if (InputUI != null)
         {

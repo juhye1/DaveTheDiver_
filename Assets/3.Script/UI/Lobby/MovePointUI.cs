@@ -36,6 +36,7 @@ public class MovePointUI : UIBase
             BoatImage.sprite = ActiveBoat;
             BoatImage.color = color;
             UIInputManager.Instance.SetInputUI(inputUI);
+            UIInputManager.Instance.SetUIState(UIInputManager.EState.EnterUI);
         }
         else
         {
@@ -47,6 +48,7 @@ public class MovePointUI : UIBase
 
     public void OnDiveUI(bool isON)
     {
+        //UIInputManager.Instance.SetUIState(UIInputManager.EState.ExitUI);
         inputKeyUI.OnBG(isON);
         DiveGO.SetActive(isON);
     }

@@ -27,7 +27,7 @@ public class FishAnimator : MonoBehaviour
     {
         SetAnimation(EFishState.swim);
     }
-    private void SetAnimation(EFishState fishState)
+    public void SetAnimation(EFishState fishState)
     {
         switch(fishState)
         {
@@ -39,13 +39,25 @@ public class FishAnimator : MonoBehaviour
                 break;
             case EFishState.die:
                 runAnimationName = "die";
+                //pine.AnimationState state = skeletonAnimation.AnimationState;
+
+/*                state.Complete += Die;
+
+                void Die(Spine.TrackEntry entry)
+                {
+                    state.End -= Die;
+                    Destroy(gameObject);
+                }*/
                 break;
 
         }
 
         skeletonAnimation.state.SetAnimation(0, runAnimationName, true);
+
+
         //skeletonAnimation.loop = true;
         //skeletonAnimation.timeScale = 1;
     }
+
 
 }
