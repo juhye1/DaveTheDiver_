@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa3219a15754c854386ced57e7cf0177, type: 3}
-  m_Name: FishSettings
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: Pyramid_butterflyFish_Atlas
   m_EditorClassIdentifier: 
-  Name: "\uC610\uB85C\uC6B0\uD0F1"
-  Weight: 0.5
-  Rank: 1
-  Raiting: 1
-  Face: {fileID: 21300000, guid: 6ca6b48ba4c320f4683036d7768d7f45, type: 3}
+  atlasFile: {fileID: 4900000, guid: 9beb752487cf3e94ab5308ce76e9cf26, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 31c97088865541649bc8dad0d5960f89, type: 2}

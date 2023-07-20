@@ -11,22 +11,6 @@ public class Object_BoatTrigger : BaseObject
         Off, On
     }
 
-    [SerializeField] private Transform Point;
-    [SerializeField] private Transform newPoint;
-
-    private Vector3 point;
-    private Vector3 newpoint;
-    private EState state;
-
-    private void Start()
-    {
-        state = EState.Off;
-        point = Point.position;
-        newpoint = newPoint.position;
-        CanPerform = !CanPerform;
-
-
-    }
     public override void Interaction()
     {
 /*        if (inputKeyUI == null)

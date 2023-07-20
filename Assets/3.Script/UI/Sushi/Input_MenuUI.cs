@@ -8,7 +8,6 @@ public class Input_MenuUI : UIInput
    public enum EState
     {
         EnterUI,
-        AddMenu,
         SelectSushi,
         AddSushi
     }
@@ -118,7 +117,24 @@ public class Input_MenuUI : UIInput
 
     public override void CancelUI()
     {
-        throw new System.NotImplementedException();
+        switch(state)
+        {
+            case EState.EnterUI:
+                base.CancelUI();
+                break;
+            case EState.SelectSushi:
+                menuUI.OnAddMenuUI(false);
+                //뒤로가기
+                state = EState.EnterUI;
+                break;
+            case EState.AddSushi:
+                menuUI.OnAddSushiUI(false);
+                //얘도 뒤로가기
+                state = EState.SelectSushi;
+                break;
+
+
+        }
     }
 
     public override void Space()
@@ -126,14 +142,14 @@ public class Input_MenuUI : UIInput
         switch(state)
         {
             case EState.EnterUI:
-                menuUI.OnAddMenuUI();
+                menuUI.OnAddMenuUI(true);
                 num = 0;
                 menuUI.LoadItemInfo(0);
                 state = EState.SelectSushi;
                 break;
 
             case EState.SelectSushi:
-                menuUI.OnAddSushiUI();
+                menuUI.OnAddSushiUI(true);
                 num = 0;
                 state = EState.AddSushi;
                 break;

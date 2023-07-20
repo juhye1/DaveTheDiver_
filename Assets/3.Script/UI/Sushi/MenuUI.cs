@@ -32,18 +32,29 @@ public class MenuUI : UIBase
     }
 
 
-    public void OnAddMenuUI()
+    public void OnAddMenuUI(bool isOn)
     {
-        UpdateItem();
-        FirstUI.gameObject.SetActive(false);
-        AddUI.gameObject.SetActive(true);
+        if(isOn)
+        {
+            UpdateItem();
+            FirstUI.gameObject.SetActive(false);
+
+        }
+        AddUI.gameObject.SetActive(isOn);
     }
 
-    public void OnAddSushiUI()
+    public void OnAddSushiUI(bool isOn)
     {
-        AddSushiSlot.AddMenu(saveInfo);
-        AddSushiUI.gameObject.SetActive(true);
+        if (isOn)
+        {
+            AddSushiSlot.AddMenu(saveInfo);
+
+        }
+        AddSushiUI.gameObject.SetActive(isOn);
     }
+
+
+
     public override void OFFUI()
     {
         FirstUI.gameObject.SetActive(false);
@@ -71,6 +82,8 @@ public class MenuUI : UIBase
 
     public void LoadItemInfo(int num)
     {
+        if (itemList==null) return;
+
         RecipeSlot[num].Show(itemList[num]);
         saveInfo = itemList[num];
     }

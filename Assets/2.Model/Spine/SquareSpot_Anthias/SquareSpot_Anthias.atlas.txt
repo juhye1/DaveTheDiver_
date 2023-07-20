@@ -1,0 +1,5 @@
+SquareSpot_Anthias.png
+size:144,48
+filter:Linear,Linear
+SquareSpot_Anthias
+bounds:2,2,140,44

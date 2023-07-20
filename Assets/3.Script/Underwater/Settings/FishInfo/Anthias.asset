@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a690c198c7016418db2515e12ed8f0, type: 3}
+  m_Name: Anthias
+  m_EditorClassIdentifier: 
+  Name: "\uAE08\uAC15\uBC14\uB9AC"
+  Type: 0
+  Face: {fileID: 7150576086693378264, guid: cd873d53e593af14e84a91cba42078f0, type: 3}
+  SushiName: "\uAE08\uAC15\uBC14\uB9AC \uCD08\uBC25"
+  Weight: 0.3
+  Rank: 1
+  Raiting: 2
+  Price: 1
+  SushiSprite: {fileID: 21300000, guid: f5978d0cd7cdc9940a8e2eac09e1dd02, type: 3}
