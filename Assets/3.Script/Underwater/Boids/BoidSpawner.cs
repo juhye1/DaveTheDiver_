@@ -4,49 +4,50 @@ using UnityEngine;
 
 public class BoidSpawner : MonoBehaviour
 {
-    public enum GizmoType { Never, SelectedOnly, Always }
+    [Header("물고기")]
+    [SerializeField] private Boid YellowTang;
+    [SerializeField] private Boid ClownFish;
+    [SerializeField] private Boid Comber;
+    [SerializeField] private Boid JellyFish;
+    [SerializeField] private Boid ButterflyFish;
+    [SerializeField] private Boid BatFish;
 
-    public Boid prefab;
-    public float spawnRadius = 10;
-    public int spawnCount = 10;
-    public Color colour;
-    public GizmoType showSpawnRegion;
+    private List<Boid> boids;
+    private int num = 0;
+    [Header("스폰 설정")]
+    [SerializeField] private float spawnRadius = 10;
 
-    void Awake()
+    [Header("스폰 위치")]
+    [SerializeField] private Transform[] SpawnPoint;
+    private void Start()
+    {
+        SpawnBoid(YellowTang,5);
+        SpawnBoid(ClownFish,3);
+        SpawnBoid(Comber,10);
+        SpawnBoid(JellyFish,5);
+        SpawnBoid(ButterflyFish,3);
+        SpawnBoid(BatFish,1);
+        //스폰,,
+/*        for (int i = 0; i < spawnCount; i++)
+        {
+            Vector3 pos = SpawnPoint[0].position + Random.insideUnitSphere * spawnRadius;
+            Boid boid = Instantiate(YellowTang);
+            boid.transform.SetParent(SpawnPoint[0]);
+            boid.transform.position = new Vector2(pos.x, pos.y);
+            boid.transform.right = Random.insideUnitSphere;
+        }*/
+    }
+
+    private void SpawnBoid(Boid prefab, int spawnCount)
     {
         for (int i = 0; i < spawnCount; i++)
         {
-            Vector3 pos = transform.position + Random.insideUnitSphere * spawnRadius;
+            Vector3 pos = SpawnPoint[num].position + Random.insideUnitSphere * spawnRadius;
             Boid boid = Instantiate(prefab);
-            boid.transform.SetParent(transform);
+            boid.transform.SetParent(SpawnPoint[num]);
             boid.transform.position = new Vector2(pos.x, pos.y);
             boid.transform.right = Random.insideUnitSphere;
-
-            //boid.SetColour(colour);
         }
+        num++;
     }
-
-    private void OnDrawGizmos()
-    {
-        if (showSpawnRegion == GizmoType.Always)
-        {
-            DrawGizmos();
-        }
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        if (showSpawnRegion == GizmoType.SelectedOnly)
-        {
-            DrawGizmos();
-        }
-    }
-
-    void DrawGizmos()
-    {
-
-        Gizmos.color = new Color(colour.r, colour.g, colour.b, 1f);
-        Gizmos.DrawSphere(transform.position, spawnRadius);
-    }
-
 }

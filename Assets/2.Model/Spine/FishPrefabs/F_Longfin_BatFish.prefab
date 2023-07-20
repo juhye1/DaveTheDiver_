@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 699910200}
   - component: {fileID: 699910201}
   - component: {fileID: 699910202}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: F_Longfin_BatFish
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,9 +82,9 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1327743071
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &441762921263642863
 MonoBehaviour:

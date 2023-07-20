@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class Object_BoatInventoryBox : BaseObject
 {
-    public override void Interaction()
+    private DiverBox_Inventory dd;
+    private bool On => player.InteractionCheck(interaction);
+
+    private void Start()
     {
-        //UI дя╠Б
-        base.Interaction();
+        dd = FindObjectOfType<DiverBox_Inventory>();
+    }
+    private void Update()
+    {
+        if(On)
+        {
+            UIInputManager.Instance.SetInputUI(dd);
+        }
     }
 
 }

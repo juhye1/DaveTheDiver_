@@ -42,7 +42,6 @@ public class MovePointUI : UIBase
             BoatImage.transform.localScale = Vector3.one * 1.2f;
             BoatImage.sprite = NormalBoat;
             BoatImage.color = defaultColor;
-            UIInputManager.Instance.SetInputUI(null);
         }
     }
 

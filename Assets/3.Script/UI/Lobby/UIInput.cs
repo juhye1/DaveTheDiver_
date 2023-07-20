@@ -24,7 +24,11 @@ public abstract class UIInput : MonoBehaviour
 
     public virtual void CancelUI()
     {
-        uiBase.OFFUI();
+        if(uiBase!=null)
+        {
+            uiBase.OFFUI();
+
+        }
         UIInputManager.Instance.SetUIState(UIInputManager.EState.ExitUI);
     }
 

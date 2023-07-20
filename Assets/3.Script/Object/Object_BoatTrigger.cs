@@ -6,11 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class Object_BoatTrigger : BaseObject
 {
-    public enum EState
-    {
-        Off, On
-    }
-
     public override void Interaction()
     {
 /*        if (inputKeyUI == null)

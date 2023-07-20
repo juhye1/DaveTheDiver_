@@ -22,7 +22,7 @@ public class Input_DiveLogUI : UIInput
     }
     public override void MoveUI(Vector2 dir)
     {
-        throw new System.NotImplementedException();
+        //³ªÁß¿¡
     }
 
     public override void Space()

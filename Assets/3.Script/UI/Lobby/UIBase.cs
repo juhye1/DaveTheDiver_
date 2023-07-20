@@ -10,6 +10,7 @@ public abstract class UIBase : MonoBehaviour
     [SerializeField] protected Image background;
     protected UIInput inputUI;
     protected InputKeyUI inputKeyUI;
+
     public abstract void OFFUI();
 
     private void Awake()

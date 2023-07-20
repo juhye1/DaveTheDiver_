@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 938708820}
   - component: {fileID: 938708821}
   - component: {fileID: 938708822}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: F_Anthias
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,9 +82,9 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1327743071
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &3520782920346457483
 MonoBehaviour:
@@ -122,8 +122,8 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
-  timeScale: 1
+  loop: 0
+  timeScale: 0
 --- !u!70 &938708819
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

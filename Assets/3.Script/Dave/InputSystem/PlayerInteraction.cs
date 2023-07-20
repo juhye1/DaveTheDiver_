@@ -26,6 +26,33 @@ public class PlayerInteraction : Player
 
     }
 
+    public bool InteractionCheck(BaseInteraction baseInteraction)
+    {
+        //UI일때도 이거해야해~~~~~~~~~~~
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, settings.DetectRange, settings.InteractableMask);
+        if (hit.collider != null)
+        {
+            interaction = hit.transform.GetComponent<BaseInteraction>();
+            Point = interaction.Point;
+
+            if (!state.Equals(EState.UI) || !state.Equals(EState.Load))
+            {
+                if (baseInteraction == interaction)
+                {
+                    return true;
+                }
+            }
+ 
+        }
+        else
+        {
+            interaction = null;
+        }
+        return false;
+
+    }
+
 
 
     public bool MovePoint(BaseInteraction baseInteraction)

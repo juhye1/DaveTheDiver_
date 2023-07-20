@@ -22,8 +22,8 @@ public class BaseObject : MonoBehaviour
 
     public virtual void Interaction()
     {
-        UIManager.Instance.InteractionUI(!isOn, interactionUI);
-        isOn = !isOn;
+        //UIManager.Instance.InteractionUI(!isOn, interactionUI);
+        //isOn = !isOn;
     }
 
 }
