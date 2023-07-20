@@ -24,7 +24,6 @@ public class PlayerDagger : MonoBehaviour
     {
         if (daggerCollider.isActiveAndEnabled)
         {
-
             daggerCollider.enabled = false;
         }
         animator.gameObject.SetActive(false);
@@ -38,7 +37,6 @@ public class PlayerDagger : MonoBehaviour
             Debug.Log("죽어라물고기~!");
             fish = collision.GetComponent<Fish>();
             fish.FishingDagger();
-            //Destroy(fish.gameObject);
             fish = null;
         }
     }

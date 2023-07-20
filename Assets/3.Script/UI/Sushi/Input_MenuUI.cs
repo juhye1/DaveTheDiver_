@@ -9,7 +9,8 @@ public class Input_MenuUI : UIInput
     {
         EnterUI,
         SelectSushi,
-        AddSushi
+        AddSushi,
+        AddComplete
     }
 
     [Header("Select")]
@@ -107,8 +108,9 @@ public class Input_MenuUI : UIInput
 
                 break;
             case EState.AddSushi:
+                int count = menuUI.LoadCount();
                 //num  = 물고기개수/0 숫자 바꿔야함
-                num = Mathf.Clamp(num, 0, 10);
+                num = Mathf.Clamp(num, 0, count+1);
                 sushiCount.text = num.ToString();
                 break;
         }
@@ -155,7 +157,12 @@ public class Input_MenuUI : UIInput
                 break;
             case EState.AddSushi:
                 num = 0;
+                state = EState.AddComplete;
                 //여기서 누르면 왼쪽 메뉴에 추가되게
+                break;
+            case EState.AddComplete:
+                menuUI.OnAddMenuUI(false);
+                menuUI.AddMenuComplete();
                 break;
                 
 
