@@ -301,6 +301,7 @@ public class UIManager : MonoBehaviour
 
     public void BoatUIOn()
     {
+        //player.ActionMapDisable();
         boatUI.BoatUIOn();
         inputKeyUI.UIOn(false);
     }

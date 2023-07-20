@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MovePointUI : MonoBehaviour
+public class MovePointUI : UIBase
 {
     [SerializeField] private GameObject SushiGO;
     [SerializeField] private GameObject DiveGO;
@@ -14,10 +14,10 @@ public class MovePointUI : MonoBehaviour
 
     private Color color;
     private Color defaultColor;
-    private InputKeyUI inputKeyUI;
 
     private void Awake()
     {
+        inputUI = GetComponent<Input_MovePointUI>();
         inputKeyUI = FindObjectOfType<InputKeyUI>();
         SushiGO.SetActive(false);
         BoatImage.sprite = NormalBoat;
@@ -35,12 +35,14 @@ public class MovePointUI : MonoBehaviour
             BoatImage.transform.localScale = Vector3.one * 1.5f;
             BoatImage.sprite = ActiveBoat;
             BoatImage.color = color;
+            UIInputManager.Instance.SetInputUI(inputUI);
         }
         else
         {
             BoatImage.transform.localScale = Vector3.one * 1.2f;
             BoatImage.sprite = NormalBoat;
             BoatImage.color = defaultColor;
+            UIInputManager.Instance.SetInputUI(null);
         }
     }
 
@@ -57,6 +59,9 @@ public class MovePointUI : MonoBehaviour
 
     }
 
-
-
+    public override void OFFUI()
+    {
+        SushiGO.SetActive(false);
+        inputKeyUI.UIOn(true);
+    }
 }

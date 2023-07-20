@@ -6,6 +6,7 @@ using DG.Tweening;
 
 public class BoatUI : UIBase
 {
+    //바다에서 로비가는 UI
     public enum EState
     {
         GotoBoat, Cancel
@@ -28,7 +29,7 @@ public class BoatUI : UIBase
 
     public void BoatUIOn()
     {
-        UIInputManager.Instance.SetInputUI(inputUI);
+        UIInputManager.Instance.SetInputUI(inputUI, UIInputManager.EState.OnUI);
         inputKeyUI.UIOn(false);
         foreach (GameObject go in UIList)
         {

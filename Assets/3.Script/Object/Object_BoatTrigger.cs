@@ -29,7 +29,7 @@ public class Object_BoatTrigger : BaseObject
     }
     public override void Interaction()
     {
-        if (inputKeyUI == null)
+/*        if (inputKeyUI == null)
         {
             inputKeyUI = FindObjectOfType<InputKeyUI>();
         }
@@ -51,7 +51,7 @@ public class Object_BoatTrigger : BaseObject
 
 
 
-        }
+        }*/
     }
 
     private void Update()

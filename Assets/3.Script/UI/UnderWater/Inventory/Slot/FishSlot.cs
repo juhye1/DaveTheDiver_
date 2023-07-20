@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class FishSlot : ItemSlot
 {
-    [Header("Base Info")]
-    [SerializeField] private Image SushiImage;
-    [SerializeField] private TextMeshProUGUI CoinTMP;
-    [SerializeField] private TextMeshProUGUI MeatTMP;
-    [SerializeField] private GameObject SlotGO;
+    [Header("Fish Info")]
+    [SerializeField] protected Image SushiImage;
+    [SerializeField] protected TextMeshProUGUI CoinTMP;
+    [SerializeField] protected TextMeshProUGUI MeatTMP;
+    [SerializeField] protected GameObject SlotGO;
     public Image Background;
 
     public override void Init(ItemInformation info)

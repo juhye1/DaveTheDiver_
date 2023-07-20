@@ -26,17 +26,52 @@ public class UIInputManager : Singleton<UIInputManager>
 
     public void SetUIState(EState state)
     {
+        //이건 나중에 하기(UI 효과 다 나오고 나서 움직이고 싶을때)
         State = state;
-        if(State.Equals
-            (EState.ExitUI)) player.ActionMapEnable(playerState);
+
+
+        if(State.Equals(EState.OnUI)) player.ActionMapDisable();
+
+        switch (State)
+        {
+            case EState.ExitUI:
+                player.ActionMapEnable(playerState);
+                switch (playerState)
+                {
+                    case Player.EState.Sushi:
+                        SushiGameManager.Instance.ActiveOpenUI(true);
+                        break;
+
+
+                }
+                break;
+
+            case EState.OnUI:
+
+                switch (playerState)
+                {
+                    case Player.EState.Sushi:
+                        SushiGameManager.Instance.ActiveOpenUI(false);
+                        break;
+
+
+                }
+                break;
+        }
+
 
 
     }
 
-    public void SetInputUI(UIInput input)
+    public void SetInputUI(UIInput input, EState state=EState.EnterUI)
     {
+        //이건 한번에 하기
         InputUI = input;
-        player.ActionMapDisable();
+
+        if(state.Equals(EState.OnUI))
+        {
+            SetUIState(EState.OnUI);
+        }
     }
 
     public void OnNumberOne(InputAction.CallbackContext context)
@@ -54,8 +89,6 @@ public class UIInputManager : Singleton<UIInputManager>
     public void OnMoveUI(InputAction.CallbackContext context)
     {
         if (!State.Equals(EState.OnUI) || !context.started) return;
-
-        Debug.Log("으악머리아파");
         cachedMove = context.ReadValue<Vector2>();
         if (InputUI != null)
         {
@@ -71,7 +104,7 @@ public class UIInputManager : Singleton<UIInputManager>
 
         if (InputUI != null)
         {
-            InputUI.MoveUI(cachedMove);
+            InputUI.CancelUI();
             State = EState.ExitUI;
 
         }
@@ -80,7 +113,8 @@ public class UIInputManager : Singleton<UIInputManager>
 
     public void OnSpace(InputAction.CallbackContext context)
     {
-        if (!State.Equals(EState.OnUI) || !context.started) return;
+        //if (!State.Equals(EState.OnUI) || !context.started) return;
+        if (!context.started) return;
 
         if (InputUI != null)
         {

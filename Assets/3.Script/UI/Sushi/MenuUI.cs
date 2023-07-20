@@ -5,16 +5,28 @@ using UnityEngine;
 
 public class MenuUI : UIBase
 {
-
+    [Header("UI")]
     [SerializeField] private RectTransform FirstUI;
-    //일단 키보드로 내리면 오른쪽에 추가 나오는거 만들고
-    // 다 하면 누르면 다음 UI 나오는거 만들고
-    // 그 담엔 스시 추가하는거 만들고
-    // 그 담엔 스시 추가된걸로 요리하는거 만들기
+    [SerializeField] private RectTransform AddUI;
+    [SerializeField] private RectTransform AddSushiUI;
 
+    [Header("Slot")]
+    [SerializeField] private RecipeSlot[] RecipeSlot;
+    [SerializeField] private RecipeSlot AddSushiSlot;
+    private ItemInformation saveInfo;
+    private List<ItemInformation> itemList;
+
+    private void Start()
+    {
+        foreach (var slot in RecipeSlot)
+        {
+            slot.gameObject.SetActive(false);
+        }
+    }
     public void OnFirstUI()
     {
-        UIInputManager.Instance.SetInputUI(inputUI);
+        UIInputManager.Instance.SetInputUI(inputUI, UIInputManager.EState.OnUI);
+        background.enabled = true;
         FirstUI.gameObject.SetActive(true);
         FirstUI.DOLocalMoveY(0, 0.5f).SetEase(Ease.OutCubic);
     }
@@ -22,11 +34,44 @@ public class MenuUI : UIBase
 
     public void OnAddMenuUI()
     {
+        UpdateItem();
+        FirstUI.gameObject.SetActive(false);
+        AddUI.gameObject.SetActive(true);
+    }
 
+    public void OnAddSushiUI()
+    {
+        AddSushiSlot.AddMenu(saveInfo);
+        AddSushiUI.gameObject.SetActive(true);
     }
     public override void OFFUI()
     {
         FirstUI.gameObject.SetActive(false);
+        AddUI.gameObject.SetActive(false);
     }
     //
+
+    private void UpdateItem()
+    {
+        itemList = InventoryManager.Instance.LoadItem();
+
+        if (itemList != null)
+        {
+            for (int i = 0; i < itemList.Count; i++)
+            {
+                RecipeSlot[i].gameObject.SetActive(true);
+                RecipeSlot[i].Init(itemList[i]);
+            }
+        }
+
+
+        //리스트 길이 만큼 slot 키고 업데이트하기
+
+    }
+
+    public void LoadItemInfo(int num)
+    {
+        RecipeSlot[num].Show(itemList[num]);
+        saveInfo = itemList[num];
+    }
 }

@@ -9,10 +9,7 @@ public class Object_DiveTrigger : BaseObject
 
     public override void Interaction()
     {
-        if(inputKeyUI==null)
-        {
-            inputKeyUI = FindObjectOfType<InputKeyUI>();
-        }
+
     }
 
     private void Update()

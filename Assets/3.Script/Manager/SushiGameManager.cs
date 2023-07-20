@@ -41,6 +41,13 @@ public class SushiGameManager : Singleton<SushiGameManager>
     {
         openUI.gameObject.SetActive(true);
     }
+
+    public void ActiveOpenUI(bool on)
+    {
+        openUI.gameObject.SetActive(on);
+
+    }
+
     public EScore TeaScore(int score)
     {
         if (score < 50)
