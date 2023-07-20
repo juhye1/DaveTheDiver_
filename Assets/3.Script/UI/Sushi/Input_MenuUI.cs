@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class Input_MenuUI : UIInput
 {
+   public enum EState
+    {
+        EnterUI,
+        GotoAddMenu,
+        SelectSushi,
+        AddSushi
+    }
     private List<RectTransform> SlotList;
+    private EState state = EState.EnterUI;
+    private MenuUI menuUI;
     private void Start()
     {
         num = 0;
         SlotList = new List<RectTransform>();
+        menuUI = GetComponent<MenuUI>();
         SlotList.AddRange(transforms);
     }
     public override void MoveUI(Vector2 dir)
     {
-        Debug.Log(dir);
         EDirection edir = direction[dir];
 
         switch (edir)
@@ -37,6 +46,20 @@ public class Input_MenuUI : UIInput
 
     public override void Space()
     {
-        throw new System.NotImplementedException();
+        switch(state)
+        {
+            case EState.EnterUI:
+                menuUI.OnAddMenuUI();
+                break;
+            case EState.GotoAddMenu:
+                break;
+
+            case EState.SelectSushi:
+                break;
+            case EState.AddSushi:
+                break;
+                
+
+        }
     }
 }

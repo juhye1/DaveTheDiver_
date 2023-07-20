@@ -13,7 +13,6 @@ public class Object_DiveLogTrigger : BaseObject
 
     }
 
-    private EState state = EState.DiveLog;
     private DiveLogUI diveLogUI;
 
     private void Start()

@@ -19,6 +19,11 @@ public class MenuUI : UIBase
         FirstUI.DOLocalMoveY(0, 0.5f).SetEase(Ease.OutCubic);
     }
 
+
+    public void OnAddMenuUI()
+    {
+
+    }
     public override void OFFUI()
     {
         FirstUI.gameObject.SetActive(false);
