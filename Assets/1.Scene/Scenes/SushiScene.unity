@@ -420,14 +420,6 @@ MonoBehaviour:
   BubbleSprites:
   - {fileID: -4031938595959965377, guid: c03259a20f11d054ba15b9d960849cdd, type: 3}
   - {fileID: -7553764107958474814, guid: c03259a20f11d054ba15b9d960849cdd, type: 3}
-  OrderSprites:
-  - {fileID: 21300000, guid: 9923c922ed33dac419b6db39f878455e, type: 3}
-  - {fileID: 2871169492295782756, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
-  - {fileID: 7002341289675288794, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
-  - {fileID: -2375351025177535345, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
-  - {fileID: -5390559438823612316, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
-  - {fileID: 931808555528793477, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
-  - {fileID: 2185300955204391116, guid: 4a01e057f6f7f2e48a0b81a2eebab865, type: 3}
   TeaUI:
   - {fileID: 1958454896}
   - {fileID: 1877297346}
@@ -4468,6 +4460,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291999142}
   m_CullTransparentMesh: 1
+--- !u!1 &292135414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 292135415}
+  m_Layer: 5
+  m_Name: FocusPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &292135415
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292135414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 835633812}
+  m_Father: {fileID: 549937197}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 19.799988}
+  m_SizeDelta: {x: -80, y: -206.3}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &294217886
 GameObject:
   m_ObjectHideFlags: 0
@@ -7367,7 +7395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &532708624
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7424,7 +7452,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532708623}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!1 &538227883
 GameObject:
   m_ObjectHideFlags: 0
@@ -7744,6 +7772,7 @@ RectTransform:
   m_Children:
   - {fileID: 1502773976}
   - {fileID: 812514138}
+  - {fileID: 292135415}
   m_Father: {fileID: 1954540833}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9091,7 +9120,7 @@ GameObject:
   - component: {fileID: 596906615}
   - component: {fileID: 596906612}
   - component: {fileID: 596906613}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: CupCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12892,6 +12921,81 @@ MonoBehaviour:
   Sushi: {fileID: 1422503095}
   customerSpawner: {fileID: 22013426}
   Score: 0
+--- !u!1 &835633811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 835633812}
+  - component: {fileID: 835633814}
+  - component: {fileID: 835633813}
+  m_Layer: 5
+  m_Name: FocusImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &835633812
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835633811}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 292135415}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &835633813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835633811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b05f95ef19046494bac39100918f647f, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 0.74
+--- !u!222 &835633814
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835633811}
+  m_CullTransparentMesh: 0
 --- !u!1 &838357158
 GameObject:
   m_ObjectHideFlags: 0
@@ -23516,7 +23620,7 @@ MonoBehaviour:
   - {fileID: 1970009815}
   - {fileID: 1741834950}
   select: {fileID: 1104893804}
-  secondSelect: {fileID: 532708624}
+  secondSelect: {fileID: 835633812}
   selectedSlot: {fileID: 0}
   sushiGridParent: {fileID: 1502773976}
   sushiTransforms:
@@ -31310,7 +31414,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502773975}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
   m_Name: 
@@ -44079,7 +44183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896910115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.201, y: -0.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 596906615}
@@ -44222,7 +44326,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1073774143
+    m_Bits: 1073774207
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -52423,8 +52527,8 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2196971285242473735}
-        m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: OnSpace
+        m_TargetAssemblyTypeName: Player_Sushi, Assembly-CSharp
+        m_MethodName: OnSushiSpace
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -52524,10 +52628,6 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 7c4ab1b5-97f8-4824-ad6e-9fa602ea24fa
     m_ActionName: UnderWater/ESC[/Keyboard/escape]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9037da84-e87e-4d07-ae4b-b30ed6e0481d
-    m_ActionName: UI/NumberOne[/Keyboard/1]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Sushi

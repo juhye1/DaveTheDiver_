@@ -26,8 +26,9 @@ public class MenuUI : UIBase
     private List<ItemInformation> itemList;
     private List<string> Dictionarykeys;
     private Dictionary<string, List<ItemInformation>> FishDictionary;
+
     private int saveCount;
-    private int totalAddcount;
+    private int saveRecipeSlotnum;
 
     private void Start()
     {
@@ -81,16 +82,22 @@ public class MenuUI : UIBase
 
     public void AddMenuComplete()
     {
-        //여기서 슬롯 채우기
-        //채워야할정보
-        //
+        //추가한 메뉴는 빼기
+        RecipeSlot[saveRecipeSlotnum].gameObject.SetActive(false);
+        //바깥 세상 메뉴판 업데이트하기
         MiniMenuUI.MiniMenuInit(saveInfo, saveCount);
+        //뒤 UI 업데이트하기
         addMenuSlot.Init(saveInfo, saveCount);
     }
 
     public void SelectMenuSlot(AddMenuSlot slot)
     {
         addMenuSlot = slot;
+    }
+
+    public void SetRecipeNum(int num)
+    {
+        saveRecipeSlotnum = num;
     }
 
 
@@ -106,6 +113,7 @@ public class MenuUI : UIBase
 
     private void UpdateItem()
     {
+        //가운데에 주루룩 나오는거
         FishDictionary = InventoryManager.Instance.LoadDictionary();
         Dictionarykeys = new List<string>(FishDictionary.Keys);
 
@@ -134,6 +142,7 @@ public class MenuUI : UIBase
 
     public void LoadItemInfo(int num)
     {
+        //오른쪽에 정보나오는거
         if (FishDictionary == null) return;
         ItemInformation info = FishDictionary[Dictionarykeys[num]][0];
 

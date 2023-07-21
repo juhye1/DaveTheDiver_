@@ -36740,8 +36740,8 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1883525042}
-        m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: OnSpace
+        m_TargetAssemblyTypeName: Player_Lobby, Assembly-CSharp
+        m_MethodName: OnLobbySpace
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36833,10 +36833,6 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 7c4ab1b5-97f8-4824-ad6e-9fa602ea24fa
     m_ActionName: UnderWater/ESC[/Keyboard/escape]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9037da84-e87e-4d07-ae4b-b30ed6e0481d
-    m_ActionName: UI/NumberOne[/Keyboard/1]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Lobby

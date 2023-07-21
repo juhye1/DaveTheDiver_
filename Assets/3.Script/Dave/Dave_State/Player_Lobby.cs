@@ -16,6 +16,28 @@ public class Player_Lobby : PlayerInteraction
         ActionMapDisable();
     }
 
+    protected void Space(bool pressKey)
+    {
+        //얘는 넘어가는거만 하면 되자너
+        if (pressKey && interaction != null)
+        {
+            if (interaction.CanPerform())
+            {
+                interaction.Perform();
+
+            }
+        }
+    }
+
+    public void OnLobbySpace(InputAction.CallbackContext context)
+    {
+        //한번 누르는건 여기서 하면되고
+        pressKey = context.ReadValue<float>() > 0.1f;
+        if (!context.started)
+            return;
+
+    }
+
 
     //애니메이터
     public void GoToUnderWater()

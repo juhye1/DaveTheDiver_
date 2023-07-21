@@ -98,19 +98,36 @@ public class Player_Sushi : PlayerInteraction
         }
     }
 
+    public void OnSushiSpace(InputAction.CallbackContext context)
+    {
+        //한번 누르는건 여기서 하면되고
+        pressKey = context.ReadValue<float>() > 0.1f;
+        if (!context.started)
+            return;
+
+        if (SushiGameManager.Instance.State.Equals(SushiGameManager.EState.Start))
+        {
+            Debug.Log("얘가 널인가?");
+            if (interaction != null)
+                interaction.Perform();
+        }
+    }
+
     public void OnPourTea(InputAction.CallbackContext context)
     {
+
+        if (!SushiGameManager.Instance.State.Equals(SushiGameManager.EState.Start)) return;
         pour = context.ReadValue<float>() > 0.1f;
 
-/*        if(context.started)
+        if (context.started)
         {
             UIManager.Instance.MoveKettle();
         }
-        if(context.canceled)
+        if (context.canceled)
         {
             UIManager.Instance.ScoreOn();
             interaction.ChangeType();
-        }*/
+        }
     }
 
     private void FixedUpdate()
@@ -124,6 +141,7 @@ public class Player_Sushi : PlayerInteraction
 
             case EState.Sushi:
                 StartSushi(startKey);
+                Interaction();
                 Move();
                 DashGauge(dash);
                 ThrowSushi(throwaway);

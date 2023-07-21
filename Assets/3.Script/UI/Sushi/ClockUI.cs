@@ -46,7 +46,7 @@ public class ClockUI : MonoBehaviour
         }
 
 
-        clockSlider.value = Mathf.MoveTowards(clockSlider.value, 1, Time.deltaTime * 0.05f);
+        clockSlider.value = Mathf.MoveTowards(clockSlider.value, 1, Time.deltaTime * 0.005f);
         if(clockSlider.value>0.8f)
         {
             redImage.SetActive(true);

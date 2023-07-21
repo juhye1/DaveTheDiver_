@@ -115,15 +115,21 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void OnSpace(InputAction.CallbackContext context)
+/*    public void OnSpace(InputAction.CallbackContext context)
     {
         //한번 누르는건 여기서 하면되고
         pressKey = context.ReadValue<float>() > 0.1f;
-        if (!context.started)
+        if (!context.started || State.Equals(EState.Sushi))
             return;
-    }
 
-    protected void Space(bool pressKey)
+        if (SushiGameManager.Instance.State.Equals(SushiGameManager.EState.Start))
+        {
+            if(interaction!=null)
+            interaction.Perform();
+        }
+    }*/
+
+/*    protected void Space(bool pressKey)
     {
         //얘는 넘어가는거만 하면 되자너
         if(pressKey&&interaction!=null)
@@ -134,7 +140,7 @@ public class Player : MonoBehaviour
 
             }
         }
-    }
+    }*/
 
     //움직이는거 rigidbody로 통일?
     protected void Move()
@@ -184,6 +190,7 @@ public class Player : MonoBehaviour
 
     public void ActionMapEnable(EState state)
     {
+        rigid.velocity = Vector2.zero;
         playerInput.currentActionMap.Disable();
 
         switch (state)

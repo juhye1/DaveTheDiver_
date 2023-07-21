@@ -31,6 +31,8 @@ public class Input_MenuUI : UIInput
     private EState state = EState.EnterUI;
     private AddMenuSlot addMenuSlot;
     private MenuUI menuUI;
+
+    private int saveRecipeSlotnum;
     private void Start()
     {
         num = 0;
@@ -108,6 +110,7 @@ public class Input_MenuUI : UIInput
                 num = Mathf.Clamp(num, 0, sushiTransforms.Length - 1);
                 secondSelect.anchoredPosition = sushiTransforms[num].anchoredPosition;
                 menuUI.LoadItemInfo(num);
+                menuUI.SetRecipeNum(num);
                 //여기서 정보 띄우기
 
 

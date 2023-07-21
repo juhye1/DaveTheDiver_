@@ -19,6 +19,8 @@ public class SushiGameManager : Singleton<SushiGameManager>
     [SerializeField] private CustomerSpawner customerSpawner;
 
     public bool isGameStart { get { return _start; } private set { } }
+    private EState state = EState.End;
+    public EState State => state;
     private bool _start = false;
     [HideInInspector]
     public enum EScore
@@ -26,6 +28,11 @@ public class SushiGameManager : Singleton<SushiGameManager>
         Perfect,
         Good,
         Bad
+    }
+
+    public enum EState
+    {
+        Start, End
     }
 
     public EScore Score;
@@ -92,17 +99,22 @@ public class SushiGameManager : Singleton<SushiGameManager>
 
     public void OnSushi(Sprite sprite)
     {
+        
         SushiGO.SetActive(true);
         Sushi.sprite = sprite;
     }
 
     public void OffSushi()
     {
+        state = EState.End;
+        UIInputManager.Instance.SetUIState(UIInputManager.EState.EnterUI);
         SushiGO.SetActive(false);
     }
 
     public void OpenSushi()
     {
+        state = EState.Start;
+        UIInputManager.Instance.SetUIState(UIInputManager.EState.DisableUIInput);
         openUI.OpenSushi();
     }
 

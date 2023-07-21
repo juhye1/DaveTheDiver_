@@ -7,22 +7,26 @@ public class UIInputManager : Singleton<UIInputManager>
 {
     public enum EState
     {
-        EnterUI, OnUI, ExitUI
+        EnterUI, OnUI, ExitUI, DisableUIInput
     }
     //private PlayerInput UIInput;
     private UIInput InputUI;
     private Player player;
+    private PlayerInput inputsystem;
     [SerializeField] private EState State;
     [SerializeField] private Player.EState playerState;
     private Vector2 cachedMove;
     private InputKeyUI inputKeyUI;
+    private InputActionMap sleepActionMap;
+    private InputActionMap onActionMap;
     private void Awake()
     {
         State = EState.EnterUI;
         player = FindObjectOfType<Player>();
         inputKeyUI = FindObjectOfType<InputKeyUI>();
-        //UIInput = GetComponent<PlayerInput>();
-        //UIInput.currentActionMap.Disable();
+        inputsystem = GetComponent<PlayerInput>();
+        sleepActionMap = inputsystem.actions.FindActionMap("Sleep");
+        onActionMap = inputsystem.actions.FindActionMap("UI");
 
     }
 
@@ -30,9 +34,6 @@ public class UIInputManager : Singleton<UIInputManager>
     {
         //이건 나중에 하기(UI 효과 다 나오고 나서 움직이고 싶을때)
         State = state;
-
-
-        if(State.Equals(EState.OnUI)) player.ActionMapDisable();
 
         switch (State)
         {
@@ -52,6 +53,7 @@ public class UIInputManager : Singleton<UIInputManager>
                 break;
 
             case EState.OnUI:
+                player.ActionMapDisable();
 
                 switch (playerState)
                 {
@@ -62,6 +64,16 @@ public class UIInputManager : Singleton<UIInputManager>
 
                 }
                 break;
+            case EState.DisableUIInput:
+                inputsystem.currentActionMap.Disable();
+                sleepActionMap.Enable();
+                break;
+            case EState.EnterUI:
+                inputsystem.currentActionMap.Disable();
+                onActionMap.Enable();
+                break;
+
+
         }
 
 
