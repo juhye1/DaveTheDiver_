@@ -9,7 +9,7 @@ public class MenuUI : UIBase
     [SerializeField] private RectTransform FirstUI;
     [SerializeField] private RectTransform FirstUIdd;
     [SerializeField] private GameObject SpaceUI;
-
+    [SerializeField] private MiniMenuUI MiniMenuUI;
     [SerializeField] private RectTransform saveRectTransform;
 
     [SerializeField] private RectTransform AddUI;
@@ -22,11 +22,13 @@ public class MenuUI : UIBase
     [SerializeField] private RecipeSlot AddSushiSlot;
 
     private AddMenuSlot addMenuSlot;
-
     private ItemInformation saveInfo;
-    private int saveCount;
     private List<ItemInformation> itemList;
+    private List<string> Dictionarykeys;
     private Dictionary<string, List<ItemInformation>> FishDictionary;
+    private int saveCount;
+    private int totalAddcount;
+
     private void Start()
     {
         foreach (var slot in RecipeSlot)
@@ -82,6 +84,7 @@ public class MenuUI : UIBase
         //여기서 슬롯 채우기
         //채워야할정보
         //
+        MiniMenuUI.MiniMenuInit(saveInfo, saveCount);
         addMenuSlot.Init(saveInfo, saveCount);
     }
 
@@ -93,6 +96,8 @@ public class MenuUI : UIBase
 
     public override void OFFUI()
     {
+
+
         background.enabled = false;
         FirstUI.gameObject.SetActive(false);
         AddUI.gameObject.SetActive(false);
@@ -102,15 +107,15 @@ public class MenuUI : UIBase
     private void UpdateItem()
     {
         FishDictionary = InventoryManager.Instance.LoadDictionary();
-        List<string> keys = new List<string>(FishDictionary.Keys);
+        Dictionarykeys = new List<string>(FishDictionary.Keys);
 
         //총 개수 곱하기 raiting(고기)
-        for (int i = 0; i < keys.Count; i++)
+        for (int i = 0; i < Dictionarykeys.Count; i++)
         {
             RecipeSlot[i].gameObject.SetActive(true);
 
-            ItemInformation info = FishDictionary[keys[i]][0];
-            int count = FishDictionary[keys[i]].Count;
+            ItemInformation info = FishDictionary[Dictionarykeys[i]][0];
+            int count = FishDictionary[Dictionarykeys[i]].Count;
             info.Raiting *= count;
             
             RecipeSlot[i].Init(info);
@@ -129,11 +134,15 @@ public class MenuUI : UIBase
 
     public void LoadItemInfo(int num)
     {
-        if (itemList==null) return;
+        if (FishDictionary == null) return;
+        ItemInformation info = FishDictionary[Dictionarykeys[num]][0];
 
-        saveCount = FishDictionary[itemList[num].Name].Count;
+        if (info == null) return;
 
-        RecipeSlot[num].Show(itemList[num], saveCount);
-        saveInfo = itemList[num];
+        string key = info.Name;
+        saveCount = FishDictionary[key].Count;
+
+        RecipeSlot[num].Show(info, saveCount);
+        saveInfo = info;
     }
 }

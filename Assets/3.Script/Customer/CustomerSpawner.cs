@@ -14,7 +14,7 @@ public class CustomerSpawner : MonoBehaviour
     [SerializeField] private Customer customer;
 
     [SerializeField] private Sprite[] BubbleSprites;
-    [SerializeField] private Sprite[] OrderSprites;
+    private List<Sprite> OrderSprites;
 
     [SerializeField] private GameObject[] TeaUI;
     [SerializeField] private SpriteLibraryAsset[] spriteLibraryAsset;
@@ -25,6 +25,8 @@ public class CustomerSpawner : MonoBehaviour
     private List<Sprite> OrderList;
     private List<Chairs> goal;
     private List<int> closet;
+
+    private MiniMenuUI miniMenuUI;
 
     private Chair chair;
     private SpeechBubble bubble;
@@ -38,6 +40,7 @@ public class CustomerSpawner : MonoBehaviour
     private void Awake()
     {
         spriteLibraryDictionary = new Dictionary<int, SpriteLibraryAsset>();
+        miniMenuUI = FindObjectOfType<MiniMenuUI>();
         chair = FindObjectOfType<Chair>();
         closet = new List<int>();
         goal = new List<Chairs>();
@@ -57,6 +60,7 @@ public class CustomerSpawner : MonoBehaviour
     {
         List<Vector3> spawnpoints = SpawnPoints();
         goal = chair.EmptyChairs();
+
         for (int i = 0; i < 3; i++)
         {
             orderType = new Customer.EOrderType();
@@ -100,6 +104,7 @@ public class CustomerSpawner : MonoBehaviour
 
     private void Gacha()
     {
+        OrderSprites = miniMenuUI.MenuSushiSprite();
         //의자 뽑기
 
         for (int j = 0; j < 10; j++)
@@ -115,7 +120,7 @@ public class CustomerSpawner : MonoBehaviour
         //말풍선, 주문
         //0번이면 무조건 녹차, 1번이면 음식
         bubble = new SpeechBubble();
-        rdn = Random.Range(0, OrderSprites.Length);
+        rdn = Random.Range(0, OrderSprites.Count);
         bubble.Order = OrderSprites[rdn];
 
         switch (rdn)
@@ -135,7 +140,7 @@ public class CustomerSpawner : MonoBehaviour
         }
         spareBubble = new SpeechBubble();
         spareBubble.Bubble = BubbleSprites[1];
-        spareBubble.Order = OrderSprites[Random.Range(1, OrderSprites.Length)];
+        spareBubble.Order = OrderSprites[Random.Range(1, OrderSprites.Count)];
     }
 
     public List<Sprite> GetOrderList()

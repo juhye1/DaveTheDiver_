@@ -177,6 +177,7 @@ public class Player : MonoBehaviour
     public void ActionMapDisable()
     {
         playerInput.currentActionMap.Disable();
+        rigid.velocity = Vector2.zero;
         state = EState.Load;
         Debug.Log("Á¤Áö");
     }

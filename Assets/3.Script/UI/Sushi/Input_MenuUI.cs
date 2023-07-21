@@ -25,6 +25,7 @@ public class Input_MenuUI : UIInput
     [SerializeField] private RectTransform sushiGridParent;
     [SerializeField] private RectTransform[] sushiTransforms;
     [SerializeField] private TextMeshProUGUI sushiCount;
+    [SerializeField] private TextMeshProUGUI subsushiCount;
     private List<RectTransform> SushiGridList;
 
     private EState state = EState.EnterUI;
@@ -114,8 +115,9 @@ public class Input_MenuUI : UIInput
             case EState.AddSushi:
                 int count = menuUI.LoadCount();
                 //num  = 물고기개수/0 숫자 바꿔야함
-                num = Mathf.Clamp(num, 0, count+1);
+                num = Mathf.Clamp(num, 0, count);
                 sushiCount.text = num.ToString();
+                subsushiCount.text = num.ToString();
                 break;
         }
 
@@ -156,7 +158,6 @@ public class Input_MenuUI : UIInput
                 //슬롯 선택
                 addMenuSlot = transforms[num].GetComponent<AddMenuSlot>();
                 //강조 표시
-                //select.anchoredPosition = transforms[num].anchoredPosition;
                 menuUI.SelectMenuSlot(addMenuSlot);
                 num = 0;
                 //첫번째 아이템 정보 출력
@@ -166,22 +167,20 @@ public class Input_MenuUI : UIInput
                 break;
 
             case EState.SelectSushi:
-                menuUI.OnAddSushiUI(true);
                 num = 0;
+                menuUI.OnAddSushiUI(true);
 
                 state = EState.AddSushi;
                 break;
             case EState.AddSushi:
                 num = 0;
-
-                state = EState.AddComplete;
-                //여기서 누르면 왼쪽 메뉴에 추가되게
-                break;
-            case EState.AddComplete:
-                menuUI.OnAddMenuUI(false);
+                sushiCount.text = num.ToString();
+                subsushiCount.text = num.ToString();
                 menuUI.AddMenuComplete();
+                menuUI.OnAddSushiUI(false);
 
-                state = EState.AddSushi;
+                state = EState.SelectSushi;
+                //여기서 누르면 왼쪽 메뉴에 추가되게
                 break;
                 
 

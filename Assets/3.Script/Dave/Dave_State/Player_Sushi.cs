@@ -102,7 +102,7 @@ public class Player_Sushi : PlayerInteraction
     {
         pour = context.ReadValue<float>() > 0.1f;
 
-        if(context.started)
+/*        if(context.started)
         {
             UIManager.Instance.MoveKettle();
         }
@@ -110,7 +110,7 @@ public class Player_Sushi : PlayerInteraction
         {
             UIManager.Instance.ScoreOn();
             interaction.ChangeType();
-        }
+        }*/
     }
 
     private void FixedUpdate()

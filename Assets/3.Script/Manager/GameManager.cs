@@ -17,7 +17,7 @@ public class GameManager : DontDestroySingleton<GameManager>
     { 
         Loading, SushiToLobby, UnderWaterToLobby, UnderWater, Sushi
     }
-    private EScene scene;
+    [SerializeField]  private EScene scene;
     public EScene Scene => scene;
     public void LoadScene(EScene scene)
     {
@@ -47,7 +47,7 @@ public class GameManager : DontDestroySingleton<GameManager>
         string sceneName = scene == EScene.SushiToLobby || scene == EScene.UnderWaterToLobby 
                                     ? "LobbyScene" : "LoadingScene";
         loadSceneWhite.enabled = true;
-        loadSceneWhite.DOFade(1, 2).OnComplete(() => SceneManager.LoadScene(sceneName));
+        loadSceneWhite.DOFade(1, 1).OnComplete(() => SceneManager.LoadScene(sceneName));
     }
 
 

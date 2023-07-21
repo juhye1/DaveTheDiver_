@@ -12,10 +12,12 @@ public class LobbyManager : Singleton<LobbyManager>
     {
         GameManager.Instance.ResetLoadSceneEffect();
         SetDiveLogCollider(false);
+
         switch (scene)
         {
             case GameManager.EScene.UnderWaterToLobby:
                 SetDiveLogCollider(true);
+
                 //UIManager.Instance.DiveLog();
                 //이거면 UI 뜨는거랑 반초한테 보내는거
                 break;

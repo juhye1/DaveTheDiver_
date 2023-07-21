@@ -57,7 +57,6 @@ public class DiverBox_Inventory : UIInput
                 UpUI(true);
                 state = EState.On;
                 break;
-                ;
             case EState.On:
                 break;
 

@@ -118,8 +118,8 @@ public class UIInputManager : Singleton<UIInputManager>
 
     public void OnSpace(InputAction.CallbackContext context)
     {
-        if (State.Equals(EState.ExitUI) || !context.started) return;   
-
+        //if (State.Equals(EState.ExitUI) || !context.started) return;   
+        if (!context.started) return;   
         if (InputUI != null)
         {
             InputUI.Space();

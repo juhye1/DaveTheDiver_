@@ -12,12 +12,14 @@ public class MovePointUI : UIBase
     [SerializeField] private Sprite NormalBoat;
     [SerializeField] private Sprite ActiveBoat;
 
+    private Input_MovePointUI inputMovePointUI;
+
     private Color color;
     private Color defaultColor;
 
     private void Awake()
     {
-        inputUI = GetComponent<Input_MovePointUI>();
+        inputMovePointUI = GetComponent<Input_MovePointUI>();
         inputKeyUI = FindObjectOfType<InputKeyUI>();
         SushiGO.SetActive(false);
         BoatImage.sprite = NormalBoat;
@@ -35,8 +37,9 @@ public class MovePointUI : UIBase
             BoatImage.transform.localScale = Vector3.one * 1.5f;
             BoatImage.sprite = ActiveBoat;
             BoatImage.color = color;
-            UIInputManager.Instance.SetInputUI(inputUI);
-            UIInputManager.Instance.SetUIState(UIInputManager.EState.EnterUI);
+            inputMovePointUI.SetType(Input_MovePointUI.EType.Sushi);
+            UIInputManager.Instance.SetInputUI(inputMovePointUI);
+            //UIInputManager.Instance.SetUIState(UIInputManager.EState.EnterUI);
         }
         else
         {
@@ -48,7 +51,12 @@ public class MovePointUI : UIBase
 
     public void OnDiveUI(bool isON)
     {
-        //UIInputManager.Instance.SetUIState(UIInputManager.EState.ExitUI);
+        if (isON)
+        {
+            inputMovePointUI.SetType(Input_MovePointUI.EType.Dive);
+            UIInputManager.Instance.SetInputUI(inputMovePointUI);
+
+        }
         inputKeyUI.OnBG(isON);
         DiveGO.SetActive(isON);
     }

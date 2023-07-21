@@ -49,16 +49,6 @@ public class DiveLogUI : UIBase
     {
         UIInputManager.Instance.SetInputUI(inputUI);
         UIInputManager.Instance.SetUIState(UIInputManager.EState.OnUI);
-
-
-
-
-
-
-
-
-
-
         UpdateUI();
         DiveLogTransform.DOLocalMoveY(0, 0.7f).SetEase(Ease.OutBounce);
     }
@@ -119,13 +109,15 @@ public class DiveLogUI : UIBase
 
         string key;
 
-        foreach(var k in keys)
+        foreach (var k in keys)
         {
-            key = FishDictionary[k].FirstOrDefault(x => x.Length == biggestFishLength).Name;
-            if(key!=null)
+            ItemInformation info = FishDictionary[k][0];
+            if (info.Length.Equals(biggestFishLength))
             {
+                key = info.Name;
                 DiveLogSlot.Init(FishDictionary[key][0], totalCount);
                 break;
+
             }
 
         }
