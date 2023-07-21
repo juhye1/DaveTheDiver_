@@ -13,6 +13,7 @@ public class ItemInformation : BaseInformation
     public int Raiting;
     public int Price;
     public int Tasty;
+    public int Length;
 
     [Header("Sprite")]
     public Sprite SushiSprite;

@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Star : MonoBehaviour
 {
     private Image[] stars;
+    private Color alphaColor;
+    private Color defaultColor;
 
     [SerializeField] private Sprite OnStar;
     [SerializeField] private Sprite OffStar;
@@ -13,6 +15,9 @@ public class Star : MonoBehaviour
     private void Awake()
     {
         stars = GetComponentsInChildren<Image>();
+        alphaColor = stars[0].color;
+        defaultColor = stars[0].color;
+        alphaColor.a = 0.5f;
     }
 
     public void StarOn(int star)
@@ -32,6 +37,27 @@ public class Star : MonoBehaviour
             stars[i].sprite = OnStar;
         }
     }
+
+    public void StarAlpha(int star)
+    {
+        ResetAlphaStar();
+        if (star == 0) return;
+
+        for (int i = 0; i < star; i++)
+        {
+            stars[i].color = defaultColor;
+        }
+
+    }
+
+    private void ResetAlphaStar()
+    {
+        foreach (Image img in stars)
+        {
+            img.color = alphaColor;
+        }
+    }
+
 
     private void ResetStar()
     {

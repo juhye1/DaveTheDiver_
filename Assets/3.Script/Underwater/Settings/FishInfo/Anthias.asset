@@ -21,4 +21,5 @@ MonoBehaviour:
   Raiting: 2
   Price: 3
   Tasty: 13
+  Length: 20
   SushiSprite: {fileID: 21300000, guid: f5978d0cd7cdc9940a8e2eac09e1dd02, type: 3}

@@ -93,6 +93,7 @@ public class MenuUI : UIBase
 
     public override void OFFUI()
     {
+        background.enabled = false;
         FirstUI.gameObject.SetActive(false);
         AddUI.gameObject.SetActive(false);
     }

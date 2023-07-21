@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 using DG.Tweening;
 
 public class DiveLogUI : UIBase
@@ -13,9 +14,8 @@ public class DiveLogUI : UIBase
     private Vector2 home;
 
     [Header("Dive Log")]
-    [SerializeField] private TextMeshProUGUI DiveNo;
-    [SerializeField] private Image BiggestFish;
     [SerializeField] private RectTransform DiveLogTransform;
+    [SerializeField] private DiveLogSlot DiveLogSlot;
 
     [Header("Fish Log")]
     [SerializeField] private RectTransform FishLogTransform;
@@ -49,6 +49,16 @@ public class DiveLogUI : UIBase
     {
         UIInputManager.Instance.SetInputUI(inputUI);
         UIInputManager.Instance.SetUIState(UIInputManager.EState.OnUI);
+
+
+
+
+
+
+
+
+
+
         UpdateUI();
         DiveLogTransform.DOLocalMoveY(0, 0.7f).SetEase(Ease.OutBounce);
     }
@@ -83,38 +93,43 @@ public class DiveLogUI : UIBase
 
     private void UpdateUI()
     {
-        //FishList = InventoryManager.Instance.LoadItem();
         FishDictionary = InventoryManager.Instance.LoadDictionary();
 
-
         List<string> keys = new List<string>(FishDictionary.Keys);
+        List<int> fishLength = new List<int>();
 
-        //총 개수 곱하기 raiting
+        int totalCount = 0;
+
         for(int i =0; i<keys.Count; i++)
         {
             FishSlot[i].gameObject.SetActive(true);
             FishSlot[i].Background.sprite = FishBox;
 
             ItemInformation info = FishDictionary[keys[i]][0];
+            fishLength.Add(info.Length);
             int count = FishDictionary[keys[i]].Count;
+            totalCount += count;
             info.Raiting *=count;
             FishSlot[i].Init(info);
 
         }
 
-/*
-        if (FishList != null)
+        int biggestFishLength = fishLength.OrderByDescending(x => x).First();
+        Debug.Log(biggestFishLength);
+
+        string key;
+
+        foreach(var k in keys)
         {
-            for (int i = 0; i < FishList.Count; i++)
+            key = FishDictionary[k].FirstOrDefault(x => x.Length == biggestFishLength).Name;
+            if(key!=null)
             {
-                FishSlot[i].gameObject.SetActive(true);
-                FishSlot[i].Background.sprite = FishBox;
-                FishSlot[i].Init(FishList[i]);
+                DiveLogSlot.Init(FishDictionary[key][0], totalCount);
+                break;
             }
-        }*/
 
+        }
 
-        //리스트 길이 만큼 slot 키고 업데이트하기
 
     }
 

@@ -126,7 +126,7 @@ public class Input_MenuUI : UIInput
         switch(state)
         {
             case EState.EnterUI:
-                //base.CancelUI();
+                base.CancelUI();
                 num = 0;
                 break;
             case EState.SelectSushi:
@@ -137,6 +137,7 @@ public class Input_MenuUI : UIInput
                 break;
             case EState.AddSushi:
                 menuUI.OnAddSushiUI(false);
+                num = 0;
                 //얘도 뒤로가기
                 state = EState.SelectSushi;
                 break;
@@ -155,7 +156,7 @@ public class Input_MenuUI : UIInput
                 //슬롯 선택
                 addMenuSlot = transforms[num].GetComponent<AddMenuSlot>();
                 //강조 표시
-                selectedSlot.anchoredPosition = transforms[num].anchoredPosition;
+                //select.anchoredPosition = transforms[num].anchoredPosition;
                 menuUI.SelectMenuSlot(addMenuSlot);
                 num = 0;
                 //첫번째 아이템 정보 출력
