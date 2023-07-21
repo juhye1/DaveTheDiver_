@@ -26,6 +26,9 @@ public class Player_Underwater : PlayerInteraction
     private float angle = 0;
     private float curruentAngle = 0;
 
+    private float depth;
+    public float Depth => depth;
+
     [HideInInspector]
     public bool PressRightButton { get; private set; } = false;
     [HideInInspector]
@@ -299,6 +302,7 @@ public class Player_Underwater : PlayerInteraction
     private void Update()
     {
         MoveMousePosition();
+        UpdateDepth();
 
     }
 
@@ -325,5 +329,10 @@ public class Player_Underwater : PlayerInteraction
         }
 
        
+    }
+
+    private void UpdateDepth()
+    {
+        depth = transform.localPosition.y + 20;
     }
 }

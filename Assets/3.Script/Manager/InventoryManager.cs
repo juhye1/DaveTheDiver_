@@ -62,4 +62,16 @@ public class InventoryManager : DontDestroySingleton<InventoryManager>
     {
         return FishDictionary;
     }
+
+    public float ReturnWeight()
+    {
+        if (ItemList == null || ItemList.Count ==0) return 0;
+
+        float weight = 0;
+        foreach(var fish in ItemList)
+        {
+            weight += fish.Weight;
+        }
+        return weight;
+    }
 }
