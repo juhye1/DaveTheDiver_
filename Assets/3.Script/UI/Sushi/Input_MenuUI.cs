@@ -32,6 +32,10 @@ public class Input_MenuUI : UIInput
     private AddMenuSlot addMenuSlot;
     private MenuUI menuUI;
 
+    private int enterUInum = 0;
+    private int selectSushinum = 0;
+    private int addSushinum = 0;
+
     private int saveRecipeSlotnum;
     private void Start()
     {
@@ -55,10 +59,10 @@ public class Input_MenuUI : UIInput
                 switch (edir)
                 {
                     case EDirection.Up:
-                        num -= 1;
+                        enterUInum -= 1;
                         break;
                     case EDirection.Down:
-                        num += 1;
+                        enterUInum += 1;
                         break;
                 }
                 break;
@@ -68,17 +72,17 @@ public class Input_MenuUI : UIInput
                 switch (edir)
                 {
                     case EDirection.Up:
-                        num -= 4;
+                        selectSushinum -= 4;
                         break;
                     case EDirection.Down:
-                        num += 4;
+                        selectSushinum += 4;
                         break;
                     case EDirection.Right:
-                        num += 1;
+                        selectSushinum += 1;
                         break;
 
                     case EDirection.Left:
-                        num -= 1;
+                        selectSushinum -= 1;
                         break;
                 }
 
@@ -89,10 +93,10 @@ public class Input_MenuUI : UIInput
                 switch (edir)
                 {
                     case EDirection.Left:
-                        num -= 1;
+                        addSushinum -= 1;
                         break;
                     case EDirection.Right:
-                        num += 1;
+                        addSushinum += 1;
                         break;
                 }
                 break;
@@ -101,16 +105,16 @@ public class Input_MenuUI : UIInput
         switch(state)
         {
             case EState.EnterUI:
-                num = Mathf.Clamp(num, 0, SlotList.Count);
-                select.anchoredPosition = transforms[num].anchoredPosition;
+                enterUInum = Mathf.Clamp(enterUInum, 0, SlotList.Count);
+                select.anchoredPosition = transforms[enterUInum].anchoredPosition;
                
                 break;
 
             case EState.SelectSushi:
-                num = Mathf.Clamp(num, 0, sushiTransforms.Length - 1);
-                secondSelect.anchoredPosition = sushiTransforms[num].anchoredPosition;
-                menuUI.LoadItemInfo(num);
-                menuUI.SetRecipeNum(num);
+                selectSushinum = Mathf.Clamp(selectSushinum, 0, sushiTransforms.Length - 1);
+                secondSelect.anchoredPosition = sushiTransforms[selectSushinum].anchoredPosition;
+                menuUI.LoadItemInfo(selectSushinum);
+                menuUI.SetRecipeNum(selectSushinum);
                 //여기서 정보 띄우기
 
 
@@ -118,9 +122,9 @@ public class Input_MenuUI : UIInput
             case EState.AddSushi:
                 int count = menuUI.LoadCount();
                 //num  = 물고기개수/0 숫자 바꿔야함
-                num = Mathf.Clamp(num, 0, count);
-                sushiCount.text = num.ToString();
-                subsushiCount.text = num.ToString();
+                addSushinum = Mathf.Clamp(addSushinum, 0, count);
+                sushiCount.text = addSushinum.ToString();
+                subsushiCount.text = addSushinum.ToString();
                 break;
         }
 
@@ -132,17 +136,17 @@ public class Input_MenuUI : UIInput
         {
             case EState.EnterUI:
                 base.CancelUI();
-                num = 0;
+                enterUInum = 0;
+                selectSushinum = 0;
+                addSushinum = 0;
                 break;
             case EState.SelectSushi:
                 menuUI.OnAddMenuUI(false);
-                num = 0;
                 //뒤로가기
                 state = EState.EnterUI;
                 break;
             case EState.AddSushi:
                 menuUI.OnAddSushiUI(false);
-                num = 0;
                 //얘도 뒤로가기
                 state = EState.SelectSushi;
                 break;
@@ -159,10 +163,9 @@ public class Input_MenuUI : UIInput
                 //UI 키기
                 menuUI.OnAddMenuUI(true);
                 //슬롯 선택
-                addMenuSlot = transforms[num].GetComponent<AddMenuSlot>();
+                addMenuSlot = transforms[enterUInum].GetComponent<AddMenuSlot>();
                 //강조 표시
                 menuUI.SelectMenuSlot(addMenuSlot);
-                num = 0;
                 //첫번째 아이템 정보 출력
                 menuUI.LoadItemInfo(0);
 
@@ -170,16 +173,16 @@ public class Input_MenuUI : UIInput
                 break;
 
             case EState.SelectSushi:
-                num = 0;
                 menuUI.OnAddSushiUI(true);
 
                 state = EState.AddSushi;
                 break;
             case EState.AddSushi:
-                num = 0;
-                sushiCount.text = num.ToString();
-                subsushiCount.text = num.ToString();
+                sushiCount.text = addSushinum.ToString();
+                subsushiCount.text = addSushinum.ToString();
                 menuUI.AddMenuComplete();
+                menuUI.LoadItemInfo(0);
+                addSushinum = 0;
                 menuUI.OnAddSushiUI(false);
 
                 state = EState.SelectSushi;

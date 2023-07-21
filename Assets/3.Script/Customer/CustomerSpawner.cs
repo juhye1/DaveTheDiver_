@@ -25,8 +25,9 @@ public class CustomerSpawner : MonoBehaviour
     private List<Sprite> OrderList;
     private List<Chairs> goal;
     private List<int> closet;
-
+    private List<Order> orderff;
     private MiniMenuUI miniMenuUI;
+    private Sprite saveSprite;
 
     private Chair chair;
     private SpeechBubble bubble;
@@ -69,6 +70,7 @@ public class CustomerSpawner : MonoBehaviour
             Customer _customer = Instantiate(customer, spawnpoints[i], Quaternion.identity);
             _customer.transform.SetParent(transform);
             _customer.Init(goal[i], bubble, spareBubble, orderType, spawnPoint, spriteLibraryDictionary[num], num);
+            _customer.SetKey(saveSprite);
             _customer.GetComponent<BaseCustomer>().Init(TeaUI);
             spriteLibraryDictionary.Remove(num);
 
@@ -122,6 +124,7 @@ public class CustomerSpawner : MonoBehaviour
         bubble = new SpeechBubble();
         rdn = Random.Range(0, OrderSprites.Count);
         bubble.Order = OrderSprites[rdn];
+        saveSprite = OrderSprites[rdn];
 
         switch (rdn)
         {

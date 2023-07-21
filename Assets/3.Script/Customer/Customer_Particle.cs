@@ -12,14 +12,17 @@ public class Customer_Particle : MonoBehaviour
     [SerializeField] private TextMeshPro goldText;
 
     private ParticleSystem heartParticle;
+    private MiniMenuUI miniMenuUI;
     private Customer customer;
     private int gold;
 
     private void Awake()
     {
-        gold = Random.Range(5, 20);
         heartParticle = GetComponent<ParticleSystem>();
+        miniMenuUI = FindObjectOfType<MiniMenuUI>();
         customer = GetComponentInParent<Customer>();
+        int price = miniMenuUI.ReturnPrice(customer.GetKey());
+        gold = price;
 
     }
     private void OnParticleSystemStopped()

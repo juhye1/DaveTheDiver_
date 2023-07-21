@@ -43,6 +43,7 @@ public class Customer : MonoBehaviour
     private SpeechBubble spareBubble;
     public SpeechBubble bubble;
     public Chairs chair;
+    public Sprite orderSpriteKey;
 
     public int clothes;
 
@@ -81,6 +82,16 @@ public class Customer : MonoBehaviour
         bancho = FindObjectOfType<Bancho_Cooking>();
         SwitchState(EState.MoveToChair);
         
+    }
+
+    public void SetKey(Sprite sprite)
+    {
+        orderSpriteKey = sprite;
+    }
+
+    public Sprite GetKey()
+    {
+        return orderSpriteKey;
     }
 
     private void MoveToChair()

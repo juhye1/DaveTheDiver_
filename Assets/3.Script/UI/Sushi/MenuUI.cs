@@ -28,6 +28,7 @@ public class MenuUI : UIBase
     private Dictionary<string, List<ItemInformation>> FishDictionary;
 
     private int saveCount;
+    private string saveName;
     private int saveRecipeSlotnum;
 
     private void Start()
@@ -82,8 +83,10 @@ public class MenuUI : UIBase
 
     public void AddMenuComplete()
     {
+        FishDictionary.Remove(saveName);
+        ResetItem();
+        UpdateItem();
         //추가한 메뉴는 빼기
-        RecipeSlot[saveRecipeSlotnum].gameObject.SetActive(false);
         //바깥 세상 메뉴판 업데이트하기
         MiniMenuUI.MiniMenuInit(saveInfo, saveCount);
         //뒤 UI 업데이트하기
@@ -110,6 +113,15 @@ public class MenuUI : UIBase
         AddUI.gameObject.SetActive(false);
     }
     //
+
+
+    private void ResetItem()
+    {
+        for(int i=0; i<RecipeSlot.Length; i++)
+        {
+            RecipeSlot[i].gameObject.SetActive(false);
+        }
+    }
 
     private void UpdateItem()
     {
@@ -150,6 +162,7 @@ public class MenuUI : UIBase
 
         string key = info.Name;
         saveCount = FishDictionary[key].Count;
+        saveName = info.Name;
 
         RecipeSlot[num].Show(info, saveCount);
         saveInfo = info;
