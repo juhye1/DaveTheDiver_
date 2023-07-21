@@ -7,12 +7,22 @@ public class MenuUI : UIBase
 {
     [Header("UI")]
     [SerializeField] private RectTransform FirstUI;
+    [SerializeField] private RectTransform FirstUIdd;
+    [SerializeField] private GameObject SpaceUI;
+
+    [SerializeField] private RectTransform saveRectTransform;
+
     [SerializeField] private RectTransform AddUI;
     [SerializeField] private RectTransform AddSushiUI;
+    [SerializeField] private RectTransform MenuUITransfrom;
+    [SerializeField] private RectTransform AddMenuLeftPoint;
 
     [Header("Slot")]
     [SerializeField] private RecipeSlot[] RecipeSlot;
     [SerializeField] private RecipeSlot AddSushiSlot;
+
+    private AddMenuSlot addMenuSlot;
+
     private ItemInformation saveInfo;
     private int saveCount;
     private List<ItemInformation> itemList;
@@ -35,12 +45,25 @@ public class MenuUI : UIBase
 
     public void OnAddMenuUI(bool isOn)
     {
-        if(isOn)
+        RectTransform rect = isOn ? AddMenuLeftPoint : saveRectTransform;
+        FirstUIdd.gameObject.SetActive(!isOn);
+        if (isOn)
         {
             UpdateItem();
-            FirstUI.gameObject.SetActive(false);
+            MenuUITransfrom.SetParent(rect.parent);
+        }
+        else
+        {
+            MenuUITransfrom.SetParent(FirstUI);
 
         }
+
+
+        MenuUITransfrom.localPosition = rect.localPosition;
+        MenuUITransfrom.sizeDelta = rect.sizeDelta;
+        MenuUITransfrom.anchoredPosition = rect.anchoredPosition;
+
+        SpaceUI.SetActive(!isOn);
         AddUI.gameObject.SetActive(isOn);
     }
 
@@ -56,7 +79,15 @@ public class MenuUI : UIBase
 
     public void AddMenuComplete()
     {
+        //여기서 슬롯 채우기
+        //채워야할정보
+        //
+        addMenuSlot.Init(saveInfo, saveCount);
+    }
 
+    public void SelectMenuSlot(AddMenuSlot slot)
+    {
+        addMenuSlot = slot;
     }
 
 

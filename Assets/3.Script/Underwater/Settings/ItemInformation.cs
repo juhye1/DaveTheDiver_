@@ -12,6 +12,7 @@ public class ItemInformation : BaseInformation
     public int Rank;
     public int Raiting;
     public int Price;
+    public int Tasty;
 
     [Header("Sprite")]
     public Sprite SushiSprite;

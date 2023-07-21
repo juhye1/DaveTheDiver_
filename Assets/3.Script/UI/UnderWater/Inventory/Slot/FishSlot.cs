@@ -13,7 +13,7 @@ public class FishSlot : ItemSlot
     [SerializeField] protected GameObject SlotGO;
     public Image Background;
 
-    public override void Init(ItemInformation info)
+    public override void Init(ItemInformation info, int i=0)
     {
         SlotGO.SetActive(true);
         base.Init(info);

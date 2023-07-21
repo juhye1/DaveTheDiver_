@@ -13,7 +13,7 @@ public class ItemSlot : MonoBehaviour
     [SerializeField] protected TextMeshProUGUI Name;
     [SerializeField] protected TextMeshProUGUI Rank;
 
-    public virtual void Init(ItemInformation info)
+    public virtual void Init(ItemInformation info, int i=0)
     {
         Face.sprite = info.Face;
         Name.text = info.Name;

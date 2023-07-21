@@ -15,9 +15,11 @@ public class Input_MenuUI : UIInput
 
     [Header("Select")]
     [SerializeField] private RectTransform secondSelect;
+    [SerializeField] private RectTransform selectedSlot;
 
     [Header("FirstUI")]
     private List<RectTransform> SlotList;
+
 
     [Header("RecipeUI")]
     [SerializeField] private RectTransform sushiGridParent;
@@ -26,6 +28,7 @@ public class Input_MenuUI : UIInput
     private List<RectTransform> SushiGridList;
 
     private EState state = EState.EnterUI;
+    private AddMenuSlot addMenuSlot;
     private MenuUI menuUI;
     private void Start()
     {
@@ -97,6 +100,7 @@ public class Input_MenuUI : UIInput
             case EState.EnterUI:
                 num = Mathf.Clamp(num, 0, SlotList.Count);
                 select.anchoredPosition = transforms[num].anchoredPosition;
+               
                 break;
 
             case EState.SelectSushi:
@@ -122,10 +126,12 @@ public class Input_MenuUI : UIInput
         switch(state)
         {
             case EState.EnterUI:
-                base.CancelUI();
+                //base.CancelUI();
+                num = 0;
                 break;
             case EState.SelectSushi:
                 menuUI.OnAddMenuUI(false);
+                num = 0;
                 //뒤로가기
                 state = EState.EnterUI;
                 break;
@@ -144,25 +150,37 @@ public class Input_MenuUI : UIInput
         switch(state)
         {
             case EState.EnterUI:
+                //UI 키기
                 menuUI.OnAddMenuUI(true);
+                //슬롯 선택
+                addMenuSlot = transforms[num].GetComponent<AddMenuSlot>();
+                //강조 표시
+                selectedSlot.anchoredPosition = transforms[num].anchoredPosition;
+                menuUI.SelectMenuSlot(addMenuSlot);
                 num = 0;
+                //첫번째 아이템 정보 출력
                 menuUI.LoadItemInfo(0);
+
                 state = EState.SelectSushi;
                 break;
 
             case EState.SelectSushi:
                 menuUI.OnAddSushiUI(true);
                 num = 0;
+
                 state = EState.AddSushi;
                 break;
             case EState.AddSushi:
                 num = 0;
+
                 state = EState.AddComplete;
                 //여기서 누르면 왼쪽 메뉴에 추가되게
                 break;
             case EState.AddComplete:
                 menuUI.OnAddMenuUI(false);
                 menuUI.AddMenuComplete();
+
+                state = EState.AddSushi;
                 break;
                 
 

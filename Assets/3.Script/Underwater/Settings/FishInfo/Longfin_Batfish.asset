@@ -19,5 +19,6 @@ MonoBehaviour:
   Weight: 0.8
   Rank: 2
   Raiting: 2
-  Price: 3
+  Price: 13
+  Tasty: 10
   SushiSprite: {fileID: 21300000, guid: 50f6e8c2148d7b744931667a2e9d8353, type: 3}

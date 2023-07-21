@@ -110,7 +110,7 @@ public class UIInputManager : Singleton<UIInputManager>
         if (InputUI != null)
         {
             InputUI.CancelUI();
-            State = EState.ExitUI;
+            //State = EState.ExitUI;
 
         }
 

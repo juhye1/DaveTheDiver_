@@ -13,7 +13,7 @@ public class RecipeSlot : FishSlot
     [SerializeField] public TextMeshProUGUI SushiMiddleCount;
     [SerializeField] private Image FishFace;
 
-    public override void Init(ItemInformation info)
+    public override void Init(ItemInformation info, int i = 0)
     {
         //°¡¿îµ¥
         Face.sprite = info.SushiSprite;
