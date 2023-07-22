@@ -10,8 +10,7 @@ public class BoidsManager : Singleton<BoidsManager>
     public BoidSettings settings;
     public ComputeShader compute;
     private List<Boid> boids;
-    Boid[] boidArray;
-    private Transform captain;
+    private Boid[] boidArray;
 
     void Start()
     {
@@ -21,7 +20,7 @@ public class BoidsManager : Singleton<BoidsManager>
         foreach (Boid b in boidArray)
         {
             boids.Add(b);
-            b.Initialize(settings, player.transform);
+            b.Initialize(settings);
         }
 
     }

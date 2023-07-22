@@ -36,7 +36,7 @@ public class DiveLogUI : UIBase
         sequence = DOTween.Sequence().Pause();
         sequence.Append(BanchoImage.DOScale(1, 1).SetEase(Ease.InCirc))
                 .AppendInterval(1)
-                .Append(BanchoImage.DOScale(0.1f, 1).SetEase(Ease.InCirc));
+                .Append(BanchoImage.DOScale(0.1f, 0.5f).SetEase(Ease.InCirc));
 
         BanchoImage.gameObject.SetActive(false);
         home = new Vector2(0, -1000);

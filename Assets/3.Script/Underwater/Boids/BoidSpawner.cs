@@ -14,6 +14,7 @@ public class BoidSpawner : MonoBehaviour
 
     private List<Boid> boids;
     private int num = 0;
+    private bool isStart = false;
     [Header("스폰 설정")]
     [SerializeField] private float spawnRadius = 10;
 
@@ -23,19 +24,11 @@ public class BoidSpawner : MonoBehaviour
     {
         SpawnBoid(YellowTang,5);
         SpawnBoid(ClownFish,3);
-        SpawnBoid(Comber,10);
+        SpawnBoid(Comber,5);
         SpawnBoid(JellyFish,5);
         SpawnBoid(ButterflyFish,3);
         SpawnBoid(BatFish,1);
-        //스폰,,
-/*        for (int i = 0; i < spawnCount; i++)
-        {
-            Vector3 pos = SpawnPoint[0].position + Random.insideUnitSphere * spawnRadius;
-            Boid boid = Instantiate(YellowTang);
-            boid.transform.SetParent(SpawnPoint[0]);
-            boid.transform.position = new Vector2(pos.x, pos.y);
-            boid.transform.right = Random.insideUnitSphere;
-        }*/
+        isStart = !isStart;
     }
 
     private void SpawnBoid(Boid prefab, int spawnCount)
@@ -49,5 +42,24 @@ public class BoidSpawner : MonoBehaviour
             boid.transform.right = Random.insideUnitSphere;
         }
         num++;
+    }
+    private void Update()
+    {
+        if (isStart) UpdateSpawnPoint();
+
+    }
+
+    private void UpdateSpawnPoint()
+    {
+        for (int i = 0; i < SpawnPoint.Length; i++)
+        {
+            num = i + 1;
+            if (num == SpawnPoint.Length)
+            {
+                num = 0;
+            }
+            SpawnPoint[i].localPosition = Vector2.MoveTowards(SpawnPoint[i].localPosition, SpawnPoint[num].localPosition, Time.deltaTime*0.3f);
+
+        }
     }
 }

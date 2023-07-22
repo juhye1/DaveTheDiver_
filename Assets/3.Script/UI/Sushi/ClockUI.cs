@@ -15,6 +15,11 @@ public class ClockUI : MonoBehaviour
     [SerializeField] private Slider clockSlider;
     [SerializeField] private RectTransform pointer;
     [SerializeField] private GameObject redImage;
+    [Header("½Ã°£")]
+    [SerializeField] private Image ClockImage;
+    [SerializeField] private Sprite Morning;
+    [SerializeField] private Sprite Afternoon;
+    [SerializeField] private Sprite Evening;
     private bool start => SushiGameManager.Instance.isGameStart;
     private float timer;
     private void Awake()
@@ -29,10 +34,6 @@ public class ClockUI : MonoBehaviour
         if(start)
         {
             UpSlider();
-        }
-        else
-        {
-
         }
     }
 
@@ -53,6 +54,22 @@ public class ClockUI : MonoBehaviour
         }
         timer = Mathf.MoveTowards(timer, 0, Time.deltaTime * 20);
         pointer.localEulerAngles = new Vector3(0, 0, timer);
+    }
+
+    public void SetTime(EClock clock)
+    {
+        switch(clock)
+        {
+            case EClock.Morning:
+                break;
+            case EClock.Afternoon:
+                break;
+
+            case EClock.Evening:
+                break;
+
+
+        }
     }
 
 }

@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Base_Warehouse00_0Mat
-    second: {fileID: 2100000, guid: 801a6af3731917049ac33d286ee9dc96, type: 2}
+    second: {fileID: 2100000, guid: 8841fb6cd2d6bdc41b27bf7dca3c9b6c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Base_Warehouse00_1Mat
-    second: {fileID: 2100000, guid: bbb06304c72cf35498bb642090d7d4b4, type: 2}
+    second: {fileID: 2100000, guid: 84fd693ffdfb7af41a0ce70a179f8708, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -23,7 +23,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Base_Warehouse00_3Mat
-    second: {fileID: 2100000, guid: 0a9764e238380c24b988a214942d7452, type: 2}
+    second: {fileID: 2100000, guid: 9d50995448dc20747b03d2dc6b05a51c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Boid : MonoBehaviour
 {
-    BoidSettings settings;
-
+    private BoidSettings settings;
     // State
     [HideInInspector]
     public Vector3 position;
@@ -32,11 +31,12 @@ public class Boid : MonoBehaviour
     void Awake()
     {
         cachedTransform = transform;
+        
     }
 
-    public void Initialize(BoidSettings settings, Transform target)
+    public void Initialize(BoidSettings settings)
     {
-        this.target = target;
+        this.target = transform.parent;
         this.settings = settings;
 
         position = cachedTransform.position;
