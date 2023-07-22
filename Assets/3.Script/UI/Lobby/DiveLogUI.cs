@@ -28,6 +28,7 @@ public class DiveLogUI : UIBase
 
     [Header("Bancho")]
     [SerializeField] private RectTransform BanchoImage;
+    [SerializeField] private CanvasGroup BanchoCanvasGroup;
 
 
     private void Start()
@@ -40,7 +41,7 @@ public class DiveLogUI : UIBase
 
         BanchoImage.gameObject.SetActive(false);
         home = new Vector2(0, -1000);
-
+        BanchoCanvasGroup.alpha = 0;
         DiveLogTransform.localPosition = home;
         FishLogTransform.localPosition = home;
     }
@@ -78,7 +79,10 @@ public class DiveLogUI : UIBase
         inputKeyUI.UIOn(true);
         BanchoImage.gameObject.SetActive(false);
         player.ToBancho(false);
-        UIInputManager.Instance.SetUIState(UIInputManager.EState.ExitUI);
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(BanchoCanvasGroup.DOFade(1, 1))
+            .Append(BanchoCanvasGroup.DOFade(0, 1)).OnComplete(() => UIInputManager.Instance.SetUIState(UIInputManager.EState.ExitUI));
+        
     }
 
     private void UpdateUI()

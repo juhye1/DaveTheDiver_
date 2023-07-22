@@ -11,24 +11,37 @@ public class LobbyManager : Singleton<LobbyManager>
     [SerializeField] private BoxCollider2D diveLog;
     [SerializeField] private Light eveningLight;
     [SerializeField] private Light morningLight;
+
+    [Header("Map")]
+    [Header("Evening")]
+    [SerializeField] private GameObject evening;
+    [SerializeField] private GameObject eveningSushi;
+    [SerializeField] private Light eveningBoatLight;
+    [SerializeField] private Material eveningGround;
+    [SerializeField] private Color eveningGroundColor;
+
+    [Header("Morning")]
+    [SerializeField] private GameObject morning;
+    [SerializeField] private GameObject morningSushi;
     private SetClockUI clockUI;
 
 
-    private void Awake()
+    private void Start()
     {
         GameManager.Instance.ResetLoadSceneEffect();
         spriteColorControllers = FindObjectsOfType<SpriteColorController>();
 
         clockUI = FindObjectOfType<SetClockUI>();
         SetDiveLogCollider(false);
+        eveningGround.color = Color.white;
 
         switch (scene)
         {
             case GameManager.EScene.UnderWaterToLobby:
-                morningLight.enabled = false;
-                eveningLight.enabled = true;
+                //저녁으로 바꾸기
+                UpdateTime();
                 SetDiveLogCollider(true);
-                clockUI.SetTime(SetClockUI.EClock.Evening);
+
                 foreach (SpriteColorController c in spriteColorControllers)
                 {
                     c.SetEveningColor();
@@ -46,8 +59,25 @@ public class LobbyManager : Singleton<LobbyManager>
         }
     }
 
+    
+
     public void SetDiveLogCollider(bool enabled)
     {
         diveLog.enabled = enabled;
+    }
+
+    private void UpdateTime()
+    {
+        clockUI.SetTime(SetClockUI.EClock.Evening);
+        //아침
+        morningLight.enabled = false;
+        morning.SetActive(false);
+        morningSushi.SetActive(false);
+        //저녁
+        evening.SetActive(true);
+        eveningLight.enabled = true;
+        eveningBoatLight.enabled = true;
+        eveningSushi.SetActive(true);
+        eveningGround.color = eveningGroundColor;
     }
 }
