@@ -26,6 +26,8 @@ public class Player_Underwater : PlayerInteraction
     private float angle = 0;
     private float curruentAngle = 0;
 
+    public bool Dash => dash;
+
     private float depth;
     public float Depth => depth;
 
