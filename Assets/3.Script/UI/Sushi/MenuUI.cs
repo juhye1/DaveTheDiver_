@@ -154,7 +154,7 @@ public class MenuUI : UIBase
 
     public void LoadItemInfo(int num)
     {
-        if (num == 0 || FishDictionary == null) return;
+        if (FishDictionary == null || FishDictionary.Count.Equals(0)) return;
         //오른쪽에 정보나오는거
         ItemInformation info = FishDictionary[Dictionarykeys[num]][0];
 

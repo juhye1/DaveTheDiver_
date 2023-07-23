@@ -18392,7 +18392,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419039967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0022, y: 0.0016, z: -0}
+  m_LocalPosition: {x: 0.0178, y: 0.0015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2292135071383232284}
@@ -22929,7 +22929,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.018, y: 0.001}
+  m_AnchoredPosition: {x: -0.0027, y: 0.001}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &622974700
@@ -49511,8 +49511,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diveLog: {fileID: 903548143}
-  eveningLight: {fileID: 705507994}
-  morningLight: {fileID: 1218060900}
+  eveningLight: {fileID: 1218060900}
+  morningLight: {fileID: 705507994}
   evening: {fileID: 1297854453}
   eveningSushi: {fileID: 4028965500818063068}
   eveningBoatLight: {fileID: 6008052327396329089}
@@ -85521,6 +85521,7 @@ GameObject:
   - component: {fileID: 3814021693102762232}
   - component: {fileID: 3814021693102762230}
   - component: {fileID: 3814021693102762233}
+  - component: {fileID: 3814021693102762234}
   m_Layer: 10
   m_Name: NPC_Cobra
   m_TagString: Untagged
@@ -85639,6 +85640,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionMarker: {fileID: 1270670243}
+--- !u!114 &3814021693102762234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3814021693102762228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52755e5c82c13034cbd993ee25cba8bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transforms: []
+  select: {fileID: 0}
 --- !u!4 &3815050302659550101
 Transform:
   m_ObjectHideFlags: 0
@@ -101634,12 +101649,12 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6008052327396329088}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.8110069, b: 0, a: 1}
-  m_Intensity: 0.72
+  m_Intensity: 0.04
   m_Range: 0.84
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

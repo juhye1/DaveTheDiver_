@@ -13867,8 +13867,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.015014648, y: 0.02999878}
-  m_SizeDelta: {x: -24.1, y: -23.44}
+  m_AnchoredPosition: {x: 0.730011, y: 0.22000122}
+  m_SizeDelta: {x: -22.65, y: -22.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &867177463
 MonoBehaviour:
@@ -13890,8 +13890,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -34049,7 +34049,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1327743071
   m_SortingLayer: 2
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -5963126636317295024, guid: 02534b4120ece7b4b8f3fa908f17913f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -34528,6 +34528,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f1f5f003482fe46aa0f79d2382d2f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chairs:
+  - {fileID: 853051404}
+  - {fileID: 1438301363}
+  - {fileID: 1962128381}
+  - {fileID: 1554011451}
+  - {fileID: 2022535661}
+  - {fileID: 570291217}
+  - {fileID: 1236792202}
+  - {fileID: 172337769}
+  - {fileID: 718211267}
 --- !u!1 &1643899302
 GameObject:
   m_ObjectHideFlags: 0
@@ -35617,7 +35627,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1327743071
   m_SortingLayer: 2
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 8633147171517850206, guid: e68150b666c7fe7408f3d6a2865f9767, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -46851,10 +46861,6 @@ MonoBehaviour:
   clockSlider: {fileID: 584181118}
   pointer: {fileID: 582545748}
   redImage: {fileID: 1562899121}
-  ClockImage: {fileID: 0}
-  Morning: {fileID: 0}
-  Afternoon: {fileID: 0}
-  Evening: {fileID: 0}
 --- !u!1 &1996789198
 GameObject:
   m_ObjectHideFlags: 0
@@ -52499,8 +52505,8 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2196971285242473735}
-        m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: OnSpace
+        m_TargetAssemblyTypeName: Player_Sushi, Assembly-CSharp
+        m_MethodName: OnSushiSpace
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

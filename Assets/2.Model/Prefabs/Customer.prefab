@@ -508,6 +508,7 @@ MonoBehaviour:
   speechBubble: {fileID: 226169751}
   thinkingUI: {fileID: 8204149130085443138}
   emoteUI: {fileID: 69971036805872638}
+  orderSpriteKey: {fileID: 0}
   clothes: 0
   OrderType: 0
 --- !u!114 &8961238935438779102
@@ -10638,9 +10639,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1327743071
+  m_SortingLayer: 2
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0

@@ -12,9 +12,11 @@ public class BubbleController : MonoBehaviour
     private Sequence sequence;
     private SpriteMask spriteMask;
     private SpriteRenderer bubbleShape;
+    private Vector3 angryHome;
 
     private void Awake()
     {
+        angryHome = new Vector3(0, -0.9f, 0);
         customer = GetComponentInParent<Customer>();
         bubbleShape = GetComponent<SpriteRenderer>();
         spriteMask = GetComponent<SpriteMask>();
@@ -39,6 +41,7 @@ public class BubbleController : MonoBehaviour
 
     private void OnDisable()
     {
+        angryGauge.localPosition = angryHome;
         sequence.Pause();
     }
 

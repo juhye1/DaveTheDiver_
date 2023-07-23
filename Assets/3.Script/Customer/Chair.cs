@@ -17,17 +17,16 @@ public class Chairs
 
 public class Chair : MonoBehaviour
 {
-    private Transform[] chairs;
+    [SerializeField] private Transform[] chairs;
     public List<Chairs> Chairs;
     private List<int> index;
 
     private void Awake()
     {
-        chairs = GetComponentsInChildren<Transform>();
         Chairs = new List<Chairs>();
         index = new List<int>();
 
-        for (int i = 1; i < chairs.Length; i++)
+        for (int i = 0; i < chairs.Length; i++)
         {
             Chairs chair = new Chairs(i, true, chairs[i]);
             Chairs.Add(chair);
@@ -46,7 +45,7 @@ public class Chair : MonoBehaviour
             }
         }
 
-        for(int i=0; i<10; i++)
+        for(int i=0; i<20; i++)
         {
             num = Random.Range(0, Chairs.Count);
             if(index.Contains(num))

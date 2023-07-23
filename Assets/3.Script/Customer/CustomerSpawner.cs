@@ -79,14 +79,21 @@ public class CustomerSpawner : MonoBehaviour
 
     public void UpdateCustomer(Customer _customer)
     {
+        //ºó ÀÇÀÚ·Î ¹Ù²Ù±â
         chair.UpdateChair(_customer.chair);
         orderType = new Customer.EOrderType();
+        //»õ·Î¿î ÀÇÀÚ Ã£±â
         Chairs _goal = chair.EmptyOneChair();
+        //»õ·Î¿î ÁÖ¹®
         Gacha();
 
+        //¿Ê ¹Ý³³
         spriteLibraryDictionary.Add(_customer.clothes, spriteLibraryAsset[_customer.clothes]);
+        //»õ ¿Ê ÀÔ±â
         _customer.Init(_goal, bubble, spareBubble, orderType, spawnPoint, spriteLibraryAsset[num], num);
+        //ÀÔ°í ÀÖ´Â ¿Ê »©±â
         spriteLibraryDictionary.Remove(num);
+        //»õ Ãâ¹ß
         _customer.SwitchState(Customer.EState.MoveToChair);
 
     }
@@ -111,7 +118,7 @@ public class CustomerSpawner : MonoBehaviour
 
         for (int j = 0; j < 10; j++)
         {
-            //¾ó±¼ »Ì±â
+            //¿Ê »Ì±â
             rdn = Random.Range(0, spriteLibraryAsset.Length);
             if (spriteLibraryDictionary.ContainsKey(rdn))
             {

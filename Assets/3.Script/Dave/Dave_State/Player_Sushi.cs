@@ -109,6 +109,7 @@ public class Player_Sushi : PlayerInteraction
         {
             Debug.Log("얘가 널인가?");
             if (interaction != null)
+                Debug.Log(interaction.name);
                 interaction.Perform();
         }
     }

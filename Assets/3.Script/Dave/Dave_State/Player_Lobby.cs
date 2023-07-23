@@ -36,6 +36,11 @@ public class Player_Lobby : PlayerInteraction
         if (!context.started)
             return;
 
+        if(interaction!=null)
+        {
+
+        }
+
     }
 
 

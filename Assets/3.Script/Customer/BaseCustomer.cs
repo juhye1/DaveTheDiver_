@@ -36,6 +36,7 @@ public class BaseCustomer : MonoBehaviour
                 spawner.SpawnTea();
                 break;
             case BaseInteraction.EInteractionType.End:
+                Debug.Log("¸ÓÁö?");
                 spawner.ResetTea();
                 customer.SwitchState(Customer.EState.Tea);
                 UIOn();

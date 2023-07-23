@@ -21,9 +21,12 @@ public class Customer_Particle : MonoBehaviour
         heartParticle = GetComponent<ParticleSystem>();
         miniMenuUI = FindObjectOfType<MiniMenuUI>();
         customer = GetComponentInParent<Customer>();
+    }
+
+    private void Start()
+    {
         int price = miniMenuUI.ReturnPrice(customer.GetKey());
         gold = price;
-
     }
     private void OnParticleSystemStopped()
     {

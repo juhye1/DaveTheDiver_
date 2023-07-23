@@ -65,7 +65,6 @@ public class DiverBox_Inventory : UIInput
 
     private void UpUI(bool isOn)
     {
-        Debug.Log("FF");
         if (isOn)
         {
             DiverBox.gameObject.SetActive(isOn);

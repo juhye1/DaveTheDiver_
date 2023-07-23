@@ -47,7 +47,11 @@ public class MiniMenuUI : MonoBehaviour
 
     public int ReturnPrice(Sprite sprite)
     {
-        return priceDictioanry[sprite];
+
+        if (priceDictioanry != null && priceDictioanry.Count!=0)
+            return priceDictioanry[sprite];
+        else
+            return 5;
     }
 
 }

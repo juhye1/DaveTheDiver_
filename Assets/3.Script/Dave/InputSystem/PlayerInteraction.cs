@@ -14,6 +14,10 @@ public class PlayerInteraction : Player
         {
             interaction = hit.transform.GetComponent<BaseInteraction>();
             Point = interaction.Point;
+            if (hit.transform.TryGetComponent<UIInput>(out var dd))
+            {
+                UIInputManager.Instance.SetInputUI(dd);
+            }
 
             if (!state.Equals(EState.UI)||!state.Equals(EState.Load))
                 return true;

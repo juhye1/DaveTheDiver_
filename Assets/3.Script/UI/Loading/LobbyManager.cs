@@ -34,6 +34,7 @@ public class LobbyManager : Singleton<LobbyManager>
         clockUI = FindObjectOfType<SetClockUI>();
         SetDiveLogCollider(false);
         eveningGround.color = Color.white;
+        eveningBoatLight.enabled = false;
 
         switch (scene)
         {

@@ -93,7 +93,7 @@ public class UIInputManager : Singleton<UIInputManager>
 
     public void OnNumberOne(InputAction.CallbackContext context)
     {
-        if (!State.Equals(EState.EnterUI)) return;
+        //if (!State.Equals(EState.EnterUI)) return;
 
         if (context.started)
         {

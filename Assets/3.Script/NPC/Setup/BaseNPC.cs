@@ -44,15 +44,19 @@ public abstract class BaseNPC : MonoBehaviour
                 break;
 
             case ETalk.InProgress:
-                if (dialogueCount-1 > dialogueNum)
+                if (dialogueCount - 1 > dialogueNum)
                 {
                     dialogueUI.Talk(dialogueData);
                     dialogueNum++;
                 }
-                else ETalkType = ETalk.End;
-                break;
-            case ETalk.End:
-                UIManager.Instance.TalkStart(false);
+                else
+                {
+                    ETalkType = ETalk.Start;
+                    UIInputManager.Instance.SetUIState(UIInputManager.EState.ExitUI);
+                    UIManager.Instance.TalkStart(false);
+
+                }
+
                 break;
         }
     }

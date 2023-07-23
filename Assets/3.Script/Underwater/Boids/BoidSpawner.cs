@@ -58,7 +58,7 @@ public class BoidSpawner : MonoBehaviour
             {
                 num = 0;
             }
-            SpawnPoint[i].localPosition = Vector2.MoveTowards(SpawnPoint[i].localPosition, SpawnPoint[num].localPosition, Time.deltaTime*0.3f);
+            SpawnPoint[i].localPosition = Vector2.MoveTowards(SpawnPoint[i].localPosition, SpawnPoint[num].localPosition, Time.deltaTime*0.1f);
 
         }
     }

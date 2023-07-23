@@ -47,7 +47,7 @@ public class Input_BoatUI : UIInput
                 break;
 
             case EState.Cancel:
-                player.transform.DOLocalMoveY(2.3f, 0.5f).OnComplete(() => CancelUI()
+                player.transform.DOLocalMoveY(6f, 0.5f).OnComplete(() => CancelUI()
                  );
                 Debug.Log("UI²¨");
                 break;
