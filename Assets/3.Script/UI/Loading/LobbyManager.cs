@@ -30,7 +30,7 @@ public class LobbyManager : Singleton<LobbyManager>
     {
         GameManager.Instance.ResetLoadSceneEffect();
         spriteColorControllers = FindObjectsOfType<SpriteColorController>();
-
+        SoundManager.Instance.PlayBGM(EBGM.Lobby);
         clockUI = FindObjectOfType<SetClockUI>();
         SetDiveLogCollider(false);
         eveningGround.color = Color.white;
