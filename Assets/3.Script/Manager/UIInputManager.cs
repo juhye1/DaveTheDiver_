@@ -9,11 +9,17 @@ public class UIInputManager : Singleton<UIInputManager>
     {
         EnterUI, OnUI, ExitUI, DisableUIInput
     }
+    public enum EScene
+    {
+        Intro, InGame
+    }
     //private PlayerInput UIInput;
     private UIInput InputUI;
     private Player player;
     private PlayerInput inputsystem;
+          
     [SerializeField] private EState State;
+    [SerializeField]private EScene sceneType;
     [SerializeField] private Player.EState playerState;
     private Vector2 cachedMove;
     private InputKeyUI inputKeyUI;
@@ -34,6 +40,10 @@ public class UIInputManager : Singleton<UIInputManager>
     {
         //이건 나중에 하기(UI 효과 다 나오고 나서 움직이고 싶을때)
         State = state;
+
+
+        if (sceneType.Equals(EScene.Intro)) return;
+
 
         switch (State)
         {
@@ -97,6 +107,7 @@ public class UIInputManager : Singleton<UIInputManager>
 
         if (context.started)
         {
+            SoundManager.Instance.PlaySE(ESE.UI_button_click);
             UIManager.Instance.SushiMenuUI();
             player.ActionMapDisable();
             State = EState.OnUI;
@@ -109,6 +120,7 @@ public class UIInputManager : Singleton<UIInputManager>
         cachedMove = context.ReadValue<Vector2>();
         if (InputUI != null)
         {
+            SoundManager.Instance.PlaySE(ESE.UI_button_click);
             InputUI.MoveUI(cachedMove);
 
         }
@@ -121,6 +133,7 @@ public class UIInputManager : Singleton<UIInputManager>
 
         if (InputUI != null)
         {
+            SoundManager.Instance.PlaySE(ESE.UI_button_click);
             InputUI.CancelUI();
             //State = EState.ExitUI;
 
@@ -134,6 +147,7 @@ public class UIInputManager : Singleton<UIInputManager>
         if (!context.started) return;   
         if (InputUI != null)
         {
+            SoundManager.Instance.PlaySE(ESE.UI_button_click);
             InputUI.Space();
 
         }

@@ -32,9 +32,14 @@ public class Fish : MonoBehaviour
         BoidsManager.Instance.RemoveBoid(boid);
         InventoryManager.Instance.SaveItem(fishInfo);
         animator.SetAnimation(FishAnimator.EFishState.die);
-        Destroy(gameObject);
+        Invoke("DestroyInvoke", 1);
         //파티클도 나중에
         //죽ㅇㅓ
+    }
+
+    private void DestroyInvoke()
+    {
+        Destroy(gameObject);
     }
 
 }

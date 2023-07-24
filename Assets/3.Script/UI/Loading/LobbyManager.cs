@@ -12,7 +12,6 @@ public class LobbyManager : Singleton<LobbyManager>
     [SerializeField] private Light eveningLight;
     [SerializeField] private Light morningLight;
 
-    [Header("Map")]
     [Header("Evening")]
     [SerializeField] private GameObject evening;
     [SerializeField] private GameObject eveningSushi;
@@ -29,8 +28,13 @@ public class LobbyManager : Singleton<LobbyManager>
     private void Start()
     {
         GameManager.Instance.ResetLoadSceneEffect();
-        spriteColorControllers = FindObjectsOfType<SpriteColorController>();
+
+
         SoundManager.Instance.PlayBGM(EBGM.Lobby);
+
+
+
+        spriteColorControllers = FindObjectsOfType<SpriteColorController>();
         clockUI = FindObjectOfType<SetClockUI>();
         SetDiveLogCollider(false);
         eveningGround.color = Color.white;
@@ -39,6 +43,7 @@ public class LobbyManager : Singleton<LobbyManager>
         switch (scene)
         {
             case GameManager.EScene.UnderWaterToLobby:
+                SoundManager.Instance.PlaySE(ESE.Lobby_Night);
                 //저녁으로 바꾸기
                 UpdateTime();
                 SetDiveLogCollider(true);
@@ -52,8 +57,17 @@ public class LobbyManager : Singleton<LobbyManager>
                 //이거면 UI 뜨는거랑 반초한테 보내는거
                 break;
             case GameManager.EScene.SushiToLobby:
+                SoundManager.Instance.PlaySE(ESE.AMB_Birds);
+                SoundManager.Instance.ChangeBGMVolume(0.3f);
+                clockUI.SetTime(SetClockUI.EClock.Morning);
+                UIManager.Instance.ShowChapter();
                 //이거는 아무일도 일어나지않는듯?
                 break;
+
+            case GameManager.EScene.Loading:
+                clockUI.SetTime(SetClockUI.EClock.Morning);
+                break;
+
             default:
                 clockUI.SetTime(SetClockUI.EClock.Morning);
                 break;

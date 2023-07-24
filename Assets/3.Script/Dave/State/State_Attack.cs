@@ -35,15 +35,18 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
         switch (State)
         {
             case EState.Fire:
+                
                 player.Recoil(arms.ArmsDir());
                 harpoon.Shoot();
                 break;
             case EState.Pull:
+                SoundManager.Instance.PlaySE(ESE.Dave_Harpoon_Pull_Loop);
                 harpoon.Return();
                 animator.SetBool("isFight", true);
                 //PullÀº ±×³É ¶¯±â´Â°Å°í Fight°¡ ¹ÙµÕ¹ÙµÕÇÏ´Â°Å
                 break;
             case EState.Fail:
+                //SoundManager.Instance.PlaySE(ESE.Dave_Harpoon_Fail);
                 harpoon.Return();
                 //arms.FailArms();
                 //animator.SetBool("isFail", true);
@@ -85,6 +88,16 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
         {
             case EState.Fire:
                 player.SwitchActionState(Player_Underwater.EActionState.Attack);
+                switch(harpoon.HarpoonState)
+                {
+                    case Harpoon.EState.Success:
+                        SoundManager.Instance.PlaySE(ESE.Dave_Harpoon_Hit);
+                        break;
+
+                    case Harpoon.EState.Fail:
+                        SoundManager.Instance.PlaySE(ESE.Dave_Harpoon_Fail);
+                        break;
+                }
                 break;
             case EState.Pull:
                 Debug.Log("¿¨");
@@ -109,6 +122,7 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
                     switch(harpoon.HarpoonState)
                     {
                         case Harpoon.EState.Success:
+                            
                             return EState.Pull;
 
                         case Harpoon.EState.Fail:
@@ -124,13 +138,17 @@ public class State_Attack : BaseStateMachine<State_Attack.EState>
             case EState.Pull:
                 if (harpoon.CheckReturn())
                 {
+                    SoundManager.Instance.StopESE();
+                    SoundManager.Instance.PlaySE(ESE.Dave_Harpoon_Return);
+                    SoundManager.Instance.PlaySE(ESE.Dave_Harpoon_Catch_Success);
                     HasFinished = !HasFinished;
                 }
                 break;
             case EState.Fail:
                 if(harpoon.CheckReturn())
                 {
-                    
+                    SoundManager.Instance.StopESE();
+                    SoundManager.Instance.PlaySE(ESE.Dave_Harpoon_Return);
                     HasFinished = !HasFinished;
                 }
 

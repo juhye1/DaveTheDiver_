@@ -46,7 +46,6 @@ public class BanchoUI : MonoBehaviour
     }
 
 
-
     private void StartCooking()
     {
         slider.value = Mathf.MoveTowards(slider.value, 1, Time.deltaTime * 0.3f);

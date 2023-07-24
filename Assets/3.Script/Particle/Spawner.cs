@@ -39,7 +39,7 @@ public class Spawner : MonoBehaviour
 
     public void SpawnTea()
     {
-        for(int i=0; i<3; i++)
+        for(int i=0; i<2; i++)
         {
             circles[count].gameObject.SetActive(true);
             count++;

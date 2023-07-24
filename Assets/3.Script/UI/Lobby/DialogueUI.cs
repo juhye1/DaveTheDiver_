@@ -49,8 +49,8 @@ public class DialogueUI : MonoBehaviour
     public void UpTalkEffect()
     {
         upSequence = DOTween.Sequence().SetAutoKill()
-                .Append(curruentSpeaker.Panel.DOLocalMoveY(10, 1).SetEase(Ease.OutBack))
-                .Append(curruentSpeaker.TalkTMP.DOText(dialoueText.Replace("\\n", "\n"), 1f));
+                .Append(curruentSpeaker.Panel.DOLocalMoveY(10, 0.5f).SetEase(Ease.OutBack))
+                .Append(curruentSpeaker.TalkTMP.DOText(dialoueText.Replace("\\n", "\n"), 0.5f));
 
 
     }
@@ -63,6 +63,8 @@ public class DialogueUI : MonoBehaviour
 
     public void Talk(DialogueData data)
     {
+
+
         Speaker speaker = UpdateUI(data);
         dialoueText = data.Dialogtext;
         speaker.NameBox.text = data.Name;
@@ -71,6 +73,38 @@ public class DialogueUI : MonoBehaviour
                 portraitData.LoadPortrait(data.ENAME, data.EEMOTIONTYPE);
         curruentSpeaker = speaker;
         UpTalkEffect();
+        switch (data.ENAME)
+        {
+
+            case EName.Dave:
+                switch (data.EEMOTIONTYPE)
+                {
+                    case EEmotionType.Normal:
+                        SoundManager.Instance.PlaySE(ESE.VO_Dave_Normal);
+
+                        break;
+                    case EEmotionType.Thinking:
+                        SoundManager.Instance.PlaySE(ESE.VO_Dave_Thinking);
+                        break;
+
+                }
+                break;
+            case EName.Cobra:
+                switch (data.EEMOTIONTYPE)
+                {
+                    case EEmotionType.Normal:
+                        SoundManager.Instance.PlaySE(ESE.VO_Cobra_Normal);
+
+                        break;
+                    case EEmotionType.Nice:
+                        SoundManager.Instance.PlaySE(ESE.VO_Cobra_Nice);
+                        break;
+
+                }
+                break;
+
+
+        }
     }
 
 

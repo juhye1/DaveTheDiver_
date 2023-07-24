@@ -43,6 +43,8 @@ public class Star : MonoBehaviour
         ResetAlphaStar();
         if (star == 0) return;
 
+        Debug.Log(star);
+        star = Mathf.Clamp(star, 0, 3);
         for (int i = 0; i < star; i++)
         {
             stars[i].color = defaultColor;

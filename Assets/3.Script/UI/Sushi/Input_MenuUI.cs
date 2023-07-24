@@ -178,11 +178,11 @@ public class Input_MenuUI : UIInput
                 state = EState.AddSushi;
                 break;
             case EState.AddSushi:
+                addSushinum = 0;
                 sushiCount.text = addSushinum.ToString();
                 subsushiCount.text = addSushinum.ToString();
                 menuUI.AddMenuComplete();
                 menuUI.LoadItemInfo(0);
-                addSushinum = 0;
                 menuUI.OnAddSushiUI(false);
 
                 state = EState.SelectSushi;

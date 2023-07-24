@@ -22,8 +22,8 @@ public class BubbleController : MonoBehaviour
         spriteMask = GetComponent<SpriteMask>();
         sequence = DOTween.Sequence().Pause().SetAutoKill(false);
         sequence.Append(transform.DOShakePosition(10, new Vector3(0, 0.015f, 0), 3, 0).SetEase(Ease.Linear))
-                .Append(angryGauge.DOLocalMoveY(0, 10f))
-                .Join(transform.DOShakePosition(10, new Vector3(0, 0.025f, 0), 5, 0).SetEase(Ease.OutCirc));
+                .Append(angryGauge.DOLocalMoveY(0, 15f))
+                .Join(transform.DOShakePosition(15, new Vector3(0, 0.02f, 0), 5, 0).SetEase(Ease.OutCirc));
     }
     private void Start()
     {

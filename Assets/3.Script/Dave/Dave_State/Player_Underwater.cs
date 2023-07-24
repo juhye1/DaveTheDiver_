@@ -47,6 +47,7 @@ public class Player_Underwater : PlayerInteraction
 
     private void Start()
     {
+        SoundManager.Instance.PlayBGM(EBGM.UnderWater);
         state = EState.UnderWater;
         ActionMapEnable(EState.UnderWater);
         AddDirection();
@@ -65,6 +66,11 @@ public class Player_Underwater : PlayerInteraction
     public void OnUnderWaterMove(InputAction.CallbackContext context)
     {
         cachedMove = context.ReadValue<Vector2>();
+        if(context.started)
+        {
+            SoundManager.Instance.PlaySE(ESE.Dave_Breath);
+
+        }
 
         animator.SetFloat("MoveX", cachedMove.x);
         animator.SetFloat("MoveY", cachedMove.y);

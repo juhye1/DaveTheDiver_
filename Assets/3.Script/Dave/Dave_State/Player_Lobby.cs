@@ -33,13 +33,18 @@ public class Player_Lobby : PlayerInteraction
     {
         //한번 누르는건 여기서 하면되고
         pressKey = context.ReadValue<float>() > 0.1f;
-        if (!context.started)
-            return;
 
-        if(interaction!=null)
+
+        if(context.started)
         {
-
+            SoundManager.Instance.PlaySE(ESE.UI_Lobby_Dive);
         }
+
+        if(context.canceled)
+        {
+            SoundManager.Instance.StopESE();
+        }
+
 
     }
 

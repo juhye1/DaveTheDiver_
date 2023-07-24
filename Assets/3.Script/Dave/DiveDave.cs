@@ -16,7 +16,7 @@ public class DiveDave : MonoBehaviour
         animator = GetComponent<Animator>();
         StartCoroutine(timerCo());
     }
-
+    //애니메이터
     public void SetActiveDave()
     {
         DaveSpriteRenderer.enabled = true;
@@ -30,6 +30,8 @@ public class DiveDave : MonoBehaviour
         yield return seconds;
         DiveSpriterenderer.enabled = true;
         animator.SetTrigger("isDive");
+        yield return new WaitForSeconds(0.5f);
+        SoundManager.Instance.PlaySE(ESE.Dave_Dive);
 
     }
 

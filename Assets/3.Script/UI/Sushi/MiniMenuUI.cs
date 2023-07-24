@@ -48,7 +48,7 @@ public class MiniMenuUI : MonoBehaviour
     public int ReturnPrice(Sprite sprite)
     {
 
-        if (priceDictioanry != null && priceDictioanry.Count!=0)
+        if (priceDictioanry != null && priceDictioanry.Count!=0&&priceDictioanry.ContainsKey(sprite))
             return priceDictioanry[sprite];
         else
             return 5;

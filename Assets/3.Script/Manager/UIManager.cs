@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -145,9 +144,11 @@ public class UIManager : MonoBehaviour
         scoreImg[1].sprite = SushiGameManager.Instance.ScoreImage(spawner.Count);
         scoreImg[1].SetNativeSize();
 
+        ESE ese = SushiGameManager.Instance.ReturnScoreSFX(
+            SushiGameManager.Instance.TeaScore(spawner.Count));
         Sequence sequence = DOTween.Sequence().SetAutoKill();
         sequence.Append(group.DOFade(0.3f, 0.1f).SetDelay(2f))
-                .Append(group.DOFade(1, 0.1f));
+                .Append(group.DOFade(1, 0.1f)).OnComplete(() => SoundManager.Instance.PlaySE(ese));
 
 
     }
@@ -229,6 +230,10 @@ public class UIManager : MonoBehaviour
             }
         }
         bool gauge = throwSlider.value.Equals(1) ? true : false;
+        if(gauge)
+        {
+            SoundManager.Instance.PlaySE(ESE.Sushi_Dump);
+        }
         return gauge;
     }
     #endregion

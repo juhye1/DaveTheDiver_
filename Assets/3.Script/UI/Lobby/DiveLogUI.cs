@@ -48,6 +48,7 @@ public class DiveLogUI : UIBase
 
     public void DiveLogUIOn()
     {
+        SoundManager.Instance.PlaySE(ESE.UI_Lobby_Reward);
         UIInputManager.Instance.SetInputUI(inputUI);
         UIInputManager.Instance.SetUIState(UIInputManager.EState.OnUI);
         UpdateUI();
@@ -79,10 +80,17 @@ public class DiveLogUI : UIBase
         inputKeyUI.UIOn(true);
         BanchoImage.gameObject.SetActive(false);
         player.ToBancho(false);
+        Invoke("PlaySFX", 1);
         Sequence sequence = DOTween.Sequence();
         sequence.Append(BanchoCanvasGroup.DOFade(1, 1))
+            .AppendInterval(1)
             .Append(BanchoCanvasGroup.DOFade(0, 1)).OnComplete(() => UIInputManager.Instance.SetUIState(UIInputManager.EState.ExitUI));
         
+    }
+
+    private void PlaySFX()
+    {
+        SoundManager.Instance.PlaySE(ESE.UI_Lobby_SushiOpen);
     }
 
     private void UpdateUI()

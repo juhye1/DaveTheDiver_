@@ -24,11 +24,25 @@ public class Player_Sushi : PlayerInteraction
     public void OnThrowAway(InputAction.CallbackContext context)
     {
         throwaway = context.ReadValue<float>() > 0.1f;
+        if(context.started)
+        {
+            SoundManager.Instance.PlaySE(ESE.Sushi_Dump);
+        }
     }
 
     public void OnStart(InputAction.CallbackContext context)
     {
         startKey = context.ReadValue<float>() > 0.1f;
+
+        if(context.started)
+        {
+            SoundManager.Instance.PlaySE(ESE.UI_Lobby_Dive);
+        }
+
+        if(context.canceled)
+        {
+            SoundManager.Instance.StopESE();
+        }
     }
 
     public void OnDash(InputAction.CallbackContext context)
@@ -43,12 +57,14 @@ public class Player_Sushi : PlayerInteraction
 
         if (context.started)
         {
+            SoundManager.Instance.PlaySE(ESE.Dave_Dash);
             animator.SetBool(isDash, true);
             speed = settings.DashSpeed;
         }
 
         else if (context.canceled)
         {
+            SoundManager.Instance.StopESE();
             animator.SetBool(isDash, false);
             speed = settings.MoveSpeed;
         }
@@ -71,7 +87,7 @@ public class Player_Sushi : PlayerInteraction
 
         if(throwsushi)
         {
-            SushiGameManager.Instance.OffSushi();
+            SushiGameManager.Instance.DumpSushi();
         }
     }
     private void DashGauge(bool pressKey)
@@ -107,7 +123,6 @@ public class Player_Sushi : PlayerInteraction
 
         if (SushiGameManager.Instance.State.Equals(SushiGameManager.EState.Start))
         {
-            Debug.Log("æÍ∞° ≥Œ¿Œ∞°?");
             if (interaction != null)
                 Debug.Log(interaction.name);
                 interaction.Perform();
@@ -122,10 +137,12 @@ public class Player_Sushi : PlayerInteraction
 
         if (context.started)
         {
+            SoundManager.Instance.PlaySE(ESE.Sushi_Tea_Pouring);
             UIManager.Instance.MoveKettle();
         }
         if (context.canceled)
         {
+            SoundManager.Instance.StopESE();
             UIManager.Instance.ScoreOn();
             interaction.ChangeType();
         }

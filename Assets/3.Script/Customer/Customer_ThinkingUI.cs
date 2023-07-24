@@ -17,6 +17,7 @@ public class Customer_ThinkingUI : MonoBehaviour
     }
     private void OnEnable()
     {
+        SoundManager.Instance.PlaySE(ESE.Sushi_Customer_ReadMenu);
         StartCoroutine(BlinkCo());
     }
 

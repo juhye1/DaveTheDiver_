@@ -4,12 +4,12 @@ using UnityEngine;
 
 public static class BoidHelper
 {
-    const int numViewDirections = 300;
-    public static readonly Vector3[] directions;
+    const int numViewDirections = 100;
+    public static readonly Vector2[] directions;
 
     static BoidHelper()
     {
-        directions = new Vector3[BoidHelper.numViewDirections];
+        directions = new Vector2[BoidHelper.numViewDirections];
 
         float goldenRatio = (1 + Mathf.Sqrt(5)) / 2;
         float angleIncrement = Mathf.PI * 2 * goldenRatio;

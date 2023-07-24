@@ -47,16 +47,19 @@ public class State_Ready : BaseStateMachine<State_Ready.EState>
 
             case EState.Dagger:
                 player.SwitchActionState(Player_Underwater.EActionState.Attack);
+                SoundManager.Instance.PlaySE(ESE.Dave_Dagger);
                 animator.SetBool("isDagger", true);
                 dagger.isDagger(true); 
                 break;
 
             case EState.Ready:
+                SoundManager.Instance.PlaySE(ESE.Dave_Harpoon_Aim);
                 player.SwitchActionState(Player_Underwater.EActionState.Attack);
                 animator.SetBool("isReady", true);
                 UIManager.Instance.PowerGaugeOn(true);
                 break;
             case EState.Shoot:
+                SoundManager.Instance.PlaySE(ESE.Dave_Harpoon_Shot);
                 animator.SetBool("isFire", true);
                 UIManager.Instance.PowerGaugeOn(false);
                 break;

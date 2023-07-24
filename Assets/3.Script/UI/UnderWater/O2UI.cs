@@ -108,6 +108,7 @@ public class O2UI : MonoBehaviour
             intensity = Mathf.MoveTowards(intensity, 0.4f, Time.deltaTime*0.5f);
             if (intensity == 0.4f)
             {
+                SoundManager.Instance.PlaySE(ESE.UI_Ingame_GoUp);
                 isGoal = !isGoal;
             }
 

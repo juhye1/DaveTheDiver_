@@ -102,7 +102,7 @@ public class Boid : MonoBehaviour
 
     Vector3 ObstacleRays()
     {
-        Vector3[] rayDirections = BoidHelper.directions;
+        Vector2[] rayDirections = BoidHelper.directions;
 
         for (int i = 0; i < rayDirections.Length; i++)
         {
@@ -119,7 +119,7 @@ public class Boid : MonoBehaviour
 
     Vector3 SteerTowards(Vector3 vector)
     {
-        Vector3 v = vector.normalized * settings.maxSpeed - velocity;
-        return Vector3.ClampMagnitude(v, settings.maxSteerForce);
+        Vector2 v = vector.normalized * settings.maxSpeed - velocity;
+        return Vector2.ClampMagnitude(v, settings.maxSteerForce);
     }
 }

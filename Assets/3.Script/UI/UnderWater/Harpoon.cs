@@ -13,6 +13,7 @@ public class Harpoon : MonoBehaviour
 
     [SerializeField]private LineRenderer lineRenderer;
     [SerializeField] private Transform point;
+    [SerializeField] private ParticleSystem bloodParticle;
     private Rigidbody2D harpoonRigidbody;
     private BoxCollider2D boxCollider2D;
     private Transform harpoonTransform;
@@ -41,6 +42,7 @@ public class Harpoon : MonoBehaviour
 
         if (collision.CompareTag("Fish")&& fish == null)
         {
+            bloodParticle.Play();
             fish = collision.GetComponent<Fish>();
             fish.Fishing(point);
             harpoonState = EState.Success;

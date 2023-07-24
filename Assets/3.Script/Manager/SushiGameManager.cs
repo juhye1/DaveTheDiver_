@@ -46,6 +46,7 @@ public class SushiGameManager : Singleton<SushiGameManager>
 
     private void Start()
     {
+        SoundManager.Instance.PlayBGM(EBGM.Sushi);
         openUI.gameObject.SetActive(true);
     }
 
@@ -75,6 +76,25 @@ public class SushiGameManager : Singleton<SushiGameManager>
         return Score;
     }
 
+    public ESE ReturnScoreSFX(EScore score)
+    {
+        ESE ese = ESE.Sushi_Tea_Perfect;
+        switch(score)
+        {
+            case EScore.Perfect:
+                
+                break;
+            case EScore.Good:
+                ese = ESE.Sushi_Tea_Good;
+                break;
+            case EScore.Bad:
+                ese = ESE.Sushi_Tea_Bad;
+                break;
+
+        }
+        return ese;
+    }
+
 
 
     public Sprite ScoreImage(int score)
@@ -99,20 +119,20 @@ public class SushiGameManager : Singleton<SushiGameManager>
 
     public void OnSushi(Sprite sprite)
     {
-        
+        //반초
         SushiGO.SetActive(true);
         Sushi.sprite = sprite;
     }
 
-    public void OffSushi()
+    public void DumpSushi()
     {
-        state = EState.End;
-        UIInputManager.Instance.SetUIState(UIInputManager.EState.EnterUI);
+        //스시버리기
         SushiGO.SetActive(false);
     }
 
     public void OpenSushi()
     {
+        //게임시작
         state = EState.Start;
         UIInputManager.Instance.SetUIState(UIInputManager.EState.DisableUIInput);
         openUI.OpenSushi();
@@ -137,7 +157,10 @@ public class SushiGameManager : Singleton<SushiGameManager>
     }
     public void SushiGameEnd()
     {
+
         _start = false;
+        state = EState.End;
+        UIInputManager.Instance.SetUIState(UIInputManager.EState.EnterUI);
         customerSpawner.gameObject.SetActive(false);
         clockUI.enabled = false;
         closeUI.OFFSushi();

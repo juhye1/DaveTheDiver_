@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerDagger : MonoBehaviour
 {
     [SerializeField]private Animator animator;
+    [SerializeField]private ParticleSystem bloodParticle;
     private BoxCollider2D daggerCollider;
     private Fish fish;
 
@@ -34,6 +35,7 @@ public class PlayerDagger : MonoBehaviour
 
         if (collision.CompareTag("Fish") && fish == null)
         {
+            bloodParticle.Play();
             Debug.Log("죽어라물고기~!");
             fish = collision.GetComponent<Fish>();
             fish.FishingDagger();

@@ -19,6 +19,14 @@ public class GameManager : DontDestroySingleton<GameManager>
     }
     [SerializeField]  private EScene scene;
     public EScene Scene => scene;
+
+    private void Start()
+    {
+        int setWidth = 1920;
+        int setHeight = 1080;
+
+        Screen.SetResolution(setWidth, setHeight, true);
+    }
     public void LoadScene(EScene scene)
     {
         this.scene = scene;
@@ -34,6 +42,7 @@ public class GameManager : DontDestroySingleton<GameManager>
                 nextSceneName = "UnderWaterScene";
                 break;
             case EScene.Sushi:
+                SoundManager.Instance.PlaySE(ESE.Lobby_Boat_Move);
                 nextSceneName = "SushiScene";
                 break;
         }
@@ -55,6 +64,7 @@ public class GameManager : DontDestroySingleton<GameManager>
     //다음씬에서 해주기
     public void ResetLoadSceneEffect()
     {
+        SoundManager.Instance.StopBgm();
         Color color = loadSceneWhite.color;
         color.a = 0;
         loadSceneWhite.color = color;

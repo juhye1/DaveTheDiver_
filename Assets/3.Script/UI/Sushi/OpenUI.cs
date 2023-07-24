@@ -32,6 +32,7 @@ public class OpenUI : MonoBehaviour
 
     private void Particle()
     {
+        SoundManager.Instance.PlaySE(ESE.UI_SushibarOpen);
         backGround.SetActive(true);
         sushiParticle.Play();
     }

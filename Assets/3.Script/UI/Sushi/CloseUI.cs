@@ -32,7 +32,13 @@ public class CloseUI : MonoBehaviour
     {
         background.enabled = true;
         sequence.Play();
-        sequence.OnComplete(() => title.SetActive(true));
+        sequence.OnComplete(() => CompleteSet());
+    }
+
+    private void CompleteSet()
+    {
+        SoundManager.Instance.PlaySE(ESE.UI_SushibarClose);
+        title.SetActive(true);
     }
 
     public void UIEffect()
