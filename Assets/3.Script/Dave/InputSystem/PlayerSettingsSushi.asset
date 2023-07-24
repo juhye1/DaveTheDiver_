@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66ec65b1e0f74b44eb64a840055a5d2a, type: 3}
-  m_Name: PlayerSettings
+  m_Name: PlayerSettingsSushi
   m_EditorClassIdentifier: 
-  MoveSpeed: 0.5
-  DashSpeed: 1
-  TiredSpeed: 0.3
+  MoveSpeed: 0.8
+  DashSpeed: 1.1
+  TiredSpeed: 0.6
   DetectRange: 1
   InteractableMask:
     serializedVersion: 2

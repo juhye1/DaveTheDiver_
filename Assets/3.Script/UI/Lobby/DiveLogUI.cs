@@ -53,6 +53,7 @@ public class DiveLogUI : UIBase
         UIInputManager.Instance.SetUIState(UIInputManager.EState.OnUI);
         UpdateUI();
         DiveLogTransform.DOLocalMoveY(0, 0.7f).SetEase(Ease.OutBounce);
+
     }
 
     public void FishLogUIOn()

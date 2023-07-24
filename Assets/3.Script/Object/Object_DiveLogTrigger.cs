@@ -18,7 +18,18 @@ public class Object_DiveLogTrigger : BaseObject
     private void Start()
     {
         diveLogUI = interactionUI.GetComponent<DiveLogUI>();
-        CanPerform = !CanPerform;
+     
+        
+      CanPerform = !CanPerform;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
+        {
+        UIManager.Instance.DiveLog();
+        Debug.Log("FF");
+
+        }
     }
 
     public override void Interaction()
@@ -40,9 +51,9 @@ public class Object_DiveLogTrigger : BaseObject
 
     private void Update()
     {
-        if (movePoint)
+/*        if (movePoint)
         {
             UIManager.Instance.DiveLog();
-        }
+        }*/
     }
 }

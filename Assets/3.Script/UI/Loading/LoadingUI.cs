@@ -45,7 +45,7 @@ public class LoadingUI : MonoBehaviour
         }
 
 
-        CanvasGroup.DOFade(1, 0.5f).OnComplete(() => StartCoroutine(LoadScene()));
+        CanvasGroup.DOFade(1, 1.5f).OnComplete(() => StartCoroutine(LoadScene()));
     }
 
     private IEnumerator LoadScene()

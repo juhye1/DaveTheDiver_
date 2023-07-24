@@ -24,10 +24,6 @@ public class Player_Sushi : PlayerInteraction
     public void OnThrowAway(InputAction.CallbackContext context)
     {
         throwaway = context.ReadValue<float>() > 0.1f;
-        if(context.started)
-        {
-            SoundManager.Instance.PlaySE(ESE.Sushi_Dump);
-        }
     }
 
     public void OnStart(InputAction.CallbackContext context)

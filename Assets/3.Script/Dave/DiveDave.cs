@@ -30,7 +30,7 @@ public class DiveDave : MonoBehaviour
         yield return seconds;
         DiveSpriterenderer.enabled = true;
         animator.SetTrigger("isDive");
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         SoundManager.Instance.PlaySE(ESE.Dave_Dive);
 
     }

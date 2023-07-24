@@ -126,6 +126,7 @@ public class SushiGameManager : Singleton<SushiGameManager>
 
     public void DumpSushi()
     {
+        SoundManager.Instance.PlaySE(ESE.Sushi_Dump);
         //스시버리기
         SushiGO.SetActive(false);
     }
