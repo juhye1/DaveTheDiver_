@@ -11,6 +11,7 @@ public class BoidSpawner : MonoBehaviour
     [SerializeField] private Boid JellyFish;
     [SerializeField] private Boid ButterflyFish;
     [SerializeField] private Boid BatFish;
+    [SerializeField] private Boid Anthias;
 
     private List<Boid> boids;
     private int num = 0;
@@ -27,7 +28,8 @@ public class BoidSpawner : MonoBehaviour
         SpawnBoid(Comber,5);
         SpawnBoid(JellyFish,5);
         SpawnBoid(ButterflyFish,3);
-        SpawnBoid(BatFish,1);
+        SpawnBoid(BatFish,3);
+        SpawnBoid(Anthias, 5);
         isStart = !isStart;
     }
 

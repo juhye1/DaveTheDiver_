@@ -91,9 +91,9 @@ public class Boid : MonoBehaviour
 
     bool IsHeadingForCollision()
     {
-        RaycastHit hit;
-        if (Physics.SphereCast(position, settings.boundsRadius, forward, out hit, settings.collisionAvoidDst, settings.obstacleMask))
+        if (Physics2D.Raycast(position, transform.forward, settings.collisionAvoidDst, settings.obstacleMask))
         {
+            Debug.Log("À§Çè !!!!!!!!!!!!!");
             return true;
         }
         else { }
@@ -107,8 +107,7 @@ public class Boid : MonoBehaviour
         for (int i = 0; i < rayDirections.Length; i++)
         {
             Vector3 dir = cachedTransform.TransformDirection(rayDirections[i]);
-            Ray ray = new Ray(position, dir);
-            if (!Physics.SphereCast(ray, settings.boundsRadius, settings.collisionAvoidDst, settings.obstacleMask))
+            if (!Physics2D.Raycast(position, dir, settings.collisionAvoidDst, settings.obstacleMask))
             {
                 return dir;
             }

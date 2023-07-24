@@ -27,7 +27,6 @@ public class BoidSettings : ScriptableObject
 
     [Header("¸¶½ºÅ©")]
     public LayerMask obstacleMask;
-    public float boundsRadius = .27f;
     public float avoidCollisionWeight = 10;
     public float collisionAvoidDst = 5;
 }
