@@ -25,6 +25,7 @@ public class PlayerDagger : MonoBehaviour
     {
         if (daggerCollider.isActiveAndEnabled)
         {
+            bloodParticle.Clear();
             daggerCollider.enabled = false;
         }
         animator.gameObject.SetActive(false);

@@ -138,6 +138,7 @@ public class Player_Sushi : PlayerInteraction
         }
         if (context.canceled)
         {
+            UIManager.Instance.ResetKettle();
             SoundManager.Instance.StopESE();
             UIManager.Instance.ScoreOn();
             interaction.ChangeType();

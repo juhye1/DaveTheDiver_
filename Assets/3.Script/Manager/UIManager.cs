@@ -36,6 +36,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Slider dashSlider;
     [SerializeField] private MenuUI menuUI;
 
+    private Transform resetKettleTransform;
+
     [Header("¹Ù´Ù")]
     [SerializeField] private GameObject powerGauge;
     [SerializeField] private InfoUI infoUI;
@@ -173,9 +175,16 @@ public class UIManager : MonoBehaviour
 
     public void MoveKettle()
     {
+        resetKettleTransform = Kettle.transform;
         Sequence sequence = DOTween.Sequence();
         sequence.Append(Kettle.transform.DOLocalMove(KettleGoal.localPosition, 2))
                 .Join(Kettle.transform.DOLocalRotate(KettleGoal.localEulerAngles, 2));
+    }
+
+    public void ResetKettle()
+    {
+        Kettle.transform.localPosition = resetKettleTransform.localPosition;
+        Kettle.transform.localRotation = Quaternion.Euler(resetKettleTransform.localEulerAngles);
     }
     public bool SliderUp(bool inputKey, Player.ESlider slider)
     {

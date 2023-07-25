@@ -49,14 +49,23 @@ public class UIInputManager : Singleton<UIInputManager>
         {
             case EState.ExitUI:
                 player.ActionMapEnable(playerState);
-                inputKeyUI.UIOn(true);
+                
                 InputUI = null;
 
                 switch (playerState)
                 {
                     case Player.EState.Sushi:
                         SushiGameManager.Instance.ActiveOpenUI(true);
+                        inputKeyUI.UIOn(true);
                         break;
+                    case Player.EState.UnderWater:
+                        break;
+
+                    default:
+                        inputKeyUI.UIOn(true);
+                        break;
+
+
 
 
                 }
