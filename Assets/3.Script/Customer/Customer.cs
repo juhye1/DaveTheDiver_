@@ -106,7 +106,7 @@ public class Customer : MonoBehaviour
 
     private void Good()
     {
-        SoundManager.Instance.PlaySE(ESE.Sushi_Customer_Pay);
+/*        SoundManager.Instance.PlaySE(ESE.Sushi_Customer_Pay);*/
         foreach (Animator ani in animators)
         {
             ani.SetBool(isGood, true);

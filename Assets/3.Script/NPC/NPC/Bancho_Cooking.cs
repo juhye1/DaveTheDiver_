@@ -69,6 +69,7 @@ public class Bancho_Cooking : MonoBehaviour
         Sprite sushi;
         if (!CookedList.Count.Equals(0))
         {
+            Debug.Log("a");
             sushi = CookedList[0];
             banchoUI.DestroyClone();
             CookedList.Remove(sushi);

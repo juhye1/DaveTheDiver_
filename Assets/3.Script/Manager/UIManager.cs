@@ -233,6 +233,7 @@ public class UIManager : MonoBehaviour
         if(gauge)
         {
             SoundManager.Instance.PlaySE(ESE.Sushi_Dump);
+            throwSlider.value = 0;
         }
         return gauge;
     }

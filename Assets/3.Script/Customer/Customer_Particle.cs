@@ -47,6 +47,7 @@ public class Customer_Particle : MonoBehaviour
     }
     private void GoldEffect()
     {
+        SoundManager.Instance.PlaySE(ESE.Sushi_Customer_Pay);
         goldTransform.gameObject.SetActive(true);
         goldText.text = gold.ToString();
         goldTransform.DOLocalMoveY(0.3f, 0.3f).SetEase(Ease.OutBounce).OnComplete(() => 

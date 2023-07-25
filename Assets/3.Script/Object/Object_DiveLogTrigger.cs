@@ -26,6 +26,7 @@ public class Object_DiveLogTrigger : BaseObject
     {
         if(collision.CompareTag("Player"))
         {
+            
         UIManager.Instance.DiveLog();
         Debug.Log("FF");
 

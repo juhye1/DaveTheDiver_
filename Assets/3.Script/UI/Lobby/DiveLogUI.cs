@@ -52,6 +52,7 @@ public class DiveLogUI : UIBase
         UIInputManager.Instance.SetInputUI(inputUI);
         UIInputManager.Instance.SetUIState(UIInputManager.EState.OnUI);
         UpdateUI();
+        DiveLogTransform.DOLocalMoveY(0, 1f).SetEase(Ease.OutBounce);
 
 
     }
@@ -130,7 +131,7 @@ public class DiveLogUI : UIBase
             {
                 key = info.Name;
                 DiveLogSlot.Init(FishDictionary[key][0], totalCount);
-                DiveLogTransform.DOLocalMoveY(0, 1f).SetEase(Ease.OutBounce);
+
                 break;
 
             }

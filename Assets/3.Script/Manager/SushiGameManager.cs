@@ -20,6 +20,7 @@ public class SushiGameManager : Singleton<SushiGameManager>
 
     public bool isGameStart { get { return _start; } private set { } }
     private EState state = EState.End;
+    private bool bump = true;
     public EState State => state;
     private bool _start = false;
     [HideInInspector]
@@ -58,15 +59,16 @@ public class SushiGameManager : Singleton<SushiGameManager>
 
     public EScore TeaScore(int score)
     {
+        Debug.Log(score);
         if (score < 50)
         {
             Score = EScore.Bad;
         }
-        else if (score < 150)
+        else if (score < 160)
         {
             Score = EScore.Good;
         }
-        else if (score < 200)
+        else if (score < 230)
         {
             Score = EScore.Perfect;
         }
@@ -126,9 +128,10 @@ public class SushiGameManager : Singleton<SushiGameManager>
 
     public void DumpSushi()
     {
-        SoundManager.Instance.PlaySE(ESE.Sushi_Dump);
         //스시버리기
         SushiGO.SetActive(false);
+
+        
     }
 
     public void OpenSushi()
