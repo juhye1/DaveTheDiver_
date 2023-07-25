@@ -80,16 +80,22 @@ public class Player : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         cachedMove = context.ReadValue<Vector2>();
-
-        switch (State)
+        if(context.started)
         {
-            case EState.Lobby:
-                SoundManager.Instance.PlaySE(ESE.Dave_Foot_Lobby);
-                break;
-            case EState.Sushi:
-                SoundManager.Instance.PlaySE(ESE.Dave_Foot_Sushi);
-                break;
+            switch (State)
+            {
+                case EState.Lobby:
+                    SoundManager.Instance.PlaySE(ESE.Dave_Foot_Lobby);
+                    break;
+                case EState.Sushi:
+                    SoundManager.Instance.PlaySE(ESE.Dave_Foot_Sushi);
+                    break;
+            }
+
+
         }
+
+
         // 로비, 스시집
 
         if (cachedMove.x != 0)

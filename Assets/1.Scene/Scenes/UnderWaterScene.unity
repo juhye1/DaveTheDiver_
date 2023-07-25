@@ -48487,7 +48487,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 73.69887, y: 48.58036}
+  m_Size: {x: 87.63256, y: 48.58036}
   m_AdaptiveModeThreshold: 1
   m_SpriteTileMode: 1
   m_WasSpriteAssigned: 1
@@ -48501,7 +48501,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975828694}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.2, y: 69.3, z: 45.9}
+  m_LocalPosition: {x: 36.6783, y: 69.3, z: 45.9}
   m_LocalScale: {x: 3.3700001, y: 5, z: 1}
   m_Children:
   - {fileID: 539006396}

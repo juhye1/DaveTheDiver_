@@ -36,22 +36,23 @@ public class LobbyManager : Singleton<LobbyManager>
 
         spriteColorControllers = FindObjectsOfType<SpriteColorController>();
         clockUI = FindObjectOfType<SetClockUI>();
-        SetDiveLogCollider(false);
         eveningGround.color = Color.white;
         eveningBoatLight.enabled = false;
 
+        SetDiveLogCollider(false);
         switch (scene)
         {
             case GameManager.EScene.UnderWaterToLobby:
-                SoundManager.Instance.PlaySE(ESE.Lobby_Night);
                 //저녁으로 바꾸기
-                UpdateTime();
-                SetDiveLogCollider(true);
 
+                spriteColorControllers = FindObjectsOfType<SpriteColorController>();
                 foreach (SpriteColorController c in spriteColorControllers)
                 {
                     c.SetEveningColor();
                 }
+                SoundManager.Instance.PlaySE(ESE.Lobby_Night);
+                UpdateTime();
+                SetDiveLogCollider(true);
 
                 //UIManager.Instance.DiveLog();
                 //이거면 UI 뜨는거랑 반초한테 보내는거
@@ -68,9 +69,6 @@ public class LobbyManager : Singleton<LobbyManager>
                 clockUI.SetTime(SetClockUI.EClock.Morning);
                 break;
 
-            default:
-                clockUI.SetTime(SetClockUI.EClock.Morning);
-                break;
         }
     }
 

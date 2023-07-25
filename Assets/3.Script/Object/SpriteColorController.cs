@@ -16,6 +16,7 @@ public class SpriteColorController : MonoBehaviour
 
     public void SetEveningColor()
     {
+        if (spriteRenderers == null) return;
         foreach (SpriteRenderer rend in spriteRenderers)
         {
             rend.color = Eveningcolor;
