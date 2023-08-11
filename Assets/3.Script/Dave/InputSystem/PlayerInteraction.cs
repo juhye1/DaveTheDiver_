@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInteraction : Player
+public abstract class PlayerInteraction : Player
 {
     private BaseInteraction movePointinteraction;
     public bool Interaction()
@@ -83,4 +83,5 @@ public class PlayerInteraction : Player
         }
         return false;
     }
+
 }

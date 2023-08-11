@@ -80,7 +80,13 @@ public class Customer : MonoBehaviour
         tmp = GetComponentInChildren<TextMeshPro>();
         particle = GetComponentInChildren<Customer_Particle>();
         bancho = FindObjectOfType<Bancho_Cooking>();
-        SwitchState(EState.MoveToChair);
+
+        
+    }
+
+    private void OnEnable()
+    {
+        //SwitchState(EState.MoveToChair);
         
     }
 

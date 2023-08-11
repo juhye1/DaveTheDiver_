@@ -28,7 +28,6 @@ public class Object_DiveLogTrigger : BaseObject
         {
             
         UIManager.Instance.DiveLog();
-        Debug.Log("FF");
 
         }
     }
@@ -50,11 +49,5 @@ public class Object_DiveLogTrigger : BaseObject
 
     }
 
-    private void Update()
-    {
-/*        if (movePoint)
-        {
-            UIManager.Instance.DiveLog();
-        }*/
-    }
+
 }

@@ -37,24 +37,24 @@ public class Player : MonoBehaviour
     protected float speed;
     protected bool tired = false;
 
-    protected PlayerInput playerInput;
-    protected Animator animator;
     protected BaseInteraction interaction;
 
-    public UIInput InputUI;
 
-
+    //Animator
+    protected Animator animator;
     protected readonly int isMove = Animator.StringToHash("isMove");
     protected readonly int isReady = Animator.StringToHash("isReady");
     protected readonly int isDash = Animator.StringToHash("isDash");
 
+    //Input System
+    public UIInput InputUI;
+    protected PlayerInput playerInput;
     protected InputActionMap lobby;
     protected InputActionMap ui;
     protected InputActionMap sushi;
     protected InputActionMap underWater;
 
     protected SpriteRenderer spriteRenderer;
-
     protected Rigidbody2D rigid;
 
 
@@ -130,42 +130,10 @@ public class Player : MonoBehaviour
 
         }
     }
-
-/*    public void OnSpace(InputAction.CallbackContext context)
-    {
-        //한번 누르는건 여기서 하면되고
-        pressKey = context.ReadValue<float>() > 0.1f;
-        if (!context.started || State.Equals(EState.Sushi))
-            return;
-
-        if (SushiGameManager.Instance.State.Equals(SushiGameManager.EState.Start))
-        {
-            if(interaction!=null)
-            interaction.Perform();
-        }
-    }*/
-
-/*    protected void Space(bool pressKey)
-    {
-        //얘는 넘어가는거만 하면 되자너
-        if(pressKey&&interaction!=null)
-        {
-            if(interaction.CanPerform())
-            {
-                interaction.Perform();
-
-            }
-        }
-    }*/
-
     //움직이는거 rigidbody로 통일?
-    protected void Move()
+    protected virtual void Move()
     {
         rigid.velocity = cachedMove * speed;
-        //Vector3 desiredMovement = cachedMove * transform.right;
-        //transform.position += desiredMovement * speed * Time.deltaTime;
-
-        //transform.Translate(Vector2.one*0.1f * cachedMove);
     }
 
     #endregion

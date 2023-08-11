@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.esotericsoftware.spine.urp-shaders": {
-      "version": "file:C:/Users/kaovv/Downloads/spine-runtimes-4.0/spine-runtimes-4.0/spine-unity/Modules/com.esotericsoftware.spine.urp-shaders",
+      "version": "file:C:/Users/KGA_1004/Downloads/com.esotericsoftware.spine.urp-shaders-4.0-2019.1",
       "depth": 0,
       "source": "local",
       "dependencies": {

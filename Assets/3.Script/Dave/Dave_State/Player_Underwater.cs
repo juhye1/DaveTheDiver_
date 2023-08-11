@@ -238,7 +238,7 @@ public class Player_Underwater : PlayerInteraction
         rigid.AddRelativeForce(dir * -3, ForceMode2D.Impulse);
     }
 
-    private void UnderwaterMove()
+    protected override void Move()
     {
         curruentAngle = transform.localEulerAngles.z;
         rigid.velocity = cachedMove * speed;
@@ -302,11 +302,6 @@ public class Player_Underwater : PlayerInteraction
         }
     }
 
-    public void MoveDown()
-    {
-        //transform.DOLocalMoveY(1, 1);
-    }
-
     private void Update()
     {
         MoveMousePosition();
@@ -323,7 +318,7 @@ public class Player_Underwater : PlayerInteraction
                 case EActionState.Attack:
                     break;
                 case EActionState.Underwater:
-                    UnderwaterMove();
+                    Move();
                     break;
 
             }

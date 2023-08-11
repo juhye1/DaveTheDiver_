@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Experimental.U2D.Animation;
 using UnityEngine;
+using System.IO;
+
 
 public class SpeechBubble
 {
@@ -21,11 +23,12 @@ public class CustomerSpawner : MonoBehaviour
 
     private Dictionary<int, SpriteLibraryAsset> spriteLibraryDictionary;
 
-
+    private CustomerSpawnFromBundle customerSpawnFromBundle;
     private List<Sprite> OrderList;
     private List<Chairs> goal;
     private List<int> closet;
-    private List<Order> orderff;
+    private List<Vector3> spawnPoints;
+
     private MiniMenuUI miniMenuUI;
     private Sprite saveSprite;
 
@@ -35,11 +38,17 @@ public class CustomerSpawner : MonoBehaviour
     private Customer.EOrderType orderType;
     private int num;
     private int rdn;
+    private string bundleName;
+    private string assetName;
 
     //목적지 정해야하고 생긴거 정해야하고 애니메이터까지?
 
     private void Awake()
     {
+        bundleName = "customer";
+        assetName = "Customer";
+
+        customerSpawnFromBundle = GetComponent<CustomerSpawnFromBundle>();
         spriteLibraryDictionary = new Dictionary<int, SpriteLibraryAsset>();
         miniMenuUI = FindObjectOfType<MiniMenuUI>();
         chair = FindObjectOfType<Chair>();
@@ -53,13 +62,14 @@ public class CustomerSpawner : MonoBehaviour
     }
     private void Start()
     {
-        SpawnCustomer();
+        StartCoroutine(Spawn());
+        //SpawnCustomer();
     }
 
 
     private void SpawnCustomer()
     {
-        List<Vector3> spawnpoints = SpawnPoints();
+        AddSpawnPoints();
         goal = chair.EmptyChairs();
 
         for (int i = 0; i < 3; i++)
@@ -67,7 +77,13 @@ public class CustomerSpawner : MonoBehaviour
             orderType = new Customer.EOrderType();
             Gacha();
 
-            Customer _customer = Instantiate(customer, spawnpoints[i], Quaternion.identity);
+            //Customer _customer = Instantiate(customer, spawnpoints[i], Quaternion.identity);
+            Customer _customer = customerSpawnFromBundle.SpawnCustomer();
+            if (_customer == null)
+            {
+                Debug.Log("널이에요");
+            }
+
             _customer.transform.SetParent(transform);
             _customer.Init(goal[i], bubble, spareBubble, orderType, spawnPoint, spriteLibraryDictionary[num], num);
             _customer.SetKey(saveSprite);
@@ -98,16 +114,14 @@ public class CustomerSpawner : MonoBehaviour
 
     }
 
-    private List<Vector3> SpawnPoints()
+    private void AddSpawnPoints()
     {
-        List<Vector3> spawnPoints = new List<Vector3>();
+        spawnPoints = new List<Vector3>();
         for (int i = 0; i < 3; i++)
         {
             Vector3 pos = new Vector3(spawnPoint.position.x - 0.2f * i, spawnPoint.position.y, spawnPoint.position.x);
             spawnPoints.Add(pos);
         }
-
-        return spawnPoints;
     }
 
 
@@ -158,6 +172,62 @@ public class CustomerSpawner : MonoBehaviour
         List<Sprite> _orderList = OrderList;
         OrderList.Clear();
         return _orderList;
+    }
+
+    private IEnumerator Spawn()
+    {
+        AddSpawnPoints();
+        goal = chair.EmptyChairs();
+
+        for (int i = 0; i < 3; i++)
+        {
+            orderType = new Customer.EOrderType();
+            Gacha();
+
+            AssetBundle localAssetBundle =
+            AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, bundleName));
+
+/*            yield return asyncBundleRequest;
+
+            AssetBundle localAssetBundle = asyncBundleRequest.assetBundle;*/
+
+            if (localAssetBundle == null)
+            {
+                Debug.LogError("번들 로드 실패");
+                yield break;
+            }
+
+            AssetBundleRequest assetRequest = localAssetBundle.LoadAssetAsync<GameObject>(assetName);
+            yield return assetRequest;
+
+            var prefab = assetRequest.asset as GameObject;
+
+            GameObject customerGo = Instantiate(prefab, spawnPoints[i], Quaternion.identity);
+            yield return new WaitForSeconds(0.01f);
+            localAssetBundle.Unload(true);
+
+
+            Customer _customer = customerGo.GetComponent<Customer>();
+
+
+            if (_customer == null)
+            {
+                Debug.Log("널이에요");
+            }
+
+            _customer.transform.SetParent(transform);
+            _customer.Init(goal[i], bubble, spareBubble, orderType, spawnPoint, spriteLibraryDictionary[num], num);
+            _customer.SetKey(saveSprite);
+            _customer.GetComponent<BaseCustomer>().Init(TeaUI);
+            spriteLibraryDictionary.Remove(num);
+
+            _customer.gameObject.SetActive(true);
+
+            _customer.SwitchState(Customer.EState.MoveToChair);
+
+
+
+        }
     }
 
 }
