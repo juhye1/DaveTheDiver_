@@ -197,7 +197,10 @@ public class CustomerSpawner : MonoBehaviour
                 yield break;
             }
 
-            AssetBundleRequest assetRequest = localAssetBundle.LoadAssetAsync<GameObject>(assetName);
+
+            localAssetBundle.LoadAssetWithSubAssets<GameObject>(assetName);
+            //AssetBundleRequest assetRequest = localAssetBundle.LoadAssetAsync<GameObject>(assetName);
+            AssetBundleRequest assetRequest = localAssetBundle.LoadAssetWithSubAssetsAsync(assetName);
             yield return assetRequest;
 
             var prefab = assetRequest.asset as GameObject;
