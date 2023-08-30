@@ -21,4 +21,5 @@ EditorBuildSettings:
     path: Assets/1.Scene/Scenes/SushiScene.unity
     guid: 598a4a882badd2c4fb360ec64342c1ef
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: b25e25981b3defe4eb6cf5cb0eac60c0, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: a00fe426fb542cc41848684f2fce67ce, type: 2}

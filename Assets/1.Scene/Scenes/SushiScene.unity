@@ -416,6 +416,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e5f449a7974404f8b6298d91929d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dd:
+    m_AssetGUID: aee707166da9b0e4a8ba9e598d94f4c9
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
   spawnPoint: {fileID: 922880624}
   customer: {fileID: 5724388106613424901, guid: aee707166da9b0e4a8ba9e598d94f4c9, type: 3}
   BubbleSprites:

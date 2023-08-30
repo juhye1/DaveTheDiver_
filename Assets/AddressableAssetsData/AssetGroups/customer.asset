@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: customer
+  m_EditorClassIdentifier: 
+  m_GroupName: customer
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 77cb01dab001d4e4f8ac3b59a8d8c096
+  m_SerializeEntries:
+  - m_GUID: aee707166da9b0e4a8ba9e598d94f4c9
+    m_Address: Assets/2.Model/Prefabs/Customer.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e9e8b2ee9ac319d468fe3a1929b9c054, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ba27914b69d10f842877f969a90ddb03, type: 2}
+    - {fileID: 11400000, guid: cc3678052856e0a46b6df126f24c7dc1, type: 2}
